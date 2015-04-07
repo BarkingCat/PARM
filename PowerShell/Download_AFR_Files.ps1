@@ -5,7 +5,7 @@ Clear-Host
 # Download this file
 # http://www.afr.com/rw/AFR/Web/Tables/Share_Tables_Daily/2015-03-28/GGsoda150328.csv
 
-[string]$DB_Server = '121.217.16.179' #NVRMND-PC or 121.217.16.179
+[string]$DB_Server = 'parm.barkingcat.com.au' #NVRMND-PC or 121.217.16.179
 [string]$DB_Name = 'PARM_Control'
 [string]$DB_User = 'neo' #set up application username and password
 [string]$DB_Password = 'trust.08'#make account read only, must use procs to change data
@@ -15,14 +15,14 @@ try{
 # check local path is valid
 
     # Get RunID
-    $RunID = 101
+    #$RunID = 1
 
 
-    while ($RunID -le 201)
-    {
+    #while ($RunID -le 201)
+    #{
 
         # Query PARM to populate these variables
-        $sql = "EXEC [Control].[GetFileInformation] @RunID = $RunID"
+        $sql = "EXEC [Control].[Get_FileDownloadMetadata]"
 
         # Create and open a database connection
         #$sqlConnection = new-object System.Data.SqlClient.SqlConnection "server=$DB_Server;database=$DB_Name;Integrated Security=sspi"
@@ -58,15 +58,15 @@ try{
 
         #Update PARM with success
         $sqlConnection.Open()
-        $sql = "EXEC [Control].[SetDownloadStatus] @RunID = $RunID, @FileID = $FileID, @StatusCode = 2"
+        $sql = "EXEC [Control].[Set_DownloadStatus] @RunID = $RunID, @FileID = $FileID, @StatusCode = 2"
         $sqlCommand = $sqlConnection.CreateCommand()
         $sqlCommand.CommandText = $sql
         $sqlCmd = $sqlCommand.ExecuteNonQuery()
         $sqlConnection.Close()
 
-        $RunID++
+        #$RunID++
 
-    }
+    #}
 
 }
 catch {
