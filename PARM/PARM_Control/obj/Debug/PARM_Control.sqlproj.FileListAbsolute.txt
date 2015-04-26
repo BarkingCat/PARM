@@ -1,0 +1,9 @@
+C:\Users\nvrmnd\BitTorrent Sync\Sync\Barking_Cat\PARM\PARM\PARM_Control\bin\Debug\PARM_Control.dacpac
+C:\Users\nvrmnd\BitTorrent Sync\Sync\Barking_Cat\PARM\PARM\PARM_Control\bin\Debug\PARM_Control.dll
+C:\Users\nvrmnd\BitTorrent Sync\Sync\Barking_Cat\PARM\PARM\PARM_Control\bin\Debug\PARM_Control.pdb
+C:\Users\nvrmnd\BitTorrent Sync\Sync\Barking_Cat\PARM\PARM\PARM_Control\obj\Debug\Model.xml
+C:\Users\nvrmnd\BitTorrent Sync\Sync\Barking_Cat\PARM\PARM\PARM_Control\obj\Debug\refactor.xml
+C:\Users\nvrmnd\BitTorrent Sync\Sync\Barking_Cat\PARM\PARM\PARM_Control\obj\Debug\postdeploy.sql
+C:\Users\nvrmnd\BitTorrent Sync\Sync\Barking_Cat\PARM\PARM\PARM_Control\obj\Debug\predeploy.sql
+C:\Users\nvrmnd\BitTorrent Sync\Sync\Barking_Cat\PARM\PARM\PARM_Control\obj\Debug\PARM_Control.dll
+C:\Users\nvrmnd\BitTorrent Sync\Sync\Barking_Cat\PARM\PARM\PARM_Control\obj\Debug\PARM_Control.pdb

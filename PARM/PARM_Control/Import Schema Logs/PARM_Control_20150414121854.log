@@ -1,0 +1,72 @@
+14/04/2015 10:18:54 AM	This log contains information about the import schema operation into project 'PARM_Control' on computer 'NVRMND-PC' by user 'nvrmnd'.
+14/04/2015 10:18:55 AM	Import of database schema has started.
+14/04/2015 10:18:58 AM	Gathering database options
+14/04/2015 10:18:58 AM	Gathering users
+14/04/2015 10:18:58 AM	Gathering roles
+14/04/2015 10:18:58 AM	Gathering application roles
+14/04/2015 10:18:58 AM	Gathering role memberships
+14/04/2015 10:18:58 AM	Gathering filegroups
+14/04/2015 10:18:58 AM	Gathering full-text catalogs
+14/04/2015 10:18:58 AM	Gathering assemblies
+14/04/2015 10:18:58 AM	Gathering certificates
+14/04/2015 10:18:58 AM	Gathering asymmetric keys
+14/04/2015 10:18:58 AM	Gathering symmetric keys
+14/04/2015 10:18:58 AM	Gathering encrypted symmetric keys
+14/04/2015 10:18:58 AM	Gathering schemas
+14/04/2015 10:18:58 AM	Gathering XML schema collections
+14/04/2015 10:18:58 AM	Gathering user-defined data types
+14/04/2015 10:18:58 AM	Gathering user-defined types
+14/04/2015 10:18:58 AM	Gathering table types
+14/04/2015 10:18:58 AM	Gathering unique keys for table types
+14/04/2015 10:18:58 AM	Gathering primary keys for table types
+14/04/2015 10:18:58 AM	Gathering check constraints for table types
+14/04/2015 10:18:58 AM	Gathering default constraints for table types
+14/04/2015 10:18:58 AM	Gathering partition functions
+14/04/2015 10:18:58 AM	Gathering partition schemes
+14/04/2015 10:18:58 AM	Gathering functions
+14/04/2015 10:18:58 AM	Gathering encrypted functions
+14/04/2015 10:18:58 AM	Gathering aggregates
+14/04/2015 10:18:58 AM	Gathering procedures
+14/04/2015 10:18:59 AM	Gathering encrypted procedures
+14/04/2015 10:18:59 AM	Gathering tables
+14/04/2015 10:18:59 AM	Gathering primary keys
+14/04/2015 10:18:59 AM	Gathering unique constraints
+14/04/2015 10:18:59 AM	Gathering foreign keys
+14/04/2015 10:18:59 AM	Gathering default constraints
+14/04/2015 10:18:59 AM	Gathering check constraints
+14/04/2015 10:18:59 AM	Gathering views
+14/04/2015 10:18:59 AM	Gathering encrypted views
+14/04/2015 10:18:59 AM	Gathering indexes
+14/04/2015 10:18:59 AM	Gathering statistics
+14/04/2015 10:18:59 AM	Gathering full-text index stoplists
+14/04/2015 10:18:59 AM	Gathering full-text indexes
+14/04/2015 10:18:59 AM	Gathering spatial indexes
+14/04/2015 10:18:59 AM	Gathering XML indexes
+14/04/2015 10:18:59 AM	Gathering encrypted triggers
+14/04/2015 10:18:59 AM	Gathering triggers
+14/04/2015 10:18:59 AM	Gathering encrypted and clr ddl triggers
+14/04/2015 10:18:59 AM	Gathering ddl triggers
+14/04/2015 10:18:59 AM	Gathering synonyms
+14/04/2015 10:18:59 AM	Gathering defaults
+14/04/2015 10:18:59 AM	Gathering data constraint uddt bindings
+14/04/2015 10:18:59 AM	Gathering rules
+14/04/2015 10:18:59 AM	Gathering data constraint uddt bindings
+14/04/2015 10:18:59 AM	Gathering message types
+14/04/2015 10:18:59 AM	Gathering queues
+14/04/2015 10:18:59 AM	Gathering contracts
+14/04/2015 10:18:59 AM	Gathering services
+14/04/2015 10:18:59 AM	Gathering event notifications
+14/04/2015 10:18:59 AM	Gathering remote service bindings
+14/04/2015 10:18:59 AM	Gathering broker priorities
+14/04/2015 10:18:59 AM	Gathering signatures
+14/04/2015 10:18:59 AM	Gathering data compression options
+14/04/2015 10:18:59 AM	Gathering database permissions
+14/04/2015 10:18:59 AM	Gathering extended properties
+14/04/2015 10:18:59 AM	Gathering credentials
+14/04/2015 10:18:59 AM	Gathering logins
+14/04/2015 10:18:59 AM	Gathering server audits
+14/04/2015 10:18:59 AM	Scanning project for duplicate elements
+14/04/2015 10:18:59 AM	Finished duplicate element processing
+14/04/2015 10:18:59 AM	Finished importing database.
+14/04/2015 10:18:59 AM	A summary of the import was saved to the following location: C:\Users\nvrmnd\BitTorrent Sync\Sync\Barking_Cat\PARM\PARM\PARM_Control\Import Schema Logs\PARM_Control_20150414121854.log
+14/04/2015 10:18:59 AM	Click Finish to continue...
