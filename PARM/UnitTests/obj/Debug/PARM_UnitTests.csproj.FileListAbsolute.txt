@@ -1,7 +1,6 @@
 C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\UnitTests\bin\Debug\UnitTests.dll.config
 C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\UnitTests\bin\Debug\UnitTests.dll
 C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\UnitTests\bin\Debug\UnitTests.pdb
-C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\UnitTests\obj\Debug\PARM_UnitTests.csprojResolveAssemblyReference.cache
 C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\UnitTests\obj\Debug\UnitTests.SqlServerUnitTest1.resources
 C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\UnitTests\obj\Debug\PARM_UnitTests.csproj.GenerateResource.Cache
 C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\UnitTests\obj\Debug\UnitTests.dll

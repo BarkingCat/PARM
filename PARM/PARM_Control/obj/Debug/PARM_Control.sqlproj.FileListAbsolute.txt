@@ -7,3 +7,8 @@ C:\Users\nvrmnd\BitTorrent Sync\Sync\Barking_Cat\PARM\PARM\PARM_Control\obj\Debu
 C:\Users\nvrmnd\BitTorrent Sync\Sync\Barking_Cat\PARM\PARM\PARM_Control\obj\Debug\predeploy.sql
 C:\Users\nvrmnd\BitTorrent Sync\Sync\Barking_Cat\PARM\PARM\PARM_Control\obj\Debug\PARM_Control.dll
 C:\Users\nvrmnd\BitTorrent Sync\Sync\Barking_Cat\PARM\PARM\PARM_Control\obj\Debug\PARM_Control.pdb
+C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Control\bin\Debug\PARM_Control.dacpac
+C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Control\bin\Debug\PARM_Control.dll
+C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Control\bin\Debug\PARM_Control.pdb
+C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Control\obj\Debug\PARM_Control.dll
+C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Control\obj\Debug\PARM_Control.pdb

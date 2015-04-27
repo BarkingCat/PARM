@@ -131,9 +131,6 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="Security\trinity.sql" />
-    <Build Include="Security\trinity_1.sql" />
-    <Build Include="Security\RoleMemberships.sql" />
     <Build Include="dbo\Functions\fn_StripCharacters.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
@@ -147,5 +144,17 @@
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
     <Build Include="Security\Staging.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PARM_Control\PARM_Control.sqlproj">
+      <Name>PARM_Control</Name>
+      <Project>{5b53f2ce-c219-427e-9dd0-13c423534081}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseVariableLiteralValue>PARM_Control</DatabaseVariableLiteralValue>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PARM_Staging.publish.xml" />
   </ItemGroup>
 </Project>

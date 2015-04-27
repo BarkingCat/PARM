@@ -64,6 +64,7 @@
     <Folder Include="Fact\" />
     <Folder Include="Fact\Tables\" />
     <Folder Include="Security\" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Dimension.sql" />
@@ -74,5 +75,17 @@
     <Build Include="Dimension\Tables\BudgetItems.sql" />
     <Build Include="Dimension\Tables\BudgetAccounts.sql" />
     <Build Include="Dimension\Tables\BalanceSheetItems.sql" />
+    <None Include="Scripts\Dimension.BalanceSheetItems.sql" />
+    <None Include="Scripts\Dimension.BudgetAccounts.sql" />
+    <None Include="Scripts\Dimension.BudgetItems.sql" />
+    <None Include="Scripts\Dimension.FinancialRatios.sql" />
+    <None Include="Scripts\Fact.BalanceSheetMeasures.sql" />
+    <None Include="Scripts\Fact.BudgetMeasures.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PARM_DW.publish.xml" />
   </ItemGroup>
 </Project>

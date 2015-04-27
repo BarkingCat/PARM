@@ -6,10 +6,63 @@
     <Name>PARM_SSAS.database</Name>
     <FullPath>PARM_SSAS.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>PARM DW.cube</Name>
+      <FullPath>PARM DW.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>PARM DW.partitions</Name>
+          <FullPath>PARM DW.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Budget Accounts.dim</Name>
+      <FullPath>Budget Accounts.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Budget Items.dim</Name>
+      <FullPath>Budget Items.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date.dim</Name>
+      <FullPath>Date.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>PARM DW.ds</Name>
+      <FullPath>PARM DW.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>PARM DW.dsv</Name>
+      <FullPath>PARM DW.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>PARM DW</Id>
+            <Name>PARM DW</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=NVRMND-LAPTOP;Integrated Security=SSPI;Initial Catalog=PARM_DW</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>PARM DW</Id>
+            <Name>PARM DW</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>

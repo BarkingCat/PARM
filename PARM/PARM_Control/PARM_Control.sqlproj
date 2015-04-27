@@ -171,4 +171,7 @@
     <Build Include="Security\Control.sql" />
     <Build Include="Security\Permissions.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="PARM_Control.publish.xml" />
+  </ItemGroup>
 </Project>

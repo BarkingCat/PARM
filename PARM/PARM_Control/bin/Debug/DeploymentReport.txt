@@ -1,0 +1,45 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [trinity] (Login)
+       [trinity] (User)
+       Role Membership: <unnamed> (Role Membership)
+       [Control] (Schema)
+       [Control].[SourceSystems] (Table)
+       [Control].[UploadQueue] (Table)
+       [Control].[DownloadQueue] (Table)
+       [Control].[Files] (Table)
+       [Control].[Run] (Table)
+       [Control].[QueueStatusCodes] (Table)
+       [Control].[ProcessLog] (Table)
+       Default Constraint: unnamed constraint on [Control].[UploadQueue] (Default Constraint)
+       Default Constraint: unnamed constraint on [Control].[UploadQueue] (Default Constraint)
+       Default Constraint: unnamed constraint on [Control].[DownloadQueue] (Default Constraint)
+       Default Constraint: unnamed constraint on [Control].[DownloadQueue] (Default Constraint)
+       Foreign Key: unnamed constraint on [Control].[UploadQueue] (Foreign Key)
+       Foreign Key: unnamed constraint on [Control].[UploadQueue] (Foreign Key)
+       Foreign Key: unnamed constraint on [Control].[UploadQueue] (Foreign Key)
+       Foreign Key: unnamed constraint on [Control].[DownloadQueue] (Foreign Key)
+       Foreign Key: unnamed constraint on [Control].[DownloadQueue] (Foreign Key)
+       Foreign Key: unnamed constraint on [Control].[DownloadQueue] (Foreign Key)
+       Foreign Key: unnamed constraint on [Control].[Files] (Foreign Key)
+       [Control].[InitialiseUploadQueue] (Procedure)
+       [Control].[InitialiseDownloadQueue] (Procedure)
+       [Control].[Set_UploadStatus] (Procedure)
+       [Control].[Get_FileDownloadMetadata] (Procedure)
+       [Control].[Get_FileUploadMetadata] (Procedure)
+       [Control].[Set_DownloadStatus] (Procedure)
+       [Control].[InitialiseRun] (Procedure)
+       [Control].[InitialiseAutomation] (Procedure)
+       Permission (Permission)
+
+** Supporting actions

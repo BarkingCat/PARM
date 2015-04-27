@@ -1,0 +1,24 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [Staging] (Schema)
+       [Staging].[AFR_ASX300_Daily_Raw] (Table)
+       [dbo].[CBA_Transactions] (Table)
+       [dbo].[CBA_TransactionSummary] (Table)
+       [dbo].[fn_StripCharacters] (Function)
+       [dbo].[GetHistoricCapitalPosition] (Function)
+       [dbo].[GetHistoricPortfolioPosition] (Function)
+       [Staging].[AFR_ASX300_Daily] (View)
+       [dbo].[CapitalPosition] (View)
+       [dbo].[TotalPosition] (View)
+
+** Supporting actions
