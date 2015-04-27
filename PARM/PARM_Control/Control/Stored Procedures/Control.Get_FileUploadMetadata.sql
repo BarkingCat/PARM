@@ -15,7 +15,7 @@ BEGIN
 	
 	DECLARE @BusinessDate DATE, @RunID INT;
 	
-	SELECT @RunID = MIN(RunID) FROM [Control].[UploadQueue] WHERE StatusCode in (-1,0) AND FileID = @FileID;
+	SELECT @RunID = MIN(RunID) FROM [Control].[UploadQueue] WHERE StatusCode in (-1, 0) AND FileID = @FileID;
 
 	SELECT @BusinessDate = BusinessDate FROM [Control].[Run] WHERE RunID = @RunID;
 

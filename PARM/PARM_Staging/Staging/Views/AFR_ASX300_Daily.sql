@@ -28,4 +28,4 @@ SELECT
       ,REPLACE(A.[P/E ratio],',,','') as [P/E ratio]
 FROM [Staging].[AFR_ASX300_Daily_Raw] AS A
 INNER JOIN [PARM_Control].[Control].Run AS B on A.RunID = B.RunID
-LEFT JOIN [PARM_Staging].[Staging].[ASX_ListedCompanies_Daily] as C on A.[ASX Code]=C.[ASX code] AND B.BusinessDate=C.BusinessDate
+LEFT JOIN [Staging].[ASX_ListedCompanies_Daily] as C on A.[ASX Code]=C.[ASX code] AND B.BusinessDate=C.BusinessDate

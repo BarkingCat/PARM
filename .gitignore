@@ -217,3 +217,8 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+*.suo
+*.dbmdl
+*.dacpac
+*.pdb
+*.ispac

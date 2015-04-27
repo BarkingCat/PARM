@@ -2,13 +2,23 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>PARM_ETL</Name>
-    <LastWriteTime>2015-04-27T03:27:03.563365Z</LastWriteTime>
+    <LastWriteTime>2015-04-27T08:34:36.896729Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Acquisition_AFR_Daily.dtsx</Name>
       <LastWriteTime>2015-04-27T03:26:56.9249853Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Acquisition_ASX_Daily.dtsx</Name>
+      <LastWriteTime>2015-04-27T08:34:22.3733108Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Historical_Load_AFR_Daily.dtsx</Name>
+      <LastWriteTime>2015-04-27T08:34:35.3367262Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

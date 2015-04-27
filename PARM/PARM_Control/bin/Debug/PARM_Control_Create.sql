@@ -394,61 +394,28 @@ ALTER TABLE [Control].[Files]
 
 
 GO
-PRINT N'Creating [Control].[InitialiseUploadQueue]...';
+PRINT N'Creating [Control].[GetSystemID]...';
 
 
 GO
-
-
--- *********************************************
--- Author:		Aaron Jackson
--- Create date: 05/04/2015
--- Description:	Update status
--- *********************************************
-CREATE PROCEDURE [Control].[InitialiseUploadQueue]
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date, ,>
+-- Description:	<Description, ,>
+-- =============================================
+CREATE FUNCTION [Control].[GetSystemID]
+(
+	@SystemName VARCHAR(255)
+)
+RETURNS INT
+WITH SCHEMABINDING
 AS
 BEGIN
-	-- SET NOCOUNT ON added to prevent extra result sets from
-	-- interfering with SELECT statements.
-	SET NOCOUNT ON;
-	
-	INSERT INTO [Control].[UploadQueue] (RunID, FileID)
-	SELECT 
-		RunID,
-		1
-	FROM [Control].[Run]
-	WHERE RunID NOT IN (SELECT RunID FROM [Control].[UploadQueue]);
-	
-END
-GO
-PRINT N'Creating [Control].[InitialiseDownloadQueue]...';
 
+	DECLARE @SystemID INT = (SELECT SystemID FROM [Control].[SourceSystems] WHERE SystemName = @SystemName);
 
-GO
+	RETURN @SystemID
 
-
--- *********************************************
--- Author:		Aaron Jackson
--- Create date: 05/04/2015
--- Description:	Update status
--- *********************************************
-CREATE PROCEDURE [Control].[InitialiseDownloadQueue]
-AS
-BEGIN
-	-- SET NOCOUNT ON added to prevent extra result sets from
-	-- interfering with SELECT statements.
-	SET NOCOUNT ON;
-	
-	-- SIMPLE HACK FOR NOW
-	
-	INSERT INTO [Control].[DownloadQueue] (RunID, FileID)
-	SELECT 
-		RunID,
-		1
-	FROM [Control].[Run]
-	WHERE RunID NOT IN (SELECT RunID FROM [Control].[DownloadQueue]);
-	
-	
 END
 GO
 PRINT N'Creating [Control].[Set_UploadStatus]...';
@@ -480,87 +447,6 @@ BEGIN
 
 END
 GO
-PRINT N'Creating [Control].[Get_FileDownloadMetadata]...';
-
-
-GO
--- *********************************************
--- Author:		Aaron Jackson
--- Create date: 05/04/2015
--- Description:	Get a file to download from the queue
--- *********************************************
-CREATE PROCEDURE [Control].[Get_FileDownloadMetadata]
-	@RunID INT = 0 --If not supplied, the min will be found
-AS
-BEGIN
-	-- SET NOCOUNT ON added to prevent extra result sets from
-	-- interfering with SELECT statements.
-	SET NOCOUNT ON;
-	
-	DECLARE @BusinessDate DATE;
-	
-	IF @RunID = 0 SELECT @RunID = MIN(RunID) FROM [Control].[DownloadQueue] WHERE StatusCode = 0;
-
-	SELECT @BusinessDate = BusinessDate FROM [Control].[Run] WHERE RunID = @RunID;
-
--- This code isnt generic, will only work for AFR files.
--- Change when addition systems are added
-	
-	SELECT
-		A.FileID,
-		REPLACE(B.SourceURI,'[YYYY-MM-DD]',CONVERT(char(10),DATEADD(d,B.DateOffset,@BusinessDate),126)) AS [SourceURI],
-		REPLACE(B.FileName,'[YYMMDD]',CONVERT(char(6),DATEADD(d,B.DateOffset,@BusinessDate),12)) AS [FileName],
-		B.TargetURI,
-		A.RunID
-	FROM [Control].[DownloadQueue] AS A
-	INNER JOIN [Control].[Files] AS B on A.FileID = B.FileID
-	WHERE StatusCode = 0 -- Only files that are pending 
-	AND RunID = @RunID;
-
-
-END
-GO
-PRINT N'Creating [Control].[Get_FileUploadMetadata]...';
-
-
-GO
--- *********************************************
--- Author:		Aaron Jackson
--- Create date: 07/04/2015
--- Description:	Get RunID and Filename for a FileID
--- Test: EXEC [Control].[Get_FileUploadMetadata] @FileID = 1;
--- *********************************************
-
-CREATE PROCEDURE [Control].[Get_FileUploadMetadata]
-	@FileID INT
-AS
-BEGIN
-	-- SET NOCOUNT ON added to prevent extra result sets from
-	-- interfering with SELECT statements.
-	SET NOCOUNT ON;
-	
-	DECLARE @BusinessDate DATE, @RunID INT;
-	
-	SELECT @RunID = MIN(RunID) FROM [Control].[UploadQueue] WHERE StatusCode = 0 AND FileID = @FileID;
-
-	SELECT @BusinessDate = BusinessDate FROM [Control].[Run] WHERE RunID = @RunID;
-
--- This code isnt generic, will only work for AFR files.
--- Change when addition systems are added
-	
-	SELECT
-		A.RunID,
-		B.SystemID,
-		B.TargetURI AS [Directory],
-		REPLACE(B.FileName,'[YYMMDD]',CONVERT(char(6),DATEADD(d,B.DateOffset,@BusinessDate),12)) AS [Filename]
-	FROM [Control].[UploadQueue] AS A
-	INNER JOIN [Control].[Files] AS B on A.FileID = B.FileID
-	WHERE A.StatusCode = 0 -- Only files that are pending 
-	AND A.RunID = @RunID
-	AND A.FileID = @FileID;
-
-END
-GO
 PRINT N'Creating [Control].[Set_DownloadStatus]...';
 
 
@@ -588,6 +474,34 @@ BEGIN
 	WHERE RunID = @RunID
 	AND FileID = @FileID;
 
+END
+GO
+PRINT N'Creating [Control].[InitialiseUploadQueue]...';
+
+
+GO
+
+
+-- *********************************************
+-- Author:		Aaron Jackson
+-- Create date: 05/04/2015
+-- Description:	Update status
+-- *********************************************
+CREATE PROCEDURE [Control].[InitialiseUploadQueue]
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+	
+	INSERT INTO [Control].[UploadQueue] (RunID, FileID)
+	SELECT 
+		A.RunID,
+		B.FileID
+	FROM [Control].[Run] as A
+	CROSS APPLY (SELECT FileID FROM [Control].[Files]) as B
+	WHERE A.RunID NOT IN (SELECT RunID FROM [Control].[UploadQueue]);
+	
 END
 GO
 PRINT N'Creating [Control].[InitialiseRun]...';
@@ -624,11 +538,11 @@ BEGIN
 	WHILE @EOD_D < @MAX_DATE
 	BEGIN
 
-		SELECT @DATE_COUNT = COUNT(*) FROM [Control].[Run] WHERE BusinessDate = @EOD_D;
+		SELECT @DATE_COUNT = COUNT(*) FROM [PARM_Control].[Control].[Run] WHERE BusinessDate = @EOD_D;
 
 		IF @DATE_COUNT = 0 -- if date doesnt already exist in table
 		BEGIN
-			INSERT INTO [Control].[Run] (BusinessDate)
+			INSERT INTO [PARM_Control].[Control].[Run] (BusinessDate)
 			SELECT @EOD_D;
 		END
 
@@ -643,6 +557,123 @@ BEGIN
 				WHEN 0 THEN DATEADD(day,2,@EOD_D) --'Saturday'
 			END
 	END
+
+END
+GO
+PRINT N'Creating [Control].[InitialiseDownloadQueue]...';
+
+
+GO
+
+
+-- *********************************************
+-- Author:		Aaron Jackson
+-- Create date: 05/04/2015
+-- Description:	Update status
+-- *********************************************
+CREATE PROCEDURE [Control].[InitialiseDownloadQueue]
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+	
+	-- SIMPLE HACK FOR NOW
+	
+	INSERT INTO [Control].[DownloadQueue] (RunID, FileID)
+	SELECT 
+		A.RunID,
+		B.FileID
+	FROM [Control].[Run] as A
+	CROSS APPLY (SELECT FileID FROM [Control].[Files]) as B
+	WHERE A.RunID NOT IN (SELECT RunID FROM [Control].[DownloadQueue]);
+	
+	
+END
+GO
+PRINT N'Creating [Control].[Get_FileUploadMetadata]...';
+
+
+GO
+-- *********************************************
+-- Author:		Aaron Jackson
+-- Create date: 07/04/2015
+-- Description:	Get RunID and Filename for a FileID
+-- Test: EXEC [Control].[Get_FileUploadMetadata] @FileID = 1;
+-- *********************************************
+
+CREATE PROCEDURE [Control].[Get_FileUploadMetadata]
+	@FileID INT
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+	
+	DECLARE @BusinessDate DATE, @RunID INT;
+	
+	SELECT @RunID = MIN(RunID) FROM [Control].[UploadQueue] WHERE StatusCode in (-1,0) AND FileID = @FileID;
+
+	SELECT @BusinessDate = BusinessDate FROM [Control].[Run] WHERE RunID = @RunID;
+
+-- This code isnt generic, will only work for AFR files.
+-- Change when addition systems are added
+	
+	SELECT
+		A.RunID,
+		B.SystemID,
+		B.TargetURI AS [Directory],
+		REPLACE(B.FileName,'[YYMMDD]',CONVERT(char(6),DATEADD(d,B.DateOffset,@BusinessDate),12)) AS [Filename]
+	FROM [Control].[UploadQueue] AS A
+	INNER JOIN [Control].[Files] AS B on A.FileID = B.FileID
+	WHERE A.StatusCode in (-1,0) -- Only files that are pending 
+	AND A.RunID = @RunID
+	AND A.FileID = @FileID;
+
+END
+GO
+PRINT N'Creating [Control].[Get_FileDownloadMetadata]...';
+
+
+GO
+-- *********************************************
+-- Author:		Aaron Jackson
+-- Create date: 05/04/2015
+-- Description:	Get a file to download from the queue
+-- *********************************************
+CREATE PROCEDURE [Control].[Get_FileDownloadMetadata]
+	@SystemID INT, -- REQURIED
+	@FileID INT = 0, -- OPTIONAL 
+	@RunID INT = 0 --OPTIONAL - If not supplied, the min will be found
+
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+	
+	DECLARE @BusinessDate DATE;
+	
+	IF @RunID = 0 SELECT @RunID = MIN(RunID) FROM [Control].[DownloadQueue] WHERE StatusCode IN (-1,0);
+
+	SELECT @BusinessDate = BusinessDate FROM [Control].[Run] WHERE RunID = @RunID;
+
+-- This code isnt generic, will only work for AFR files.
+-- Change when addition systems are added
+	
+	SELECT
+		A.FileID,
+		REPLACE(B.SourceURI,'[YYYY-MM-DD]',CONVERT(char(10),DATEADD(d,B.DateOffset,@BusinessDate),126)) AS [SourceURI],
+		REPLACE(B.FileName,'[YYMMDD]',CONVERT(char(6),DATEADD(d,B.DateOffset,@BusinessDate),12)) AS [FileName],
+		B.TargetURI,
+		A.RunID
+	FROM [Control].[DownloadQueue] AS A
+	INNER JOIN [Control].[Files] AS B on A.FileID = B.FileID
+	WHERE A.StatusCode IN (-1,0) -- Only files that are pending 
+	AND A.RunID = @RunID
+	AND B.SystemID = @SystemID
+	AND A.FileID = ISNULL(NULLIF(@FileID,0),A.FileID);
+
 
 END
 GO
