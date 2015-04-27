@@ -1,0 +1,22 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [Dimension] (Schema)
+       [Fact] (Schema)
+       [Dimension].[BalanceSheetItems] (Table)
+       [Dimension].[BudgetAccounts] (Table)
+       [Dimension].[BudgetItems] (Table)
+       [Dimension].[FinancialRatios] (Table)
+       [Fact].[BalanceSheetMeasures] (Table)
+       [Fact].[BudgetMeasures] (Table)
+
+** Supporting actions

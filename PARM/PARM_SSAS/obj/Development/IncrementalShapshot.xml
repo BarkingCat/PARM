@@ -54,7 +54,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>pK14gTskcy+kOUBggufqJaM/1tI=27/04/2015 1:58:00 PM27/04/2015 1:58:00 PMn0Cq0fpMQiDcFKeXTvUubUXpWU0=27/04/2015 1:58:00 PM27/04/2015 1:58:00 PM</TimeStamp>
+        <TimeStamp>pK14gTskcy+kOUBggufqJaM/1tI=27/04/2015 2:01:18 PM27/04/2015 1:58:00 PMn0Cq0fpMQiDcFKeXTvUubUXpWU0=27/04/2015 1:58:00 PM27/04/2015 1:58:00 PM</TimeStamp>
         <ID>
           <String>PARM DW</String>
         </ID>
@@ -71,5 +71,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2015-04-27T03:58:14.656667Z</LastDeployed>
+  <LastDeployed>2015-04-27T05:00:08.69Z</LastDeployed>
 </DeploymentSnapshot>
