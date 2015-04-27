@@ -1,0 +1,68 @@
+26/04/2015 8:34:45 PM	This log contains information about the import schema operation into project 'PARM_DW' on computer 'NVRMND-LAPTOP' by user 'Aaron'.
+26/04/2015 8:34:45 PM	Import of database schema has started.
+26/04/2015 8:34:49 PM	Gathering database options
+26/04/2015 8:34:49 PM	Gathering users
+26/04/2015 8:34:49 PM	Gathering roles
+26/04/2015 8:34:49 PM	Gathering application roles
+26/04/2015 8:34:49 PM	Gathering role memberships
+26/04/2015 8:34:49 PM	Gathering filegroups
+26/04/2015 8:34:49 PM	Gathering full-text catalogs
+26/04/2015 8:34:49 PM	Gathering assemblies
+26/04/2015 8:34:49 PM	Gathering certificates
+26/04/2015 8:34:49 PM	Gathering asymmetric keys
+26/04/2015 8:34:49 PM	Gathering symmetric keys
+26/04/2015 8:34:49 PM	Gathering encrypted symmetric keys
+26/04/2015 8:34:49 PM	Gathering schemas
+26/04/2015 8:34:49 PM	Gathering XML schema collections
+26/04/2015 8:34:49 PM	Gathering user-defined data types
+26/04/2015 8:34:49 PM	Gathering user-defined types
+26/04/2015 8:34:49 PM	Gathering table types
+26/04/2015 8:34:49 PM	Gathering unique keys for table types
+26/04/2015 8:34:49 PM	Gathering primary keys for table types
+26/04/2015 8:34:49 PM	Gathering check constraints for table types
+26/04/2015 8:34:49 PM	Gathering default constraints for table types
+26/04/2015 8:34:49 PM	Gathering partition functions
+26/04/2015 8:34:49 PM	Gathering partition schemes
+26/04/2015 8:34:49 PM	Gathering functions
+26/04/2015 8:34:49 PM	Gathering encrypted functions
+26/04/2015 8:34:49 PM	Gathering aggregates
+26/04/2015 8:34:49 PM	Gathering procedures
+26/04/2015 8:34:49 PM	Gathering encrypted procedures
+26/04/2015 8:34:49 PM	Gathering tables
+26/04/2015 8:34:49 PM	Gathering primary keys
+26/04/2015 8:34:49 PM	Gathering unique constraints
+26/04/2015 8:34:49 PM	Gathering foreign keys
+26/04/2015 8:34:49 PM	Gathering default constraints
+26/04/2015 8:34:49 PM	Gathering check constraints
+26/04/2015 8:34:49 PM	Gathering views
+26/04/2015 8:34:49 PM	Gathering encrypted views
+26/04/2015 8:34:49 PM	Gathering indexes
+26/04/2015 8:34:49 PM	Gathering statistics
+26/04/2015 8:34:49 PM	Gathering full-text index stoplists
+26/04/2015 8:34:49 PM	Gathering full-text indexes
+26/04/2015 8:34:49 PM	Gathering spatial indexes
+26/04/2015 8:34:49 PM	Gathering XML indexes
+26/04/2015 8:34:49 PM	Gathering encrypted triggers
+26/04/2015 8:34:49 PM	Gathering triggers
+26/04/2015 8:34:49 PM	Gathering encrypted and clr ddl triggers
+26/04/2015 8:34:49 PM	Gathering ddl triggers
+26/04/2015 8:34:49 PM	Gathering synonyms
+26/04/2015 8:34:49 PM	Gathering defaults
+26/04/2015 8:34:49 PM	Gathering data constraint uddt bindings
+26/04/2015 8:34:49 PM	Gathering rules
+26/04/2015 8:34:49 PM	Gathering data constraint uddt bindings
+26/04/2015 8:34:49 PM	Gathering message types
+26/04/2015 8:34:49 PM	Gathering queues
+26/04/2015 8:34:49 PM	Gathering contracts
+26/04/2015 8:34:49 PM	Gathering services
+26/04/2015 8:34:49 PM	Gathering event notifications
+26/04/2015 8:34:49 PM	Gathering remote service bindings
+26/04/2015 8:34:49 PM	Gathering broker priorities
+26/04/2015 8:34:49 PM	Gathering signatures
+26/04/2015 8:34:49 PM	Gathering data compression options
+26/04/2015 8:34:49 PM	Gathering extended properties
+26/04/2015 8:34:49 PM	Scanning project for duplicate elements
+26/04/2015 8:34:49 PM	Finished duplicate element processing
+26/04/2015 8:34:49 PM	Finished importing database.
+26/04/2015 8:34:49 PM	A summary of the import was saved to the following location: C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_DW\Import Schema Logs\PARM_DW_20150426103445.log
+26/04/2015 8:34:49 PM	Click Finish to continue...
