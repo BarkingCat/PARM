@@ -28,11 +28,11 @@ BEGIN
 	WHILE @EOD_D < @MAX_DATE
 	BEGIN
 
-		SELECT @DATE_COUNT = COUNT(*) FROM [Control].[Run] WHERE BusinessDate = @EOD_D;
+		SELECT @DATE_COUNT = COUNT(*) FROM [PARM_Control].[Control].[Run] WHERE BusinessDate = @EOD_D;
 
 		IF @DATE_COUNT = 0 -- if date doesnt already exist in table
 		BEGIN
-			INSERT INTO [Control].[Run] (BusinessDate)
+			INSERT INTO [PARM_Control].[Control].[Run] (BusinessDate)
 			SELECT @EOD_D;
 		END
 

@@ -5,3 +5,4 @@ C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\UnitTests\obj\Debug\UnitTests.SqlServe
 C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\UnitTests\obj\Debug\PARM_UnitTests.csproj.GenerateResource.Cache
 C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\UnitTests\obj\Debug\UnitTests.dll
 C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\UnitTests\obj\Debug\UnitTests.pdb
+C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\UnitTests\obj\Debug\PARM_UnitTests.csprojResolveAssemblyReference.cache

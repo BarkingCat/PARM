@@ -103,6 +103,7 @@
     <Folder Include="Control\Tables\" />
     <Folder Include="Security\" />
     <Folder Include="Control\Stored Procedures\" />
+    <Folder Include="Control\Functions\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Control\Tables\Control.ProcessLog.sql">
@@ -170,6 +171,10 @@
     </Build>
     <Build Include="Security\Control.sql" />
     <Build Include="Security\Permissions.sql" />
+    <Build Include="Control\Functions\Control.GetSystemID.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
   </ItemGroup>
   <ItemGroup>
     <None Include="PARM_Control.publish.xml" />

@@ -14,10 +14,11 @@ BEGIN
 	
 	INSERT INTO [Control].[UploadQueue] (RunID, FileID)
 	SELECT 
-		RunID,
-		1
-	FROM [Control].[Run]
-	WHERE RunID NOT IN (SELECT RunID FROM [Control].[UploadQueue]);
+		A.RunID,
+		B.FileID
+	FROM [Control].[Run] as A
+	CROSS APPLY (SELECT FileID FROM [Control].[Files]) as B
+	WHERE A.RunID NOT IN (SELECT RunID FROM [Control].[UploadQueue]);
 	
 END
 

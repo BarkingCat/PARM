@@ -4,7 +4,10 @@
 -- Description:	Get a file to download from the queue
 -- *********************************************
 CREATE PROCEDURE [Control].[Get_FileDownloadMetadata]
-	@RunID INT = 0 --If not supplied, the min will be found
+	@SystemID INT, -- REQURIED
+	@FileID INT = 0, -- OPTIONAL 
+	@RunID INT = 0 --OPTIONAL - If not supplied, the min will be found
+
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
@@ -13,7 +16,7 @@ BEGIN
 	
 	DECLARE @BusinessDate DATE;
 	
-	IF @RunID = 0 SELECT @RunID = MIN(RunID) FROM [Control].[DownloadQueue] WHERE StatusCode = 0;
+	IF @RunID = 0 SELECT @RunID = MIN(RunID) FROM [Control].[DownloadQueue] WHERE StatusCode IN (-1,0);
 
 	SELECT @BusinessDate = BusinessDate FROM [Control].[Run] WHERE RunID = @RunID;
 
@@ -28,8 +31,10 @@ BEGIN
 		A.RunID
 	FROM [Control].[DownloadQueue] AS A
 	INNER JOIN [Control].[Files] AS B on A.FileID = B.FileID
-	WHERE StatusCode = 0 -- Only files that are pending 
-	AND RunID = @RunID;
+	WHERE A.StatusCode IN (-1,0) -- Only files that are pending 
+	AND A.RunID = @RunID
+	AND B.SystemID = @SystemID
+	AND A.FileID = ISNULL(NULLIF(@FileID,0),A.FileID);
 
 
 END

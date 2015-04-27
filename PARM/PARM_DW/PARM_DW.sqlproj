@@ -81,6 +81,11 @@
     <None Include="Scripts\Dimension.FinancialRatios.sql" />
     <None Include="Scripts\Fact.BalanceSheetMeasures.sql" />
     <None Include="Scripts\Fact.BudgetMeasures.sql" />
+    <Build Include="Fact\Tables\Portfolio.sql" />
+    <Build Include="Fact\Tables\Market.sql" />
+    <Build Include="Dimension\Tables\Stock.sql" />
+    <Build Include="Dimension\Tables\Market.sql" />
+    <Build Include="Dimension\Tables\Date.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
