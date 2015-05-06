@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="PARM_Staging"
+  DTS:DTSID="{51A6FCF7-E674-40CC-BA36-612E7A9BC17C}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=localhost;Initial Catalog=PARM_Staging;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{51A6FCF7-E674-40CC-BA36-612E7A9BC17C}NVRMND-PC.PARM_Staging;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
