@@ -11,16 +11,16 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Acquisition_AFR_PutOptions_Daily"
   DTS:PackageType="5"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{9872C696-60D9-4E60-A41D-CFAB6B572D7F}">
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{258BB6DC-0C39-4F41-B996-BB4E172026CF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[ASX300]"
+      DTS:refId="Package.ConnectionManagers[ASXPutOptions]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{01797D9C-A93E-4F6D-86EB-32A441507647}"
-      DTS:ObjectName="ASX300">
+      DTS:ObjectName="ASXPutOptions">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::Directory] +@[User::Filename]</DTS:PropertyExpression>
       <DTS:ObjectData>
@@ -30,7 +30,7 @@
           DTS:HeaderRowDelimiter="_x000D__x000A_"
           DTS:ColumnNamesInFirstDataRow="True"
           DTS:RowDelimiter=""
-          DTS:DataRowsToSkip="6"
+          DTS:DataRowsToSkip="7"
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252">
           <DTS:FlatFileColumns>
@@ -40,8 +40,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="52 Week High"
-              DTS:DTSID="{B54A1477-FA89-4BE9-A855-50D42F62CFBC}"
+              DTS:ObjectName="OptionSeriesMonth"
+              DTS:DTSID="{6C5CD4BD-D4FE-427B-8CD6-C0295321267B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -49,8 +49,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="52 Week Low"
-              DTS:DTSID="{363C64BA-C72D-4057-A4D5-8F637D256E52}"
+              DTS:ObjectName="OptionSeriesYear"
+              DTS:DTSID="{3C91578A-B0DA-4E4B-96E0-51466052F889}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -58,8 +58,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Day's High"
-              DTS:DTSID="{DB167F27-2E77-4825-B536-C299FF8ECE0F}"
+              DTS:ObjectName="ExercisePrice"
+              DTS:DTSID="{EE9E4EBF-162F-4312-9E2B-B9EB8AC28B10}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -67,8 +67,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Day's Low"
-              DTS:DTSID="{D7E85581-22A8-439A-93F9-31BF70CC9178}"
+              DTS:ObjectName="FairValue"
+              DTS:DTSID="{04E25C35-38CF-4D53-87B6-887CE449C15A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -76,17 +76,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="ASX Code"
-              DTS:DTSID="{0C9ACA84-36DC-4688-9663-60023FFE79DD}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Company Name"
-              DTS:DTSID="{9D84D03A-D059-4631-BB1F-2AEF8DC48029}"
+              DTS:ObjectName="LastSale"
+              DTS:DTSID="{9C1955E6-F323-46DA-894B-DE2CDE05BCC6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -94,8 +85,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Last Sale"
-              DTS:DTSID="{49E4C6DD-D885-4FA7-8240-8E1E760C9FFB}"
+              DTS:ObjectName="Volume"
+              DTS:DTSID="{20E0289B-D6FC-445F-A94C-64285F082387}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -103,8 +94,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="+ or -"
-              DTS:DTSID="{E379780C-AE71-4927-B3F1-037EA6191717}"
+              DTS:ObjectName="OpenInterest"
+              DTS:DTSID="{6ED97306-80FC-44F0-B469-83A29B75CA51}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,8 +103,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Vol 100's"
-              DTS:DTSID="{41CB8267-24BA-4673-8A50-18701BC7E7A4}"
+              DTS:ObjectName="ImpliedVolatility"
+              DTS:DTSID="{24A2F4DD-2F21-4A14-87BC-2DFA1BAE1E57}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -121,71 +112,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Quote Buy"
-              DTS:DTSID="{E7E537C1-16B2-48DF-92BC-E8116B760AF6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Quote Sell"
-              DTS:DTSID="{88442DC4-2FED-4F54-9706-7DF3C9404BFD}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Div c per share"
-              DTS:DTSID="{4C81BE90-B232-4ECE-A62E-04889E746094}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Franked"
-              DTS:DTSID="{40D518C8-6982-4AE7-856E-2C5BCEEDA337}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Div Times cov'd"
-              DTS:DTSID="{3D01C65D-D735-4977-A8FD-CBFB7226A397}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Net Tangible Assets"
-              DTS:DTSID="{FC2A5B2C-AC79-49FA-B67B-4F71CE5BC554}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Div yield %"
-              DTS:DTSID="{7EB417B2-AC6E-446E-B93C-B4419F282602}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Earn share c"
-              DTS:DTSID="{127902CE-38B6-4D62-A21E-923A09DD06A3}"
+              DTS:ObjectName="Delta"
+              DTS:DTSID="{BDE89C1C-EA8A-465A-8A46-D4D4B9087131}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -193,8 +121,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="P/E ratio"
-              DTS:DTSID="{CBA737B6-2685-4EBF-B1EE-A98B20A7ACA9}"
+              DTS:ObjectName="AnnualReturn"
+              DTS:DTSID="{71552AEA-AF83-49C0-A888-866C67E69FBA}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -437,12 +365,12 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300"
+                  refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions"
                   componentClassID="Microsoft.FlatFileSource"
                   contactInfo="Flat File Source;Microsoft Corporation; Microsoft SqlServer v10; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                   description="Flat File Source"
                   localeId="1033"
-                  name="FF_SRC_ASX300"
+                  name="FF_SRC_PutOptions"
                   usesDispositions="true"
                   version="1">
                   <properties>
@@ -457,26 +385,26 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Connections[FlatFileConnection]"
-                      connectionManagerID="Package.ConnectionManagers[ASX300]"
-                      connectionManagerRefId="Package.ConnectionManagers[ASX300]"
+                      refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[ASXPutOptions]"
+                      connectionManagerRefId="Package.ConnectionManagers[ASXPutOptions]"
                       name="FlatFileConnection" />
                   </connections>
                   <outputs>
                     <output
-                      refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output]"
+                      refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output]"
                       name="Flat File Source Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[52 Week High]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[OptionSeriesMonth]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[52 Week High]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[OptionSeriesMonth]"
                           length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[52 Week High]"
-                          name="52 Week High"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[OptionSeriesMonth]"
+                          name="OptionSeriesMonth"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -490,15 +418,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[52 Week Low]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[OptionSeriesYear]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[52 Week Low]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[OptionSeriesYear]"
                           length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[52 Week Low]"
-                          name="52 Week Low"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[OptionSeriesYear]"
+                          name="OptionSeriesYear"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -512,15 +440,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Day's High]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[ExercisePrice]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Day's High]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[ExercisePrice]"
                           length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Day's High]"
-                          name="Day's High"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[ExercisePrice]"
+                          name="ExercisePrice"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -534,15 +462,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Day's Low]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[FairValue]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Day's Low]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[FairValue]"
                           length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Day's Low]"
-                          name="Day's Low"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[FairValue]"
+                          name="FairValue"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -556,15 +484,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[ASX Code]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[LastSale]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[ASX Code]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[LastSale]"
                           length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[ASX Code]"
-                          name="ASX Code"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[LastSale]"
+                          name="LastSale"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -578,15 +506,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Company Name]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[Volume]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Company Name]"
-                          length="255"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Company Name]"
-                          name="Company Name"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[Volume]"
+                          length="50"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[Volume]"
+                          name="Volume"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -600,15 +528,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Last Sale]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[OpenInterest]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Last Sale]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[OpenInterest]"
                           length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Last Sale]"
-                          name="Last Sale"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[OpenInterest]"
+                          name="OpenInterest"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -622,15 +550,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[+ or -]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[ImpliedVolatility]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[+ or -]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[ImpliedVolatility]"
                           length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[+ or -]"
-                          name="+ or -"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[ImpliedVolatility]"
+                          name="ImpliedVolatility"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -644,15 +572,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Vol 100's]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[Delta]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Vol 100's]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[Delta]"
                           length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Vol 100's]"
-                          name="Vol 100's"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[Delta]"
+                          name="Delta"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -666,191 +594,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Quote Buy]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[AnnualReturn]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Quote Buy]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[AnnualReturn]"
                           length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Quote Buy]"
-                          name="Quote Buy"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Quote Sell]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Quote Sell]"
-                          length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Quote Sell]"
-                          name="Quote Sell"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Div c per share]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Div c per share]"
-                          length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Div c per share]"
-                          name="Div c per share"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Franked]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Franked]"
-                          length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Franked]"
-                          name="Franked"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Div Times cov'd]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Div Times cov'd]"
-                          length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Div Times cov'd]"
-                          name="Div Times cov'd"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Net Tangible Assets]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Net Tangible Assets]"
-                          length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Net Tangible Assets]"
-                          name="Net Tangible Assets"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Div yield %]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Div yield %]"
-                          length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Div yield %]"
-                          name="Div yield %"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Earn share c]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Earn share c]"
-                          length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Earn share c]"
-                          name="Earn share c"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[P/E ratio]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[P/E ratio]"
-                          length="50"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[P/E ratio]"
-                          name="P/E ratio"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[AnnualReturn]"
+                          name="AnnualReturn"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -867,137 +619,89 @@
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[52 Week High]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[OptionSeriesMonth]"
                           codePage="1252"
                           dataType="str"
                           length="50"
-                          name="52 Week High" />
+                          name="OptionSeriesMonth" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[52 Week Low]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[OptionSeriesYear]"
                           codePage="1252"
                           dataType="str"
                           length="50"
-                          name="52 Week Low" />
+                          name="OptionSeriesYear" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Day's High]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[ExercisePrice]"
                           codePage="1252"
                           dataType="str"
                           length="50"
-                          name="Day's High" />
+                          name="ExercisePrice" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Day's Low]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[FairValue]"
                           codePage="1252"
                           dataType="str"
                           length="50"
-                          name="Day's Low" />
+                          name="FairValue" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[ASX Code]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[LastSale]"
                           codePage="1252"
                           dataType="str"
                           length="50"
-                          name="ASX Code" />
+                          name="LastSale" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Company Name]"
-                          codePage="1252"
-                          dataType="str"
-                          length="255"
-                          name="Company Name" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Last Sale]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[Volume]"
                           codePage="1252"
                           dataType="str"
                           length="50"
-                          name="Last Sale" />
+                          name="Volume" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[+ or -]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[OpenInterest]"
                           codePage="1252"
                           dataType="str"
                           length="50"
-                          name="+ or -" />
+                          name="OpenInterest" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Vol 100's]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[ImpliedVolatility]"
                           codePage="1252"
                           dataType="str"
                           length="50"
-                          name="Vol 100's" />
+                          name="ImpliedVolatility" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Quote Buy]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[Delta]"
                           codePage="1252"
                           dataType="str"
                           length="50"
-                          name="Quote Buy" />
+                          name="Delta" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Quote Sell]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].ExternalColumns[AnnualReturn]"
                           codePage="1252"
                           dataType="str"
                           length="50"
-                          name="Quote Sell" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Div c per share]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Div c per share" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Franked]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Franked" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Div Times cov'd]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Div Times cov'd" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Net Tangible Assets]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Net Tangible Assets" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Div yield %]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Div yield %" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[Earn share c]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Earn share c" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].ExternalColumns[P/E ratio]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="P/E ratio" />
+                          name="AnnualReturn" />
                       </externalMetadataColumns>
                     </output>
                     <output
-                      refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Error Output]"
+                      refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Error Output]"
                       isErrorOut="true"
                       name="Flat File Source Error Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                           codePage="1252"
                           dataType="text"
                           description="Flat File Source Error Output Column"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                           name="Flat File Source Error Output Column" />
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -1021,7 +725,7 @@
                     <property
                       dataType="System.String"
                       description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[Staging].[AFR_ASX300_Daily_Raw]</property>
+                      name="OpenRowset">[Staging].[AFR_ASXPutOptions_Daily_Raw]</property>
                     <property
                       dataType="System.String"
                       description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1065,7 +769,7 @@
                     <connection
                       refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Connections[OleDbConnection]"
                       connectionManagerID="{51A6FCF7-E674-40CC-BA36-612E7A9BC17C}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[NVRMND-PC.PARM_Staging]"
+                      connectionManagerRefId="Project.ConnectionManagers[PARM_Staging]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1077,150 +781,6 @@
                       hasSideEffects="true"
                       name="OLE DB Destination Input">
                       <inputColumns>
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[52 Week High]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="52 Week High"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[52 Week High]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[52 Week High]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[52 Week Low]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="52 Week Low"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[52 Week Low]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[52 Week Low]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Day's High]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Day's High"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Day's High]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Day's High]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Day's Low]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Day's Low"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Day's Low]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Day's Low]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[ASX Code]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="ASX Code"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[ASX Code]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[ASX Code]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Company Name]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="255"
-                          cachedName="Company Name"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Company Name]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Company Name]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Last Sale]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Last Sale"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Last Sale]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Last Sale]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[+ or -]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="+ or -"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[+ or -]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[+ or -]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Vol 100's]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Vol 100's"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Vol 100's]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Vol 100's]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Quote Buy]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Quote Buy"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Quote Buy]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Quote Buy]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Quote Sell]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Quote Sell"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Quote Sell]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Quote Sell]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Div c per share]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Div c per share"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Div c per share]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Div c per share]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Franked]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Franked"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Franked]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Franked]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Div Times cov'd]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Div Times cov'd"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Div Times cov'd]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Div Times cov'd]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Net Tangible Assets]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Net Tangible Assets"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Net Tangible Assets]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Net Tangible Assets]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Div yield %]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Div yield %"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Div yield %]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Div yield %]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Earn share c]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Earn share c"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Earn share c]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[Earn share c]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[P/E ratio]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="P/E ratio"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[P/E ratio]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output].Columns[P/E ratio]" />
                         <inputColumn
                           refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[RunID]"
                           cachedDataType="i4"
@@ -1239,117 +799,89 @@
                           cachedName="FileID"
                           externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[FileID]"
                           lineageId="Package\SEQC_Load_File\DFT_Load_File\DER_Lineage_Data.Outputs[Derived Column Output].Columns[FileID]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[OptionSeriesMonth]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="OptionSeriesMonth"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[OptionSeriesMonth]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[OptionSeriesMonth]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[OptionSeriesYear]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="OptionSeriesYear"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[OptionSeriesYear]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[OptionSeriesYear]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[ExercisePrice]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ExercisePrice"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[ExercisePrice]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[ExercisePrice]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[FairValue]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="FairValue"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[FairValue]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[FairValue]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[LastSale]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="LastSale"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[LastSale]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[LastSale]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Volume]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Volume"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Volume]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[Volume]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[OpenInterest]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="OpenInterest"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[OpenInterest]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[OpenInterest]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[ImpliedVolatility]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ImpliedVolatility"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[ImpliedVolatility]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[ImpliedVolatility]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Delta]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Delta"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Delta]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[Delta]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[AnnualReturn]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="AnnualReturn"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[AnnualReturn]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output].Columns[AnnualReturn]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[52 Week High]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="52 Week High" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[52 Week Low]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="52 Week Low" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Day's High]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Day's High" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Day's Low]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Day's Low" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[ASX Code]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="ASX Code" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Company Name]"
-                          codePage="1252"
-                          dataType="str"
-                          length="255"
-                          name="Company Name" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Last Sale]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Last Sale" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[+ or -]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="+ or -" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Vol 100's]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Vol 100's" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Quote Buy]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Quote Buy" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Quote Sell]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Quote Sell" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Div c per share]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Div c per share" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Franked]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Franked" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Div Times cov'd]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Div Times cov'd" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Net Tangible Assets]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Net Tangible Assets" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Div yield %]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Div yield %" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Earn share c]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Earn share c" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[P/E ratio]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="P/E ratio" />
                         <externalMetadataColumn
                           refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[RunID]"
                           dataType="i4"
@@ -1363,9 +895,65 @@
                           dataType="i4"
                           name="FileID" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[RowID]"
-                          dataType="i4"
-                          name="RowID" />
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[OptionSeriesMonth]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OptionSeriesMonth" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[OptionSeriesYear]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OptionSeriesYear" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[ExercisePrice]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ExercisePrice" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[FairValue]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="FairValue" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[LastSale]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="LastSale" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Volume]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Volume" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[OpenInterest]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OpenInterest" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[ImpliedVolatility]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ImpliedVolatility" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Delta]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Delta" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[AnnualReturn]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AnnualReturn" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -1405,7 +993,7 @@
                   refId="Package\SEQC_Load_File\DFT_Load_File.Paths[Flat File Source Output]"
                   endId="Package\SEQC_Load_File\DFT_Load_File\DER_Lineage_Data.Inputs[Derived Column Input]"
                   name="Flat File Source Output"
-                  startId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASX300.Outputs[Flat File Source Output]" />
+                  startId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions.Outputs[Flat File Source Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -1682,5 +1270,82 @@
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\SEQC_Load_File\DFT_Load_File">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="174,42"
+          Id="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_PutOptions"
+          TopLeft="11.5,5.5" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\SEQC_Load_File\DFT_Load_File\DER_Lineage_Data"
+          TopLeft="5.50000000000003,107.5" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging"
+          TopLeft="16.5,209.5" />
+        <EdgeLayout
+          Id="Package\SEQC_Load_File\DFT_Load_File.Paths[Flat File Source Output]"
+          TopLeft="94.75,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SEQC_Load_File\DFT_Load_File.Paths[Derived Column Output]"
+          TopLeft="91,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

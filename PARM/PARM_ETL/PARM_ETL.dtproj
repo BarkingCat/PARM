@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">NVRMND-LAPTOP</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPfxDUTRQcUizfQvz4pUkSwAAAAACAAAAAAAQZgAAAAEAACAAAAAnEnnOrmEq4Xlj6nh1TgfMbzOF/rXKWkYI9pepiqdO2gAAAAAOgAAAAAIAACAAAADwQBEfviQEPlu6yHzSKzIkAFklCe4v1IwGdfqUaHeqCpAAAAAw41Hy/ID5gkZ7+kANmU6oLBYAyG7ZPsdKcmw2XT9VYhYjnMUL7GoUb2gYUtrYGQRWozKDSJpX6QCNurMXMCyTyUn/e1am2Hyrg1g0jREBb1G/7k1xc/yY33nwSawKCDwQFA30vCLfGJVYbjp0jHwzuCjLC5TQnRqkcT/cFsFSuziyvPRU3kzg0SVUQkHjUcZAAAAA4ZsDXHLBLLySWddw/cgoSrQgnwdj3XDzKKcyxzS7Z3ocU48r2gke0XSb1OXIXZ7oi+5BH56TKpSQPT13TEQTlw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPfxDUTRQcUizfQvz4pUkSwAAAAACAAAAAAAQZgAAAAEAACAAAAAIKk2/sSjW71YHGCVFZYP56aZRk4mznWS7+qH9n5grdwAAAAAOgAAAAAIAACAAAACXnhpcm3dqMg++ZqdWNWcHU41e1js5DNXu6sSAFd3WPZAAAABWY/oARq9qnTcMs9v0oEIiN35QaH4uPn9FJrdSn/HliEwZ5hVOuky2X/usHwoAPVRUdZjDbR1lGp4NOOfVeKxCwLERYnvMMz4/bruK/FstbOcmabYrpOs0xndRarVOvcnJSpot1oONnp8xoeoZTdaP2Npa56tvTQi7CPC2X7IsJ+mbem9S94QdyauqEOuXo3FAAAAA734zaxFNc7+rMSis+zcPLx+jYUTA5XDyG+sQN1NG+eh4Qz190asKXOplkR7k2MgVshAGURVKZoqk0tg8I1WPNw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -402,8 +402,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -587,8 +585,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -772,8 +768,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -815,17 +809,17 @@
                 <SSIS:Property SSIS:Name="Name">Acquisition_AFR_PutOptions_Daily</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">17</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">18</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{9872C696-60D9-4E60-A41D-CFAB6B572D7F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{0770EFFE-EE72-4627-A5FA-7197399DA727}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="CM.ASX300.AlwaysCheckForRowDelimiters">
+                <SSIS:Parameter SSIS:Name="CM.ASXPutOptions.AlwaysCheckForRowDelimiters">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -840,7 +834,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.ASX300.CodePage">
+                <SSIS:Parameter SSIS:Name="CM.ASXPutOptions.CodePage">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -855,7 +849,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.ASX300.ColumnNamesInFirstDataRow">
+                <SSIS:Parameter SSIS:Name="CM.ASXPutOptions.ColumnNamesInFirstDataRow">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -870,7 +864,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.ASX300.DataRowsToSkip">
+                <SSIS:Parameter SSIS:Name="CM.ASXPutOptions.DataRowsToSkip">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -881,11 +875,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">6</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">7</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.ASX300.Format">
+                <SSIS:Parameter SSIS:Name="CM.ASXPutOptions.Format">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -900,7 +894,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.ASX300.HeaderRowDelimiter">
+                <SSIS:Parameter SSIS:Name="CM.ASXPutOptions.HeaderRowDelimiter">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -916,7 +910,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.ASX300.HeaderRowsToSkip">
+                <SSIS:Parameter SSIS:Name="CM.ASXPutOptions.HeaderRowsToSkip">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -931,7 +925,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.ASX300.LocaleID">
+                <SSIS:Parameter SSIS:Name="CM.ASXPutOptions.LocaleID">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -946,7 +940,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.ASX300.RowDelimiter">
+                <SSIS:Parameter SSIS:Name="CM.ASXPutOptions.RowDelimiter">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -962,7 +956,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.ASX300.TextQualifier">
+                <SSIS:Parameter SSIS:Name="CM.ASXPutOptions.TextQualifier">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -977,7 +971,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.ASX300.Unicode">
+                <SSIS:Parameter SSIS:Name="CM.ASXPutOptions.Unicode">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
