@@ -7,7 +7,3 @@ C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Staging\bin\Debug\PARM_Control.da
 C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Staging\obj\Debug\PARM_Staging.sqlprojResolveAssemblyReference.cache
 C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Staging\obj\Debug\PARM_Staging.dll
 C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Staging\obj\Debug\PARM_Staging.pdb
-C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Staging\obj\Debug\Model.xml
-C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Staging\obj\Debug\refactor.xml
-C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Staging\obj\Debug\postdeploy.sql
-C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Staging\obj\Debug\predeploy.sql

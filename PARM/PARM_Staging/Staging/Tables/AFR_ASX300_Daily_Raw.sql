@@ -26,12 +26,12 @@
 
 
 
-GO
-CREATE UNIQUE NONCLUSTERED INDEX [IX_UNQ_AFR_ASX300_RunID_ASXCode]
-    ON [Staging].[AFR_ASX300_Daily_Raw]([RunID] ASC, [SystemID] ASC, [FileID] ASC, [ASX Code] ASC);
 
 
 GO
-CREATE CLUSTERED INDEX [IX_AFR_ASX300_RunID_ASXCode]
-    ON [Staging].[AFR_ASX300_Daily_Raw]([RunID] DESC, [ASX Code] ASC);
+
+
+
+GO
+
 

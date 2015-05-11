@@ -4,7 +4,7 @@
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseName>PARM_DW</TargetDatabaseName>
     <DeployScriptFileName>PARM_DW.sql</DeployScriptFileName>
-    <TargetConnectionString>Data Source=NVRMND-LAPTOP;Integrated Security=True;Pooling=False</TargetConnectionString>
+    <TargetConnectionString>Data Source=NVRMND-PC\PARM;Persist Security Info=True;User ID=neo;Pooling=False</TargetConnectionString>
     <BlockWhenDriftDetected>True</BlockWhenDriftDetected>
     <RegisterDataTierApplication>True</RegisterDataTierApplication>
     <ProfileVersionNumber>1</ProfileVersionNumber>

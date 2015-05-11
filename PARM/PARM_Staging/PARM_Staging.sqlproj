@@ -105,6 +105,8 @@
     <Folder Include="dbo\Views\" />
     <Folder Include="Security\" />
     <Folder Include="dbo\Functions\" />
+    <Folder Include="Control\" />
+    <Folder Include="Control\Synonyms\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\CBA_Transactions.sql">
@@ -152,6 +154,20 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
+    <Build Include="Staging\Tables\AFR_ASXShortSales_Daily_Raw.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Staging\Tables\AFR_ASXPutOptions_Daily_Raw.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Staging\Tables\AFR_ASXCallOptions_Daily_Raw.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Security\Control.sql" />
+    <Build Include="Control\Synonyms\Run.sql" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PARM_Control\PARM_Control.sqlproj">
@@ -164,5 +180,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="PARM_Staging.publish.xml" />
+    <None Include="PARM_Staging_1.publish.xml" />
   </ItemGroup>
 </Project>
