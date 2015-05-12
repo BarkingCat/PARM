@@ -5,21 +5,18 @@
 -- Create date: 05/04/2015
 -- Description:	Update status
 -- *********************************************
-CREATE PROCEDURE [Control].[InitialiseAutomation]
+CREATE PROCEDURE [Control].[Initialise_UploadQueue]
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
 	-- interfering with SELECT statements.
 	SET NOCOUNT ON;
 	
-	-- Populate run with business date
-	EXEC [Control].[InitialiseRun];
-	-- Populate Download Queue
-	EXEC [Control].[InitialiseDownloadQueue];
-	-- Populate Upload Queue
-	EXEC [Control].[InitialiseUploadQueue];
-
+	INSERT INTO [Control].[UploadQueue] (RunID, FileID)
+	SELECT 
+		RunID,
+		1
+	FROM [Control].[Run]
+	WHERE RunID NOT IN (SELECT RunID FROM [Control].[UploadQueue]);
+	
 END
-
-
-

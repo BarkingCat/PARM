@@ -5,7 +5,7 @@
 -- Create date: 05/04/2015
 -- Description:	Update status
 -- *********************************************
-CREATE PROCEDURE [Control].[InitialiseRun]
+CREATE PROCEDURE [Control].[Initialise_Run]
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
@@ -30,7 +30,7 @@ BEGIN
 
 		SELECT @DATE_COUNT = COUNT(*) FROM [Control].[Run] WHERE BusinessDate = @EOD_D;
 
-		IF @DATE_COUNT = 0 -- if date doesn't already exist in table
+		IF @DATE_COUNT = 0 -- if date doesnt already exist in table
 		BEGIN
 			INSERT INTO [Control].[Run] (BusinessDate)
 			SELECT @EOD_D;
@@ -49,6 +49,3 @@ BEGIN
 	END
 
 END
-
-
-
