@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Acquisition_AFR_CallOptions_Daily"
   DTS:PackageType="5"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{34D7AE31-D25A-41DD-BAA4-2FEA908C9A9D}">
+  DTS:VersionBuild="22"
+  DTS:VersionGUID="{F3452CAD-ECF4-4076-8C14-2D465BCBD972}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -147,7 +147,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FileID">
       <DTS:VariableValue
-        DTS:DataType="3">1</DTS:VariableValue>
+        DTS:DataType="3">3</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -954,6 +954,10 @@
                           dataType="str"
                           length="50"
                           name="AnnualReturn" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[RowID]"
+                          dataType="i4"
+                          name="RowID" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -1276,6 +1280,10 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="149,42"
+          Id="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging"
+          TopLeft="16.5,209.5" />
+        <NodeLayout
           Size="194,42"
           Id="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASXCallOptions"
           TopLeft="11.5,5.5" />
@@ -1283,10 +1291,6 @@
           Size="171,42"
           Id="Package\SEQC_Load_File\DFT_Load_File\DER_Lineage_Data"
           TopLeft="5.50000000000003,107.5" />
-        <NodeLayout
-          Size="149,42"
-          Id="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging"
-          TopLeft="16.5,209.5" />
         <EdgeLayout
           Id="Package\SEQC_Load_File\DFT_Load_File.Paths[Flat File Source Output]"
           TopLeft="108.5,47.5">
