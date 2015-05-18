@@ -65,6 +65,7 @@ try{
 	$SystemID = 0
     $RunID = 0
     $FileID_Array = @()
+    $Frequency = "W"
 
     # Query PARM to populate these variables
     $sql = "SELECT [Control].[GetSystemID]('$System_Name') as [SystemID];"
@@ -86,7 +87,7 @@ try{
 	$sqlConnection.Close()
 
     # Query PARM to populate these variables
-    $sql = "EXEC [Control].[Get_FileDownloadMetadata] @SystemID = $SystemID; " # This needs a system ID to be passed in, and perhaps a file ID
+    $sql = "EXEC [Control].[Get_FileDownloadMetadata] @SystemID = $SystemID, @Frequency = $Frequency; " # This needs a system ID to be passed in, and perhaps a file ID
 
     # Create and open a database connection
     $sqlConnection = new-object System.Data.SqlClient.SqlConnection "server=$DB_Server;database=$DB_Name;Integrated Security=sspi"
