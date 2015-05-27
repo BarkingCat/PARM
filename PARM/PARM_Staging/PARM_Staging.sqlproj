@@ -177,6 +177,14 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
+    <Build Include="Staging\Tables\AFR_ASXPutOptions_Daily_Transformed.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Staging\Stored Procedures\Transform_AFR_ASXPutOptions_Daily.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PARM_Control\PARM_Control.sqlproj">
