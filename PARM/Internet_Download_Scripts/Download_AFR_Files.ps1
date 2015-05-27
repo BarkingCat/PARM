@@ -65,7 +65,7 @@ try{
 	$SystemID = 0
     $RunID = 0
     $FileID_Array = @()
-    $Frequency = "W"
+    $Frequency = "W" #Make parameter, call with different arguements
 
     # Query PARM to populate these variables
     $sql = "SELECT [Control].[GetSystemID]('$System_Name') as [SystemID];"
