@@ -2,6 +2,7 @@
     [RunID]                                              INT           NULL,
     [SystemID]                                           INT           NULL,
     [FileID]                                             INT           NULL,
+    [RowID]                                              INT           IDENTITY (1, 1) NOT NULL,
     [Company Name]                                       VARCHAR (255) NULL,
     [Code]                                               VARCHAR (50)  NULL,
     [Product/Class]                                      VARCHAR (50)  NULL,
@@ -12,4 +13,6 @@
     [Issued Capital  (b)]                                VARCHAR (50)  NULL,
     [Percentage issued capital reported as short(a)/(b)] VARCHAR (50)  NULL
 );
+
+
 

@@ -2,6 +2,7 @@
     [RunID]             INT           NULL,
     [SystemID]          INT           NULL,
     [FileID]            INT           NULL,
+    [RowID]             INT           IDENTITY (1, 1) NOT NULL,
     [OptionSeriesMonth] VARCHAR (50)  NULL,
     [OptionSeriesYear]  VARCHAR (50)  NULL,
     [ExercisePrice]     VARCHAR (50)  NULL,
@@ -13,4 +14,6 @@
     [Delta]             VARCHAR (50)  NULL,
     [AnnualReturn]      VARCHAR (50)  NULL
 );
+
+
 
