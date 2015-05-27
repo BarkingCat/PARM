@@ -107,6 +107,7 @@
     <Folder Include="dbo\Functions\" />
     <Folder Include="Control\" />
     <Folder Include="Control\Synonyms\" />
+    <Folder Include="Staging\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\CBA_Transactions.sql">
@@ -168,6 +169,14 @@
     </Build>
     <Build Include="Security\Control.sql" />
     <Build Include="Control\Synonyms\Run.sql" />
+    <Build Include="Staging\Tables\AFR_ASXCallOptions_Daily_Transformed.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Staging\Stored Procedures\Transform_AFR_ASXCallOptions_Daily.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PARM_Control\PARM_Control.sqlproj">
