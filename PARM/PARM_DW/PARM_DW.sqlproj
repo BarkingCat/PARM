@@ -85,6 +85,8 @@
     <Build Include="Dimension\Tables\Date.sql" />
     <Build Include="Fact\Tables\Equities.sql" />
     <Build Include="Dimension\Tables\Time.sql" />
+    <Build Include="Fact\Tables\Derivatives.sql" />
+    <Build Include="Dimension\Tables\Market.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />

@@ -108,6 +108,8 @@
     <Folder Include="Control\" />
     <Folder Include="Control\Synonyms\" />
     <Folder Include="Staging\Stored Procedures\" />
+    <Folder Include="Reference\" />
+    <Folder Include="Reference\Tables\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\CBA_Transactions.sql">
@@ -185,6 +187,15 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
+    <Build Include="Staging\Views\AFR_ASXShortSales_Daily.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Reference\Tables\ASX_Code_LookUp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Security\Reference.sql" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PARM_Control\PARM_Control.sqlproj">
