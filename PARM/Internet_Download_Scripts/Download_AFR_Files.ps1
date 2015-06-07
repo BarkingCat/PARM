@@ -8,14 +8,18 @@
 # Desc: This script will download files from the download queue in PARM
 
 ## TEST
-# .\Download_AFR_Files.ps1 -System_Name "AFR"
+# .\Download_AFR_Files.ps1 -System_Name "AFR" -Frequency "D"
 ##
 
 ################ VARIABLES #################
 Param (
     [String]
     [Parameter(Mandatory = $true)] 
-    $System_Name
+    $System_Name,
+	[String]
+	[Parameter(Mandatory = $true)]
+	[ValidateSet("D","W")]
+	$Frequency
 )
 ################ END VARIABLES #################
 
@@ -65,7 +69,6 @@ try{
 	$SystemID = 0
     $RunID = 0
     $FileID_Array = @()
-    $Frequency = "W" #Make parameter, call with different arguements
 
     # Query PARM to populate these variables
     $sql = "SELECT [Control].[GetSystemID]('$System_Name') as [SystemID];"
