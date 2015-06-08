@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Acquisition_AFR_InterestRateSecurities_Weekly"
   DTS:PackageType="5"
-  DTS:VersionBuild="26"
-  DTS:VersionGUID="{B6ECEA91-6F73-4E14-AB80-44EF8E55A9D4}">
+  DTS:VersionBuild="28"
+  DTS:VersionGUID="{9DA023F4-6D6A-4411-AA62-E97FC6438564}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,11 +27,11 @@
         <DTS:ConnectionManager
           DTS:Format="Delimited"
           DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:HeaderRowsToSkip="6"
+          DTS:HeaderRowDelimiter="_x000A_"
           DTS:ColumnNamesInFirstDataRow="True"
           DTS:RowDelimiter=""
-          DTS:DataRowsToSkip="6"
-          DTS:TextQualifier="_x0022_"
+          DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
@@ -41,7 +41,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="52 Week High"
-              DTS:DTSID="{71FFFD7B-4BBF-4140-AB31-54B5F7E20AE8}"
+              DTS:DTSID="{9B52497C-D1AB-437C-97BB-DEF6B7EC3F1F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -50,7 +50,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="52 Week Low"
-              DTS:DTSID="{CD047650-1693-4F59-8917-F601652F38FA}"
+              DTS:DTSID="{D979EF73-290F-4224-B7D8-49879D7BE367}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -59,7 +59,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Week's High"
-              DTS:DTSID="{D1AAA86C-12F0-469E-A036-7868672BD971}"
+              DTS:DTSID="{195E34B5-70B7-4399-BA8D-CB1187FC1E7C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -68,7 +68,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Week's Low"
-              DTS:DTSID="{683322AE-AECD-44F2-99AE-352809FAA024}"
+              DTS:DTSID="{5C24CCF4-E06B-4750-A039-F60603D2B852}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -77,7 +77,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ASX Code"
-              DTS:DTSID="{E1DC54A7-F26A-496E-BE05-226D011170E9}"
+              DTS:DTSID="{A6B73943-3EB8-49D0-B860-4DB628CFED9D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -86,7 +86,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Security Description"
-              DTS:DTSID="{72502492-9AA7-4D52-A40E-347A15E6EE70}"
+              DTS:DTSID="{820107B9-AC7E-49C5-8A64-81D846F545CB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -95,7 +95,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Last Sale"
-              DTS:DTSID="{28063B8F-FA0F-4A32-9314-58AD9E413A4E}"
+              DTS:DTSID="{2BC1E3F2-6682-4881-BE02-B1860B9A986C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -104,7 +104,72 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Vol 000's"
-              DTS:DTSID="{B164A236-CF59-4568-8A92-4B6A21AE4A0C}"
+              DTS:DTSID="{2B937148-17FC-4D8F-B7CE-9E5750E1F4EE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Val 000's"
+              DTS:DTSID="{0D4C297E-8A74-4249-9C71-351F42B0E658}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Quote Buy"
+              DTS:DTSID="{0C20E0DC-523E-4C59-802A-C1B822B01924}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Quote Sell"
+              DTS:DTSID="{F27D002C-56B8-463C-9EA6-EF35C84D0C37}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Face Value"
+              DTS:DTSID="{5F99529A-D8AE-47CC-B817-84A95EAFC9E1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CPN (%) p a "
+              DTS:DTSID="{D1282299-B749-47C7-8F1E-5BECED4285E8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Next Cpn Date"
+              DTS:DTSID="{D7992CF4-4A46-4AF1-812A-4AB01C876FA4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Conv Mat  Date"
+              DTS:DTSID="{1B7DCFF6-885E-429C-BC38-DE25543293A3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Conv Mat  Value"
+              DTS:DTSID="{58ADE7B9-F0B7-4448-94F0-7009073D92C3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,8 +177,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Val 000's"
-              DTS:DTSID="{7AF434A3-3D98-43B9-8BEE-AEDA52F4FB6A}"
+              DTS:ObjectName="YTM Conv"
+              DTS:DTSID="{023BBFB3-3B09-40DB-AF5E-BA85E486B950}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -584,6 +649,182 @@
                               name="UseBinaryFormat">false</property>
                           </properties>
                         </outputColumn>
+                        <outputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Quote Buy]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].ExternalColumns[Quote Buy]"
+                          length="255"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Quote Buy]"
+                          name="Quote Buy"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Quote Sell]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].ExternalColumns[Quote Sell]"
+                          length="255"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Quote Sell]"
+                          name="Quote Sell"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Face Value]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].ExternalColumns[Face Value]"
+                          length="255"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Face Value]"
+                          name="Face Value"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[CPN (%) p a ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].ExternalColumns[CPN (%) p a ]"
+                          length="255"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[CPN (%) p a ]"
+                          name="CPN (%) p a "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Next Cpn Date]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].ExternalColumns[Next Cpn Date]"
+                          length="255"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Next Cpn Date]"
+                          name="Next Cpn Date"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Conv Mat  Date]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].ExternalColumns[Conv Mat  Date]"
+                          length="255"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Conv Mat  Date]"
+                          name="Conv Mat  Date"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Conv Mat  Value]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].ExternalColumns[Conv Mat  Value]"
+                          length="255"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Conv Mat  Value]"
+                          name="Conv Mat  Value"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[YTM Conv]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].ExternalColumns[YTM Conv]"
+                          length="50"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[YTM Conv]"
+                          name="YTM Conv"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -641,6 +882,54 @@
                           dataType="str"
                           length="50"
                           name="Val 000's" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].ExternalColumns[Quote Buy]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Quote Buy" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].ExternalColumns[Quote Sell]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Quote Sell" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].ExternalColumns[Face Value]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Face Value" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].ExternalColumns[CPN (%) p a ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="CPN (%) p a " />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].ExternalColumns[Next Cpn Date]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Next Cpn Date" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].ExternalColumns[Conv Mat  Date]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Conv Mat  Date" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].ExternalColumns[Conv Mat  Value]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Conv Mat  Value" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].ExternalColumns[YTM Conv]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="YTM Conv" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -834,6 +1123,70 @@
                           cachedName="Val 000's"
                           externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Val 000's]"
                           lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Val 000's]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Quote Buy]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Quote Buy"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Quote Buy]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Quote Buy]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Quote Sell]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Quote Sell"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Quote Sell]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Quote Sell]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Face Value]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Face Value"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Face Value]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Face Value]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[CPN (%) p a ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="CPN (%) p a "
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[CPN (%) p a ]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[CPN (%) p a ]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Next Cpn Date]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Next Cpn Date"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Next Cpn Date]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Next Cpn Date]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Conv Mat  Date]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Conv Mat  Date"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Conv Mat  Date]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Conv Mat  Date]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Conv Mat  Value]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Conv Mat  Value"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Conv Mat  Value]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[Conv Mat  Value]" />
+                        <inputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[YTM Conv]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="YTM Conv"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[YTM Conv]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities.Outputs[Flat File Source Output].Columns[YTM Conv]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -903,6 +1256,54 @@
                           dataType="str"
                           length="50"
                           name="Val 000's" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Quote Buy]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Quote Buy" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Quote Sell]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Quote Sell" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Face Value]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Face Value" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[CPN (%) p a ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="CPN (%) p a " />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Next Cpn Date]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Next Cpn Date" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Conv Mat  Date]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Conv Mat  Date" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Conv Mat  Value]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Conv Mat  Value" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[YTM Conv]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="YTM Conv" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>

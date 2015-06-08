@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">NVRMND-LAPTOP</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPfxDUTRQcUizfQvz4pUkSwAAAAACAAAAAAAQZgAAAAEAACAAAAAyZiKAm7XNn2lzhEFhROfLWXBR3TGYblgAQLEI8KPkSgAAAAAOgAAAAAIAACAAAAA9bjTZR1pwhJupStnvgQ6tnegEkxrTMADeP3D7CqHftpAAAAAsNnEuwWV4aNl7KK6+m8PVuxUF+enn0pgC8ZOfJvnZxV/8a3Hv5Fvqhvm3mC9aS1mJJfsl5T/ObTu+LUhGAY3XCuar3rXI3veWq0+bpEjGz5tDbHoltUR2Bza3tyIChGPLwzC/BYvS0oaQkM+5v1mLx/HHd2Js94QmwdFq43Uwmb/Y/63RPWme5KtHOjCM/u5AAAAABFbtGSSNOI9xuHIOWCdd6kBeYq6xYUfXsTuIke88ufvoQrj6Btvel41qBZMggNNa98KZz62bN9jzHBGlSaa4Qw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPfxDUTRQcUizfQvz4pUkSwAAAAACAAAAAAAQZgAAAAEAACAAAADly2ddp58Sg9wvitDPujZL8ubxB0LKUIQkgjCphVQQfwAAAAAOgAAAAAIAACAAAADtWwcMM1PbpEf9Z+pCVGOdAaYyb8OLGHqng3ueTJM/M5AAAAB0oVUxHwrednqTcvKpAL/hC1ToYY3nhffAcJ8BNRNP0uQSoMZA3pihDRu1x3OwSgaBWDEG/fJz91ju46nd5hmo1vEvRVMdT+n1Y82hu9hlaPurnmd2xosgPeomcwKKGPe8II3n6+R6QnIxL21UczPc/fCujmPTL1PsfPGtyUAcVGofDMahUUC+sIs49nTjNANAAAAAz9NxzYEVABycFG1vUjfxyQrktyuBYoeHxWOZaKsJKpcAKbo8K6WgdNP/8PGALdo3EHCfc/d464zItJr8yrCkhQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -1178,17 +1178,17 @@
                 <SSIS:Property SSIS:Name="Name">Acquisition_AFR_Indices_Weekly</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">23</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">35</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{759077A8-12EA-419A-843D-7ECAE96AA34C}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{FC14F9D9-7B06-4548-AA7D-E9C37A9C4227}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="CM.AFRShortSales.AlwaysCheckForRowDelimiters">
+                <SSIS:Parameter SSIS:Name="CM.AFRASXIndices.AlwaysCheckForRowDelimiters">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -1203,7 +1203,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.AFRShortSales.CodePage">
+                <SSIS:Parameter SSIS:Name="CM.AFRASXIndices.CodePage">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -1218,7 +1218,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.AFRShortSales.ColumnNamesInFirstDataRow">
+                <SSIS:Parameter SSIS:Name="CM.AFRASXIndices.ColumnNamesInFirstDataRow">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -1233,7 +1233,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.AFRShortSales.DataRowsToSkip">
+                <SSIS:Parameter SSIS:Name="CM.AFRASXIndices.DataRowsToSkip">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -1244,11 +1244,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">6</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.AFRShortSales.Format">
+                <SSIS:Parameter SSIS:Name="CM.AFRASXIndices.Format">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -1263,7 +1263,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.AFRShortSales.HeaderRowDelimiter">
+                <SSIS:Parameter SSIS:Name="CM.AFRASXIndices.HeaderRowDelimiter">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -1279,7 +1279,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.AFRShortSales.HeaderRowsToSkip">
+                <SSIS:Parameter SSIS:Name="CM.AFRASXIndices.HeaderRowsToSkip">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -1290,11 +1290,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">6</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.AFRShortSales.LocaleID">
+                <SSIS:Parameter SSIS:Name="CM.AFRASXIndices.LocaleID">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -1309,7 +1309,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.AFRShortSales.RowDelimiter">
+                <SSIS:Parameter SSIS:Name="CM.AFRASXIndices.RowDelimiter">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -1320,10 +1320,12 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.AFRShortSales.TextQualifier">
+                <SSIS:Parameter SSIS:Name="CM.AFRASXIndices.TextQualifier">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -1334,11 +1336,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">"</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">&lt;none&gt;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.AFRShortSales.Unicode">
+                <SSIS:Parameter SSIS:Name="CM.AFRASXIndices.Unicode">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -1361,10 +1363,10 @@
                 <SSIS:Property SSIS:Name="Name">Acquisition_AFR_Intl_Indices_Weekly</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">25</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">29</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{5535EED7-A38E-417B-942E-A8394A492254}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{3F32C62C-29E8-45A7-83AA-D8E3B7D244A1}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1427,7 +1429,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">7</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1473,7 +1475,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">7</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1546,10 +1548,10 @@
                 <SSIS:Property SSIS:Name="Name">Acquisition_AFR_InterestRateSecurities_Weekly</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">26</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">28</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{B6ECEA91-6F73-4E14-AB80-44EF8E55A9D4}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{9DA023F4-6D6A-4411-AA62-E97FC6438564}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1612,7 +1614,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">6</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1658,7 +1660,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">6</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1704,7 +1706,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">"</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">&lt;none&gt;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

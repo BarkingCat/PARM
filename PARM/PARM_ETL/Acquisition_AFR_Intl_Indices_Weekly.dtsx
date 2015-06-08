@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Acquisition_AFR_Intl_Indices_Weekly"
   DTS:PackageType="5"
-  DTS:VersionBuild="25"
-  DTS:VersionGUID="{5535EED7-A38E-417B-942E-A8394A492254}">
+  DTS:VersionBuild="29"
+  DTS:VersionGUID="{3F32C62C-29E8-45A7-83AA-D8E3B7D244A1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,10 +27,10 @@
         <DTS:ConnectionManager
           DTS:Format="Delimited"
           DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:HeaderRowsToSkip="7"
+          DTS:HeaderRowDelimiter="_x000A_"
           DTS:ColumnNamesInFirstDataRow="True"
           DTS:RowDelimiter=""
-          DTS:DataRowsToSkip="7"
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252">
           <DTS:FlatFileColumns>
@@ -41,7 +41,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Weekly Roundup - Overseas Indices "
-              DTS:DTSID="{C2A2AD9A-107F-418E-8DF4-9939259B7320}"
+              DTS:DTSID="{11E01C59-4A95-4727-A1FF-BABC237FD7B4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -50,7 +50,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Monday"
-              DTS:DTSID="{1415C105-64CC-4EE4-A3E0-D923569A241D}"
+              DTS:DTSID="{7E6B9442-2F32-4C31-A18D-EE89B4BBF5F9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -59,7 +59,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Tuesday"
-              DTS:DTSID="{A29E714E-EBA0-4D04-893C-CDC156465F84}"
+              DTS:DTSID="{87AB7930-F1DA-4084-B84E-CF058457B2E1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -68,7 +68,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Wednesday"
-              DTS:DTSID="{9D810BF4-640B-437B-8E88-117DC8B00452}"
+              DTS:DTSID="{298BF700-9B36-475E-9DFE-80DF029B9FE5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -77,16 +77,32 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Thursday"
-              DTS:DTSID="{44E80886-736A-42AB-BAF2-B93B4F2A8881}"
+              DTS:DTSID="{36640D30-7A91-423C-AEEB-7A43FA136D49}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000A_"
+              DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Friday"
-              DTS:DTSID="{EFC7739E-A17C-47F8-8DF7-F6BFE9ABB0C7}"
+              DTS:DTSID="{AA246BC7-5D98-450A-A30D-555861932ADC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{2C809AF5-C75E-4296-8823-7C575698C801}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 1"
+              DTS:DTSID="{6F589335-3ECE-4713-8D3B-8C24E69147CB}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -491,6 +507,50 @@
                               name="UseBinaryFormat">false</property>
                           </properties>
                         </outputColumn>
+                        <outputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASXIntlIndices.Outputs[Flat File Source Output].Columns[Column 0]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASXIntlIndices.Outputs[Flat File Source Output].ExternalColumns[Column 0]"
+                          length="255"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASXIntlIndices.Outputs[Flat File Source Output].Columns[Column 0]"
+                          name="Column 0"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASXIntlIndices.Outputs[Flat File Source Output].Columns[Column 1]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASXIntlIndices.Outputs[Flat File Source Output].ExternalColumns[Column 1]"
+                          length="255"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASXIntlIndices.Outputs[Flat File Source Output].Columns[Column 1]"
+                          name="Column 1"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -530,6 +590,18 @@
                           dataType="str"
                           length="50"
                           name="Friday" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASXIntlIndices.Outputs[Flat File Source Output].ExternalColumns[Column 0]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Column 0" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASXIntlIndices.Outputs[Flat File Source Output].ExternalColumns[Column 1]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Column 1" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -1072,10 +1144,6 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="149,42"
-          Id="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging"
-          TopLeft="23.5,196.5" />
-        <NodeLayout
           Size="191,42"
           Id="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_ASXIntlIndices"
           TopLeft="5.5,17.5" />
@@ -1083,6 +1151,10 @@
           Size="171,42"
           Id="Package\SEQC_Load_File\DFT_Load_File\DER_Lineage_Data"
           TopLeft="9.50000000000003,107.5" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging"
+          TopLeft="23.5,196.5" />
         <EdgeLayout
           Id="Package\SEQC_Load_File\DFT_Load_File.Paths[Flat File Source Output]"
           TopLeft="98,59.5">
