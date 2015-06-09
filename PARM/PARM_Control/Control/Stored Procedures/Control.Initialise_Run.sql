@@ -4,6 +4,7 @@
 -- Author:		Aaron Jackson
 -- Create date: 05/04/2015
 -- Description:	Update status
+-- EXEC [Control].[Initialise_Run]
 -- *********************************************
 CREATE PROCEDURE [Control].[Initialise_Run]
 AS

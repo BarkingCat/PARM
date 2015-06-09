@@ -5,11 +5,11 @@
 -- Test: EXEC [Control].[Get_FileDownloadMetadata] @SystemID = 1;
 -- *********************************************
 CREATE PROCEDURE [Control].[Get_FileDownloadMetadata]
-	@SystemID INT, -- REQURIED
-	@FileID INT = 0, -- OPTIONAL 
-	@RunID INT = 0, --OPTIONAL - If not supplied, the min will be found
-	@Frequency CHAR(1) = 'D', --OPTIONAL - Default to daily
-	@Retry_Flag BIT = 0 -- OPTIONAL - Default to no
+	@SystemID INT,			  -- REQURIED
+	@FileID INT = 0,		  -- OPTIONAL 
+	@RunID INT = 0,			  -- OPTIONAL - If not supplied, the min will be found
+	@Frequency CHAR(1) = 'D', -- OPTIONAL - Default to daily
+	@Retry_Flag BIT = 0		  -- OPTIONAL - Default to no
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
