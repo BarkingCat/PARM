@@ -1,7 +1,14 @@
 ﻿CREATE TABLE [Dimension].[Date] (
-    [DateSK] INT NOT NULL,
-    [Year]   INT NOT NULL,
-    [Month]  INT NOT NULL,
-    [Day]    INT NOT NULL
+    [DateSK]        INT          NOT NULL,
+    [DateText]      VARCHAR (20) NOT NULL,
+    [FinancialYear] CHAR (4)     NOT NULL,
+    [WeekOfYear]    INT          NOT NULL,
+    [Quarter]       CHAR (2)     NOT NULL,
+    [Year]          INT          NOT NULL,
+    [Month]         INT          NOT NULL,
+    [Day]           INT          NOT NULL,
+    [DayOfWeek]     VARCHAR (10) NOT NULL
 );
+
+
 
