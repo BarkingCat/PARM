@@ -258,14 +258,6 @@
           <AttributeID>Day Of Week</AttributeID>
         </Attribute>
       </Attributes>
-      <Hierarchies>
-        <Hierarchy dwd:design-time-name="042b164e-a9b8-45ba-9bcc-84db365162d9">
-          <HierarchyID>Hierarchy 1</HierarchyID>
-        </Hierarchy>
-        <Hierarchy dwd:design-time-name="af6e33c9-0fa8-4ffd-9bcc-aeb3a213c198">
-          <HierarchyID>Hierarchy</HierarchyID>
-        </Hierarchy>
-      </Hierarchies>
     </Dimension>
     <Dimension dwd:design-time-name="c69b5d7e-4b73-4a37-b8cf-f075c17fa808">
       <ID>Time</ID>
@@ -280,9 +272,6 @@
         </Attribute>
         <Attribute dwd:design-time-name="fcbc95ec-4596-49d3-9a0f-e26d3914c7eb">
           <AttributeID>Minute</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="2068447b-e8a5-4e11-9699-9ced12172bb9">
-          <AttributeID>Second</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
@@ -406,14 +395,6 @@
               <AttributeID>Day Of Week</AttributeID>
             </Attribute>
           </Attributes>
-          <Hierarchies>
-            <Hierarchy dwd:design-time-name="71699959-5c5f-4519-841a-a6d1b53146cb">
-              <HierarchyID>Hierarchy 1</HierarchyID>
-            </Hierarchy>
-            <Hierarchy dwd:design-time-name="62a6d616-39ee-4ed6-9b45-bf0eff4c3577">
-              <HierarchyID>Hierarchy</HierarchyID>
-            </Hierarchy>
-          </Hierarchies>
         </Dimension>
         <Dimension dwd:design-time-name="edaf34b1-7f8f-4ce0-b80f-1589c4f6208c">
           <CubeDimensionID>Time</CubeDimensionID>
@@ -426,9 +407,6 @@
             </Attribute>
             <Attribute dwd:design-time-name="5e5de256-b322-4d41-be35-68f92890f4c1">
               <AttributeID>Minute</AttributeID>
-            </Attribute>
-            <Attribute dwd:design-time-name="65688213-c211-4dac-ae4e-658c92eb5b0d">
-              <AttributeID>Second</AttributeID>
             </Attribute>
           </Attributes>
           <Hierarchies>

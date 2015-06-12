@@ -18,7 +18,6 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
-      <Value></Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
@@ -32,7 +31,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9767" scrolltop="-2905" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="34158" y="22357" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9767" scrolltop="-2905" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="44159" y="22357" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                   </font>
@@ -303,7 +302,6 @@
                   <xs:element name="TimeSK" msprop:design-time-name="84ce97d8-a547-40b4-b001-9500c8a3b2e3" msprop:DbColumnName="TimeSK" msprop:FriendlyName="TimeSK" type="xs:int" />
                   <xs:element name="Hour" msprop:design-time-name="81b0c32f-e620-4c78-8670-455b7ed1d7b4" msprop:DbColumnName="Hour" msprop:FriendlyName="Hour" type="xs:int" />
                   <xs:element name="Minute" msprop:design-time-name="ba46be73-ae74-4fa1-b31b-cc823038394f" msprop:DbColumnName="Minute" msprop:FriendlyName="Minute" type="xs:int" />
-                  <xs:element name="Second" msprop:design-time-name="b2990d0c-8d38-4304-b4da-f1e5df55ff94" msprop:DbColumnName="Second" msprop:FriendlyName="Second" type="xs:int" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
