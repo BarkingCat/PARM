@@ -1,6 +1,6 @@
 ﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fad8dd39-48b2-4566-bf5d-907942bc6a6c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>PARM DW</ID>
-  <Name>PARM DW</Name>
+  <Name>Budget</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -43,30 +43,6 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="bc46fbac-f674-4848-a668-a83a1b652de8">
-      <ID>Date</ID>
-      <Name>Date</Name>
-      <DimensionID>Date</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="d3771554-0939-4257-b6dd-a1adccb7faeb">
-          <AttributeID>Date SK</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="6915c049-be21-4f31-b795-7b88d6f15bbb">
-          <AttributeID>Year</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="4f99f0c5-d623-4bd6-98f8-d0ccd8a316fe">
-          <AttributeID>Month</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="fcec196e-82ae-42f7-b801-3341b39dc90c">
-          <AttributeID>Day</AttributeID>
-        </Attribute>
-      </Attributes>
-      <Hierarchies>
-        <Hierarchy dwd:design-time-name="ce33908c-8cd8-400d-b962-f82b3dd76c75">
-          <HierarchyID>Hierarchy</HierarchyID>
-        </Hierarchy>
-      </Hierarchies>
-    </Dimension>
     <Dimension dwd:design-time-name="587447be-4cfa-4eeb-858c-bf98a26e057a">
       <ID>Budget Accounts</ID>
       <Name>Budget Accounts</Name>
@@ -167,24 +143,6 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="521360cc-19a3-4663-b67d-2230e037635b">
-          <CubeDimensionID>Date</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="f71a014f-a00e-4c64-93d6-3be6ebe51df1">
-              <AttributeID>Date SK</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="fe4d2427-dba1-4951-9973-35d1f53f2149">
-                  <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="46cb0e68-4acd-4916-a237-865728233419">
-                    <TableID>Fact_BudgetMeasures</TableID>
-                    <ColumnID>DateSK</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
         <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="55e9c695-c2c0-4c1f-a501-a1d19f10304c">
           <CubeDimensionID>Budget Accounts</CubeDimensionID>
           <Attributes>

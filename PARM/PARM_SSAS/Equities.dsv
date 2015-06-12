@@ -1,0 +1,456 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="20c7f8bd-b8ae-450c-8356-f78eb9dee548" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Equities</ID>
+  <Name>Equities</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9767" scrolltop="-2905" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="34158" y="22357" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Equities" left="5400" top="5125" logicalid="12" controlid="1" masterid="0" hint1="0" hint2="0" width="4710" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a00006612000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Fact_Equities" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Currency" left="3314" top="12525" logicalid="13" controlid="2" masterid="0" hint1="0" hint2="0" width="3281" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000d10c0000f40d0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Dimension_Currency" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Time" left="12510" top="6262" logicalid="14" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000a50a0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Dimension_Time" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Date" left="0" top="5125" logicalid="15" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000b80b000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Dimension_Date" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Market" left="8995" top="12525" logicalid="16" controlid="5" masterid="0" hint1="0" hint2="0" width="3201" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000810c00004d0c0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Dimension_Market" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Stock" left="6194" top="0" logicalid="17" controlid="6" masterid="0" hint1="0" hint2="0" width="3122" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000320c0000a50a0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Dimension_Stock" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="2700" top="7226" logicalid="18" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[Equities-Date]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="19" destattachpoint="26" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="3000" y="7625" />
+                    <point x="5400" y="7625" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="9810" top="7225" logicalid="19" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[Equities-Time]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="14" destattachpoint="27" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="12510" y="7624" />
+                    <point x="11310" y="7624" />
+                    <point x="11310" y="7625" />
+                    <point x="10110" y="7625" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="8005" top="9825" logicalid="20" controlid="9" masterid="0" hint1="0" hint2="0" width="2990" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[Equities-Market]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="1" sourceattachpoint="4" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="10595" y="12525" />
+                    <point x="10595" y="11325" />
+                    <point x="8305" y="11325" />
+                    <point x="8305" y="10125" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="4555" top="9825" logicalid="21" controlid="10" masterid="0" hint1="0" hint2="0" width="2400" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[Equities-Currency]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="4954" y="12525" />
+                    <point x="4954" y="11325" />
+                    <point x="6655" y="11325" />
+                    <point x="6655" y="10125" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="7356" top="2226" logicalid="22" controlid="11" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[Equities-Stock]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="1" sourceattachpoint="5" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="7755" y="2725" />
+                    <point x="7755" y="5125" />
+                  </connector>
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-9767</DiagramViewPortLeft>
+            <DiagramViewPortTop>-2905</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>PARM DW</DataSourceID>
+  <Schema>
+    <xs:schema id="Equities" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Equities" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="ed4ddd50-ecc7-413c-9462-81411e194a4b">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Fact_Equities" msprop:design-time-name="416df7d8-693d-40c7-b622-07dcd302cffb" msprop:FriendlyName="Equities" msprop:DbSchemaName="Fact" msprop:DbTableName="Equities" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateSK" msprop:design-time-name="182df722-f59d-4efb-87eb-2344e5a92762" msprop:DbColumnName="DateSK" msprop:FriendlyName="DateSK" type="xs:int" />
+                  <xs:element name="TimeSK" msprop:design-time-name="8d16304a-61b2-4fbc-8b54-5e2cb2610fe1" msprop:DbColumnName="TimeSK" msprop:FriendlyName="TimeSK" type="xs:int" />
+                  <xs:element name="MarketSK" msprop:design-time-name="8838830f-a32b-4db1-af92-c0cc5b3e9c22" msprop:DbColumnName="MarketSK" msprop:FriendlyName="MarketSK" type="xs:int" />
+                  <xs:element name="CurrencySK" msprop:design-time-name="78ddf354-4c1c-45a5-813d-f9f58710fd33" msprop:DbColumnName="CurrencySK" msprop:FriendlyName="CurrencySK" type="xs:int" />
+                  <xs:element name="StockSK" msprop:design-time-name="5c209bdb-9f25-4a68-9c4c-fed21cebe484" msprop:DbColumnName="StockSK" msprop:FriendlyName="StockSK" type="xs:int" />
+                  <xs:element name="HighPrice" msprop:design-time-name="ac58cd88-4f2e-4307-b549-49e032e7c4af" msprop:DbColumnName="HighPrice" msprop:FriendlyName="HighPrice" type="xs:decimal" />
+                  <xs:element name="LowPrice" msprop:design-time-name="7980a22f-d7bb-4612-8ed6-3f74cd2a2ad0" msprop:DbColumnName="LowPrice" msprop:FriendlyName="LowPrice" type="xs:decimal" />
+                  <xs:element name="BidPrice" msprop:design-time-name="cb2e559f-089a-49e0-878c-22547753191a" msprop:DbColumnName="BidPrice" msprop:FriendlyName="BidPrice" type="xs:decimal" />
+                  <xs:element name="AskPrice" msprop:design-time-name="0e632cba-cd46-43e2-9b1c-8c9e67ad0e0a" msprop:DbColumnName="AskPrice" msprop:FriendlyName="AskPrice" type="xs:decimal" />
+                  <xs:element name="BidAskSpread" msdata:ReadOnly="true" msprop:design-time-name="d3edc45b-d52e-4fe8-ae53-3a581c3a380b" msprop:DbColumnName="BidAskSpread" msprop:FriendlyName="BidAskSpread" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Volume" msprop:design-time-name="033d1ba1-b742-463f-9343-a9128ff25fd0" msprop:DbColumnName="Volume" msprop:FriendlyName="Volume" type="xs:int" />
+                  <xs:element name="Yield" msprop:design-time-name="787ee0d0-1e86-4f7a-a4db-50f322848341" msprop:DbColumnName="Yield" msprop:FriendlyName="Yield" type="xs:decimal" />
+                  <xs:element name="DividendCentsPerShare" msprop:design-time-name="b9cb9e53-393b-4c38-9427-734c735b1576" msprop:DbColumnName="DividendCentsPerShare" msprop:FriendlyName="DividendCentsPerShare" type="xs:decimal" />
+                  <xs:element name="EarningsCentsPerShare" msprop:design-time-name="3cbbfa7b-85a9-4e23-b7a1-63777a264325" msprop:DbColumnName="EarningsCentsPerShare" msprop:FriendlyName="EarningsCentsPerShare" type="xs:decimal" />
+                  <xs:element name="PE_Ratio" msprop:design-time-name="79dae6a0-f13c-44ed-a091-cd5df7494f89" msprop:DbColumnName="PE_Ratio" msprop:FriendlyName="PE_Ratio" type="xs:decimal" />
+                  <xs:element name="IssuedCapital" msprop:design-time-name="dcaf625f-f6b0-4fe1-a0be-ffdb7cd400d9" msprop:DbColumnName="IssuedCapital" msprop:FriendlyName="IssuedCapital" type="xs:decimal" />
+                  <xs:element name="GrossShortSales" msprop:design-time-name="4f3a0a3c-5933-439a-978e-a1befed3d971" msprop:DbColumnName="GrossShortSales" msprop:FriendlyName="GrossShortSales" type="xs:decimal" />
+                  <xs:element name="_x0039_0Day_SMA" msprop:design-time-name="e76bb937-003e-4c29-b430-b89494c33c26" msprop:DbColumnName="90Day_SMA" msprop:FriendlyName="90Day_SMA" type="xs:decimal" />
+                  <xs:element name="_x0039_0Day_AverageDailyReturn" msprop:design-time-name="1b689340-1c44-4a61-b3b5-af17d4f8aba7" msprop:DbColumnName="90Day_AverageDailyReturn" msprop:FriendlyName="90Day_AverageDailyReturn" type="xs:decimal" />
+                  <xs:element name="_x0039_0Day_Volatility" msprop:design-time-name="0136e377-1d38-44cd-b026-c4c98bfec028" msprop:DbColumnName="90Day_Volatility" msprop:FriendlyName="90Day_Volatility" type="xs:decimal" />
+                  <xs:element name="Price_vs_90Day_SMA" msdata:ReadOnly="true" msprop:design-time-name="13c8a491-2085-4d30-af4b-dd3997752910" msprop:DbColumnName="Price_vs_90Day_SMA" msprop:FriendlyName="Price_vs_90Day_SMA" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Daily_PriceChange" msprop:design-time-name="d0c00d9c-88e5-4c3b-b6e8-a439a7522655" msprop:DbColumnName="Daily_PriceChange" msprop:FriendlyName="Daily_PriceChange" type="xs:decimal" />
+                  <xs:element name="MTD_PriceChange" msprop:design-time-name="300f5d1d-6c17-4e86-8175-985d22f8bc93" msprop:DbColumnName="MTD_PriceChange" msprop:FriendlyName="MTD_PriceChange" type="xs:decimal" />
+                  <xs:element name="YTD_PriceChange" msprop:design-time-name="402f1e1c-fe8e-477b-b895-88e045f1d1b1" msprop:DbColumnName="YTD_PriceChange" msprop:FriendlyName="YTD_PriceChange" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Dimension_Currency" msprop:design-time-name="4fa53013-84ed-4e60-8b0b-5e7c1b5d532a" msprop:FriendlyName="Currency" msprop:DbSchemaName="Dimension" msprop:DbTableName="Currency" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CurrencySK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="0eadde74-8b5e-4cde-bf11-9fe61643f105" msprop:DbColumnName="CurrencySK" msprop:FriendlyName="CurrencySK" type="xs:int" />
+                  <xs:element name="CurrencyCode" msprop:design-time-name="afc49991-ad51-42cf-b476-f53b49869ad8" msprop:DbColumnName="CurrencyCode" msprop:FriendlyName="CurrencyCode">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CurrencyName" msprop:design-time-name="a01b9a9f-c496-42bb-8c4e-8aaec4d05d31" msprop:DbColumnName="CurrencyName" msprop:FriendlyName="CurrencyName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CurrencyCountry" msprop:design-time-name="65709c21-a602-4123-a985-66392d59e157" msprop:DbColumnName="CurrencyCountry" msprop:FriendlyName="CurrencyCountry">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CurrencyType" msprop:design-time-name="9b9cacce-2c3a-4bde-a1c4-6a04d9551a5d" msprop:DbColumnName="CurrencyType" msprop:FriendlyName="CurrencyType">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CentralBank" msprop:design-time-name="fbbd4982-6abb-4cbd-9972-34358a2cb0ae" msprop:DbColumnName="CentralBank" msprop:FriendlyName="CentralBank">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Dimension_Time" msprop:design-time-name="979db41e-eb21-45db-946f-cbbef8852ec7" msprop:FriendlyName="Time" msprop:DbSchemaName="Dimension" msprop:DbTableName="Time" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TimeSK" msprop:design-time-name="84ce97d8-a547-40b4-b001-9500c8a3b2e3" msprop:DbColumnName="TimeSK" msprop:FriendlyName="TimeSK" type="xs:int" />
+                  <xs:element name="Hour" msprop:design-time-name="81b0c32f-e620-4c78-8670-455b7ed1d7b4" msprop:DbColumnName="Hour" msprop:FriendlyName="Hour" type="xs:int" />
+                  <xs:element name="Minute" msprop:design-time-name="ba46be73-ae74-4fa1-b31b-cc823038394f" msprop:DbColumnName="Minute" msprop:FriendlyName="Minute" type="xs:int" />
+                  <xs:element name="Second" msprop:design-time-name="b2990d0c-8d38-4304-b4da-f1e5df55ff94" msprop:DbColumnName="Second" msprop:FriendlyName="Second" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Dimension_Date" msprop:design-time-name="991cc341-3043-4af5-8c48-beb1c09fd706" msprop:FriendlyName="Date" msprop:DbSchemaName="Dimension" msprop:DbTableName="Date" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateSK" msprop:design-time-name="bd793227-ed99-47d9-9470-296c4897ad18" msprop:DbColumnName="DateSK" msprop:FriendlyName="DateSK" type="xs:int" />
+                  <xs:element name="Date" msdata:DateTimeMode="Local" msprop:design-time-name="4aa35aed-534a-473d-aad2-169a637c4ce9" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
+                  <xs:element name="DateText" msprop:design-time-name="9bb20f74-6c3d-4d7d-ad5e-31ec50b0c9b0" msprop:DbColumnName="DateText" msprop:FriendlyName="DateText">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FinancialYear" msprop:design-time-name="d40c77c6-6e2a-4869-a05b-fb5a9a1fa402" msprop:DbColumnName="FinancialYear" msprop:FriendlyName="FinancialYear">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="4" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="WeekOfYear" msprop:design-time-name="cfffe430-4299-4e9f-9444-fdb01a8b3ff1" msprop:DbColumnName="WeekOfYear" msprop:FriendlyName="WeekOfYear" type="xs:int" />
+                  <xs:element name="Quarter" msprop:design-time-name="dd563e0d-2f15-4628-853d-49c59b5c8ac3" msprop:DbColumnName="Quarter" msprop:FriendlyName="Quarter">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Year" msprop:design-time-name="7dad5008-1dc5-4d3a-9ae3-d351aac642a0" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" />
+                  <xs:element name="Month" msprop:design-time-name="8f0ca7dd-b444-42f3-85a9-ece6ecfd5c90" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" />
+                  <xs:element name="Day" msprop:design-time-name="0288791d-04f7-4e2e-b66e-0eba5e9d6dac" msprop:DbColumnName="Day" msprop:FriendlyName="Day" type="xs:int" />
+                  <xs:element name="DayOfWeek" msprop:design-time-name="916ecad4-1e7f-42c4-a7a2-17b4eb4a43e4" msprop:DbColumnName="DayOfWeek" msprop:FriendlyName="DayOfWeek">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Dimension_Market" msprop:design-time-name="9d69a15c-7efd-4de8-8fb7-41b8a4cccc4c" msprop:FriendlyName="Market" msprop:DbSchemaName="Dimension" msprop:DbTableName="Market" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MarketSK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="a84cc96f-1280-43bc-b2e9-059f765fab45" msprop:DbColumnName="MarketSK" msprop:FriendlyName="MarketSK" type="xs:int" />
+                  <xs:element name="MarketName" msprop:design-time-name="b00f792b-0c5d-4831-8e81-7f314370d3d0" msprop:DbColumnName="MarketName" msprop:FriendlyName="MarketName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MarketCountry" msprop:design-time-name="7b286e2a-16c5-47f9-8140-a954dc9a79a0" msprop:DbColumnName="MarketCountry" msprop:FriendlyName="MarketCountry">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MarketType" msprop:design-time-name="e7f771ad-91c1-4537-be71-5bbd8c238ecb" msprop:DbColumnName="MarketType" msprop:FriendlyName="MarketType">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MarketCurrency" msprop:design-time-name="7426d136-d2b8-4184-ab8b-94de0107a33b" msprop:DbColumnName="MarketCurrency" msprop:FriendlyName="MarketCurrency">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Dimension_Stock" msprop:design-time-name="2d6b8972-daa3-42e8-8ddc-a2c39f5fc410" msprop:FriendlyName="Stock" msprop:DbSchemaName="Dimension" msprop:DbTableName="Stock" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="StockSK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="614de4f2-995e-4f83-abef-46ddc24006c3" msprop:DbColumnName="StockSK" msprop:FriendlyName="StockSK" type="xs:int" />
+                  <xs:element name="StockCode" msprop:design-time-name="13e57e83-307a-462b-894c-10002a2ccada" msprop:DbColumnName="StockCode" msprop:FriendlyName="StockCode">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CompanyName" msprop:design-time-name="16136961-be7d-4031-ae73-606b99df7469" msprop:DbColumnName="CompanyName" msprop:FriendlyName="CompanyName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IndustryGroup" msprop:design-time-name="636db2ad-f112-4949-8760-2027b35405e9" msprop:DbColumnName="IndustryGroup" msprop:FriendlyName="IndustryGroup">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Fact_Equities" />
+          <xs:field xpath="DateSK" />
+          <xs:field xpath="TimeSK" />
+          <xs:field xpath="MarketSK" />
+          <xs:field xpath="CurrencySK" />
+          <xs:field xpath="StockSK" />
+        </xs:unique>
+        <xs:unique name="Dimension_Currency_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Dimension_Currency" />
+          <xs:field xpath="CurrencySK" />
+        </xs:unique>
+        <xs:unique name="Dimension_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Dimension_Time" />
+          <xs:field xpath="TimeSK" />
+        </xs:unique>
+        <xs:unique name="Dimension_Date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Dimension_Date" />
+          <xs:field xpath="DateSK" />
+        </xs:unique>
+        <xs:unique name="Dimension_Market_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Dimension_Market" />
+          <xs:field xpath="MarketSK" />
+        </xs:unique>
+        <xs:unique name="Dimension_Stock_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Dimension_Stock" />
+          <xs:field xpath="StockSK" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="Equities-Date" msdata:parent="Dimension_Date" msdata:child="Fact_Equities" msdata:parentkey="DateSK" msdata:childkey="DateSK" />
+          <msdata:Relationship name="Equities-Time" msdata:parent="Dimension_Time" msdata:child="Fact_Equities" msdata:parentkey="TimeSK" msdata:childkey="TimeSK" />
+          <msdata:Relationship name="Equities-Market" msdata:parent="Dimension_Market" msdata:child="Fact_Equities" msdata:parentkey="MarketSK" msdata:childkey="MarketSK" />
+          <msdata:Relationship name="Equities-Currency" msdata:parent="Dimension_Currency" msdata:child="Fact_Equities" msdata:parentkey="CurrencySK" msdata:childkey="CurrencySK" />
+          <msdata:Relationship name="Equities-Stock" msdata:parent="Dimension_Stock" msdata:child="Fact_Equities" msdata:parentkey="StockSK" msdata:childkey="StockSK" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <Equities xmlns="" />
+  </Schema>
+</DataSourceView>

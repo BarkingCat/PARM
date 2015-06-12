@@ -19,7 +19,19 @@
         <ID>Budget Items</ID>
       </Dimension>
       <Dimension>
-        <ID>Date</ID>
+        <ID>Date 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Time</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Market</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Currency</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Stock</ID>
       </Dimension>
     </Dimensions>
     <Cubes>
@@ -31,6 +43,19 @@
             <Partitions>
               <Partition>
                 <ID>Budget Measures</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Equities</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Equities</ID>
+            <Partitions>
+              <Partition>
+                <ID>Equities</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>

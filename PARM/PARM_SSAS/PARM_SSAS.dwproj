@@ -8,12 +8,22 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>PARM DW.cube</Name>
-      <FullPath>PARM DW.cube</FullPath>
+      <Name>Budget.cube</Name>
+      <FullPath>Budget.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>PARM DW.partitions</Name>
-          <FullPath>PARM DW.partitions</FullPath>
+          <Name>Budget.partitions</Name>
+          <FullPath>Budget.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Equities.cube</Name>
+      <FullPath>Equities.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Equities.partitions</Name>
+          <FullPath>Equities.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
@@ -31,6 +41,22 @@
       <Name>Date.dim</Name>
       <FullPath>Date.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Time.dim</Name>
+      <FullPath>Time.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Market.dim</Name>
+      <FullPath>Market.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Currency.dim</Name>
+      <FullPath>Currency.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Stock.dim</Name>
+      <FullPath>Stock.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
@@ -40,8 +66,12 @@
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
-      <Name>PARM DW.dsv</Name>
-      <FullPath>PARM DW.dsv</FullPath>
+      <Name>Budget.dsv</Name>
+      <FullPath>Budget.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Equities.dsv</Name>
+      <FullPath>Equities.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
