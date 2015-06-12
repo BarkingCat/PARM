@@ -1,7 +1,4 @@
-﻿
-
-
-CREATE VIEW [Staging].[AFR_ASX300_Daily]
+﻿CREATE VIEW [Staging].[AFR_ASX300_Daily]
 AS
 SELECT
 	   B.BusinessDate

@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9441" scrolltop="-2032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="35004" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9441" scrolltop="-2032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="43630" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -365,6 +365,215 @@
       </Hierarchies>
     </Dimension>
   </Dimensions>
+  <Perspectives>
+    <Perspective dwd:design-time-name="b73fffed-8bb0-4020-8b58-54bbcf41257c">
+      <ID>Perspective</ID>
+      <Name>Perspective</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="f62b8adc-acc2-4438-b8b5-14255ce835b6">
+          <CubeDimensionID>Date 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="90f1027e-8106-4f92-b5bf-19301c4ef333">
+              <AttributeID>Date SK</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b0772890-b88b-46ce-97d7-f149d4074c91">
+              <AttributeID>Date</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="663f5c1b-583b-4968-afa6-04b790367eaf">
+              <AttributeID>Date Text</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d88ad691-abc1-4d05-82dd-c03004097fd0">
+              <AttributeID>Financial Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3e962ce0-6bb2-452a-b956-62b135f4563c">
+              <AttributeID>Week Of Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="4e8ac924-1a2c-425b-8cc7-5dd9499a5a0d">
+              <AttributeID>Quarter</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="51951d36-8320-4ab0-9eff-52bc55c68f3c">
+              <AttributeID>Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ee2c620a-72b9-4da0-a076-50b43ad5f710">
+              <AttributeID>Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e978b0b2-98b9-45c3-9539-953abada863b">
+              <AttributeID>Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="a7561482-4e93-43b3-837b-658cb7226509">
+              <AttributeID>Day Of Week</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="71699959-5c5f-4519-841a-a6d1b53146cb">
+              <HierarchyID>Hierarchy 1</HierarchyID>
+            </Hierarchy>
+            <Hierarchy dwd:design-time-name="62a6d616-39ee-4ed6-9b45-bf0eff4c3577">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="edaf34b1-7f8f-4ce0-b80f-1589c4f6208c">
+          <CubeDimensionID>Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3b9f8e6f-a79f-4f69-bcd5-36d21973b9bb">
+              <AttributeID>Time SK</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3d2521fd-54c3-4caa-b52a-ece09f96851e">
+              <AttributeID>Hour</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5e5de256-b322-4d41-be35-68f92890f4c1">
+              <AttributeID>Minute</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="65688213-c211-4dac-ae4e-658c92eb5b0d">
+              <AttributeID>Second</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="05f7cd39-fcef-4a29-a32f-4d9fabb4f31b">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="83aad186-9283-40cb-98fd-0aa4bfb7663a">
+          <CubeDimensionID>Market</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5f33efef-bf12-4bfe-998c-41e53c5aca1e">
+              <AttributeID>Market SK</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="04bf2723-3304-45dd-8686-e8df7c4bf1b7">
+              <AttributeID>Market Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="6b19ba97-d2e6-4d1a-8b85-4334bea3aaaf">
+              <AttributeID>Market Country</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3c275828-d3bb-4e84-a3a7-3f3479201644">
+              <AttributeID>Market Type</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="7fa9b854-ce5b-46a0-9ee6-15e370ac0307">
+              <AttributeID>Market Currency</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="7c4a4aff-af9a-4d99-abd1-f01f2785a0f0">
+          <CubeDimensionID>Currency</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dbecbdf2-c20d-4cfc-baac-bf07ce66f0a2">
+              <AttributeID>Currency SK</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="eff903aa-bb1f-45c8-8783-014e5483a022">
+              <AttributeID>Currency Code</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="fe4a8d49-5887-4201-897b-771ba39fb18f">
+              <AttributeID>Currency Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="9ff5de9c-73bf-4013-a757-95188ae4fca3">
+              <AttributeID>Currency Country</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="dafe26a5-6085-4c47-9601-0005db31a3b9">
+              <AttributeID>Central Bank</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="d760fbb7-620a-45f9-ac68-bcd9f4e27b38">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="4aafa1b9-0f93-48bd-a54e-a4aad6a48ecb">
+          <CubeDimensionID>Stock</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f2e7fd7c-e906-4e40-a9c6-c1d124a25f8f">
+              <AttributeID>Stock SK</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="33b24492-2c70-4562-86b7-1065054342f2">
+              <AttributeID>Industry Group</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="6abdf601-200b-4aa5-8dc8-87cb0eb4b0bb">
+              <AttributeID>Company Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="9d64d408-1a89-4143-9933-a260fd9b7113">
+              <AttributeID>Stock Code</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="8d532d6b-e268-4327-967e-e72863e9cc8b">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="64c693ff-09f2-4132-90b8-8ed98169d4c0">
+          <MeasureGroupID>Equities</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="b645ae55-1718-4109-bb34-9a829da65908">
+              <MeasureID>High Price</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="74dc2c2e-5620-464f-ae1f-12faf7a508bb">
+              <MeasureID>Low Price</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="1c286d11-c95f-418e-9ffd-dd0c18b9fe50">
+              <MeasureID>Bid Price</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="becc75bb-302c-4200-aa29-f6cda1cf69a9">
+              <MeasureID>Ask Price</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="3f3c5630-30c4-4b6f-bea7-9b737152d78c">
+              <MeasureID>Bid Ask Spread</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="90262775-7884-4d21-90a3-86993e607627">
+              <MeasureID>Volume</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="a9e6fd20-9aff-465a-a7a4-2de8a3e8032c">
+              <MeasureID>Yield</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="d96483d8-eb3b-4314-b60a-2a5cb9642ef8">
+              <MeasureID>Dividend Cents Per Share</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="c1e90787-20ee-4114-8b27-1dffd984ccca">
+              <MeasureID>Earnings Cents Per Share</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="870989c6-bfb9-49a1-8c5d-c82d14212d5e">
+              <MeasureID>PE Ratio</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="74930dc8-0c3f-4d0a-911d-f6098561edff">
+              <MeasureID>Issued Capital</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="8984d8d1-2d2f-49ec-ab4f-2942da759bd8">
+              <MeasureID>Gross Short Sales</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="722a8d4e-b9f6-42dc-9602-5cc1c49ee223">
+              <MeasureID>90 Day SMA</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="705121fd-088e-4dd5-ace1-95a2879e7a3f">
+              <MeasureID>90 Day Average Daily Return</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="b95c076f-3317-48fe-be7d-4fa41ca4c76e">
+              <MeasureID>90 Day Volatility</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="9a3284ce-1b00-498a-8e41-d25f67f20178">
+              <MeasureID>Price Vs 90 Day SMA</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="c3ca9eb6-80f0-4e8f-aea0-7130d2bc7a11">
+              <MeasureID>Daily Price Change</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="f31c809f-6181-4331-8bdb-7c157229c189">
+              <MeasureID>MTD Price Change</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="83fc873b-35d3-4a64-9dca-ceb681f057ab">
+              <MeasureID>YTD Price Change</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="c37e06fa-e4b0-470d-80e8-6834dc10a4fd">
+              <MeasureID>Equities Count</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+    </Perspective>
+  </Perspectives>
   <MeasureGroups>
     <MeasureGroup dwd:design-time-name="317cdfd7-846a-4a3c-b3d0-a8b62ddf100e">
       <ID>Equities</ID>

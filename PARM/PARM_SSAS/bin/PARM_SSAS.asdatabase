@@ -1735,7 +1735,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9441" scrolltop="-2032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="35004" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9441" scrolltop="-2032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="43630" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -2092,6 +2092,215 @@
           </Hierarchies>
         </Dimension>
       </Dimensions>
+      <Perspectives>
+        <Perspective>
+          <ID>Perspective</ID>
+          <Name>Perspective</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Date 1</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date SK</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Date</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Date Text</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Financial Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Week Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Quarter</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Of Week</AttributeID>
+                </Attribute>
+              </Attributes>
+              <Hierarchies>
+                <Hierarchy>
+                  <HierarchyID>Hierarchy 1</HierarchyID>
+                </Hierarchy>
+                <Hierarchy>
+                  <HierarchyID>Hierarchy</HierarchyID>
+                </Hierarchy>
+              </Hierarchies>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Time</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Time SK</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Hour</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Minute</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Second</AttributeID>
+                </Attribute>
+              </Attributes>
+              <Hierarchies>
+                <Hierarchy>
+                  <HierarchyID>Hierarchy</HierarchyID>
+                </Hierarchy>
+              </Hierarchies>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Market</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Market SK</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Market Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Market Country</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Market Type</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Market Currency</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Currency</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Currency SK</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Currency Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Currency Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Currency Country</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Central Bank</AttributeID>
+                </Attribute>
+              </Attributes>
+              <Hierarchies>
+                <Hierarchy>
+                  <HierarchyID>Hierarchy</HierarchyID>
+                </Hierarchy>
+              </Hierarchies>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Stock</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Stock SK</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Industry Group</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Company Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Stock Code</AttributeID>
+                </Attribute>
+              </Attributes>
+              <Hierarchies>
+                <Hierarchy>
+                  <HierarchyID>Hierarchy</HierarchyID>
+                </Hierarchy>
+              </Hierarchies>
+            </Dimension>
+          </Dimensions>
+          <MeasureGroups>
+            <MeasureGroup>
+              <MeasureGroupID>Equities</MeasureGroupID>
+              <Measures>
+                <Measure>
+                  <MeasureID>High Price</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Low Price</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Bid Price</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Ask Price</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Bid Ask Spread</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Volume</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Yield</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Dividend Cents Per Share</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Earnings Cents Per Share</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>PE Ratio</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Issued Capital</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Gross Short Sales</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>90 Day SMA</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>90 Day Average Daily Return</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>90 Day Volatility</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Price Vs 90 Day SMA</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Daily Price Change</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>MTD Price Change</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>YTD Price Change</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Equities Count</MeasureID>
+                </Measure>
+              </Measures>
+            </MeasureGroup>
+          </MeasureGroups>
+        </Perspective>
+      </Perspectives>
       <MeasureGroups>
         <MeasureGroup>
           <ID>Equities</ID>
@@ -2751,7 +2960,7 @@
                 <Name>_ALL_TABLES_</Name>
                 <DiagramLayout>
                   <dds>
-                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9767" scrolltop="-2905" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="34158" y="22357" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9767" scrolltop="-2905" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="44159" y="22357" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                       <font>
                         <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                       </font>

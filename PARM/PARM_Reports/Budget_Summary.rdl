@@ -305,8 +305,8 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="PARM_DW">
-      <DataSourceReference>PARM_DW</DataSourceReference>
+    <DataSource Name="PARM_SSAS">
+      <DataSourceReference>PARM_SSAS</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>1d081b68-1654-4915-8182-7908a94f95c3</rd:DataSourceID>
     </DataSource>
@@ -314,7 +314,7 @@
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>PARM_DW</DataSourceName>
+        <DataSourceName>PARM_SSAS</DataSourceName>
         <QueryParameters>
           <QueryParameter Name="DateDateSK">
             <Value>=Parameters!DateDateSK.Value</Value>
@@ -442,7 +442,7 @@
     </DataSet>
     <DataSet Name="DateDateSK">
       <Query>
-        <DataSourceName>PARM_DW</DataSourceName>
+        <DataSourceName>PARM_SSAS</DataSourceName>
         <CommandText>WITH MEMBER [Measures].[ParameterCaption] AS [Date].[Date SK].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Date].[Date SK].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Date].[Date SK].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Date].[Date SK].ALLMEMBERS ON ROWS FROM [PARM DW]</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
