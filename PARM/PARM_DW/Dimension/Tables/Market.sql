@@ -6,3 +6,10 @@
     [MarketCurrency] CHAR (3)      NOT NULL
 );
 
+
+
+
+GO
+CREATE UNIQUE CLUSTERED INDEX [ClusteredIndex-20150612-112222]
+    ON [Dimension].[Market]([MarketSK] ASC);
+

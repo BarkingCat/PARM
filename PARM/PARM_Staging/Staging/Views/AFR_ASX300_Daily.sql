@@ -1,5 +1,6 @@
 ﻿
 
+
 CREATE VIEW [Staging].[AFR_ASX300_Daily]
 AS
 SELECT
@@ -22,5 +23,8 @@ SELECT
       ,CONVERT(MONEY,A.[Div yield %]) AS [Div yield %]
       ,CONVERT(MONEY,A.[Earn share c]) AS [Earn share c]
       ,CONVERT(MONEY,REPLACE(A.[P/E ratio],',,','')) AS [P/E ratio]
+	  ,CONVERT(MONEY,A.[Quote Sell]) - CONVERT(MONEY,LAG(A.[Quote Sell],1,0) OVER (PARTITION BY [ASX Code] ORDER BY B.BusinessDate ASC)) as [DailyMove]
+	  ,(CONVERT(MONEY,A.[Quote Sell]) - CONVERT(MONEY,LAG(A.[Quote Sell],1,0) OVER (PARTITION BY [ASX Code] ORDER BY B.BusinessDate ASC))) / CONVERT(MONEY,LAG(A.[Quote Sell],1,NULL) OVER (PARTITION BY [ASX Code] ORDER BY B.BusinessDate ASC)) as [DailyReturn]
+	  ,AVG(CONVERT(MONEY,A.[Quote Sell])) OVER (PARTITION BY [ASX Code] ORDER BY B.[BusinessDate] DESC ROWS BETWEEN 90 PRECEDING AND CURRENT ROW) as [90Day_SMA]
 FROM [Staging].[AFR_ASX300_Daily_Raw] AS A
 INNER JOIN [Control].Run AS B on A.RunID = B.RunID

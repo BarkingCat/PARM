@@ -7,3 +7,10 @@
     [CentralBank]     VARCHAR (255) NOT NULL
 );
 
+
+
+
+GO
+CREATE UNIQUE CLUSTERED INDEX [ClusteredIndex-20150612-112239]
+    ON [Dimension].[Currency]([CurrencySK] ASC);
+

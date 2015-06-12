@@ -1,5 +1,6 @@
 ﻿CREATE TABLE [Dimension].[Date] (
     [DateSK]        INT          NOT NULL,
+    [Date]          DATE         NOT NULL,
     [DateText]      VARCHAR (20) NOT NULL,
     [FinancialYear] CHAR (4)     NOT NULL,
     [WeekOfYear]    INT          NOT NULL,
@@ -11,4 +12,11 @@
 );
 
 
+
+
+
+
+GO
+CREATE UNIQUE CLUSTERED INDEX [ClusteredIndex-20150612-104530]
+    ON [Dimension].[Date]([DateSK] ASC);
 

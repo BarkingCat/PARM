@@ -29,3 +29,10 @@
 
 
 
+
+
+
+GO
+CREATE UNIQUE CLUSTERED INDEX [ClusteredIndex-20150612-112129]
+    ON [Fact].[Equities]([DateSK] ASC, [TimeSK] ASC, [MarketSK] ASC, [CurrencySK] ASC, [StockSK] ASC);
+

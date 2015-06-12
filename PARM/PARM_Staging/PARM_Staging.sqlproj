@@ -110,6 +110,8 @@
     <Folder Include="Staging\Stored Procedures\" />
     <Folder Include="Reference\" />
     <Folder Include="Reference\Tables\" />
+    <Folder Include="Dimension\" />
+    <Folder Include="Dimension\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\CBA_Transactions.sql">
@@ -196,6 +198,27 @@
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
     <Build Include="Security\Reference.sql" />
+    <Build Include="Staging\Tables\AFR_IntlIndices_Weekly_Raw_1.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Staging\Tables\AFR_InterestRateSecurities_Weekly_Raw_1.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Staging\Tables\AFR_ASXIndices_Weekly_Raw_1.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Staging\Views\AFR_Options_Daily_1.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Dimension\Stored Procedures\Populate_Dimension_Date.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Security\Dimension.sql" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PARM_Control\PARM_Control.sqlproj">

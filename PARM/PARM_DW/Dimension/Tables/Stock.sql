@@ -7,3 +7,10 @@
 
 
 
+
+
+
+GO
+CREATE UNIQUE CLUSTERED INDEX [ClusteredIndex-20150612-112048]
+    ON [Dimension].[Stock]([StockSK] ASC);
+
