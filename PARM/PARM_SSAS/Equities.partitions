@@ -18,6 +18,7 @@
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>208</EstimatedRows>
         </Partition>
       </Partitions>
     </MeasureGroup>

@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9441" scrolltop="-2032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="43630" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3901" scrolltop="-2032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="22622" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -200,7 +200,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-9441</Value>
+      <Value>-3901</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
@@ -258,6 +258,11 @@
           <AttributeID>Day Of Week</AttributeID>
         </Attribute>
       </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="45404dbc-e40c-48dc-809b-ada81c035241">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
     </Dimension>
     <Dimension dwd:design-time-name="c69b5d7e-4b73-4a37-b8cf-f075c17fa808">
       <ID>Time</ID>
@@ -361,41 +366,6 @@
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
       <Dimensions>
-        <Dimension dwd:design-time-name="f62b8adc-acc2-4438-b8b5-14255ce835b6">
-          <CubeDimensionID>Date 1</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="90f1027e-8106-4f92-b5bf-19301c4ef333">
-              <AttributeID>Date SK</AttributeID>
-            </Attribute>
-            <Attribute dwd:design-time-name="b0772890-b88b-46ce-97d7-f149d4074c91">
-              <AttributeID>Date</AttributeID>
-            </Attribute>
-            <Attribute dwd:design-time-name="663f5c1b-583b-4968-afa6-04b790367eaf">
-              <AttributeID>Date Text</AttributeID>
-            </Attribute>
-            <Attribute dwd:design-time-name="d88ad691-abc1-4d05-82dd-c03004097fd0">
-              <AttributeID>Financial Year</AttributeID>
-            </Attribute>
-            <Attribute dwd:design-time-name="3e962ce0-6bb2-452a-b956-62b135f4563c">
-              <AttributeID>Week Of Year</AttributeID>
-            </Attribute>
-            <Attribute dwd:design-time-name="4e8ac924-1a2c-425b-8cc7-5dd9499a5a0d">
-              <AttributeID>Quarter</AttributeID>
-            </Attribute>
-            <Attribute dwd:design-time-name="51951d36-8320-4ab0-9eff-52bc55c68f3c">
-              <AttributeID>Year</AttributeID>
-            </Attribute>
-            <Attribute dwd:design-time-name="ee2c620a-72b9-4da0-a076-50b43ad5f710">
-              <AttributeID>Month</AttributeID>
-            </Attribute>
-            <Attribute dwd:design-time-name="e978b0b2-98b9-45c3-9539-953abada863b">
-              <AttributeID>Day</AttributeID>
-            </Attribute>
-            <Attribute dwd:design-time-name="a7561482-4e93-43b3-837b-658cb7226509">
-              <AttributeID>Day Of Week</AttributeID>
-            </Attribute>
-          </Attributes>
-        </Dimension>
         <Dimension dwd:design-time-name="edaf34b1-7f8f-4ce0-b80f-1589c4f6208c">
           <CubeDimensionID>Time</CubeDimensionID>
           <Attributes>
@@ -478,6 +448,46 @@
           </Attributes>
           <Hierarchies>
             <Hierarchy dwd:design-time-name="8d532d6b-e268-4327-967e-e72863e9cc8b">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="cfd53518-5e01-411e-b04f-cb4a6eef0e83">
+          <CubeDimensionID>Date 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0b12b11d-f23f-4185-abff-bb139c65b45f">
+              <AttributeID>Date SK</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3d8fe9fe-f535-47f6-9473-40f9e240d2c0">
+              <AttributeID>Date</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e63c8f02-95d4-44f0-bfbc-5c695924c9b7">
+              <AttributeID>Date Text</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="04ad245a-5186-4ec4-9ef8-6142d4008cd4">
+              <AttributeID>Financial Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="4d1209ef-eec4-4055-a318-9e0487de946a">
+              <AttributeID>Week Of Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="2a9b425c-152e-4b33-9f15-2abd73217b22">
+              <AttributeID>Quarter</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d546d407-0b81-4e3a-84c7-664fb93d26cd">
+              <AttributeID>Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3163ec38-7565-474e-9c97-0c792be9f36e">
+              <AttributeID>Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="04f6cd80-4945-4170-a866-ce64ca0994cb">
+              <AttributeID>Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ec0cbca7-2783-453e-9c59-7f4abb462629">
+              <AttributeID>Day Of Week</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="a641797a-c821-42cd-9332-b77e675cc653">
               <HierarchyID>Hierarchy</HierarchyID>
             </Hierarchy>
           </Hierarchies>
@@ -571,6 +581,7 @@
               <ColumnID>HighPrice</ColumnID>
             </Source>
           </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="7c6c69af-ed58-4fa3-8a8a-c5f24d9faff0">
           <ID>Low Price</ID>
@@ -582,6 +593,7 @@
               <ColumnID>LowPrice</ColumnID>
             </Source>
           </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="72515534-a4f0-4aa7-9371-b27c964ab891">
           <ID>Bid Price</ID>
@@ -593,6 +605,7 @@
               <ColumnID>BidPrice</ColumnID>
             </Source>
           </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="a3ca6ffa-0f01-4170-9cc1-17cfda9dab3d">
           <ID>Ask Price</ID>
@@ -604,6 +617,7 @@
               <ColumnID>AskPrice</ColumnID>
             </Source>
           </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="ae5d49ee-aabb-4c65-9b4a-98375dd86fa8">
           <ID>Bid Ask Spread</ID>
@@ -615,6 +629,7 @@
               <ColumnID>BidAskSpread</ColumnID>
             </Source>
           </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="8f27b42f-373a-423b-b8a9-714da18829c6">
           <ID>Volume</ID>
@@ -626,10 +641,12 @@
               <ColumnID>Volume</ColumnID>
             </Source>
           </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="21e69e32-4ca1-4896-bd1a-7f8e6fd9be84">
           <ID>Yield</ID>
           <Name>Yield</Name>
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
           <Source dwd:design-time-name="5aef1846-ba51-4ce2-b4bc-f66964047c42">
             <DataType>Double</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="dfeed914-4bfa-4831-b8f0-6ea3b3360dad">
@@ -637,6 +654,7 @@
               <ColumnID>Yield</ColumnID>
             </Source>
           </Source>
+          <FormatString>Percent</FormatString>
         </Measure>
         <Measure dwd:design-time-name="58466006-6efc-47d9-9fcb-7548aab5772c">
           <ID>Dividend Cents Per Share</ID>
@@ -648,6 +666,7 @@
               <ColumnID>DividendCentsPerShare</ColumnID>
             </Source>
           </Source>
+          <FormatString>0</FormatString>
         </Measure>
         <Measure dwd:design-time-name="9cee9c1d-1681-4343-957b-6f2df54886ec">
           <ID>Earnings Cents Per Share</ID>
@@ -659,10 +678,12 @@
               <ColumnID>EarningsCentsPerShare</ColumnID>
             </Source>
           </Source>
+          <FormatString>0</FormatString>
         </Measure>
         <Measure dwd:design-time-name="cf68bc29-7c37-42c0-9a4d-88c302851cc1">
           <ID>PE Ratio</ID>
           <Name>PE Ratio</Name>
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
           <Source dwd:design-time-name="4daa94e2-c291-412a-937d-555d98baa35d">
             <DataType>Double</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="6a5854fb-ff66-405b-bca2-9f4eff000e39">
@@ -670,6 +691,7 @@
               <ColumnID>PE_Ratio</ColumnID>
             </Source>
           </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="97ab5193-367e-4322-be4d-18804394b8f8">
           <ID>Issued Capital</ID>
@@ -681,6 +703,7 @@
               <ColumnID>IssuedCapital</ColumnID>
             </Source>
           </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="39f00df3-697f-4a19-ae42-0d24a82086a0">
           <ID>Gross Short Sales</ID>
@@ -692,6 +715,7 @@
               <ColumnID>GrossShortSales</ColumnID>
             </Source>
           </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="b8fdf354-00d2-4235-8ec0-316d6af8ea38">
           <ID>90 Day SMA</ID>
@@ -703,6 +727,7 @@
               <ColumnID>_x0039_0Day_SMA</ColumnID>
             </Source>
           </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="9dca68b0-6032-48b7-bcfb-82cf0c433594">
           <ID>90 Day Average Daily Return</ID>
@@ -714,6 +739,7 @@
               <ColumnID>_x0039_0Day_AverageDailyReturn</ColumnID>
             </Source>
           </Source>
+          <FormatString>Percent</FormatString>
         </Measure>
         <Measure dwd:design-time-name="af1fe5d4-d5f2-4318-bfb6-a9eab3875765">
           <ID>90 Day Volatility</ID>
@@ -725,6 +751,7 @@
               <ColumnID>_x0039_0Day_Volatility</ColumnID>
             </Source>
           </Source>
+          <FormatString>Percent</FormatString>
         </Measure>
         <Measure dwd:design-time-name="5dd31f9c-83d9-4b71-aef4-374f460a0bc2">
           <ID>Price Vs 90 Day SMA</ID>
@@ -736,6 +763,7 @@
               <ColumnID>Price_vs_90Day_SMA</ColumnID>
             </Source>
           </Source>
+          <FormatString>Percent</FormatString>
         </Measure>
         <Measure dwd:design-time-name="7a467f42-1c88-4b5a-93c6-c2623f42b9ff">
           <ID>Daily Price Change</ID>
@@ -747,6 +775,7 @@
               <ColumnID>Daily_PriceChange</ColumnID>
             </Source>
           </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="301ac0fb-c613-4aaf-9580-69ec81bc9dfc">
           <ID>MTD Price Change</ID>
@@ -758,6 +787,7 @@
               <ColumnID>MTD_PriceChange</ColumnID>
             </Source>
           </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="66ec12c2-7ad2-441e-bb87-06f94fd837b9">
           <ID>YTD Price Change</ID>
@@ -769,6 +799,7 @@
               <ColumnID>YTD_PriceChange</ColumnID>
             </Source>
           </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="b2334569-f507-4f42-8a56-c1a04d06ac42">
           <ID>Equities Count</ID>
@@ -784,6 +815,7 @@
         </Measure>
       </Measures>
       <StorageMode>Molap</StorageMode>
+      <EstimatedRows>208</EstimatedRows>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
         <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="76dca8ab-393b-42b4-b8e4-f7d2a0c7e1b7">

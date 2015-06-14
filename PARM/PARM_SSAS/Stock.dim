@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4425" scrolltop="-9155" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12012" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4425" scrolltop="-9155" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11800" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Stock" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3122" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Stock" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3122" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000320c0000a50a0000" />
             </control>
@@ -65,6 +65,39 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
       <Value>100</Value>
     </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="119">
+            <Shape Id="Stock SK" Expanded="false">
+              <Attributes>
+                <Attribute Id="Stock SK" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Industry Group" Expanded="false">
+              <Attributes>
+                <Attribute Id="Industry Group" />
+              </Attributes>
+              <Position x="173" y="20" />
+            </Shape>
+            <Shape Id="Stock Code" Expanded="false">
+              <Attributes>
+                <Attribute Id="Stock Code" />
+              </Attributes>
+              <Position x="327" y="20" />
+            </Shape>
+            <Shape Id="Company Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Company Name" />
+              </Attributes>
+              <Position x="481" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
@@ -82,6 +115,7 @@
       <ID>Stock SK</ID>
       <Name>Stock SK</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>2177</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="98354612-8c4c-47a5-b1ed-671377a50ed4">
           <DataType>Integer</DataType>
@@ -92,26 +126,21 @@
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="332ff2f7-7f0b-40f6-96fe-4b4359dfd3ae">
+        <AttributeRelationship dwd:design-time-name="bb2e8c6a-c939-4f14-9876-29836f60404a">
           <AttributeID>Industry Group</AttributeID>
           <Name>Industry Group</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c9ab3e32-47d0-4845-b86e-6570fd158839">
-          <AttributeID>Company Name</AttributeID>
-          <Name>Company Name</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6519c102-671a-421b-9291-945ec89e6225">
-          <AttributeID>Stock Code</AttributeID>
-          <Name>Stock Code</Name>
+          <Visible>false</Visible>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
     <Attribute dwd:design-time-name="4dd14ebc-1ff6-4f49-b2c0-95e5a363020b">
       <ID>Industry Group</ID>
       <Name>Industry Group</Name>
+      <EstimatedCount>26</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="0a7837bc-2ad8-479f-9f6d-f1316bca1052">
           <DataType>WChar</DataType>
@@ -122,12 +151,27 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="26bdd0b7-ca53-49d3-b86e-3e5260c23e6d">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2919a1a1-b48c-4c6f-a150-da07f4041c19">
+          <TableID>Dimension_Stock</TableID>
+          <ColumnID>IndustryGroup</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f4bdaaaf-592f-4d56-8507-afab8166d42e">
+          <AttributeID>Stock Code</AttributeID>
+          <Name>Stock Code</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
     <Attribute dwd:design-time-name="c5b1be5f-9446-4a27-a156-da4d775c11ac">
       <ID>Company Name</ID>
       <Name>Company Name</Name>
+      <EstimatedCount>2177</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="5c9a3a19-faec-4773-8ba7-f3b30b5adedb">
           <DataType>WChar</DataType>
@@ -144,6 +188,7 @@
     <Attribute dwd:design-time-name="26f2be1b-3557-4818-83e5-40386da5ca5e">
       <ID>Stock Code</ID>
       <Name>Stock Code</Name>
+      <EstimatedCount>2177</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="08321548-0c1a-48a3-bc50-4af3a86d0689">
           <DataType>WChar</DataType>
@@ -154,6 +199,13 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1b2f94a8-89f2-499c-963e-118fb0ee2c78">
+          <AttributeID>Company Name</AttributeID>
+          <Cardinality>One</Cardinality>
+          <Name>Company Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>

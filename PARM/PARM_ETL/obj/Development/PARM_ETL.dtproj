@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">NVRMND-LAPTOP</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPfxDUTRQcUizfQvz4pUkSwAAAAACAAAAAAAQZgAAAAEAACAAAAB25WU5ZZe9TQsgap7TFG9ERgmHp0ptsAXGWKBaqu3fZAAAAAAOgAAAAAIAACAAAADEzpny41wCjYtbGZ6AuvH9cfb9VuxXioMCcj9fyBjr7JAAAAAoeBJ7noE3bA4aP1z7Tiu5ViiXckwiRw7NYUEHw83EwFQpRm1R67P8c5vG+npwuZz0xS6nqWROhMgIfwXeekR0e8RhfmpkLJBGxIR6dkgUgzJzclOEu5vGMbDxZSTBuTxVylHQZZn0zpecMR3swhn8vkDMC/pJ0XS6nOhqioKhRr1feU0DztzOBtguhJbdrUtAAAAA00TShM0EYV7XWXsa6NCkOVHyqNXS8WzMx8TIHO1AE7ylXyVAsEBZfL1WtJqXxaEO3uRNxRmo5MofFIHE/85X6w==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPfxDUTRQcUizfQvz4pUkSwAAAAACAAAAAAAQZgAAAAEAACAAAAAHz4UkjLfe68iLTgb/yS7bMJxz1ThFdFOA4C7eG+8+dAAAAAAOgAAAAAIAACAAAAATYwI+BqTWmskBZBW6+Ds4cxdGY0dE1O5ddnP6mXJ8qJAAAAAw6A0rmNhZR5w4QoOCWmZB3x2H0M7oQjVurhp5sLt44SzWAXsCmDYp1ZpB9u6VtIFlyeXuZb5aAuaUWcdcLJwZIq0diUVp2ojo88z/P42yFfZ/XEOitEY6HDahIMNVOhzmgn9Bdp30YQsVgTti7hqYSJEcX9Xq1xzKpp9MxM0gaRvaGPkDKfTDCovwGqFm8DBAAAAA9kuJY6SQdomszvQo9lQ3/lbOyjp+7TGGqZuZJC26QGiLdKZTqNsrNWnVgr6qXpBnwFZUAsrhjAI9DL1dnOH2JQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -39,6 +39,7 @@
           <SSIS:Package SSIS:Name="Acquisition_AFR_Indices_Weekly.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Acquisition_AFR_Intl_Indices_Weekly.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Acquisition_AFR_InterestRateSecurities_Weekly.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Historical_Load_AFR_ShortSales_Daily.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="PARM_Control.conmgr" />
@@ -1137,6 +1138,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1503,8 +1506,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1719,6 +1720,39 @@
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+              </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="Historical_Load_AFR_ShortSales_Daily.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{3D88C655-DA4E-437F-8E40-B1EE320643F1}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Historical_Load_AFR_ShortSales_Daily</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">13</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{A26CA281-012A-4F1B-9A7A-B5B7C6E495EA}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="CM.Acquisition_AFR_Daily.dtsx.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_ETL\Acquisition_AFR_ShortSales_Daily.dtsx</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
               </SSIS:Parameters>

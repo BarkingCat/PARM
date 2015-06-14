@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4386" scrolltop="-8943" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12012" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4386" scrolltop="-8943" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6853" y="37518" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Market" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3201" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Market" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3201" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000810c00004d0c0000" />
             </control>
@@ -97,6 +97,7 @@
       <ID>Market SK</ID>
       <Name>Market SK</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>1</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="241262ae-50b6-4f12-9a2b-806a2df3adf3">
           <DataType>Integer</DataType>
@@ -131,6 +132,7 @@
     <Attribute dwd:design-time-name="2e0d0d80-205f-452c-b70d-af8a9e9fc4b9">
       <ID>Market Name</ID>
       <Name>Market Name</Name>
+      <EstimatedCount>1</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="7dedd27b-42a5-4a40-9a57-fa22036c6395">
           <DataType>WChar</DataType>
@@ -147,6 +149,7 @@
     <Attribute dwd:design-time-name="37e6a02f-1312-44f1-a275-e65aa759e129">
       <ID>Market Country</ID>
       <Name>Market Country</Name>
+      <EstimatedCount>1</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="afffa5b3-9419-41bb-b766-0a617a129a20">
           <DataType>WChar</DataType>
@@ -163,6 +166,7 @@
     <Attribute dwd:design-time-name="c3ddf41f-0c9f-4b07-afdc-d9e5503dd1ec">
       <ID>Market Type</ID>
       <Name>Market Type</Name>
+      <EstimatedCount>1</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="75033e1b-7d64-4024-aa19-6ee25ab87e63">
           <DataType>WChar</DataType>
@@ -179,6 +183,7 @@
     <Attribute dwd:design-time-name="0eb87930-2418-4927-9866-77515919ee59">
       <ID>Market Currency</ID>
       <Name>Market Currency</Name>
+      <EstimatedCount>1</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="7a10416a-a79d-4d1e-92c7-c478091def3a">
           <DataType>WChar</DataType>

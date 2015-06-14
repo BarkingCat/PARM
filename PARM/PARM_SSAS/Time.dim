@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4486" scrolltop="-9155" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14605" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4486" scrolltop="-9155" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11800" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -100,7 +100,7 @@
   </Source>
   <ErrorConfiguration dwd:design-time-name="9537479b-779a-4019-a689-28b53377d5d6">
     <KeyNotFound>ReportAndStop</KeyNotFound>
-    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <KeyDuplicate>ReportAndContinue</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
@@ -109,6 +109,7 @@
       <ID>Time SK</ID>
       <Name>Time SK</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>1</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="2237cfe5-0dee-45db-b61c-db5323aa5905">
           <DataType>Integer</DataType>
@@ -121,6 +122,7 @@
       <AttributeRelationships>
         <AttributeRelationship dwd:design-time-name="ac62d84e-6935-4807-89fa-2f199e42ed85">
           <AttributeID>Hour</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
           <Name>Hour</Name>
         </AttributeRelationship>
       </AttributeRelationships>
@@ -131,19 +133,34 @@
     <Attribute dwd:design-time-name="0fbe4152-f9c4-4a4e-b011-1b673e498b07">
       <ID>Hour</ID>
       <Name>Hour</Name>
-      <Type>Hours</Type>
+      <EstimatedCount>1</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="095f6d78-396c-4a0f-8131-0f0b6fc9fdbf">
+        <KeyColumn dwd:design-time-name="a95b5c45-dc2f-4f72-bfd5-70d7043b62ed">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0582454c-78f3-48bb-8024-72e8f2b2ed9b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9175ffdb-63ae-48c2-bde8-68adca118e47">
             <TableID>Dimension_Time</TableID>
             <ColumnID>Hour</ColumnID>
           </Source>
         </KeyColumn>
+        <KeyColumn dwd:design-time-name="3312a86c-ad3c-4e7e-bb7d-3bda85aa1e61">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6536ff1c-a697-4ce7-bf70-2e6c52f6fcc3">
+            <TableID>Dimension_Time</TableID>
+            <ColumnID>Minute</ColumnID>
+          </Source>
+        </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="7277ee6e-8e05-4a9a-a5d4-eb788d5ccf5e">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4a54c16f-f08b-46cb-8f9f-682fd7305ea0">
+          <TableID>Dimension_Time</TableID>
+          <ColumnID>Hour</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
         <AttributeRelationship dwd:design-time-name="7a23d767-4634-42e9-b08b-a7516dcf6808">
           <AttributeID>Minute</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
           <Name>Minute</Name>
         </AttributeRelationship>
       </AttributeRelationships>
@@ -153,16 +170,30 @@
     <Attribute dwd:design-time-name="9bfa2045-7dc6-4604-8d96-9960a6728c64">
       <ID>Minute</ID>
       <Name>Minute</Name>
-      <Type>Minutes</Type>
+      <EstimatedCount>1</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b4cbe967-7f3a-46cd-bca7-f192aa3feaeb">
+        <KeyColumn dwd:design-time-name="814fb8bd-2136-4f81-a8bb-39b7d17d8dd3">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a40268b-6a1a-4997-af66-7da4d9611cba">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8308253b-23e9-4b34-8fee-ca6545534239">
+            <TableID>Dimension_Time</TableID>
+            <ColumnID>Hour</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f71e2609-0d72-4334-9d3d-398b2c5c7a90">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7c448047-cc21-4d5d-b928-ebc6b1692836">
             <TableID>Dimension_Time</TableID>
             <ColumnID>Minute</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="64b4d152-b797-4fcc-bf17-2e1cd8200dfd">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0975e2ea-745a-4a07-b5b0-a5035a683518">
+          <TableID>Dimension_Time</TableID>
+          <ColumnID>Minute</ColumnID>
+        </Source>
+      </NameColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>

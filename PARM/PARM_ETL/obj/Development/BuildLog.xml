@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>PARM_ETL</Name>
-    <LastWriteTime>2015-06-08T12:45:42.519998Z</LastWriteTime>
+    <LastWriteTime>2015-06-13T09:14:19.9361638Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -33,7 +33,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Acquisition_AFR_ShortSales_Daily.dtsx</Name>
-      <LastWriteTime>2015-05-18T13:04:04.1750995Z</LastWriteTime>
+      <LastWriteTime>2015-06-13T09:23:59.9257422Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -49,6 +49,11 @@
     <ProjectBuildItemInfo>
       <Name>Acquisition_AFR_InterestRateSecurities_Weekly.dtsx</Name>
       <LastWriteTime>2015-06-08T12:34:58.1951447Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Historical_Load_AFR_ShortSales_Daily.dtsx</Name>
+      <LastWriteTime>2015-06-13T09:24:02.2657463Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
