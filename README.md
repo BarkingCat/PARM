@@ -29,4 +29,4 @@ This repo uses the following software:
 * Writing Unit Tests - TBA
 * Branching - Master is for production code only, use branches for new contributions
 * Merging - TBA
-*Documentation - Please read the [Wiki](https://github.com/nvrmnd85/PARM/wiki)
+* Documentation - Please read the [Wiki](https://github.com/nvrmnd85/PARM/wiki)
