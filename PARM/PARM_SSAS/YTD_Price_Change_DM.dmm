@@ -1,0 +1,193 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="daf2fb3e-2636-4b93-a1c3-aecf63e27b65" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>YTD_Price_Change_DM</ID>
+  <Name>YTD_Price_Change_DM</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>MDXFilterComponent</Name>
+      <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition" /&gt;&lt;/Filter&gt;</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="6fe57eca-19d0-48e9-8316-2eb42ab235ba">
+    <DataSourceID>.</DataSourceID>
+    <CubeID>Equities</CubeID>
+    <CubeDimensionID>Stock</CubeDimensionID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="77ccd257-239a-4bf7-b58e-681541e006c7">
+      <ID>Stock Code</ID>
+      <Name>Stock Code</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="d39c4673-d264-491f-988e-073b1b604bdc">
+        <CubeID>Equities</CubeID>
+        <CubeDimensionID>Stock</CubeDimensionID>
+        <AttributeID>Stock Code</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Key</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e2393d97-6510-4dec-99a5-26e05ec0a308">
+      <ID>Bid Ask Spread</ID>
+      <Name>Bid Ask Spread</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="85dae1b7-c193-4103-b389-4274398b189e">
+        <MeasureID>Bid Ask Spread</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e5f8a9bd-1a1e-43cc-a118-635468816a68">
+      <ID>Gross Short Sales</ID>
+      <Name>Gross Short Sales</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="ac1ae3b7-f667-4a86-9f7c-d21dd896da54">
+        <MeasureID>Gross Short Sales</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="43555f5b-b2f9-4f8b-a775-6b1cad04f7ef">
+      <ID>PE Ratio</ID>
+      <Name>PE Ratio</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="eecb0629-785a-4819-975a-7346c09e49c1">
+        <MeasureID>PE Ratio</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1d3a2b89-5fa0-4dff-a004-3bdf8ef3ef50">
+      <ID>Volume</ID>
+      <Name>Volume</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="cfae89c2-9302-4f9c-92d1-032ba91f6ba1">
+        <MeasureID>Volume</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0306f28d-1eee-4204-9735-f3d11357b290">
+      <ID>Yield</ID>
+      <Name>Yield</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="360421dd-f345-4c70-b754-46c260be4a54">
+        <MeasureID>Yield</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ee435089-f05d-4897-a163-cd8ff1949972">
+      <ID>YTD Price Change</ID>
+      <Name>YTD Price Change</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="cc705e97-f6f8-45f1-a01c-3375b7a6ea17">
+        <MeasureID>YTD Price Change</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="80b47327-d80d-44a4-85bb-0f25b66097ef">
+      <ID>Stock</ID>
+      <Name>Stock</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Time_Series</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="fb49ffc5-b18e-4a7e-b257-2b655f2f76a4">
+          <ID>Stock Code</ID>
+          <Name>Stock Code</Name>
+          <SourceColumnID>Stock Code</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="42ac4939-47ef-4d87-a9d2-cc16c481a26c">
+          <ID>Bid Ask Spread</ID>
+          <Name>Bid Ask Spread</Name>
+          <SourceColumnID>Bid Ask Spread</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="1f720881-584f-490d-94d1-39b85a096511">
+          <ID>Gross Short Sales</ID>
+          <Name>Gross Short Sales</Name>
+          <SourceColumnID>Gross Short Sales</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="4398a3e3-0f18-43f0-9724-afde8d4b776e">
+          <ID>PE Ratio</ID>
+          <Name>PE Ratio</Name>
+          <SourceColumnID>PE Ratio</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="b17c9690-7fba-4ee9-b27f-64d19684abb8">
+          <ID>Volume</ID>
+          <Name>Volume</Name>
+          <SourceColumnID>Volume</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="7f44b959-6492-4562-9381-d44e845c8883">
+          <ID>Yield</ID>
+          <Name>Yield</Name>
+          <SourceColumnID>Yield</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="f6c5ba19-7fe8-450b-b72f-b4e698d897ec">
+          <ID>YTD Price Change</ID>
+          <Name>YTD Price Change</Name>
+          <SourceColumnID>YTD Price Change</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+      </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

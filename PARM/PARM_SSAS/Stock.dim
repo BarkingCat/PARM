@@ -76,21 +76,21 @@
               </Attributes>
               <Position x="20" y="20" />
             </Shape>
-            <Shape Id="Industry Group" Expanded="false">
-              <Attributes>
-                <Attribute Id="Industry Group" />
-              </Attributes>
-              <Position x="173" y="20" />
-            </Shape>
             <Shape Id="Stock Code" Expanded="false">
               <Attributes>
                 <Attribute Id="Stock Code" />
               </Attributes>
-              <Position x="327" y="20" />
+              <Position x="173" y="20" />
             </Shape>
             <Shape Id="Company Name" Expanded="false">
               <Attributes>
                 <Attribute Id="Company Name" />
+              </Attributes>
+              <Position x="327" y="20" />
+            </Shape>
+            <Shape Id="Industry Group" Expanded="false">
+              <Attributes>
+                <Attribute Id="Industry Group" />
               </Attributes>
               <Position x="481" y="20" />
             </Shape>
@@ -126,10 +126,10 @@
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="bb2e8c6a-c939-4f14-9876-29836f60404a">
-          <AttributeID>Industry Group</AttributeID>
-          <Name>Industry Group</Name>
-          <Visible>false</Visible>
+        <AttributeRelationship dwd:design-time-name="c80eb31a-6bf8-4f0d-8dc7-e8e996db634e">
+          <AttributeID>Stock Code</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Stock Code</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -159,12 +159,6 @@
           <ColumnID>IndustryGroup</ColumnID>
         </Source>
       </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="f4bdaaaf-592f-4d56-8507-afab8166d42e">
-          <AttributeID>Stock Code</AttributeID>
-          <Name>Stock Code</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -182,6 +176,12 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7a4c0c59-a63e-464a-99df-354880c7a2dc">
+          <AttributeID>Industry Group</AttributeID>
+          <Name>Industry Group</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -202,6 +202,7 @@
       <AttributeRelationships>
         <AttributeRelationship dwd:design-time-name="1b2f94a8-89f2-499c-963e-118fb0ee2c78">
           <AttributeID>Company Name</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
           <Cardinality>One</Cardinality>
           <Name>Company Name</Name>
         </AttributeRelationship>
@@ -211,29 +212,24 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="56ff3464-52bc-48cc-a471-d22ec47396c6">
+    <Hierarchy dwd:design-time-name="a87c546d-bc03-4bbe-929c-90d11c84625a">
       <ID>Hierarchy</ID>
       <Name>Hierarchy</Name>
       <Levels>
-        <Level dwd:design-time-name="bdda018c-c7ea-462a-b7bc-759a00d59581">
-          <ID>Stock SK</ID>
-          <Name>Stock SK</Name>
-          <SourceAttributeID>Stock SK</SourceAttributeID>
-        </Level>
-        <Level dwd:design-time-name="4cae7b7a-7385-4928-8a9d-5288b06e1c0a">
+        <Level dwd:design-time-name="c6d53474-644c-40c1-a3a6-cc23c86ccf6c">
           <ID>Industry Group</ID>
           <Name>Industry Group</Name>
           <SourceAttributeID>Industry Group</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="70fa1f50-c548-413e-b944-01a3275ff509">
-          <ID>Stock Code</ID>
-          <Name>Stock Code</Name>
-          <SourceAttributeID>Stock Code</SourceAttributeID>
-        </Level>
-        <Level dwd:design-time-name="91954478-b7ba-4e69-8a28-0ef2b6174e94">
+        <Level dwd:design-time-name="b2203b61-3dc8-4e35-966d-7648f78f5ba4">
           <ID>Company Name</ID>
           <Name>Company Name</Name>
           <SourceAttributeID>Company Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5821f4b2-091b-4491-ab6e-bb4c25269caa">
+          <ID>Stock Code</ID>
+          <Name>Stock Code</Name>
+          <SourceAttributeID>Stock Code</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>

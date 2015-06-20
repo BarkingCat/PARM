@@ -76,15 +76,15 @@
               </Attributes>
               <Position x="20" y="20" />
             </Shape>
-            <Shape Id="Hour" Expanded="false">
-              <Attributes>
-                <Attribute Id="Hour" />
-              </Attributes>
-              <Position x="120" y="20" />
-            </Shape>
             <Shape Id="Minute" Expanded="false">
               <Attributes>
                 <Attribute Id="Minute" />
+              </Attributes>
+              <Position x="120" y="20" />
+            </Shape>
+            <Shape Id="Hour" Expanded="false">
+              <Attributes>
+                <Attribute Id="Hour" />
               </Attributes>
               <Position x="220" y="20" />
             </Shape>
@@ -120,10 +120,10 @@
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="ac62d84e-6935-4807-89fa-2f199e42ed85">
-          <AttributeID>Hour</AttributeID>
+        <AttributeRelationship dwd:design-time-name="7d0e82b4-7f54-40f4-85ac-d0bc286f49dd">
+          <AttributeID>Minute</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
-          <Name>Hour</Name>
+          <Name>Minute</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -157,13 +157,6 @@
           <ColumnID>Hour</ColumnID>
         </Source>
       </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="7a23d767-4634-42e9-b08b-a7516dcf6808">
-          <AttributeID>Minute</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Minute</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -194,27 +187,28 @@
           <ColumnID>Minute</ColumnID>
         </Source>
       </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b267a651-a3da-4c3c-b0a9-31e38372ab83">
+          <AttributeID>Hour</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Hour</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="e913811d-1ae8-4bef-b722-f75d9156e50a">
+    <Hierarchy dwd:design-time-name="5e7e089f-0075-426f-b722-b2967a860f0a">
       <ID>Hierarchy</ID>
       <Name>Hierarchy</Name>
-      <ddl2:MemberKeysUnique valuens="ddl2_2">Unique</ddl2:MemberKeysUnique>
       <Levels>
-        <Level dwd:design-time-name="cfed401b-25fb-4f05-b286-aadbf45db441">
-          <ID>Time SK</ID>
-          <Name>Time SK</Name>
-          <SourceAttributeID>Time SK</SourceAttributeID>
-        </Level>
-        <Level dwd:design-time-name="2b19ca83-2a67-4b39-bde3-62d99069db95">
+        <Level dwd:design-time-name="ec5247f4-939d-4572-83a3-0e54019b119d">
           <ID>Hour</ID>
           <Name>Hour</Name>
           <SourceAttributeID>Hour</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="fd506104-d53e-4109-8851-6e69c52ba43b">
+        <Level dwd:design-time-name="20e18dcc-fd1e-40fa-bffb-ee860af4d4f2">
           <ID>Minute</ID>
           <Name>Minute</Name>
           <SourceAttributeID>Minute</SourceAttributeID>

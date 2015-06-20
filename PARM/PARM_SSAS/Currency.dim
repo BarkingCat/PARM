@@ -65,6 +65,45 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
       <Value>100</Value>
     </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="141">
+            <Shape Id="Currency SK" Expanded="true">
+              <Attributes>
+                <Attribute Id="Currency SK" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Currency Code" Expanded="true">
+              <Attributes>
+                <Attribute Id="Currency Code" />
+              </Attributes>
+              <Position x="201" y="20" />
+            </Shape>
+            <Shape Id="Currency Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Currency Name" />
+              </Attributes>
+              <Position x="382" y="20" />
+            </Shape>
+            <Shape Id="Currency Country" Expanded="false">
+              <Attributes>
+                <Attribute Id="Currency Country" />
+              </Attributes>
+              <Position x="563" y="20" />
+            </Shape>
+            <Shape Id="Central Bank" Expanded="false">
+              <Attributes>
+                <Attribute Id="Central Bank" />
+              </Attributes>
+              <Position x="745" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
@@ -93,21 +132,10 @@
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="67a08e0a-5409-465a-8911-bc917bb6016e">
+        <AttributeRelationship dwd:design-time-name="2d76c633-3536-4f6d-bdc3-0124a83580e0">
           <AttributeID>Currency Code</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
           <Name>Currency Code</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="79a02f91-0c03-4d2f-9344-e29e0a09031b">
-          <AttributeID>Currency Name</AttributeID>
-          <Name>Currency Name</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ef9dd420-0c0e-4844-9dc5-3d20d1638c5e">
-          <AttributeID>Currency Country</AttributeID>
-          <Name>Currency Country</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="1225f4f0-659d-4672-8992-02a5c1a67107">
-          <AttributeID>Central Bank</AttributeID>
-          <Name>Central Bank</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -128,6 +156,13 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7170a0d3-712e-451f-93fb-9e61d06db5c6">
+          <AttributeID>Currency Name</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Currency Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -145,6 +180,13 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d6bc8a53-d642-4603-98f7-2ee46893dcf4">
+          <AttributeID>Currency Country</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Currency Country</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -162,6 +204,13 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a5e5e551-5c84-46c5-8eca-bc5319f5339b">
+          <AttributeID>Central Bank</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Central Bank</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -184,16 +233,16 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="0c66d441-13d9-4a8f-8336-908f159510c0">
+    <Hierarchy dwd:design-time-name="67670ef1-662c-4c23-80ba-1588036755db">
       <ID>Hierarchy</ID>
       <Name>Hierarchy</Name>
       <Levels>
-        <Level dwd:design-time-name="6ea69471-65c9-4f1b-b0d8-0824e5c99eda">
-          <ID>Currency SK</ID>
-          <Name>Currency SK</Name>
-          <SourceAttributeID>Currency SK</SourceAttributeID>
+        <Level dwd:design-time-name="236e2b2d-4670-4760-b7f0-2c7ca3c441bc">
+          <ID>Currency Name</ID>
+          <Name>Currency Name</Name>
+          <SourceAttributeID>Currency Name</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="252f64c5-e78b-4f35-ac00-865c2615d91d">
+        <Level dwd:design-time-name="f878708a-55a8-4843-89b8-f65a2b02aeef">
           <ID>Currency Code</ID>
           <Name>Currency Code</Name>
           <SourceAttributeID>Currency Code</SourceAttributeID>

@@ -68,57 +68,67 @@
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
       <Value>
-        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+        <DiagramLayout ZoomPercent="100" ViewPortX="4" ViewPortY="0" xmlns="">
           <Shapes NodeWidth="133">
             <Shape Id="Date SK" Expanded="true">
               <Attributes>
                 <Attribute Id="Date SK" />
-                <Attribute Id="Date" />
-                <Attribute Id="Date Text" />
               </Attributes>
               <Position x="20" y="20" />
             </Shape>
-            <Shape Id="Week Of Year" Expanded="false">
+            <Shape Id="Date" Expanded="false">
               <Attributes>
-                <Attribute Id="Week Of Year" />
+                <Attribute Id="Date" />
               </Attributes>
               <Position x="191" y="20" />
             </Shape>
-            <Shape Id="Financial Year" Expanded="false">
+            <Shape Id="Date Text" Expanded="false">
               <Attributes>
-                <Attribute Id="Financial Year" />
+                <Attribute Id="Date Text" />
               </Attributes>
-              <Position x="191" y="68" />
-            </Shape>
-            <Shape Id="Year" Expanded="false">
-              <Attributes>
-                <Attribute Id="Year" />
-              </Attributes>
-              <Position x="362" y="68" />
-            </Shape>
-            <Shape Id="Quarter" Expanded="true">
-              <Attributes>
-                <Attribute Id="Quarter" />
-              </Attributes>
-              <Position x="533" y="68" />
-            </Shape>
-            <Shape Id="Month" Expanded="true">
-              <Attributes>
-                <Attribute Id="Month" />
-              </Attributes>
-              <Position x="705" y="68" />
-            </Shape>
-            <Shape Id="Day" Expanded="false">
-              <Attributes>
-                <Attribute Id="Day" />
-              </Attributes>
-              <Position x="876" y="68" />
+              <Position x="362" y="20" />
             </Shape>
             <Shape Id="Day Of Week" Expanded="false">
               <Attributes>
                 <Attribute Id="Day Of Week" />
               </Attributes>
-              <Position x="1047" y="68" />
+              <Position x="533" y="20" />
+            </Shape>
+            <Shape Id="Day" Expanded="false">
+              <Attributes>
+                <Attribute Id="Day" />
+              </Attributes>
+              <Position x="705" y="20" />
+            </Shape>
+            <Shape Id="Week Of Year" Expanded="false">
+              <Attributes>
+                <Attribute Id="Week Of Year" />
+              </Attributes>
+              <Position x="876" y="20" />
+            </Shape>
+            <Shape Id="Month" Expanded="true">
+              <Attributes>
+                <Attribute Id="Month" />
+              </Attributes>
+              <Position x="1047" y="20" />
+            </Shape>
+            <Shape Id="Quarter" Expanded="true">
+              <Attributes>
+                <Attribute Id="Quarter" />
+              </Attributes>
+              <Position x="1218" y="20" />
+            </Shape>
+            <Shape Id="Financial Year" Expanded="false">
+              <Attributes>
+                <Attribute Id="Financial Year" />
+              </Attributes>
+              <Position x="1390" y="20" />
+            </Shape>
+            <Shape Id="Year" Expanded="false">
+              <Attributes>
+                <Attribute Id="Year" />
+              </Attributes>
+              <Position x="1561" y="20" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -152,21 +162,10 @@
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="69858506-9694-43ab-96be-3bd104408787">
+        <AttributeRelationship dwd:design-time-name="55dbc16c-8ba1-4116-902b-8bd2e88bc352">
           <AttributeID>Date</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
           <Name>Date</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d1d46903-5bb6-4fbd-8f38-d8f167ba718c">
-          <AttributeID>Date Text</AttributeID>
-          <Name>Date Text</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="856950b4-4923-4e94-b085-442645d7e3a8">
-          <AttributeID>Financial Year</AttributeID>
-          <Name>Financial Year</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="1baade12-18f0-4eb8-ba30-c65476dac158">
-          <AttributeID>Week Of Year</AttributeID>
-          <Name>Week Of Year</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -186,6 +185,27 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="39b72147-49db-4ee6-8ff0-849635979e33">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="750bf887-4ca9-49de-a4a3-2b11813b3b27">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>Date</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1cfcd6c1-4c12-433f-8cfd-0bcf9d89527f">
+          <AttributeID>Date Text</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Date Text</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ValueColumn dwd:design-time-name="03d8ef1e-d731-437e-9ffe-c3db51be32d5">
+        <DataType>Date</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d2bb6bac-5732-4743-a41d-dd78c8c8ed0d">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>Date</ColumnID>
+        </Source>
+      </ValueColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -203,6 +223,29 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="42432a74-b2bc-49ca-bb2c-5aa319811d52">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="84dbc121-6fe7-4ff0-8937-a60f114f6ee2">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>DateText</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="970550dc-63e0-434f-8d55-5eeafdabca1c">
+          <AttributeID>Day Of Week</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Day Of Week</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ValueColumn dwd:design-time-name="be8910d9-5aec-4580-af47-bbfad7045c8d">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="af9ce385-2546-4a71-ab20-14d99665f9d4">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>DateText</ColumnID>
+        </Source>
+      </ValueColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -211,20 +254,38 @@
       <Name>Financial Year</Name>
       <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6f7e2b00-d0df-4080-9395-94e2e1f6e9e2">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="82074160-d3dd-4bc8-bc38-eba0a53985f1">
+        <KeyColumn dwd:design-time-name="9291509f-754c-48d1-b997-d3a63f9502b7">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a0fe55a-d5b3-4ed8-bdad-f20f50ff908f">
             <TableID>Dimension_Date</TableID>
-            <ColumnID>DateSK</ColumnID>
+            <ColumnID>FinancialYear</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="078febfe-40ad-4147-940c-eab08268588b">
+        <DataType>WChar</DataType>
+        <DataSize>4</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8832973c-0545-4543-bff1-85e18c3a44fc">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>FinancialYear</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="dc590b56-8325-41cd-a585-858be66de389">
+        <AttributeRelationship dwd:design-time-name="db4e08d5-0fe9-48f4-965f-009b73e5b4c6">
           <AttributeID>Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
           <Name>Year</Name>
         </AttributeRelationship>
       </AttributeRelationships>
+      <ValueColumn dwd:design-time-name="e97b9e2f-5757-44d8-9c26-3c76691eb4d4">
+        <DataType>WChar</DataType>
+        <DataSize>4</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fa5ebcf2-dafe-4339-8189-dc63369ffbd3">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>FinancialYear</ColumnID>
+        </Source>
+      </ValueColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -233,14 +294,35 @@
       <Name>Week Of Year</Name>
       <EstimatedCount>54</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0e7cf3a8-a53e-4b78-a8e4-c9e18085a248">
+        <KeyColumn dwd:design-time-name="ee7a307d-e35b-4727-ac37-b9ced924c613">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b5a3d727-4d92-45c7-9587-b6feb670cc55">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e79929ce-d289-4a02-bf83-81adf7b84fef">
             <TableID>Dimension_Date</TableID>
-            <ColumnID>DateSK</ColumnID>
+            <ColumnID>WeekOfYear</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="eaf30586-39cc-40ff-b4f3-a8d312592d15">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="535a519f-2389-4492-83b3-46fc1929506b">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>WeekOfYear</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="cd977f5a-5efc-4b16-bd9d-28b4f89b5fab">
+          <AttributeID>Month</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Month</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ValueColumn dwd:design-time-name="f99860fc-3a15-4bc3-8bc3-88f82164eb81">
+        <DataType>Integer</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a6562c0c-b330-408b-9efc-b7419fe7ee63">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>WeekOfYear</ColumnID>
+        </Source>
+      </ValueColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -249,20 +331,38 @@
       <Name>Quarter</Name>
       <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c1f60179-b9cc-4a3d-a95b-7b174b0ca3f2">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9c05bce4-cdf1-4d04-91c4-55f850610d1b">
+        <KeyColumn dwd:design-time-name="2911105c-9c52-402a-bbb7-3ac36c7cd8fc">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="232c20f3-5dd6-413d-82df-42808c3b8d1b">
             <TableID>Dimension_Date</TableID>
-            <ColumnID>DateSK</ColumnID>
+            <ColumnID>Quarter</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="aeda7b34-2132-4f35-9e0d-216c82e01c0e">
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f24d7676-0a89-4c10-89fe-97bb2b37fb5e">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>Quarter</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="30aa3a29-b4b5-4584-9933-fc71aad1f4b3">
-          <AttributeID>Month</AttributeID>
-          <Name>Month</Name>
+        <AttributeRelationship dwd:design-time-name="af0ed021-bf77-4891-aebd-95c2a51c5cdf">
+          <AttributeID>Financial Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Financial Year</Name>
         </AttributeRelationship>
       </AttributeRelationships>
+      <ValueColumn dwd:design-time-name="6ff2da6d-3c40-4aef-81b3-3f3163c5867b">
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="caa41912-19de-480b-aeba-90d29d036ea1">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>Quarter</ColumnID>
+        </Source>
+      </ValueColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -271,20 +371,28 @@
       <Name>Year</Name>
       <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="be0a867b-a360-409e-8249-2cd982b76dee">
+        <KeyColumn dwd:design-time-name="d9c56de1-1a45-4014-92a7-3fc1d6483d01">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f5155ae-de10-4f94-8143-f0436adb7233">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a1a7c165-605f-4979-99d5-076f9f3710cc">
             <TableID>Dimension_Date</TableID>
-            <ColumnID>DateSK</ColumnID>
+            <ColumnID>Year</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="4caac32a-52fa-4465-9b1e-6e23dd062f34">
-          <AttributeID>Quarter</AttributeID>
-          <Name>Quarter</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
+      <NameColumn dwd:design-time-name="022f62e5-e8e3-4b7c-bde0-1ee780fb8986">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b0becbbc-50eb-4031-8674-2d274c4a8539">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>Year</ColumnID>
+        </Source>
+      </NameColumn>
+      <ValueColumn dwd:design-time-name="3a4d0dc4-268a-4197-a852-20a3f10d190c">
+        <DataType>Integer</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f4807d23-40c7-49e2-b93d-fc095ea7d605">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>Year</ColumnID>
+        </Source>
+      </ValueColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -293,20 +401,35 @@
       <Name>Month</Name>
       <EstimatedCount>13</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5b424213-7b71-4b71-8251-11916b46affb">
+        <KeyColumn dwd:design-time-name="71c9e68e-475d-4a46-894d-2dda487dd0f6">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d7c32be3-1190-49c6-8b20-042ad71ef0ee">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9546b5e8-ae85-4ce9-bbc0-e9b7fb0a88b9">
             <TableID>Dimension_Date</TableID>
-            <ColumnID>DateSK</ColumnID>
+            <ColumnID>Month</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="6adef7c0-94c8-454b-a05b-e3cf07695695">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3bf97f00-4894-437c-90f2-beb4de092f51">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>Month</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="df94c189-2ae2-47ea-b3af-fbdc4551225d">
-          <AttributeID>Day</AttributeID>
-          <Name>Day</Name>
+        <AttributeRelationship dwd:design-time-name="d6fdc249-3eb7-4a59-8b64-8b556f639e0c">
+          <AttributeID>Quarter</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Quarter</Name>
         </AttributeRelationship>
       </AttributeRelationships>
+      <ValueColumn dwd:design-time-name="6008dba3-76be-43f7-96ca-ca995ddc5b86">
+        <DataType>Integer</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="089ada69-0b35-43ab-bddf-b8291c15604f">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>Month</ColumnID>
+        </Source>
+      </ValueColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -315,20 +438,35 @@
       <Name>Day</Name>
       <EstimatedCount>32</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a434435a-a2ed-43a5-a844-df480de0c947">
+        <KeyColumn dwd:design-time-name="8ce034d1-73d6-41de-9537-17346adb3d43">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e7874040-4824-409d-b302-ae108df189cf">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="57151482-bed5-4329-baa7-b2a620e21e6a">
             <TableID>Dimension_Date</TableID>
-            <ColumnID>DateSK</ColumnID>
+            <ColumnID>Day</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="cfcb925e-e79b-45f9-89c0-3129e9ba7a8f">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2e808fa8-bac0-471d-a70e-2e3724a0621d">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>Day</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="14bcc1fb-9bac-4463-9ffb-6f80bc199f04">
-          <AttributeID>Day Of Week</AttributeID>
-          <Name>Day Of Week</Name>
+        <AttributeRelationship dwd:design-time-name="0677f367-0a48-4971-be09-758e8dc04475">
+          <AttributeID>Week Of Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Week Of Year</Name>
         </AttributeRelationship>
       </AttributeRelationships>
+      <ValueColumn dwd:design-time-name="09fdb5ac-97e1-451b-ae81-810875ca0697">
+        <DataType>Integer</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b952b86f-0066-487e-92f4-953f5f3489a3">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>Day</ColumnID>
+        </Source>
+      </ValueColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -337,62 +475,91 @@
       <Name>Day Of Week</Name>
       <EstimatedCount>8</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="9e778b2a-1b26-48d1-a5ba-74bba9015ed9">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="92530f1f-95da-4088-abc2-3e6dfa281719">
+        <KeyColumn dwd:design-time-name="c8b91462-142a-4a22-9b11-4c00128675a5">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fc118d88-a214-4840-bd78-9a553c496abc">
             <TableID>Dimension_Date</TableID>
-            <ColumnID>DateSK</ColumnID>
+            <ColumnID>DayOfWeek</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="45940eb2-575f-4cbe-85cc-96ae8be70079">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7b5c8891-139e-470a-8074-2a7afb036e67">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>DayOfWeek</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="31135f12-a022-4f33-ad07-5c0cb3f5ff2a">
+          <AttributeID>Day</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Day</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ValueColumn dwd:design-time-name="1e385f86-27f0-4d8f-bc57-af067999300d">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3fb871e2-66b4-4253-b705-9686ab61e726">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>DayOfWeek</ColumnID>
+        </Source>
+      </ValueColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="5d0925cc-3324-4964-ab1d-7ee05c8bcc8c">
-      <ID>Hierarchy</ID>
+    <Hierarchy dwd:design-time-name="40343e8c-0e49-4136-8788-a79c19dfd990">
+      <ID>Hierarchy 1</ID>
       <Name>Hierarchy</Name>
       <Levels>
-        <Level dwd:design-time-name="676482ef-94ed-43de-9650-0dd932b80514">
-          <ID>Date SK</ID>
-          <Name>Date SK</Name>
-          <SourceAttributeID>Date SK</SourceAttributeID>
-        </Level>
-        <Level dwd:design-time-name="4561fcbd-5cb3-419e-8432-45515ae11dd8">
-          <ID>Financial Year</ID>
-          <Name>Financial Year</Name>
-          <SourceAttributeID>Financial Year</SourceAttributeID>
-        </Level>
-        <Level dwd:design-time-name="8092c664-9170-48f0-ba23-e72c12b8391a">
+        <Level dwd:design-time-name="73a4b240-4191-4cf2-b359-4f81891900ac">
           <ID>Year</ID>
           <Name>Year</Name>
           <SourceAttributeID>Year</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="258d8b8c-7604-42bc-98f2-1b7a4c8b5464">
+        <Level dwd:design-time-name="043c2487-01d5-4d50-9684-0a244dab91b5">
+          <ID>Financial Year</ID>
+          <Name>Financial Year</Name>
+          <SourceAttributeID>Financial Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="56588b7e-fd8d-49eb-9374-5af22e39a2db">
           <ID>Quarter</ID>
           <Name>Quarter</Name>
           <SourceAttributeID>Quarter</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="1b856c94-2168-4024-b0ea-c26b371b9a34">
+        <Level dwd:design-time-name="88a7d374-3384-400a-bd63-38f71da1b983">
           <ID>Month</ID>
           <Name>Month</Name>
           <SourceAttributeID>Month</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="c14996f7-18cc-4f2e-9f99-0c80ec9bb648">
+        <Level dwd:design-time-name="26f9805c-0d76-445d-9ff4-9daef0e936fe">
           <ID>Week Of Year</ID>
           <Name>Week Of Year</Name>
           <SourceAttributeID>Week Of Year</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="47a5a302-a7c1-4d7b-8e43-aa7143860970">
+        <Level dwd:design-time-name="e8b2e1db-7478-47ec-98d4-675cfc5dc39b">
           <ID>Day</ID>
           <Name>Day</Name>
           <SourceAttributeID>Day</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="f992078b-6f52-4394-9f34-d07686d0ea6a">
+        <Level dwd:design-time-name="a6745623-410c-460a-9a50-6f12e207b5a8">
           <ID>Day Of Week</ID>
           <Name>Day Of Week</Name>
           <SourceAttributeID>Day Of Week</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="6b1c051d-2946-4267-bc79-09e8b287e822">
+          <ID>Date Text</ID>
+          <Name>Date Text</Name>
+          <SourceAttributeID>Date Text</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="34d2d667-f540-48f4-8af7-44a0a2bf1cd1">
+          <ID>Date</ID>
+          <Name>Date</Name>
+          <SourceAttributeID>Date</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>

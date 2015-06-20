@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4386" scrolltop="-8943" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6853" y="37518" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4386" scrolltop="-8943" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11800" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -69,12 +69,36 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
       <Value>
         <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
-          <Shapes NodeWidth="89">
+          <Shapes NodeWidth="126">
             <Shape Id="Market SK" Expanded="true">
               <Attributes>
                 <Attribute Id="Market SK" />
               </Attributes>
               <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Market Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Market Name" />
+              </Attributes>
+              <Position x="182" y="20" />
+            </Shape>
+            <Shape Id="Market Type" Expanded="false">
+              <Attributes>
+                <Attribute Id="Market Type" />
+              </Attributes>
+              <Position x="345" y="20" />
+            </Shape>
+            <Shape Id="Market Currency" Expanded="false">
+              <Attributes>
+                <Attribute Id="Market Currency" />
+              </Attributes>
+              <Position x="507" y="20" />
+            </Shape>
+            <Shape Id="Market Country" Expanded="false">
+              <Attributes>
+                <Attribute Id="Market Country" />
+              </Attributes>
+              <Position x="670" y="20" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -108,21 +132,10 @@
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="d440ec30-e0fd-4342-bf2e-e90cf17c0c91">
+        <AttributeRelationship dwd:design-time-name="f34a2dfb-7d91-40a8-b01b-6fb5d7269da6">
           <AttributeID>Market Name</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
           <Name>Market Name</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6cac05bd-c23d-4e29-9dfe-6e4694db599a">
-          <AttributeID>Market Country</AttributeID>
-          <Name>Market Country</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="53c4058b-ac60-4b1f-8ed1-470dd6a853f3">
-          <AttributeID>Market Type</AttributeID>
-          <Name>Market Type</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="93040ebb-38d1-485d-b27c-6e5a8871369b">
-          <AttributeID>Market Currency</AttributeID>
-          <Name>Market Currency</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -143,6 +156,13 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="189b9a03-44ac-4998-86d8-4d351d9e8d53">
+          <AttributeID>Market Type</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Market Type</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -177,6 +197,13 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="c61c42cd-f25a-4af5-9bdc-447eccf17b5c">
+          <AttributeID>Market Currency</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Market Currency</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -194,9 +221,44 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="48de5681-7741-4315-be66-ab2e10ab29c7">
+          <AttributeID>Market Country</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Market Country</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="4cbe5ec2-fca1-4ad5-a402-ada7b23baa18">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="db4e1384-d508-4d37-beb3-309b74492b49">
+          <ID>Market Country</ID>
+          <Name>Market Country</Name>
+          <SourceAttributeID>Market Country</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="d615d33f-a8c2-47a8-a972-e8b42ea167cc">
+          <ID>Market Currency</ID>
+          <Name>Market Currency</Name>
+          <SourceAttributeID>Market Currency</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="21f3d808-3335-4a49-92d7-c85c43959fa4">
+          <ID>Market Type</ID>
+          <Name>Market Type</Name>
+          <SourceAttributeID>Market Type</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="efa98aba-f2bd-45b3-85e6-d238a092b256">
+          <ID>Market Name</ID>
+          <Name>Market Name</Name>
+          <SourceAttributeID>Market Name</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

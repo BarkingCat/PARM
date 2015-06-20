@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3901" scrolltop="-2032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="22622" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3901" scrolltop="-2032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="34264" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -259,8 +259,8 @@
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="45404dbc-e40c-48dc-809b-ada81c035241">
-          <HierarchyID>Hierarchy</HierarchyID>
+        <Hierarchy dwd:design-time-name="0d01037a-52d8-4f7d-93f1-415312a278cc">
+          <HierarchyID>Hierarchy 1</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
@@ -280,7 +280,7 @@
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="d36a2c90-fb0d-48c1-ada2-c7ad2c3c7474">
+        <Hierarchy dwd:design-time-name="da5d381d-38fe-4744-b700-f145fd143876">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
@@ -306,6 +306,11 @@
           <AttributeID>Market Currency</AttributeID>
         </Attribute>
       </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="8181197a-e88a-4644-8bc1-0beee6a3a990">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
     </Dimension>
     <Dimension dwd:design-time-name="147be190-e026-4ffa-81e9-8ce3d3c2857e">
       <ID>Currency</ID>
@@ -329,7 +334,7 @@
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="886cc66d-b957-4e27-a80d-e99b90fa2349">
+        <Hierarchy dwd:design-time-name="6d10bb6d-e860-4d44-878b-2e802075c9ac">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
@@ -353,7 +358,7 @@
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="78c95988-49e2-4344-8edd-d58995cb7a4c">
+        <Hierarchy dwd:design-time-name="a576151c-900f-4bc7-b489-3fe313f23d95">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
@@ -379,11 +384,6 @@
               <AttributeID>Minute</AttributeID>
             </Attribute>
           </Attributes>
-          <Hierarchies>
-            <Hierarchy dwd:design-time-name="05f7cd39-fcef-4a29-a32f-4d9fabb4f31b">
-              <HierarchyID>Hierarchy</HierarchyID>
-            </Hierarchy>
-          </Hierarchies>
         </Dimension>
         <Dimension dwd:design-time-name="83aad186-9283-40cb-98fd-0aa4bfb7663a">
           <CubeDimensionID>Market</CubeDimensionID>
@@ -424,11 +424,6 @@
               <AttributeID>Central Bank</AttributeID>
             </Attribute>
           </Attributes>
-          <Hierarchies>
-            <Hierarchy dwd:design-time-name="d760fbb7-620a-45f9-ac68-bcd9f4e27b38">
-              <HierarchyID>Hierarchy</HierarchyID>
-            </Hierarchy>
-          </Hierarchies>
         </Dimension>
         <Dimension dwd:design-time-name="4aafa1b9-0f93-48bd-a54e-a4aad6a48ecb">
           <CubeDimensionID>Stock</CubeDimensionID>
@@ -446,11 +441,6 @@
               <AttributeID>Stock Code</AttributeID>
             </Attribute>
           </Attributes>
-          <Hierarchies>
-            <Hierarchy dwd:design-time-name="8d532d6b-e268-4327-967e-e72863e9cc8b">
-              <HierarchyID>Hierarchy</HierarchyID>
-            </Hierarchy>
-          </Hierarchies>
         </Dimension>
         <Dimension dwd:design-time-name="cfd53518-5e01-411e-b04f-cb4a6eef0e83">
           <CubeDimensionID>Date 1</CubeDimensionID>
@@ -486,11 +476,6 @@
               <AttributeID>Day Of Week</AttributeID>
             </Attribute>
           </Attributes>
-          <Hierarchies>
-            <Hierarchy dwd:design-time-name="a641797a-c821-42cd-9332-b77e675cc653">
-              <HierarchyID>Hierarchy</HierarchyID>
-            </Hierarchy>
-          </Hierarchies>
         </Dimension>
       </Dimensions>
       <MeasureGroups>
@@ -575,67 +560,72 @@
           <ID>High Price</ID>
           <Name>High Price</Name>
           <Source dwd:design-time-name="bde5a7bf-7a46-48f0-8809-03ce33cbb84e">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="f062b9a9-f08d-49fa-96dd-434499429759">
               <TableID>Fact_Equities</TableID>
               <ColumnID>HighPrice</ColumnID>
             </Source>
           </Source>
+          <DisplayFolder>Price</DisplayFolder>
           <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="7c6c69af-ed58-4fa3-8a8a-c5f24d9faff0">
           <ID>Low Price</ID>
           <Name>Low Price</Name>
           <Source dwd:design-time-name="c68d7a09-819e-47d2-a7c7-4b26b5b286e8">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="0f7b8113-cb3f-4dc0-84a4-71883b9b33c8">
               <TableID>Fact_Equities</TableID>
               <ColumnID>LowPrice</ColumnID>
             </Source>
           </Source>
+          <DisplayFolder>Price</DisplayFolder>
           <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="72515534-a4f0-4aa7-9371-b27c964ab891">
           <ID>Bid Price</ID>
           <Name>Bid Price</Name>
           <Source dwd:design-time-name="050833f4-9fd5-44ca-a56a-37272e10d8d5">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="f2639f21-885d-4eec-829e-ec2dd19187c9">
               <TableID>Fact_Equities</TableID>
               <ColumnID>BidPrice</ColumnID>
             </Source>
           </Source>
+          <DisplayFolder>Price</DisplayFolder>
           <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="a3ca6ffa-0f01-4170-9cc1-17cfda9dab3d">
           <ID>Ask Price</ID>
           <Name>Ask Price</Name>
           <Source dwd:design-time-name="68ef633b-43b7-4e23-92f5-8a031f14a03e">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="b72575b2-d1f4-4fd4-83e2-2e7e667594e0">
               <TableID>Fact_Equities</TableID>
               <ColumnID>AskPrice</ColumnID>
             </Source>
           </Source>
+          <DisplayFolder>Price</DisplayFolder>
           <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="ae5d49ee-aabb-4c65-9b4a-98375dd86fa8">
           <ID>Bid Ask Spread</ID>
           <Name>Bid Ask Spread</Name>
           <Source dwd:design-time-name="7a2c4efa-9772-46f5-a11d-21e52752f83b">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="3a75e145-05e6-48ee-9956-ed88a2a9ac14">
               <TableID>Fact_Equities</TableID>
               <ColumnID>BidAskSpread</ColumnID>
             </Source>
           </Source>
+          <DisplayFolder>Price</DisplayFolder>
           <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="8f27b42f-373a-423b-b8a9-714da18829c6">
           <ID>Volume</ID>
           <Name>Volume</Name>
           <Source dwd:design-time-name="dc183057-c393-4b22-8a36-766aefb4e580">
-            <DataType>Integer</DataType>
+            <DataType>BigInt</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="979b65b7-66d6-40aa-b6d6-fa7882b1bad3">
               <TableID>Fact_Equities</TableID>
               <ColumnID>Volume</ColumnID>
@@ -648,7 +638,7 @@
           <Name>Yield</Name>
           <AggregateFunction>AverageOfChildren</AggregateFunction>
           <Source dwd:design-time-name="5aef1846-ba51-4ce2-b4bc-f66964047c42">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="dfeed914-4bfa-4831-b8f0-6ea3b3360dad">
               <TableID>Fact_Equities</TableID>
               <ColumnID>Yield</ColumnID>
@@ -660,7 +650,7 @@
           <ID>Dividend Cents Per Share</ID>
           <Name>Dividend Cents Per Share</Name>
           <Source dwd:design-time-name="c26558db-7849-46da-8fb8-84e08c019a5a">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="e449fb14-1030-46d3-9b54-948fccc09260">
               <TableID>Fact_Equities</TableID>
               <ColumnID>DividendCentsPerShare</ColumnID>
@@ -672,7 +662,7 @@
           <ID>Earnings Cents Per Share</ID>
           <Name>Earnings Cents Per Share</Name>
           <Source dwd:design-time-name="a947c400-9a51-426a-a965-d443e0397742">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="0bf85f76-aa1c-4b0d-808b-d23bb62b643b">
               <TableID>Fact_Equities</TableID>
               <ColumnID>EarningsCentsPerShare</ColumnID>
@@ -685,7 +675,7 @@
           <Name>PE Ratio</Name>
           <AggregateFunction>AverageOfChildren</AggregateFunction>
           <Source dwd:design-time-name="4daa94e2-c291-412a-937d-555d98baa35d">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="6a5854fb-ff66-405b-bca2-9f4eff000e39">
               <TableID>Fact_Equities</TableID>
               <ColumnID>PE_Ratio</ColumnID>
@@ -697,7 +687,7 @@
           <ID>Issued Capital</ID>
           <Name>Issued Capital</Name>
           <Source dwd:design-time-name="b3dcd746-b135-4ac1-a586-2e6e35ad7e00">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="c78231a0-841f-458c-acd8-e5def192bbad">
               <TableID>Fact_Equities</TableID>
               <ColumnID>IssuedCapital</ColumnID>
@@ -709,7 +699,7 @@
           <ID>Gross Short Sales</ID>
           <Name>Gross Short Sales</Name>
           <Source dwd:design-time-name="411e6160-952b-4dfb-9919-bf0c9b70c410">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="97350486-983c-45f0-a570-c9064679e607">
               <TableID>Fact_Equities</TableID>
               <ColumnID>GrossShortSales</ColumnID>
@@ -721,7 +711,7 @@
           <ID>90 Day SMA</ID>
           <Name>90 Day SMA</Name>
           <Source dwd:design-time-name="30b78e14-690a-4684-8113-3f24f7a0cf37">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="711c90f0-22ea-4dc8-b086-e1e755415683">
               <TableID>Fact_Equities</TableID>
               <ColumnID>_x0039_0Day_SMA</ColumnID>
@@ -733,7 +723,7 @@
           <ID>90 Day Average Daily Return</ID>
           <Name>90 Day Average Daily Return</Name>
           <Source dwd:design-time-name="0c7a3720-b8ef-47a4-a3c3-ac93f15867ba">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="8c7412a2-49fb-4fef-96bb-814cfb8dfde1">
               <TableID>Fact_Equities</TableID>
               <ColumnID>_x0039_0Day_AverageDailyReturn</ColumnID>
@@ -745,7 +735,7 @@
           <ID>90 Day Volatility</ID>
           <Name>90 Day Volatility</Name>
           <Source dwd:design-time-name="518c89da-8fb5-45b9-b440-d7f212f90f86">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="068cdce8-b80f-49c7-9cd2-8564f14d1da5">
               <TableID>Fact_Equities</TableID>
               <ColumnID>_x0039_0Day_Volatility</ColumnID>
@@ -757,7 +747,7 @@
           <ID>Price Vs 90 Day SMA</ID>
           <Name>Price Vs 90 Day SMA</Name>
           <Source dwd:design-time-name="ea01d417-2d6b-4dbc-a07a-d06920a7c78c">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="3ecd86f4-41d5-49b4-93a3-8e5e5289370b">
               <TableID>Fact_Equities</TableID>
               <ColumnID>Price_vs_90Day_SMA</ColumnID>
@@ -769,36 +759,39 @@
           <ID>Daily Price Change</ID>
           <Name>Daily Price Change</Name>
           <Source dwd:design-time-name="0dfd62b9-88d8-44f8-86b3-afe29587a61d">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="f6475e3a-02f8-45e5-9960-dab19f93f0fc">
               <TableID>Fact_Equities</TableID>
               <ColumnID>Daily_PriceChange</ColumnID>
             </Source>
           </Source>
+          <DisplayFolder>Price</DisplayFolder>
           <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="301ac0fb-c613-4aaf-9580-69ec81bc9dfc">
           <ID>MTD Price Change</ID>
           <Name>MTD Price Change</Name>
           <Source dwd:design-time-name="3010e1ef-d84e-4a88-91de-961122b3ff50">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="81914a6e-60eb-4d38-b563-eb13b570f19e">
               <TableID>Fact_Equities</TableID>
               <ColumnID>MTD_PriceChange</ColumnID>
             </Source>
           </Source>
+          <DisplayFolder>Price</DisplayFolder>
           <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="66ec12c2-7ad2-441e-bb87-06f94fd837b9">
           <ID>YTD Price Change</ID>
           <Name>YTD Price Change</Name>
           <Source dwd:design-time-name="4409964b-0c38-4289-8cde-d670e0ac578b">
-            <DataType>Double</DataType>
+            <DataType>Currency</DataType>
             <Source xsi:type="ColumnBinding" dwd:design-time-name="4a7fa18e-551b-42f8-994f-0f48e2e68c2d">
               <TableID>Fact_Equities</TableID>
               <ColumnID>YTD_PriceChange</ColumnID>
             </Source>
           </Source>
+          <DisplayFolder>Price</DisplayFolder>
           <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="b2334569-f507-4f42-8a56-c1a04d06ac42">
