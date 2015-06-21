@@ -409,7 +409,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4486" scrolltop="-8017" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11800" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4486" scrolltop="-8017" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14605" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -420,7 +420,7 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Date" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Date" left="-2229" top="-7065" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000a0000b80b000088130000" />
                 </control>
@@ -456,11 +456,11 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-          <Value>20</Value>
+          <Value>-2229</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-          <Value>0</Value>
+          <Value>-7065</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
@@ -474,52 +474,38 @@
                 <Shape Id="Date SK" Expanded="true">
                   <Attributes>
                     <Attribute Id="Date SK" />
-                    <Attribute Id="Date" />
-                    <Attribute Id="Date Text" />
                   </Attributes>
                   <Position x="20" y="20" />
                 </Shape>
-                <Shape Id="Week Of Year" Expanded="false">
+                <Shape Id="Date" Expanded="false">
                   <Attributes>
-                    <Attribute Id="Week Of Year" />
+                    <Attribute Id="Date" />
                   </Attributes>
                   <Position x="191" y="20" />
                 </Shape>
-                <Shape Id="Financial Year" Expanded="false">
+                <Shape Id="Date Text" Expanded="false">
                   <Attributes>
-                    <Attribute Id="Financial Year" />
+                    <Attribute Id="Date Text" />
                   </Attributes>
-                  <Position x="191" y="68" />
-                </Shape>
-                <Shape Id="Year" Expanded="false">
-                  <Attributes>
-                    <Attribute Id="Year" />
-                  </Attributes>
-                  <Position x="362" y="68" />
-                </Shape>
-                <Shape Id="Quarter" Expanded="true">
-                  <Attributes>
-                    <Attribute Id="Quarter" />
-                  </Attributes>
-                  <Position x="533" y="68" />
-                </Shape>
-                <Shape Id="Month" Expanded="true">
-                  <Attributes>
-                    <Attribute Id="Month" />
-                  </Attributes>
-                  <Position x="705" y="68" />
+                  <Position x="362" y="20" />
                 </Shape>
                 <Shape Id="Day" Expanded="false">
                   <Attributes>
                     <Attribute Id="Day" />
                   </Attributes>
-                  <Position x="876" y="68" />
+                  <Position x="533" y="20" />
                 </Shape>
-                <Shape Id="Day Of Week" Expanded="false">
+                <Shape Id="Month" Expanded="true">
                   <Attributes>
-                    <Attribute Id="Day Of Week" />
+                    <Attribute Id="Month" />
                   </Attributes>
-                  <Position x="1047" y="68" />
+                  <Position x="705" y="20" />
+                </Shape>
+                <Shape Id="Year" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Year" />
+                  </Attributes>
+                  <Position x="876" y="20" />
                 </Shape>
               </Shapes>
             </DiagramLayout>
@@ -531,8 +517,8 @@
       <Source xsi:type="DataSourceViewBinding">
         <DataSourceViewID>Equities</DataSourceViewID>
       </Source>
+      <Type>Time</Type>
       <ErrorConfiguration>
-        <KeyNotFound>ReportAndStop</KeyNotFound>
         <KeyDuplicate>ReportAndContinue</KeyDuplicate>
         <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
       </ErrorConfiguration>
@@ -555,19 +541,8 @@
           <AttributeRelationships>
             <AttributeRelationship>
               <AttributeID>Date</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
               <Name>Date</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Date Text</AttributeID>
-              <Name>Date Text</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Financial Year</AttributeID>
-              <Name>Financial Year</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Week Of Year</AttributeID>
-              <Name>Week Of Year</Name>
             </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
@@ -577,6 +552,7 @@
         <Attribute>
           <ID>Date</ID>
           <Name>Date</Name>
+          <Type>Date</Type>
           <EstimatedCount>731</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
@@ -587,6 +563,27 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>Dimension_Date</TableID>
+              <ColumnID>Date</ColumnID>
+            </Source>
+          </NameColumn>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Date Text</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Date Text</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <ValueColumn>
+            <DataType>Date</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>Dimension_Date</TableID>
+              <ColumnID>Date</ColumnID>
+            </Source>
+          </ValueColumn>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -604,176 +601,148 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Financial Year</ID>
-          <Name>Financial Year</Name>
-          <EstimatedCount>3</EstimatedCount>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>Dimension_Date</TableID>
-                <ColumnID>DateSK</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <DataSize>20</DataSize>
+            <Source xsi:type="ColumnBinding">
+              <TableID>Dimension_Date</TableID>
+              <ColumnID>DateText</ColumnID>
+            </Source>
+          </NameColumn>
           <AttributeRelationships>
             <AttributeRelationship>
-              <AttributeID>Year</AttributeID>
-              <Name>Year</Name>
+              <AttributeID>Day</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Day</Name>
             </AttributeRelationship>
           </AttributeRelationships>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Week Of Year</ID>
-          <Name>Week Of Year</Name>
-          <EstimatedCount>54</EstimatedCount>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>Dimension_Date</TableID>
-                <ColumnID>DateSK</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Quarter</ID>
-          <Name>Quarter</Name>
-          <EstimatedCount>5</EstimatedCount>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>Dimension_Date</TableID>
-                <ColumnID>DateSK</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <AttributeRelationships>
-            <AttributeRelationship>
-              <AttributeID>Month</AttributeID>
-              <Name>Month</Name>
-            </AttributeRelationship>
-          </AttributeRelationships>
+          <ValueColumn>
+            <DataType>WChar</DataType>
+            <DataSize>20</DataSize>
+            <Source xsi:type="ColumnBinding">
+              <TableID>Dimension_Date</TableID>
+              <ColumnID>DateText</ColumnID>
+            </Source>
+          </ValueColumn>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
           <ID>Year</ID>
           <Name>Year</Name>
+          <Type>Years</Type>
           <EstimatedCount>4</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
               <Source xsi:type="ColumnBinding">
                 <TableID>Dimension_Date</TableID>
-                <ColumnID>DateSK</ColumnID>
+                <ColumnID>Year</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
-          <AttributeRelationships>
-            <AttributeRelationship>
-              <AttributeID>Quarter</AttributeID>
-              <Name>Quarter</Name>
-            </AttributeRelationship>
-          </AttributeRelationships>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>Dimension_Date</TableID>
+              <ColumnID>Year</ColumnID>
+            </Source>
+          </NameColumn>
+          <ValueColumn>
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>Dimension_Date</TableID>
+              <ColumnID>Year</ColumnID>
+            </Source>
+          </ValueColumn>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
           <ID>Month</ID>
           <Name>Month</Name>
+          <Type>MonthOfYear</Type>
           <EstimatedCount>13</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
               <Source xsi:type="ColumnBinding">
                 <TableID>Dimension_Date</TableID>
-                <ColumnID>DateSK</ColumnID>
+                <ColumnID>Month</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <DataSize>10</DataSize>
+            <Source xsi:type="ColumnBinding">
+              <TableID>Dimension_Date</TableID>
+              <ColumnID>MonthName</ColumnID>
+            </Source>
+          </NameColumn>
           <AttributeRelationships>
             <AttributeRelationship>
-              <AttributeID>Day</AttributeID>
-              <Name>Day</Name>
+              <AttributeID>Year</AttributeID>
+              <Name>Year</Name>
             </AttributeRelationship>
           </AttributeRelationships>
+          <ValueColumn>
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>Dimension_Date</TableID>
+              <ColumnID>Month</ColumnID>
+            </Source>
+          </ValueColumn>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
           <ID>Day</ID>
           <Name>Day</Name>
+          <Type>DayOfMonth</Type>
           <EstimatedCount>32</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
               <Source xsi:type="ColumnBinding">
                 <TableID>Dimension_Date</TableID>
-                <ColumnID>DateSK</ColumnID>
+                <ColumnID>Day</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>Dimension_Date</TableID>
+              <ColumnID>Day</ColumnID>
+            </Source>
+          </NameColumn>
           <AttributeRelationships>
             <AttributeRelationship>
-              <AttributeID>Day Of Week</AttributeID>
-              <Name>Day Of Week</Name>
+              <AttributeID>Month</AttributeID>
+              <Name>Month</Name>
             </AttributeRelationship>
           </AttributeRelationships>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Day Of Week</ID>
-          <Name>Day Of Week</Name>
-          <EstimatedCount>8</EstimatedCount>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>Dimension_Date</TableID>
-                <ColumnID>DateSK</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
+          <ValueColumn>
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>Dimension_Date</TableID>
+              <ColumnID>Day</ColumnID>
+            </Source>
+          </ValueColumn>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy>
-          <ID>Hierarchy</ID>
-          <Name>Hierarchy</Name>
+          <ID>Hierarchy 1</ID>
+          <Name>Year - Month - Day</Name>
           <Levels>
-            <Level>
-              <ID>Date SK</ID>
-              <Name>Date SK</Name>
-              <SourceAttributeID>Date SK</SourceAttributeID>
-            </Level>
-            <Level>
-              <ID>Financial Year</ID>
-              <Name>Financial Year</Name>
-              <SourceAttributeID>Financial Year</SourceAttributeID>
-            </Level>
             <Level>
               <ID>Year</ID>
               <Name>Year</Name>
               <SourceAttributeID>Year</SourceAttributeID>
-            </Level>
-            <Level>
-              <ID>Quarter</ID>
-              <Name>Quarter</Name>
-              <SourceAttributeID>Quarter</SourceAttributeID>
             </Level>
             <Level>
               <ID>Month</ID>
@@ -781,245 +750,19 @@
               <SourceAttributeID>Month</SourceAttributeID>
             </Level>
             <Level>
-              <ID>Week Of Year</ID>
-              <Name>Week Of Year</Name>
-              <SourceAttributeID>Week Of Year</SourceAttributeID>
-            </Level>
-            <Level>
               <ID>Day</ID>
               <Name>Day</Name>
               <SourceAttributeID>Day</SourceAttributeID>
             </Level>
             <Level>
-              <ID>Day Of Week</ID>
-              <Name>Day Of Week</Name>
-              <SourceAttributeID>Day Of Week</SourceAttributeID>
-            </Level>
-          </Levels>
-        </Hierarchy>
-      </Hierarchies>
-      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
-    </Dimension>
-    <Dimension>
-      <ID>Time</ID>
-      <Name>Time</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <Annotations>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
-          <Value>
-            <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4486" scrolltop="-9155" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11800" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
-                <font>
-                  <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
-                </font>
-                <mouseicon>
-                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
-                </mouseicon>
-              </diagram>
-              <layoutmanager>
-                <ddsxmlobj />
-              </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Time" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000a50a0000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="Dimension_Time" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-            </dds>
-          </Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
-          <Value>true</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
-          <Value>false</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
-          <Value>true</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-4486</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-9155</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-          <Value>20</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-          <Value>0</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
-          <Value>100</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
-          <Value>
-            <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
-              <Shapes NodeWidth="76">
-                <Shape Id="Time SK" Expanded="false">
-                  <Attributes>
-                    <Attribute Id="Time SK" />
-                  </Attributes>
-                  <Position x="20" y="20" />
-                </Shape>
-                <Shape Id="Hour" Expanded="false">
-                  <Attributes>
-                    <Attribute Id="Hour" />
-                  </Attributes>
-                  <Position x="120" y="20" />
-                </Shape>
-                <Shape Id="Minute" Expanded="false">
-                  <Attributes>
-                    <Attribute Id="Minute" />
-                  </Attributes>
-                  <Position x="220" y="20" />
-                </Shape>
-              </Shapes>
-            </DiagramLayout>
-          </Value>
-        </Annotation>
-      </Annotations>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-      <State>Unprocessed</State>
-      <Source xsi:type="DataSourceViewBinding">
-        <DataSourceViewID>Equities</DataSourceViewID>
-      </Source>
-      <ErrorConfiguration>
-        <KeyNotFound>ReportAndStop</KeyNotFound>
-        <KeyDuplicate>ReportAndContinue</KeyDuplicate>
-        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
-      </ErrorConfiguration>
-      <CurrentStorageMode>Molap</CurrentStorageMode>
-      <Attributes>
-        <Attribute>
-          <ID>Time SK</ID>
-          <Name>Time SK</Name>
-          <Usage>Key</Usage>
-          <EstimatedCount>1</EstimatedCount>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>Dimension_Time</TableID>
-                <ColumnID>TimeSK</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <AttributeRelationships>
-            <AttributeRelationship>
-              <AttributeID>Hour</AttributeID>
-              <RelationshipType>Rigid</RelationshipType>
-              <Name>Hour</Name>
-            </AttributeRelationship>
-          </AttributeRelationships>
-          <OrderBy>Key</OrderBy>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Hour</ID>
-          <Name>Hour</Name>
-          <EstimatedCount>1</EstimatedCount>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>Dimension_Time</TableID>
-                <ColumnID>Hour</ColumnID>
-              </Source>
-            </KeyColumn>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>Dimension_Time</TableID>
-                <ColumnID>Minute</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <NameColumn>
-            <DataType>WChar</DataType>
-            <Source xsi:type="ColumnBinding">
-              <TableID>Dimension_Time</TableID>
-              <ColumnID>Hour</ColumnID>
-            </Source>
-          </NameColumn>
-          <AttributeRelationships>
-            <AttributeRelationship>
-              <AttributeID>Minute</AttributeID>
-              <RelationshipType>Rigid</RelationshipType>
-              <Name>Minute</Name>
-            </AttributeRelationship>
-          </AttributeRelationships>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Minute</ID>
-          <Name>Minute</Name>
-          <EstimatedCount>1</EstimatedCount>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>Dimension_Time</TableID>
-                <ColumnID>Hour</ColumnID>
-              </Source>
-            </KeyColumn>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>Dimension_Time</TableID>
-                <ColumnID>Minute</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <NameColumn>
-            <DataType>WChar</DataType>
-            <Source xsi:type="ColumnBinding">
-              <TableID>Dimension_Time</TableID>
-              <ColumnID>Minute</ColumnID>
-            </Source>
-          </NameColumn>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-      </Attributes>
-      <Hierarchies>
-        <Hierarchy>
-          <ID>Hierarchy</ID>
-          <Name>Hierarchy</Name>
-          <ddl2:MemberKeysUnique valuens="ddl2_2">Unique</ddl2:MemberKeysUnique>
-          <Levels>
-            <Level>
-              <ID>Time SK</ID>
-              <Name>Time SK</Name>
-              <SourceAttributeID>Time SK</SourceAttributeID>
+              <ID>Date Text</ID>
+              <Name>Date Text</Name>
+              <SourceAttributeID>Date Text</SourceAttributeID>
             </Level>
             <Level>
-              <ID>Hour</ID>
-              <Name>Hour</Name>
-              <SourceAttributeID>Hour</SourceAttributeID>
-            </Level>
-            <Level>
-              <ID>Minute</ID>
-              <Name>Minute</Name>
-              <SourceAttributeID>Minute</SourceAttributeID>
+              <ID>Date</ID>
+              <Name>Date</Name>
+              <SourceAttributeID>Date</SourceAttributeID>
             </Level>
           </Levels>
         </Hierarchy>
@@ -1036,7 +779,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4386" scrolltop="-8943" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6853" y="37518" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4386" scrolltop="-8943" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14605" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -1097,12 +840,36 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
           <Value>
             <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
-              <Shapes NodeWidth="89">
+              <Shapes NodeWidth="126">
                 <Shape Id="Market SK" Expanded="true">
                   <Attributes>
                     <Attribute Id="Market SK" />
                   </Attributes>
                   <Position x="20" y="20" />
+                </Shape>
+                <Shape Id="Market Name" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Market Name" />
+                  </Attributes>
+                  <Position x="182" y="20" />
+                </Shape>
+                <Shape Id="Market Type" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Market Type" />
+                  </Attributes>
+                  <Position x="345" y="20" />
+                </Shape>
+                <Shape Id="Market Currency" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Market Currency" />
+                  </Attributes>
+                  <Position x="507" y="20" />
+                </Shape>
+                <Shape Id="Market Country" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Market Country" />
+                  </Attributes>
+                  <Position x="670" y="20" />
                 </Shape>
               </Shapes>
             </DiagramLayout>
@@ -1138,19 +905,8 @@
           <AttributeRelationships>
             <AttributeRelationship>
               <AttributeID>Market Name</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
               <Name>Market Name</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Market Country</AttributeID>
-              <Name>Market Country</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Market Type</AttributeID>
-              <Name>Market Type</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Market Currency</AttributeID>
-              <Name>Market Currency</Name>
             </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
@@ -1171,6 +927,13 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Market Type</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Market Type</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -1205,6 +968,13 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Market Currency</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Market Currency</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -1222,10 +992,45 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Market Country</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Market Country</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
       </Attributes>
+      <Hierarchies>
+        <Hierarchy>
+          <ID>Hierarchy</ID>
+          <Name>MarketCountry - Currnecy - Type - Name</Name>
+          <Levels>
+            <Level>
+              <ID>Market Country</ID>
+              <Name>Market Country</Name>
+              <SourceAttributeID>Market Country</SourceAttributeID>
+            </Level>
+            <Level>
+              <ID>Market Currency</ID>
+              <Name>Market Currency</Name>
+              <SourceAttributeID>Market Currency</SourceAttributeID>
+            </Level>
+            <Level>
+              <ID>Market Type</ID>
+              <Name>Market Type</Name>
+              <SourceAttributeID>Market Type</SourceAttributeID>
+            </Level>
+            <Level>
+              <ID>Market Name</ID>
+              <Name>Market Name</Name>
+              <SourceAttributeID>Market Name</SourceAttributeID>
+            </Level>
+          </Levels>
+        </Hierarchy>
+      </Hierarchies>
       <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
     </Dimension>
     <Dimension>
@@ -1238,7 +1043,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4346" scrolltop="-8731" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11800" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4346" scrolltop="-8731" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14605" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -1295,6 +1100,45 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
           <Value>100</Value>
         </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+          <Value>
+            <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+              <Shapes NodeWidth="141">
+                <Shape Id="Currency SK" Expanded="true">
+                  <Attributes>
+                    <Attribute Id="Currency SK" />
+                  </Attributes>
+                  <Position x="20" y="20" />
+                </Shape>
+                <Shape Id="Currency Code" Expanded="true">
+                  <Attributes>
+                    <Attribute Id="Currency Code" />
+                  </Attributes>
+                  <Position x="201" y="20" />
+                </Shape>
+                <Shape Id="Currency Name" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Currency Name" />
+                  </Attributes>
+                  <Position x="382" y="20" />
+                </Shape>
+                <Shape Id="Currency Country" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Currency Country" />
+                  </Attributes>
+                  <Position x="563" y="20" />
+                </Shape>
+                <Shape Id="Central Bank" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Central Bank" />
+                  </Attributes>
+                  <Position x="745" y="20" />
+                </Shape>
+              </Shapes>
+            </DiagramLayout>
+          </Value>
+        </Annotation>
       </Annotations>
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
@@ -1325,19 +1169,8 @@
           <AttributeRelationships>
             <AttributeRelationship>
               <AttributeID>Currency Code</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
               <Name>Currency Code</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Currency Name</AttributeID>
-              <Name>Currency Name</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Currency Country</AttributeID>
-              <Name>Currency Country</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Central Bank</AttributeID>
-              <Name>Central Bank</Name>
             </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
@@ -1358,6 +1191,13 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Currency Name</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Currency Name</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -1375,6 +1215,13 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Currency Country</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Currency Country</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -1392,6 +1239,13 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Central Bank</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Central Bank</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -1416,12 +1270,12 @@
       <Hierarchies>
         <Hierarchy>
           <ID>Hierarchy</ID>
-          <Name>Hierarchy</Name>
+          <Name>CurrencyName - ISOCode</Name>
           <Levels>
             <Level>
-              <ID>Currency SK</ID>
-              <Name>Currency SK</Name>
-              <SourceAttributeID>Currency SK</SourceAttributeID>
+              <ID>Currency Name</ID>
+              <Name>Currency Name</Name>
+              <SourceAttributeID>Currency Name</SourceAttributeID>
             </Level>
             <Level>
               <ID>Currency Code</ID>
@@ -1443,7 +1297,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4425" scrolltop="-9155" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11800" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4425" scrolltop="-9155" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14605" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -1500,6 +1354,39 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
           <Value>100</Value>
         </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+          <Value>
+            <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+              <Shapes NodeWidth="119">
+                <Shape Id="Stock SK" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Stock SK" />
+                  </Attributes>
+                  <Position x="20" y="20" />
+                </Shape>
+                <Shape Id="Stock Code" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Stock Code" />
+                  </Attributes>
+                  <Position x="173" y="20" />
+                </Shape>
+                <Shape Id="Company Name" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Company Name" />
+                  </Attributes>
+                  <Position x="327" y="20" />
+                </Shape>
+                <Shape Id="Industry Group" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Industry Group" />
+                  </Attributes>
+                  <Position x="481" y="20" />
+                </Shape>
+              </Shapes>
+            </DiagramLayout>
+          </Value>
+        </Annotation>
       </Annotations>
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
@@ -1529,19 +1416,13 @@
           </KeyColumns>
           <AttributeRelationships>
             <AttributeRelationship>
-              <AttributeID>Industry Group</AttributeID>
-              <Name>Industry Group</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Company Name</AttributeID>
-              <Name>Company Name</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
               <AttributeID>Stock Code</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
               <Name>Stock Code</Name>
             </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -1559,6 +1440,14 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <DataSize>255</DataSize>
+            <Source xsi:type="ColumnBinding">
+              <TableID>Dimension_Stock</TableID>
+              <ColumnID>IndustryGroup</ColumnID>
+            </Source>
+          </NameColumn>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -1576,6 +1465,12 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Industry Group</AttributeID>
+              <Name>Industry Group</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -1593,6 +1488,14 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Company Name</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Cardinality>One</Cardinality>
+              <Name>Company Name</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -1600,31 +1503,100 @@
       <Hierarchies>
         <Hierarchy>
           <ID>Hierarchy</ID>
-          <Name>Hierarchy</Name>
+          <Name>Industry-Company-Stock</Name>
           <Levels>
-            <Level>
-              <ID>Stock SK</ID>
-              <Name>Stock SK</Name>
-              <SourceAttributeID>Stock SK</SourceAttributeID>
-            </Level>
             <Level>
               <ID>Industry Group</ID>
               <Name>Industry Group</Name>
               <SourceAttributeID>Industry Group</SourceAttributeID>
             </Level>
             <Level>
-              <ID>Stock Code</ID>
-              <Name>Stock Code</Name>
-              <SourceAttributeID>Stock Code</SourceAttributeID>
-            </Level>
-            <Level>
               <ID>Company Name</ID>
               <Name>Company Name</Name>
               <SourceAttributeID>Company Name</SourceAttributeID>
             </Level>
+            <Level>
+              <ID>Stock Code</ID>
+              <Name>Stock Code</Name>
+              <SourceAttributeID>Stock Code</SourceAttributeID>
+            </Level>
           </Levels>
         </Hierarchy>
       </Hierarchies>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Time</ID>
+      <Name>Time</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>Equities</DataSourceViewID>
+      </Source>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Time SK</ID>
+          <Name>Time SK</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>Dimension_Time</TableID>
+                <ColumnID>TimeSK</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
       <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
     </Dimension>
   </Dimensions>
@@ -1844,7 +1816,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3901" scrolltop="-2032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="25003" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="26" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3901" scrolltop="-2032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="31089" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -1906,17 +1878,6 @@
                 <layoutobject>
                   <ddsxmlobj>
                     <property name="LogicalObject" value="Fact_Equities" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Time" left="3557" top="12949" logicalid="17" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000a50a0000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="Dimension_Time" vartype="8" />
                   </ddsxmlobj>
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
@@ -1999,24 +1960,35 @@
                   <point x="7897" y="5549" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="4658" top="10249" logicalid="22" controlid="11" masterid="0" hint1="0" hint2="0" width="2439" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Time" left="-1475" top="11487" logicalid="24" controlid="13" masterid="0" hint1="0" hint2="0" width="3000" height="5529" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000a0000b80b000099150000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="Dimension_Time" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="1225" top="9949" logicalid="25" controlid="14" masterid="0" hint1="0" hint2="0" width="4617" height="2502" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                   </ddsxmlobj>
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
-                    <property name="LogicalObject" value="dataSet.Relations[Equities-Time]" vartype="8" />
+                    <property name="LogicalObject" value="dataSet.Relations[FK_Dimension_Time_Fact_Equities]" vartype="8" />
                     <property name="Virtual" value="0" vartype="11" />
                     <property name="VisibleAP" value="0" vartype="3" />
                   </ddsxmlobj>
                 </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="5" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="5057" y="12949" />
-                  <point x="5057" y="11749" />
-                  <point x="6797" y="11749" />
-                  <point x="6797" y="10549" />
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="13" destid="5" sourceattachpoint="11" destattachpoint="34" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="1525" y="12051" />
+                  <point x="3533" y="12051" />
+                  <point x="3533" y="10249" />
+                  <point x="5542" y="10249" />
                 </connector>
               </ddscontrol>
             </dds>
@@ -2044,7 +2016,7 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-          <Value>20</Value>
+          <Value>-1475</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
@@ -2073,15 +2045,6 @@
               <AttributeID>Date Text</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Financial Year</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Week Of Year</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Quarter</AttributeID>
-            </Attribute>
-            <Attribute>
               <AttributeID>Year</AttributeID>
             </Attribute>
             <Attribute>
@@ -2090,34 +2053,10 @@
             <Attribute>
               <AttributeID>Day</AttributeID>
             </Attribute>
-            <Attribute>
-              <AttributeID>Day Of Week</AttributeID>
-            </Attribute>
           </Attributes>
           <Hierarchies>
             <Hierarchy>
-              <HierarchyID>Hierarchy</HierarchyID>
-            </Hierarchy>
-          </Hierarchies>
-        </Dimension>
-        <Dimension>
-          <ID>Time</ID>
-          <Name>Time</Name>
-          <DimensionID>Time</DimensionID>
-          <Attributes>
-            <Attribute>
-              <AttributeID>Time SK</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Hour</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Minute</AttributeID>
-            </Attribute>
-          </Attributes>
-          <Hierarchies>
-            <Hierarchy>
-              <HierarchyID>Hierarchy</HierarchyID>
+              <HierarchyID>Hierarchy 1</HierarchyID>
             </Hierarchy>
           </Hierarchies>
         </Dimension>
@@ -2142,6 +2081,11 @@
               <AttributeID>Market Currency</AttributeID>
             </Attribute>
           </Attributes>
+          <Hierarchies>
+            <Hierarchy>
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
         </Dimension>
         <Dimension>
           <ID>Currency</ID>
@@ -2194,6 +2138,16 @@
             </Hierarchy>
           </Hierarchies>
         </Dimension>
+        <Dimension>
+          <ID>Time</ID>
+          <Name>Time</Name>
+          <DimensionID>Time</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Time SK</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
       </Dimensions>
       <Perspectives>
         <Perspective>
@@ -2202,25 +2156,6 @@
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <Dimensions>
-            <Dimension>
-              <CubeDimensionID>Time</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Time SK</AttributeID>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Hour</AttributeID>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Minute</AttributeID>
-                </Attribute>
-              </Attributes>
-              <Hierarchies>
-                <Hierarchy>
-                  <HierarchyID>Hierarchy</HierarchyID>
-                </Hierarchy>
-              </Hierarchies>
-            </Dimension>
             <Dimension>
               <CubeDimensionID>Market</CubeDimensionID>
               <Attributes>
@@ -2260,11 +2195,6 @@
                   <AttributeID>Central Bank</AttributeID>
                 </Attribute>
               </Attributes>
-              <Hierarchies>
-                <Hierarchy>
-                  <HierarchyID>Hierarchy</HierarchyID>
-                </Hierarchy>
-              </Hierarchies>
             </Dimension>
             <Dimension>
               <CubeDimensionID>Stock</CubeDimensionID>
@@ -2282,11 +2212,6 @@
                   <AttributeID>Stock Code</AttributeID>
                 </Attribute>
               </Attributes>
-              <Hierarchies>
-                <Hierarchy>
-                  <HierarchyID>Hierarchy</HierarchyID>
-                </Hierarchy>
-              </Hierarchies>
             </Dimension>
             <Dimension>
               <CubeDimensionID>Date 1</CubeDimensionID>
@@ -2301,15 +2226,6 @@
                   <AttributeID>Date Text</AttributeID>
                 </Attribute>
                 <Attribute>
-                  <AttributeID>Financial Year</AttributeID>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Week Of Year</AttributeID>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Quarter</AttributeID>
-                </Attribute>
-                <Attribute>
                   <AttributeID>Year</AttributeID>
                 </Attribute>
                 <Attribute>
@@ -2318,15 +2234,7 @@
                 <Attribute>
                   <AttributeID>Day</AttributeID>
                 </Attribute>
-                <Attribute>
-                  <AttributeID>Day Of Week</AttributeID>
-                </Attribute>
               </Attributes>
-              <Hierarchies>
-                <Hierarchy>
-                  <HierarchyID>Hierarchy</HierarchyID>
-                </Hierarchy>
-              </Hierarchies>
             </Dimension>
           </Dimensions>
           <MeasureGroups>
@@ -2411,67 +2319,72 @@
               <ID>High Price</ID>
               <Name>High Price</Name>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>HighPrice</ColumnID>
                 </Source>
               </Source>
+              <DisplayFolder>Price</DisplayFolder>
               <FormatString>#,##0.00;-#,##0.00</FormatString>
             </Measure>
             <Measure>
               <ID>Low Price</ID>
               <Name>Low Price</Name>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>LowPrice</ColumnID>
                 </Source>
               </Source>
+              <DisplayFolder>Price</DisplayFolder>
               <FormatString>#,##0.00;-#,##0.00</FormatString>
             </Measure>
             <Measure>
               <ID>Bid Price</ID>
               <Name>Bid Price</Name>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>BidPrice</ColumnID>
                 </Source>
               </Source>
+              <DisplayFolder>Price</DisplayFolder>
               <FormatString>#,##0.00;-#,##0.00</FormatString>
             </Measure>
             <Measure>
               <ID>Ask Price</ID>
               <Name>Ask Price</Name>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>AskPrice</ColumnID>
                 </Source>
               </Source>
+              <DisplayFolder>Price</DisplayFolder>
               <FormatString>#,##0.00;-#,##0.00</FormatString>
             </Measure>
             <Measure>
               <ID>Bid Ask Spread</ID>
               <Name>Bid Ask Spread</Name>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>BidAskSpread</ColumnID>
                 </Source>
               </Source>
+              <DisplayFolder>Price</DisplayFolder>
               <FormatString>#,##0.00;-#,##0.00</FormatString>
             </Measure>
             <Measure>
               <ID>Volume</ID>
               <Name>Volume</Name>
               <Source>
-                <DataType>Integer</DataType>
+                <DataType>BigInt</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>Volume</ColumnID>
@@ -2482,8 +2395,9 @@
             <Measure>
               <ID>Yield</ID>
               <Name>Yield</Name>
+              <AggregateFunction>AverageOfChildren</AggregateFunction>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>Yield</ColumnID>
@@ -2495,7 +2409,7 @@
               <ID>Dividend Cents Per Share</ID>
               <Name>Dividend Cents Per Share</Name>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>DividendCentsPerShare</ColumnID>
@@ -2507,7 +2421,7 @@
               <ID>Earnings Cents Per Share</ID>
               <Name>Earnings Cents Per Share</Name>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>EarningsCentsPerShare</ColumnID>
@@ -2518,8 +2432,9 @@
             <Measure>
               <ID>PE Ratio</ID>
               <Name>PE Ratio</Name>
+              <AggregateFunction>AverageOfChildren</AggregateFunction>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>PE_Ratio</ColumnID>
@@ -2531,7 +2446,7 @@
               <ID>Issued Capital</ID>
               <Name>Issued Capital</Name>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>IssuedCapital</ColumnID>
@@ -2543,7 +2458,7 @@
               <ID>Gross Short Sales</ID>
               <Name>Gross Short Sales</Name>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>GrossShortSales</ColumnID>
@@ -2555,7 +2470,7 @@
               <ID>90 Day SMA</ID>
               <Name>90 Day SMA</Name>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>_x0039_0Day_SMA</ColumnID>
@@ -2567,7 +2482,7 @@
               <ID>90 Day Average Daily Return</ID>
               <Name>90 Day Average Daily Return</Name>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>_x0039_0Day_AverageDailyReturn</ColumnID>
@@ -2579,7 +2494,7 @@
               <ID>90 Day Volatility</ID>
               <Name>90 Day Volatility</Name>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>_x0039_0Day_Volatility</ColumnID>
@@ -2591,7 +2506,7 @@
               <ID>Price Vs 90 Day SMA</ID>
               <Name>Price Vs 90 Day SMA</Name>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>Price_vs_90Day_SMA</ColumnID>
@@ -2603,36 +2518,39 @@
               <ID>Daily Price Change</ID>
               <Name>Daily Price Change</Name>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>Daily_PriceChange</ColumnID>
                 </Source>
               </Source>
+              <DisplayFolder>Price</DisplayFolder>
               <FormatString>#,##0.00;-#,##0.00</FormatString>
             </Measure>
             <Measure>
               <ID>MTD Price Change</ID>
               <Name>MTD Price Change</Name>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>MTD_PriceChange</ColumnID>
                 </Source>
               </Source>
+              <DisplayFolder>Price</DisplayFolder>
               <FormatString>#,##0.00;-#,##0.00</FormatString>
             </Measure>
             <Measure>
               <ID>YTD Price Change</ID>
               <Name>YTD Price Change</Name>
               <Source>
-                <DataType>Double</DataType>
+                <DataType>Currency</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>Fact_Equities</TableID>
                   <ColumnID>YTD_PriceChange</ColumnID>
                 </Source>
               </Source>
+              <DisplayFolder>Price</DisplayFolder>
               <FormatString>#,##0.00;-#,##0.00</FormatString>
             </Measure>
             <Measure>
@@ -2663,24 +2581,6 @@
                       <Source xsi:type="ColumnBinding">
                         <TableID>Fact_Equities</TableID>
                         <ColumnID>DateSK</ColumnID>
-                      </Source>
-                    </KeyColumn>
-                  </KeyColumns>
-                  <Type>Granularity</Type>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension xsi:type="RegularMeasureGroupDimension">
-              <CubeDimensionID>Time</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Time SK</AttributeID>
-                  <KeyColumns>
-                    <KeyColumn>
-                      <DataType>Integer</DataType>
-                      <Source xsi:type="ColumnBinding">
-                        <TableID>Fact_Equities</TableID>
-                        <ColumnID>TimeSK</ColumnID>
                       </Source>
                     </KeyColumn>
                   </KeyColumns>
@@ -2742,6 +2642,24 @@
                 </Attribute>
               </Attributes>
             </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Time</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Time SK</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>Fact_Equities</TableID>
+                        <ColumnID>TimeSK</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
           </Dimensions>
           <Partitions>
             <Partition>
@@ -2779,7 +2697,7 @@
       <ImpersonationInfo>
         <ImpersonationMode>ImpersonateAccount</ImpersonationMode>
         <Account>Aaron</Account>
-        <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+        <ImpersonationInfoSecurity>PasswordRemoved</ImpersonationInfoSecurity>
       </ImpersonationInfo>
       <Timeout>PT0S</Timeout>
     </DataSource>
@@ -3077,7 +2995,7 @@
                 <Name>_ALL_TABLES_</Name>
                 <DiagramLayout>
                   <dds>
-                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9767" scrolltop="-2905" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="44159" y="22357" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="26" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9346" scrolltop="-1583" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="44159" y="22357" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                       <font>
                         <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                       </font>
@@ -3110,20 +3028,9 @@
                       </layoutobject>
                       <shape groupshapeid="0" groupnode="0" />
                     </ddscontrol>
-                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Time" left="12510" top="6262" logicalid="14" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Date" left="0" top="5125" logicalid="15" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="5635" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
-                        <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000a50a0000" />
-                      </control>
-                      <layoutobject>
-                        <ddsxmlobj>
-                          <property name="LogicalObject" value="Dimension_Time" vartype="8" />
-                        </ddsxmlobj>
-                      </layoutobject>
-                      <shape groupshapeid="0" groupnode="0" />
-                    </ddscontrol>
-                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Date" left="0" top="5125" logicalid="15" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                      <control>
-                        <ddsxmlobjectstreaminitwrapper binary="000a0000b80b000088130000" />
+                        <ddsxmlobjectstreaminitwrapper binary="000a0000b80b000003160000" />
                       </control>
                       <layoutobject>
                         <ddsxmlobj>
@@ -3154,7 +3061,7 @@
                       </layoutobject>
                       <shape groupshapeid="0" groupnode="0" />
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="2700" top="7226" logicalid="18" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="2700" top="5343" logicalid="18" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="932" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -3167,29 +3074,11 @@
                           <property name="VisibleAP" value="0" vartype="3" />
                         </ddsxmlobj>
                       </layoutobject>
-                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="19" destattachpoint="26" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                        <point x="3000" y="7625" />
-                        <point x="5400" y="7625" />
-                      </connector>
-                    </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="9810" top="7225" logicalid="19" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                      <control>
-                        <ddsxmlobj>
-                          <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
-                        </ddsxmlobj>
-                      </control>
-                      <layoutobject>
-                        <ddsxmlobj>
-                          <property name="LogicalObject" value="dataSet.Relations[Equities-Time]" vartype="8" />
-                          <property name="Virtual" value="0" vartype="11" />
-                          <property name="VisibleAP" value="0" vartype="3" />
-                        </ddsxmlobj>
-                      </layoutobject>
-                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="14" destattachpoint="27" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                        <point x="12510" y="7624" />
-                        <point x="11310" y="7624" />
-                        <point x="11310" y="7625" />
-                        <point x="10110" y="7625" />
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="11" destattachpoint="20" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="3000" y="5742" />
+                        <point x="4200" y="5742" />
+                        <point x="4200" y="5975" />
+                        <point x="5400" y="5975" />
                       </connector>
                     </ddscontrol>
                     <ddscontrol controlprogid="MSDDS.Polyline" left="8005" top="9825" logicalid="20" controlid="9" masterid="0" hint1="0" hint2="0" width="2990" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
@@ -3250,12 +3139,43 @@
                         <point x="7755" y="5125" />
                       </connector>
                     </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Time" left="12821" top="4793" logicalid="24" controlid="13" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000a0000b80b000088130000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="Dimension_Time" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="9810" top="5125" logicalid="25" controlid="14" masterid="0" hint1="0" hint2="0" width="3311" height="4768" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[FK_Dimension_Time_Fact_Equities]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="13" destid="1" sourceattachpoint="26" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="12821" y="9493" />
+                        <point x="10672" y="9493" />
+                        <point x="10672" y="5425" />
+                        <point x="10110" y="5425" />
+                      </connector>
+                    </ddscontrol>
                   </dds>
-                </DiagramLayout>
+</DiagramLayout>
                 <ShowRelationshipNames>False</ShowRelationshipNames>
                 <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
-                <DiagramViewPortLeft>-9767</DiagramViewPortLeft>
-                <DiagramViewPortTop>-2905</DiagramViewPortTop>
+                <DiagramViewPortLeft>-9346</DiagramViewPortLeft>
+                <DiagramViewPortTop>-1583</DiagramViewPortTop>
                 <DiagramBoundingLeft>0</DiagramBoundingLeft>
                 <DiagramBoundingTop>0</DiagramBoundingTop>
                 <DiagramZoom>100</DiagramZoom>
@@ -3342,15 +3262,6 @@
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="Dimension_Time" msprop:design-time-name="979db41e-eb21-45db-946f-cbbef8852ec7" msprop:FriendlyName="Time" msprop:DbSchemaName="Dimension" msprop:DbTableName="Time" msprop:TableType="Table">
-                  <xs:complexType>
-                    <xs:sequence>
-                      <xs:element name="TimeSK" msprop:design-time-name="84ce97d8-a547-40b4-b001-9500c8a3b2e3" msprop:DbColumnName="TimeSK" msprop:FriendlyName="TimeSK" type="xs:int" />
-                      <xs:element name="Hour" msprop:design-time-name="81b0c32f-e620-4c78-8670-455b7ed1d7b4" msprop:DbColumnName="Hour" msprop:FriendlyName="Hour" type="xs:int" />
-                      <xs:element name="Minute" msprop:design-time-name="ba46be73-ae74-4fa1-b31b-cc823038394f" msprop:DbColumnName="Minute" msprop:FriendlyName="Minute" type="xs:int" />
-                    </xs:sequence>
-                  </xs:complexType>
-                </xs:element>
                 <xs:element name="Dimension_Date" msprop:design-time-name="991cc341-3043-4af5-8c48-beb1c09fd706" msprop:FriendlyName="Date" msprop:DbSchemaName="Dimension" msprop:DbTableName="Date" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
@@ -3382,6 +3293,13 @@
                       <xs:element name="Month" msprop:design-time-name="8f0ca7dd-b444-42f3-85a9-ece6ecfd5c90" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" />
                       <xs:element name="Day" msprop:design-time-name="0288791d-04f7-4e2e-b66e-0eba5e9d6dac" msprop:DbColumnName="Day" msprop:FriendlyName="Day" type="xs:int" />
                       <xs:element name="DayOfWeek" msprop:design-time-name="916ecad4-1e7f-42c4-a7a2-17b4eb4a43e4" msprop:DbColumnName="DayOfWeek" msprop:FriendlyName="DayOfWeek">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="10" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="MonthName" msprop:design-time-name="7d90def4-1f09-4e1c-8197-4a166ba76493" msprop:DbColumnName="MonthName" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="10" />
@@ -3454,6 +3372,53 @@
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
+                <xs:element name="Dimension_Time" msprop:design-time-name="e5ee28f1-8e13-489b-af63-2f9869bee6de" msprop:FriendlyName="Time" msprop:DbSchemaName="Dimension" msprop:DbTableName="Time" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="TimeSK" msprop:design-time-name="a741df4a-cf99-484a-8bcc-b3cfc20ce420" msprop:DbColumnName="TimeSK" msprop:FriendlyName="TimeSK" type="xs:int" />
+                      <xs:element name="Time" msprop:design-time-name="7118f412-3aed-464d-83e5-3c8d55c455fd" msprop:DbColumnName="Time" msprop:FriendlyName="Time">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="11" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Time24" msprop:design-time-name="025f1f6c-80e0-40f0-b97f-a01d49cc71ad" msprop:DbColumnName="Time24" msprop:FriendlyName="Time24">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="8" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Hour" msprop:design-time-name="42eed08d-a0eb-46ea-8eb3-cbff7eecee8a" msprop:DbColumnName="Hour" msprop:FriendlyName="Hour" type="xs:unsignedByte" />
+                      <xs:element name="HourName" msprop:design-time-name="b97d4517-c25a-4d9d-8129-a0377b1162dc" msprop:DbColumnName="HourName" msprop:FriendlyName="HourName">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="5" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Minute" msprop:design-time-name="20bd3834-9ed1-4a5f-bc11-0fa1a47dff64" msprop:DbColumnName="Minute" msprop:FriendlyName="Minute" type="xs:unsignedByte" />
+                      <xs:element name="MinuteKey" msprop:design-time-name="faa8b732-5021-4bc3-93d9-68603f3fb138" msprop:DbColumnName="MinuteKey" msprop:FriendlyName="MinuteKey" type="xs:int" />
+                      <xs:element name="MinuteName" msprop:design-time-name="fb2b7316-0458-4194-9cb4-9ffbbb316867" msprop:DbColumnName="MinuteName" msprop:FriendlyName="MinuteName">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="8" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Second" msprop:design-time-name="0569764c-c827-4ad6-809b-98d977c1639a" msprop:DbColumnName="Second" msprop:FriendlyName="Second" type="xs:unsignedByte" />
+                      <xs:element name="Hour24" msprop:design-time-name="f29246e9-fb48-4834-9de8-8869ef365299" msprop:DbColumnName="Hour24" msprop:FriendlyName="Hour24" type="xs:unsignedByte" />
+                      <xs:element name="AM" msprop:design-time-name="bae68c3d-e4ce-440c-8f83-83dad79836c2" msprop:DbColumnName="AM" msprop:FriendlyName="AM">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="2" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
               </xs:choice>
             </xs:complexType>
             <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -3468,10 +3433,6 @@
               <xs:selector xpath=".//Dimension_Currency" />
               <xs:field xpath="CurrencySK" />
             </xs:unique>
-            <xs:unique name="Dimension_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-              <xs:selector xpath=".//Dimension_Time" />
-              <xs:field xpath="TimeSK" />
-            </xs:unique>
             <xs:unique name="Dimension_Date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
               <xs:selector xpath=".//Dimension_Date" />
               <xs:field xpath="DateSK" />
@@ -3484,14 +3445,18 @@
               <xs:selector xpath=".//Dimension_Stock" />
               <xs:field xpath="StockSK" />
             </xs:unique>
+            <xs:unique name="Dimension_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//Dimension_Time" />
+              <xs:field xpath="TimeSK" />
+            </xs:unique>
           </xs:element>
           <xs:annotation>
             <xs:appinfo>
               <msdata:Relationship name="Equities-Date" msdata:parent="Dimension_Date" msdata:child="Fact_Equities" msdata:parentkey="DateSK" msdata:childkey="DateSK" />
-              <msdata:Relationship name="Equities-Time" msdata:parent="Dimension_Time" msdata:child="Fact_Equities" msdata:parentkey="TimeSK" msdata:childkey="TimeSK" />
               <msdata:Relationship name="Equities-Market" msdata:parent="Dimension_Market" msdata:child="Fact_Equities" msdata:parentkey="MarketSK" msdata:childkey="MarketSK" />
               <msdata:Relationship name="Equities-Currency" msdata:parent="Dimension_Currency" msdata:child="Fact_Equities" msdata:parentkey="CurrencySK" msdata:childkey="CurrencySK" />
               <msdata:Relationship name="Equities-Stock" msdata:parent="Dimension_Stock" msdata:child="Fact_Equities" msdata:parentkey="StockSK" msdata:childkey="StockSK" />
+              <msdata:Relationship name="FK_Dimension_Time_Fact_Equities" msdata:parent="Dimension_Time" msdata:child="Fact_Equities" msdata:parentkey="TimeSK" msdata:childkey="TimeSK" />
             </xs:appinfo>
           </xs:annotation>
         </xs:schema>
@@ -3499,4 +3464,31 @@
       </Schema>
     </DataSourceView>
   </DataSourceViews>
+  <Roles>
+    <Role>
+      <ID>Role</ID>
+      <Name>Administrator</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Description>Administrator Role</Description>
+      <Members>
+        <Member>
+          <Name>Aaron</Name>
+        </Member>
+      </Members>
+    </Role>
+  </Roles>
+  <DatabasePermissions>
+    <DatabasePermission>
+      <ID>DatabasePermission</ID>
+      <Name>DatabasePermission</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role</RoleID>
+      <Process>true</Process>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+      <Administer>true</Administer>
+    </DatabasePermission>
+  </DatabasePermissions>
 </Database>

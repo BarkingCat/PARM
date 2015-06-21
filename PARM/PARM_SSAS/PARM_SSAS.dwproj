@@ -38,14 +38,6 @@
       <FullPath>Budget Items.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Date.dim</Name>
-      <FullPath>Date.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Time.dim</Name>
-      <FullPath>Time.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Market.dim</Name>
       <FullPath>Market.dim</FullPath>
     </ProjectItem>
@@ -58,8 +50,12 @@
       <FullPath>Stock.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Stock_DMDim.dim</Name>
-      <FullPath>Stock_DMDim.dim</FullPath>
+      <Name>Time.dim</Name>
+      <FullPath>Time.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date.dim</Name>
+      <FullPath>Date.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
@@ -78,16 +74,10 @@
       <FullPath>Equities.dsv</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Stock_DMDSV.dsv</Name>
-      <FullPath>Stock_DMDSV.dsv</FullPath>
+      <Name>PARM_SSAS.dsv</Name>
+      <FullPath>PARM_SSAS.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
-  <MiningModels>
-    <ProjectItem>
-      <Name>YTD_Price_Change_DM.dmm</Name>
-      <FullPath>YTD_Price_Change_DM.dmm</FullPath>
-    </ProjectItem>
-  </MiningModels>
   <Roles>
     <ProjectItem>
       <Name>Administrator.role</Name>
