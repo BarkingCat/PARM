@@ -1,0 +1,222 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cfa44a77-74a7-4814-bfb4-83ba58ce47b5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Balance Sheet Items</ID>
+  <Name>Balance Sheet Items</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5232" scrolltop="-9155" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14605" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BalanceSheetItems" left="-3129" top="-8917" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4101" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a000005100000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_BalanceSheetItems" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-5232</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-9155</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-3129</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-8917</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="166">
+            <Shape Id="Balance Sheet Item SK" Expanded="false">
+              <Attributes>
+                <Attribute Id="Balance Sheet Item SK" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Balance Sheet Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Balance Sheet Name" />
+              </Attributes>
+              <Position x="232" y="20" />
+            </Shape>
+            <Shape Id="Balance Sheet Category" Expanded="false">
+              <Attributes>
+                <Attribute Id="Balance Sheet Category" />
+              </Attributes>
+              <Position x="445" y="20" />
+            </Shape>
+            <Shape Id="Balance Sheet Type" Expanded="false">
+              <Attributes>
+                <Attribute Id="Balance Sheet Type" />
+              </Attributes>
+              <Position x="657" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2a7a25bc-2663-4a78-9df1-c94e9002658e">
+    <DataSourceViewID>BalanceSheet</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="f577ffb6-7328-4adb-bfe6-008992ff02c7">
+    <KeyDuplicate>ReportAndContinue</KeyDuplicate>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="391bbab7-40bd-4a4e-af63-570e275e887d">
+      <ID>Balance Sheet Item SK</ID>
+      <Name>Balance Sheet Item SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ae719d4b-80a6-434a-989a-679622742dc2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7ea74406-8935-467b-bf59-2e18080d34b9">
+            <TableID>Dimension_BalanceSheetItems</TableID>
+            <ColumnID>BalanceSheetItemSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7c42596c-aed5-4575-91d6-a77e0b084d29">
+          <AttributeID>Balance Sheet Name</AttributeID>
+          <Name>Balance Sheet Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="deba95fc-2259-41a5-9481-d6d808bea66b">
+      <ID>Balance Sheet Name</ID>
+      <Name>Balance Sheet Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="91a4fba8-5edc-443a-ba96-0e47df59aa94">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="584ab9d1-1d5b-45a6-8863-934c6ad764c8">
+            <TableID>Dimension_BalanceSheetItems</TableID>
+            <ColumnID>BalanceSheetName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="aa0aadb5-65c0-4c65-8e37-d8d9260800ac">
+          <AttributeID>Balance Sheet Category</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Balance Sheet Category</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ac17f6f6-96d0-4414-8f1d-ed68f7f6f05a">
+      <ID>Balance Sheet Category</ID>
+      <Name>Balance Sheet Category</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4c8ee468-8ce5-4902-ae2e-67f347e7fe97">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a446761-89e4-49e7-b4dd-2a0006a6d4ac">
+            <TableID>Dimension_BalanceSheetItems</TableID>
+            <ColumnID>BalanceSheetCategory</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9ea2ee72-1788-4d66-9f29-1d6bb1f239e5">
+          <AttributeID>Balance Sheet Type</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Balance Sheet Type</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6a9a3c51-5591-4da7-9fb4-29f31a6c632f">
+      <ID>Balance Sheet Type</ID>
+      <Name>Balance Sheet Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="caa75709-0cfb-42ec-bdca-7971d4675826">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="09a38870-2b64-4af5-98c3-4a0e7b56480e">
+            <TableID>Dimension_BalanceSheetItems</TableID>
+            <ColumnID>BalanceSheetType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="e6cddc9f-a89c-4609-97c9-052691213659">
+      <ID>Hierarchy</ID>
+      <Name>BS Type - BS Category - BS Name</Name>
+      <Levels>
+        <Level dwd:design-time-name="ea522090-4bd9-49fb-8871-c658d24c3166">
+          <ID>Balance Sheet Type</ID>
+          <Name>Balance Sheet Type</Name>
+          <SourceAttributeID>Balance Sheet Type</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="cc9e4827-9974-4a55-b848-13b1e958a3be">
+          <ID>Balance Sheet Category</ID>
+          <Name>Balance Sheet Category</Name>
+          <SourceAttributeID>Balance Sheet Category</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a3b253f0-cf98-4d5a-a3c8-b8aefe3fcf75">
+          <ID>Balance Sheet Name</ID>
+          <Name>Balance Sheet Name</Name>
+          <SourceAttributeID>Balance Sheet Name</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

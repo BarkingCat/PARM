@@ -27,6 +27,16 @@
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
+    <ProjectItem>
+      <Name>BalanceSheet.cube</Name>
+      <FullPath>BalanceSheet.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>BalanceSheet.partitions</Name>
+          <FullPath>BalanceSheet.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
@@ -57,6 +67,14 @@
       <Name>Date.dim</Name>
       <FullPath>Date.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Balance Sheet Items.dim</Name>
+      <FullPath>Balance Sheet Items.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date 1.dim</Name>
+      <FullPath>Date 1.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
@@ -72,6 +90,10 @@
     <ProjectItem>
       <Name>Equities.dsv</Name>
       <FullPath>Equities.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BalanceSheet.dsv</Name>
+      <FullPath>BalanceSheet.dsv</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>PARM_SSAS.dsv</Name>

@@ -31,6 +31,12 @@
         <ID>Time</ID>
       </Dimension>
       <Dimension>
+        <ID>Balance Sheet Items</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Date 1</ID>
+      </Dimension>
+      <Dimension>
         <ID>Date</ID>
       </Dimension>
     </Dimensions>
@@ -56,6 +62,19 @@
             <Partitions>
               <Partition>
                 <ID>Equities</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>BalanceSheet</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Balance Sheet Measures</ID>
+            <Partitions>
+              <Partition>
+                <ID>Balance Sheet Measures</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>
