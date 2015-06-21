@@ -19,9 +19,6 @@
         <ID>Budget Items</ID>
       </Dimension>
       <Dimension>
-        <ID>Date 1</ID>
-      </Dimension>
-      <Dimension>
         <ID>Market</ID>
       </Dimension>
       <Dimension>
@@ -32,6 +29,9 @@
       </Dimension>
       <Dimension>
         <ID>Time</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Date</ID>
       </Dimension>
     </Dimensions>
     <Cubes>
