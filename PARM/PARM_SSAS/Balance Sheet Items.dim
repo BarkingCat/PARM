@@ -125,6 +125,7 @@
       <AttributeRelationships>
         <AttributeRelationship dwd:design-time-name="7c42596c-aed5-4575-91d6-a77e0b084d29">
           <AttributeID>Balance Sheet Name</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
           <Name>Balance Sheet Name</Name>
         </AttributeRelationship>
       </AttributeRelationships>
@@ -136,12 +137,20 @@
       <ID>Balance Sheet Name</ID>
       <Name>Balance Sheet Name</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="91a4fba8-5edc-443a-ba96-0e47df59aa94">
+        <KeyColumn dwd:design-time-name="7a0033d1-8180-4971-a965-629f4c6aab2c">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="584ab9d1-1d5b-45a6-8863-934c6ad764c8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="30a6f610-4f10-4132-8fb7-70b266d695c7">
             <TableID>Dimension_BalanceSheetItems</TableID>
             <ColumnID>BalanceSheetName</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a1f1c8e3-3883-4a31-92b5-2a10eda547f3">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4a12de36-d3f8-47f8-8c9d-1c9a4f6a1991">
+            <TableID>Dimension_BalanceSheetItems</TableID>
+            <ColumnID>BalanceSheetCategory</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
