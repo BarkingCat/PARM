@@ -222,3 +222,4 @@ pip-log.txt
 *.dacpac
 *.pdb
 *.ispac
+*.dbmdl
