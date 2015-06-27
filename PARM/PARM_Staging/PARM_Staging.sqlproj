@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{ec2f2278-9333-47c3-a608-fd87ab95c3bc}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -105,6 +105,13 @@
     <Folder Include="dbo\Views\" />
     <Folder Include="Security\" />
     <Folder Include="dbo\Functions\" />
+    <Folder Include="Control\" />
+    <Folder Include="Control\Synonyms\" />
+    <Folder Include="Staging\Stored Procedures\" />
+    <Folder Include="Reference\" />
+    <Folder Include="Reference\Tables\" />
+    <Folder Include="Dimension\" />
+    <Folder Include="Dimension\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\CBA_Transactions.sql">
@@ -152,6 +159,66 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
+    <Build Include="Staging\Tables\AFR_ASXShortSales_Daily_Raw.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Staging\Tables\AFR_ASXPutOptions_Daily_Raw.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Staging\Tables\AFR_ASXCallOptions_Daily_Raw.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Security\Control.sql" />
+    <Build Include="Control\Synonyms\Run.sql" />
+    <Build Include="Staging\Tables\AFR_ASXCallOptions_Daily_Transformed.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Staging\Stored Procedures\Transform_AFR_ASXCallOptions_Daily.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Staging\Tables\AFR_ASXPutOptions_Daily_Transformed.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Staging\Stored Procedures\Transform_AFR_ASXPutOptions_Daily.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Staging\Views\AFR_ASXShortSales_Daily.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Reference\Tables\ASX_Code_LookUp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Security\Reference.sql" />
+    <Build Include="Staging\Tables\AFR_IntlIndices_Weekly_Raw_1.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Staging\Tables\AFR_InterestRateSecurities_Weekly_Raw_1.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Staging\Tables\AFR_ASXIndices_Weekly_Raw_1.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Staging\Views\AFR_Options_Daily_1.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Dimension\Stored Procedures\Populate_Dimension_Date.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Security\Dimension.sql" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PARM_Control\PARM_Control.sqlproj">
@@ -164,5 +231,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="PARM_Staging.publish.xml" />
+    <None Include="PARM_Staging_1.publish.xml" />
   </ItemGroup>
 </Project>

@@ -2,23 +2,58 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>PARM_ETL</Name>
-    <LastWriteTime>2015-04-27T08:34:36.896729Z</LastWriteTime>
+    <LastWriteTime>2015-06-13T09:14:19.9361638Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>Acquisition_AFR_Daily.dtsx</Name>
-      <LastWriteTime>2015-04-27T03:26:56.9249853Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>Acquisition_ASX_Daily.dtsx</Name>
-      <LastWriteTime>2015-04-27T08:34:22.3733108Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
       <Name>Historical_Load_AFR_Daily.dtsx</Name>
       <LastWriteTime>2015-04-27T08:34:35.3367262Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Acquisition_AFR_ASX300_Daily.dtsx</Name>
+      <LastWriteTime>2015-05-05T12:40:49.9752252Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Acquisition_ASX_CIGS_Daily.dtsx</Name>
+      <LastWriteTime>2015-05-12T12:33:10.3219666Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Acquisition_AFR_CallOptions_Daily.dtsx</Name>
+      <LastWriteTime>2015-05-12T12:33:20.3796394Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Acquisition_AFR_PutOptions_Daily.dtsx</Name>
+      <LastWriteTime>2015-05-12T12:33:30.7208672Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Acquisition_AFR_ShortSales_Daily.dtsx</Name>
+      <LastWriteTime>2015-06-13T09:23:59.9257422Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Acquisition_AFR_Indices_Weekly.dtsx</Name>
+      <LastWriteTime>2015-06-08T12:21:17.6452119Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Acquisition_AFR_Intl_Indices_Weekly.dtsx</Name>
+      <LastWriteTime>2015-06-08T12:45:40.038856Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Acquisition_AFR_InterestRateSecurities_Weekly.dtsx</Name>
+      <LastWriteTime>2015-06-08T12:34:58.1951447Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Historical_Load_AFR_ShortSales_Daily.dtsx</Name>
+      <LastWriteTime>2015-06-13T09:24:02.2657463Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

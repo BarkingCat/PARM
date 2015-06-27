@@ -1,0 +1,105 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/7/2015 10:58:11 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="NVRMND-PC"
+  DTS:CreatorName="nvrmnd-PC\nvrmnd"
+  DTS:DTSID="{3D88C655-DA4E-437F-8E40-B1EE320643F1}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="12.0.2430.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Historical_Load_AFR_ShortSales_Daily"
+  DTS:PackageType="5"
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{A26CA281-012A-4F1B-9A7A-B5B7C6E495EA}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Acquisition_AFR_Daily.dtsx]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{09E2A644-BF13-4DEA-ADAD-077CF2ABB51C}"
+      DTS:ObjectName="Acquisition_AFR_Daily.dtsx">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_ETL\Acquisition_AFR_ShortSales_Daily.dtsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\For Loop Container"
+      DTS:AssignExpression="@i=@i+1"
+      DTS:CreationName="STOCK:FORLOOP"
+      DTS:Description="For Loop Container"
+      DTS:DTSID="{92E9CCD9-1D38-44F2-B1E5-581A7D3BFF6F}"
+      DTS:EvalExpression="@i&lt;=248"
+      DTS:ExecutableType="STOCK:FORLOOP"
+      DTS:InitExpression="@i=11"
+      DTS:LocaleID="-1"
+      DTS:MaxConcurrent="1"
+      DTS:ObjectName="For Loop Container">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{A641D899-2EBA-4067-B94D-8851A43134D5}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="User"
+          DTS:ObjectName="i">
+          <DTS:VariableValue
+            DTS:DataType="3">0</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\For Loop Container\Execute Package Task"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{45ADF9A0-6AB9-4A5A-8CF2-564F13B461E5}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:ForceExecutionResult="0"
+          DTS:ISOLevel="-1"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute Package Task"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server v10; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:TransactionOption="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <Connection>{09E2A644-BF13-4DEA-ADAD-077CF2ABB51C}</Connection>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql12">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="185,42"
+          Id="Package\For Loop Container\Execute Package Task"
+          TopLeft="26.9622641509434,51.8490566037736" />
+        <ContainerLayout
+          HeaderHeight="43.924528301886795"
+          IsExpanded="True"
+          PanelSize="230,176"
+          Size="230,220"
+          Id="Package\For Loop Container"
+          TopLeft="120.5,69.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

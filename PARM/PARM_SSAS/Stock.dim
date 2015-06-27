@@ -1,0 +1,238 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8c7b9f1e-ba6e-4aa1-b97c-4efc60b8584a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Stock</ID>
+  <Name>Stock</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4425" scrolltop="-9155" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14605" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Stock" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3122" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000320c0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Stock" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4425</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-9155</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="119">
+            <Shape Id="Stock SK" Expanded="false">
+              <Attributes>
+                <Attribute Id="Stock SK" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Stock Code" Expanded="false">
+              <Attributes>
+                <Attribute Id="Stock Code" />
+              </Attributes>
+              <Position x="173" y="20" />
+            </Shape>
+            <Shape Id="Company Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Company Name" />
+              </Attributes>
+              <Position x="327" y="20" />
+            </Shape>
+            <Shape Id="Industry Group" Expanded="false">
+              <Attributes>
+                <Attribute Id="Industry Group" />
+              </Attributes>
+              <Position x="481" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="6ed95a88-eac3-43bf-a223-247d3c711586">
+    <DataSourceViewID>Equities</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="9643346d-47d3-442b-b419-d133a820c855">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="21375eaf-f5fe-4433-a210-4ec96759844f">
+      <ID>Stock SK</ID>
+      <Name>Stock SK</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>2177</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="98354612-8c4c-47a5-b1ed-671377a50ed4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2264c2b9-b3aa-4a74-a105-6b69664751c0">
+            <TableID>Dimension_Stock</TableID>
+            <ColumnID>StockSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="c80eb31a-6bf8-4f0d-8dc7-e8e996db634e">
+          <AttributeID>Stock Code</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Stock Code</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4dd14ebc-1ff6-4f49-b2c0-95e5a363020b">
+      <ID>Industry Group</ID>
+      <Name>Industry Group</Name>
+      <EstimatedCount>26</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0a7837bc-2ad8-479f-9f6d-f1316bca1052">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d2fddf6-d302-49ab-b4a8-0398d3551215">
+            <TableID>Dimension_Stock</TableID>
+            <ColumnID>IndustryGroup</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="26bdd0b7-ca53-49d3-b86e-3e5260c23e6d">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2919a1a1-b48c-4c6f-a150-da07f4041c19">
+          <TableID>Dimension_Stock</TableID>
+          <ColumnID>IndustryGroup</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c5b1be5f-9446-4a27-a156-da4d775c11ac">
+      <ID>Company Name</ID>
+      <Name>Company Name</Name>
+      <EstimatedCount>2177</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5c9a3a19-faec-4773-8ba7-f3b30b5adedb">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c1537910-7edb-421f-9f40-4741551263f2">
+            <TableID>Dimension_Stock</TableID>
+            <ColumnID>CompanyName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7a4c0c59-a63e-464a-99df-354880c7a2dc">
+          <AttributeID>Industry Group</AttributeID>
+          <Name>Industry Group</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="26f2be1b-3557-4818-83e5-40386da5ca5e">
+      <ID>Stock Code</ID>
+      <Name>Stock Code</Name>
+      <EstimatedCount>2177</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="08321548-0c1a-48a3-bc50-4af3a86d0689">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9193c483-4de2-4b1e-9aa9-168d499255d7">
+            <TableID>Dimension_Stock</TableID>
+            <ColumnID>StockCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1b2f94a8-89f2-499c-963e-118fb0ee2c78">
+          <AttributeID>Company Name</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Cardinality>One</Cardinality>
+          <Name>Company Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="a87c546d-bc03-4bbe-929c-90d11c84625a">
+      <ID>Hierarchy</ID>
+      <Name>Industry-Company-Stock</Name>
+      <Levels>
+        <Level dwd:design-time-name="c6d53474-644c-40c1-a3a6-cc23c86ccf6c">
+          <ID>Industry Group</ID>
+          <Name>Industry Group</Name>
+          <SourceAttributeID>Industry Group</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b2203b61-3dc8-4e35-966d-7648f78f5ba4">
+          <ID>Company Name</ID>
+          <Name>Company Name</Name>
+          <SourceAttributeID>Company Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5821f4b2-091b-4491-ab6e-bb4c25269caa">
+          <ID>Stock Code</ID>
+          <Name>Stock Code</Name>
+          <SourceAttributeID>Stock Code</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

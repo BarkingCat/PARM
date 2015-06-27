@@ -6,7 +6,10 @@
     [DateOffset] INT           NOT NULL,
     [FileDesc]   VARCHAR (255) NOT NULL,
     [TargetURI]  VARCHAR (255) NOT NULL,
+    [Frequency]  CHAR (1)      NULL,
     PRIMARY KEY CLUSTERED ([FileID] ASC),
     FOREIGN KEY ([SystemID]) REFERENCES [Control].[SourceSystems] ([SystemID])
 );
+
+
 

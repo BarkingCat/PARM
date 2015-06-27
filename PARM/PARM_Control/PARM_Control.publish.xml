@@ -4,9 +4,9 @@
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseName>PARM_Control</TargetDatabaseName>
     <DeployScriptFileName>PARM_Control.sql</DeployScriptFileName>
+    <TargetConnectionString>Data Source=NVRMND-PC;Persist Security Info=True;User ID=nvrmnd;Pooling=False</TargetConnectionString>
     <BlockWhenDriftDetected>True</BlockWhenDriftDetected>
     <RegisterDataTierApplication>True</RegisterDataTierApplication>
     <ProfileVersionNumber>1</ProfileVersionNumber>
-    <TargetConnectionString>Data Source=NVRMND-LAPTOP;Integrated Security=True;Pooling=False</TargetConnectionString>
   </PropertyGroup>
 </Project>

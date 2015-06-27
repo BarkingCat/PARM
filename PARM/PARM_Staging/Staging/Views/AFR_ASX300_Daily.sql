@@ -1,31 +1,27 @@
-﻿
-
-
-
-
-CREATE VIEW [Staging].[AFR_ASX300_Daily]
+﻿CREATE VIEW [Staging].[AFR_ASX300_Daily]
 AS
 SELECT
 	   B.BusinessDate
-	  ,A.[52 Week High]
-      ,A.[52 Week Low]
-      ,A.[Day's High]
-      ,A.[Day's Low]
-      ,C.[CIGS industry group]
+	  ,CONVERT(MONEY,A.[52 Week High]) AS [52 Week High]
+      ,CONVERT(MONEY,A.[52 Week Low]) AS [52 Week Low]
+      ,CONVERT(MONEY,A.[Day's High]) AS [Day's High]
+      ,CONVERT(MONEY,A.[Day's Low]) AS [Day's Low]
       ,A.[ASX Code]
       ,A.[Company Name]
-      ,A.[Last Sale]
+      ,CONVERT(MONEY,A.[Last Sale]) AS [Last Sale]
       ,A.[+ or -]
-      ,CAST(A.[Vol 100's] as INT) * 100 AS [Volume] 
-      ,CAST(A.[Quote Buy] as MONEY) as [Quote Buy]
-      ,CAST(A.[Quote Sell] as MONEY) as [Quote Sell]
-      ,CAST(A.[Div c per share] as MONEY) as [Div c per share]
+      ,CONVERT(INT,A.[Vol 100's]) * 100 AS [Vol 100's]
+      ,CONVERT(MONEY,A.[Quote Buy]) AS [Quote Buy]
+      ,CONVERT(MONEY,A.[Quote Sell]) AS [Quote Sell]
+      ,CONVERT(MONEY,A.[Div c per share]) AS [Div c per share]
       ,A.[Franked]
-      ,CAST(A.[Div Times cov'd] as MONEY) as [Div Times cov'd]
-      ,CAST(A.[Net Tangible Assets] as MONEY) as [Net Tangible Assets]
-      ,CAST(A.[Div yield %] as MONEY) as [Div yield %]
-      ,CAST(A.[Earn share c] as MONEY) AS [Earn share c]
-      ,REPLACE(A.[P/E ratio],',,','') as [P/E ratio]
+      ,CONVERT(MONEY,A.[Div Times cov'd]) AS [Div Times cov'd]
+      ,CONVERT(MONEY,A.[Net Tangible Assets]) AS [Net Tangible Assets]
+      ,CONVERT(MONEY,A.[Div yield %]) AS [Div yield %]
+      ,CONVERT(MONEY,A.[Earn share c]) AS [Earn share c]
+      ,CONVERT(MONEY,REPLACE(A.[P/E ratio],',,','')) AS [P/E ratio]
+	  ,CONVERT(MONEY,A.[Quote Sell]) - CONVERT(MONEY,LAG(A.[Quote Sell],1,0) OVER (PARTITION BY [ASX Code] ORDER BY B.BusinessDate ASC)) as [DailyMove]
+	  ,(CONVERT(MONEY,A.[Quote Sell]) - CONVERT(MONEY,LAG(A.[Quote Sell],1,0) OVER (PARTITION BY [ASX Code] ORDER BY B.BusinessDate ASC))) / CONVERT(MONEY,LAG(A.[Quote Sell],1,NULL) OVER (PARTITION BY [ASX Code] ORDER BY B.BusinessDate ASC)) as [DailyReturn]
+	  ,AVG(CONVERT(MONEY,A.[Quote Sell])) OVER (PARTITION BY [ASX Code] ORDER BY B.[BusinessDate] DESC ROWS BETWEEN 90 PRECEDING AND CURRENT ROW) as [90Day_SMA]
 FROM [Staging].[AFR_ASX300_Daily_Raw] AS A
-INNER JOIN [PARM_Control].[Control].Run AS B on A.RunID = B.RunID
-LEFT JOIN [Staging].[ASX_ListedCompanies_Daily] as C on A.[ASX Code]=C.[ASX code] AND B.BusinessDate=C.BusinessDate
+INNER JOIN [Control].Run AS B on A.RunID = B.RunID

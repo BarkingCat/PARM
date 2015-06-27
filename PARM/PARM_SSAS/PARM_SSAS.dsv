@@ -1,0 +1,289 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="465a0b34-35b3-4baa-b5b2-fbf62df5f155" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>PARM_SSAS</ID>
+  <Name>PARM_SSAS</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-14717" scrolltop="-8678" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="34793" y="22357" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Date" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5318" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000c614000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Date" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-14717</DiagramViewPortLeft>
+            <DiagramViewPortTop>-8678</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>PARM DW</DataSourceID>
+  <Schema>
+    <xs:schema id="PARM_SSAS" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="PARM_SSAS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="45e5fb61-b64d-4cb8-bbe9-ee9d416fdce5" msprop:AllowGen="True">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Date" msprop:design-time-name="f7230873-6860-492f-a21f-b46df3bfe4fe" msprop:FriendlyName="Date" msprop:DbSchemaName="Dimension" msprop:AllowGen="True" msprop:TableType="Table" msprop:DbTableName="Date">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Date" msprop:design-time-name="24795d29-9dbb-42b6-abe6-b8adafd38472" msprop:FriendlyName="PK_Date" msprop:DbColumnName="PK_Date" msprop:AllowGen="True" type="xs:dateTime" />
+                  <xs:element name="Date_Name" msprop:design-time-name="adcda17b-fea8-4a20-ab1d-ae499e47dfca" msprop:FriendlyName="Date_Name" msprop:DbColumnName="Date_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Year" msprop:design-time-name="ea3531b8-795e-4b20-88ee-85254f52e7a0" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:AllowGen="True" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Year_Name" msprop:design-time-name="963944ac-3104-4e1c-91fa-fc3c47326d85" msprop:FriendlyName="Year_Name" msprop:DbColumnName="Year_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Quarter" msprop:design-time-name="8a530607-969e-4d84-bbf5-c47699c86a3f" msprop:FriendlyName="Quarter" msprop:DbColumnName="Quarter" msprop:AllowGen="True" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Quarter_Name" msprop:design-time-name="20869e38-c47b-4ade-a728-e52ea2f4acb8" msprop:FriendlyName="Quarter_Name" msprop:DbColumnName="Quarter_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Month" msprop:design-time-name="4b387f17-6c6d-43f9-8d80-78b7d6ddbdb2" msprop:FriendlyName="Month" msprop:DbColumnName="Month" msprop:AllowGen="True" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Month_Name" msprop:design-time-name="53135f58-90fd-485c-bf65-3211a790193f" msprop:FriendlyName="Month_Name" msprop:DbColumnName="Month_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Week" msprop:design-time-name="1880b45d-67cf-42f6-914a-261978e8f2b9" msprop:FriendlyName="Week" msprop:DbColumnName="Week" msprop:AllowGen="True" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Week_Name" msprop:design-time-name="33f9c7fb-935a-4e55-8a92-fe8ced53f013" msprop:FriendlyName="Week_Name" msprop:DbColumnName="Week_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Day_Of_Year" msprop:design-time-name="785073c4-5928-4536-a033-c1358731123b" msprop:FriendlyName="Day_Of_Year" msprop:DbColumnName="Day_Of_Year" msprop:AllowGen="True" type="xs:int" minOccurs="0" />
+                  <xs:element name="Day_Of_Year_Name" msprop:design-time-name="98097086-9800-4f0e-b31f-e7c8a4c0256a" msprop:FriendlyName="Day_Of_Year_Name" msprop:DbColumnName="Day_Of_Year_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Day_Of_Quarter" msprop:design-time-name="2e38dc17-5c11-44fd-bf40-02b53615480e" msprop:FriendlyName="Day_Of_Quarter" msprop:DbColumnName="Day_Of_Quarter" msprop:AllowGen="True" type="xs:int" minOccurs="0" />
+                  <xs:element name="Day_Of_Quarter_Name" msprop:design-time-name="4e15e4a5-3b73-426d-b6f2-c9a2885839c3" msprop:FriendlyName="Day_Of_Quarter_Name" msprop:DbColumnName="Day_Of_Quarter_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Day_Of_Month" msprop:design-time-name="0982627e-4acf-4242-8e36-45f9d4d32ac9" msprop:FriendlyName="Day_Of_Month" msprop:DbColumnName="Day_Of_Month" msprop:AllowGen="True" type="xs:int" minOccurs="0" />
+                  <xs:element name="Day_Of_Month_Name" msprop:design-time-name="a47547c1-227a-4bde-8915-c1b25e44ddc7" msprop:FriendlyName="Day_Of_Month_Name" msprop:DbColumnName="Day_Of_Month_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Day_Of_Week" msprop:design-time-name="bb9f02dc-23cc-4f34-adb9-64d26e8a62aa" msprop:FriendlyName="Day_Of_Week" msprop:DbColumnName="Day_Of_Week" msprop:AllowGen="True" type="xs:int" minOccurs="0" />
+                  <xs:element name="Day_Of_Week_Name" msprop:design-time-name="0b2550ac-dc97-4e4a-b5a3-55a86742b9af" msprop:FriendlyName="Day_Of_Week_Name" msprop:DbColumnName="Day_Of_Week_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Week_Of_Year" msprop:design-time-name="a3e7d3ea-5311-4660-ac97-1894d6baa3fa" msprop:FriendlyName="Week_Of_Year" msprop:DbColumnName="Week_Of_Year" msprop:AllowGen="True" type="xs:int" minOccurs="0" />
+                  <xs:element name="Week_Of_Year_Name" msprop:design-time-name="aa722bad-f68d-4f96-adff-7ea1c22df877" msprop:FriendlyName="Week_Of_Year_Name" msprop:DbColumnName="Week_Of_Year_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Month_Of_Year" msprop:design-time-name="401d4437-3005-48fc-a32f-42a49a6375e1" msprop:FriendlyName="Month_Of_Year" msprop:DbColumnName="Month_Of_Year" msprop:AllowGen="True" type="xs:int" minOccurs="0" />
+                  <xs:element name="Month_Of_Year_Name" msprop:design-time-name="ab793fbb-dfa2-4719-8011-3738138757ef" msprop:FriendlyName="Month_Of_Year_Name" msprop:DbColumnName="Month_Of_Year_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Month_Of_Quarter" msprop:design-time-name="55d28461-53b5-4a50-be25-a3fe4754c09f" msprop:FriendlyName="Month_Of_Quarter" msprop:DbColumnName="Month_Of_Quarter" msprop:AllowGen="True" type="xs:int" minOccurs="0" />
+                  <xs:element name="Month_Of_Quarter_Name" msprop:design-time-name="bb8c87e4-1bf5-4892-aba1-ab7df9c426e4" msprop:FriendlyName="Month_Of_Quarter_Name" msprop:DbColumnName="Month_Of_Quarter_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Quarter_Of_Year" msprop:design-time-name="890eefa9-ba5e-42ef-b4a9-e9cf12f0f64d" msprop:FriendlyName="Quarter_Of_Year" msprop:DbColumnName="Quarter_Of_Year" msprop:AllowGen="True" type="xs:int" minOccurs="0" />
+                  <xs:element name="Quarter_Of_Year_Name" msprop:design-time-name="83f2ccfc-e0e5-4972-ad73-b78ea4201e1f" msprop:FriendlyName="Quarter_Of_Year_Name" msprop:DbColumnName="Quarter_Of_Year_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Year" msprop:design-time-name="657c246b-b72b-4823-949c-4cfe3292b593" msprop:FriendlyName="Fiscal_Year" msprop:DbColumnName="Fiscal_Year" msprop:AllowGen="True" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Fiscal_Year_Name" msprop:design-time-name="2b8ab0cf-1f33-4dea-8c1f-3d8f38f01452" msprop:FriendlyName="Fiscal_Year_Name" msprop:DbColumnName="Fiscal_Year_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Quarter" msprop:design-time-name="ada585c3-bd5f-48a1-95c9-679e8c5e2004" msprop:FriendlyName="Fiscal_Quarter" msprop:DbColumnName="Fiscal_Quarter" msprop:AllowGen="True" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Fiscal_Quarter_Name" msprop:design-time-name="a313d655-6cd6-4316-8d8a-7b5e85dadeec" msprop:FriendlyName="Fiscal_Quarter_Name" msprop:DbColumnName="Fiscal_Quarter_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Month" msprop:design-time-name="d8ca4449-c2d8-4363-8532-ebf9c5a11461" msprop:FriendlyName="Fiscal_Month" msprop:DbColumnName="Fiscal_Month" msprop:AllowGen="True" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Fiscal_Month_Name" msprop:design-time-name="77c6c8ea-1703-4a74-a429-ec591c20b2fa" msprop:FriendlyName="Fiscal_Month_Name" msprop:DbColumnName="Fiscal_Month_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Week" msprop:design-time-name="58d1fe4c-9751-478d-9a19-6137289d8870" msprop:FriendlyName="Fiscal_Week" msprop:DbColumnName="Fiscal_Week" msprop:AllowGen="True" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Fiscal_Week_Name" msprop:design-time-name="e8d40221-5ca1-446c-86bb-c708cf392538" msprop:FriendlyName="Fiscal_Week_Name" msprop:DbColumnName="Fiscal_Week_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Day" msprop:design-time-name="91a207e5-e28e-4675-b6be-321633f85661" msprop:FriendlyName="Fiscal_Day" msprop:DbColumnName="Fiscal_Day" msprop:AllowGen="True" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Fiscal_Day_Name" msprop:design-time-name="913078ab-0082-4806-b7ea-6eaf4c57d08e" msprop:FriendlyName="Fiscal_Day_Name" msprop:DbColumnName="Fiscal_Day_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Day_Of_Year" msprop:design-time-name="9b6d80c5-4211-4747-98f2-50fc046d6715" msprop:FriendlyName="Fiscal_Day_Of_Year" msprop:DbColumnName="Fiscal_Day_Of_Year" msprop:AllowGen="True" type="xs:int" minOccurs="0" />
+                  <xs:element name="Fiscal_Day_Of_Year_Name" msprop:design-time-name="2cfbef47-527b-4cff-bf57-7c9f83575b4e" msprop:FriendlyName="Fiscal_Day_Of_Year_Name" msprop:DbColumnName="Fiscal_Day_Of_Year_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Day_Of_Quarter" msprop:design-time-name="e7326258-0a83-4749-b827-2737c0b8b1ad" msprop:FriendlyName="Fiscal_Day_Of_Quarter" msprop:DbColumnName="Fiscal_Day_Of_Quarter" msprop:AllowGen="True" type="xs:int" minOccurs="0" />
+                  <xs:element name="Fiscal_Day_Of_Quarter_Name" msprop:design-time-name="9c7a3866-83db-4bad-be62-d50cde8be9d2" msprop:FriendlyName="Fiscal_Day_Of_Quarter_Name" msprop:DbColumnName="Fiscal_Day_Of_Quarter_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Day_Of_Month" msprop:design-time-name="7bdad7a4-7bb3-4ea0-bfaf-a9ef7d49978a" msprop:FriendlyName="Fiscal_Day_Of_Month" msprop:DbColumnName="Fiscal_Day_Of_Month" msprop:AllowGen="True" type="xs:int" minOccurs="0" />
+                  <xs:element name="Fiscal_Day_Of_Month_Name" msprop:design-time-name="5b30d168-2d21-4ad9-8b40-1cae37d0fdb2" msprop:FriendlyName="Fiscal_Day_Of_Month_Name" msprop:DbColumnName="Fiscal_Day_Of_Month_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Day_Of_Week" msprop:design-time-name="99729081-bcac-49ce-85db-dabcc3aa1c8e" msprop:FriendlyName="Fiscal_Day_Of_Week" msprop:DbColumnName="Fiscal_Day_Of_Week" msprop:AllowGen="True" type="xs:int" minOccurs="0" />
+                  <xs:element name="Fiscal_Day_Of_Week_Name" msprop:design-time-name="9f722e89-420b-403e-8a0a-bae620fea91f" msprop:FriendlyName="Fiscal_Day_Of_Week_Name" msprop:DbColumnName="Fiscal_Day_Of_Week_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Week_Of_Year" msprop:design-time-name="d12e9f8c-793d-48cc-842b-2ced5fffa3dc" msprop:FriendlyName="Fiscal_Week_Of_Year" msprop:DbColumnName="Fiscal_Week_Of_Year" msprop:AllowGen="True" type="xs:int" minOccurs="0" />
+                  <xs:element name="Fiscal_Week_Of_Year_Name" msprop:design-time-name="3de1bc97-02bc-43c9-95d3-95bf812b35da" msprop:FriendlyName="Fiscal_Week_Of_Year_Name" msprop:DbColumnName="Fiscal_Week_Of_Year_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Month_Of_Year" msprop:design-time-name="4787ce75-48ee-4f63-a736-c13e4131f1fd" msprop:FriendlyName="Fiscal_Month_Of_Year" msprop:DbColumnName="Fiscal_Month_Of_Year" msprop:AllowGen="True" type="xs:int" minOccurs="0" />
+                  <xs:element name="Fiscal_Month_Of_Year_Name" msprop:design-time-name="05d31b8f-1525-4410-9fcb-c3e7ca4c17e2" msprop:FriendlyName="Fiscal_Month_Of_Year_Name" msprop:DbColumnName="Fiscal_Month_Of_Year_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Month_Of_Quarter" msprop:design-time-name="743f547c-ef7a-4ba3-bc7c-a28f2abfce07" msprop:FriendlyName="Fiscal_Month_Of_Quarter" msprop:DbColumnName="Fiscal_Month_Of_Quarter" msprop:AllowGen="True" type="xs:int" minOccurs="0" />
+                  <xs:element name="Fiscal_Month_Of_Quarter_Name" msprop:design-time-name="21bdede1-9419-4aa7-b772-b26b48bd44dd" msprop:FriendlyName="Fiscal_Month_Of_Quarter_Name" msprop:DbColumnName="Fiscal_Month_Of_Quarter_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Quarter_Of_Year" msprop:design-time-name="43ac61f3-d713-41ac-a25c-85fc26758c34" msprop:FriendlyName="Fiscal_Quarter_Of_Year" msprop:DbColumnName="Fiscal_Quarter_Of_Year" msprop:AllowGen="True" type="xs:int" minOccurs="0" />
+                  <xs:element name="Fiscal_Quarter_Of_Year_Name" msprop:design-time-name="e4dafb5c-aee5-47c0-9bf1-a8cb1db4c8a8" msprop:FriendlyName="Fiscal_Quarter_Of_Year_Name" msprop:DbColumnName="Fiscal_Quarter_Of_Year_Name" msprop:AllowGen="True" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="PK_Date" msprop:AllowGen="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Date" />
+          <xs:field xpath="Date" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <PARM_SSAS xmlns="" />
+  </Schema>
+</DataSourceView>

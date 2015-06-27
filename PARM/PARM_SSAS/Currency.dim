@@ -1,0 +1,254 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="280fce22-5cbc-4a51-b32a-0a538edffcea" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Currency</ID>
+  <Name>Currency</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4346" scrolltop="-8731" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14605" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Currency" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3281" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000d10c0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Currency" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4346</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8731</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="141">
+            <Shape Id="Currency SK" Expanded="true">
+              <Attributes>
+                <Attribute Id="Currency SK" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Currency Code" Expanded="true">
+              <Attributes>
+                <Attribute Id="Currency Code" />
+              </Attributes>
+              <Position x="201" y="20" />
+            </Shape>
+            <Shape Id="Currency Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Currency Name" />
+              </Attributes>
+              <Position x="382" y="20" />
+            </Shape>
+            <Shape Id="Currency Country" Expanded="false">
+              <Attributes>
+                <Attribute Id="Currency Country" />
+              </Attributes>
+              <Position x="563" y="20" />
+            </Shape>
+            <Shape Id="Central Bank" Expanded="false">
+              <Attributes>
+                <Attribute Id="Central Bank" />
+              </Attributes>
+              <Position x="745" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d3c814c5-d20c-4f5e-88ea-89cceb4b419a">
+    <DataSourceViewID>Equities</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="6b6e9b8c-069b-46ca-b478-6e3e562d8d25">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="979b3726-dd5a-4d67-a09b-fea99e5cfbe2">
+      <ID>Currency SK</ID>
+      <Name>Currency SK</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5aa0b5f7-e3c4-4246-8b44-f30e161b5dea">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8030994e-d0b9-4310-b795-8792494f5994">
+            <TableID>Dimension_Currency</TableID>
+            <ColumnID>CurrencySK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="2d76c633-3536-4f6d-bdc3-0124a83580e0">
+          <AttributeID>Currency Code</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Currency Code</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="428dc129-740f-42cb-852a-e25e75bbaab4">
+      <ID>Currency Code</ID>
+      <Name>Currency Code</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4471784a-a2c9-42a0-88a9-3be84038854f">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1c583620-cd11-4cb8-bc68-74ba2ebbc398">
+            <TableID>Dimension_Currency</TableID>
+            <ColumnID>CurrencyCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7170a0d3-712e-451f-93fb-9e61d06db5c6">
+          <AttributeID>Currency Name</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Currency Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="65ef9d36-66a4-4b76-b589-a4305c30066f">
+      <ID>Currency Name</ID>
+      <Name>Currency Name</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="09910c6c-82c1-4f82-8899-6c92d1b41d65">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="379f9472-66da-437a-a024-ef217034e231">
+            <TableID>Dimension_Currency</TableID>
+            <ColumnID>CurrencyName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d6bc8a53-d642-4603-98f7-2ee46893dcf4">
+          <AttributeID>Currency Country</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Currency Country</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="047ae5ec-ddc0-4655-afd1-4d767ea4d8b7">
+      <ID>Currency Country</ID>
+      <Name>Currency Country</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9cafa481-6e8f-4179-8e5d-8693fffb08d5">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1ca84b52-0263-4f78-83d3-af45e79eed9f">
+            <TableID>Dimension_Currency</TableID>
+            <ColumnID>CurrencyCountry</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a5e5e551-5c84-46c5-8eca-bc5319f5339b">
+          <AttributeID>Central Bank</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Central Bank</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="07f2f5be-daf5-4e0e-ac17-d58e441e535c">
+      <ID>Central Bank</ID>
+      <Name>Central Bank</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="27271ccd-758e-46fb-8c73-8220395ebb03">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b967f392-47a0-4024-8a05-67803b7f75aa">
+            <TableID>Dimension_Currency</TableID>
+            <ColumnID>CentralBank</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="67670ef1-662c-4c23-80ba-1588036755db">
+      <ID>Hierarchy</ID>
+      <Name>CurrencyName - ISOCode</Name>
+      <Levels>
+        <Level dwd:design-time-name="236e2b2d-4670-4760-b7f0-2c7ca3c441bc">
+          <ID>Currency Name</ID>
+          <Name>Currency Name</Name>
+          <SourceAttributeID>Currency Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f878708a-55a8-4843-89b8-f65a2b02aeef">
+          <ID>Currency Code</ID>
+          <Name>Currency Code</Name>
+          <SourceAttributeID>Currency Code</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

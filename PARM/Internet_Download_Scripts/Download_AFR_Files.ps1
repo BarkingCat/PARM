@@ -8,7 +8,7 @@
 # Desc: This script will download files from the download queue in PARM
 
 ## TEST
-# .\Download_AFR_Files.ps1 -System_Name "ASX" -FileID 2
+# .\Download_AFR_Files.ps1 -System_Name "AFR" -Frequency "D"
 ##
 
 ################ VARIABLES #################
@@ -16,10 +16,10 @@ Param (
     [String]
     [Parameter(Mandatory = $true)] 
     $System_Name,
-    
-    [INT]
-    [Parameter(Mandatory = $true)] 
-    $FileID  
+	[String]
+	[Parameter(Mandatory = $true)]
+	[ValidateSet("D","W")]
+	$Frequency
 )
 ################ END VARIABLES #################
 
@@ -29,7 +29,7 @@ Set-StrictMode -version 4
 #######
 # CONSTANTS
 #######
-[string]$DB_Server = 'NVRMND-PC' #NVRMND-PC or parm.barkingcat.com.au,666
+[string]$DB_Server = 'localhost' #NVRMND-PC or parm.barkingcat.com.au -- url disabled for now
 [string]$DB_Name = 'PARM_Control'
 
 #######
@@ -47,7 +47,7 @@ param(
 	)
 
     # Check file exists - if exists delete
-    Write-Output "Attemping to download $LocalPath"
+    Write-Output "Attempting to download $LocalPath"
 
     $Wget = New-Object System.Net.WebClient
     $Wget.DownloadFile($Url, $LocalPath)
@@ -68,6 +68,7 @@ try{
 
 	$SystemID = 0
     $RunID = 0
+    $FileID_Array = @()
 
     # Query PARM to populate these variables
     $sql = "SELECT [Control].[GetSystemID]('$System_Name') as [SystemID];"
@@ -89,7 +90,7 @@ try{
 	$sqlConnection.Close()
 
     # Query PARM to populate these variables
-    $sql = "EXEC [Control].[Get_FileDownloadMetadata] @SystemID = $SystemID, @FileID = $FileID;" # This needs a system ID to be passed in, and perhaps a file ID
+    $sql = "EXEC [Control].[Get_FileDownloadMetadata] @SystemID = $SystemID, @Frequency = $Frequency; " # This needs a system ID to be passed in, and perhaps a file ID
 
     # Create and open a database connection
     $sqlConnection = new-object System.Data.SqlClient.SqlConnection "server=$DB_Server;database=$DB_Name;Integrated Security=sspi"
@@ -104,28 +105,42 @@ try{
 
     while ($sqlReader.Read()) 
     {
+        # reset each var to null
+        $FileID = $null
+        $Url = $null
+        $LocalPath = $null
+        $RunID = $null
+
         $FileID = $sqlReader["FileID"] 
         $Url = $sqlReader["SourceURI"] + $sqlReader["FileName"]
         $LocalPath = $sqlReader["TargetURI"] + $sqlReader["FileName"]
         $RunID = $sqlReader["RunID"] 
 
 		GetHTTPFile -Url $Url -LocalPath $LocalPath
+
+        $FileID_Array += $FileID
+
     }
 
     # Close the database connection
     $sqlConnection.Close()
-    
+ 
+ # add loop here <--   
    
     If($RunID -ne 0)
     {
-        
-        #Update PARM with success -> Move this to a function
-        $sqlConnection.Open()
-        $sql = "EXEC [Control].[Set_DownloadStatus] @RunID = $RunID, @FileID = $FileID, @StatusCode = 2"
-        $sqlCommand = $sqlConnection.CreateCommand()
-        $sqlCommand.CommandText = $sql
-        $sqlCmd = $sqlCommand.ExecuteNonQuery()
-        $sqlConnection.Close()
+
+        Foreach ($l_FileID in $FileID_Array)
+        {     
+            #Update PARM with success -> Move this to a function
+            $sqlConnection.Open()
+            $sql = "EXEC [Control].[Set_DownloadStatus] @RunID = $RunID, @FileID = $l_FileID, @StatusCode = 2"
+            Write-Output $sql
+            $sqlCommand = $sqlConnection.CreateCommand()
+            $sqlCommand.CommandText = $sql
+            $sqlCmd = $sqlCommand.ExecuteNonQuery()
+            $sqlConnection.Close()
+        }
     }
 
 }
@@ -139,6 +154,7 @@ catch {
         # Update PARM with Error
         $sqlConnection.Open()
         $sql = "EXEC [Control].[Set_DownloadStatus] @RunID = $RunID, @FileID = $FileID, @StatusCode = -1"
+        Write-Output $sql
         $sqlCommand = $sqlConnection.CreateCommand()
         $sqlCommand.CommandText = $sql
         $sqlCmd = $sqlCommand.ExecuteNonQuery()

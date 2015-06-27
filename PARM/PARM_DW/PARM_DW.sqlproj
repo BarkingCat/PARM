@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{60abe4a7-f148-4bb6-abe1-fb7698d54b8a}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -65,6 +65,8 @@
     <Folder Include="Fact\Tables\" />
     <Folder Include="Security\" />
     <Folder Include="Scripts" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Functions\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Dimension.sql" />
@@ -81,11 +83,17 @@
     <None Include="Scripts\Dimension.FinancialRatios.sql" />
     <None Include="Scripts\Fact.BalanceSheetMeasures.sql" />
     <None Include="Scripts\Fact.BudgetMeasures.sql" />
-    <Build Include="Fact\Tables\Portfolio.sql" />
-    <Build Include="Fact\Tables\Market.sql" />
     <Build Include="Dimension\Tables\Stock.sql" />
-    <Build Include="Dimension\Tables\Market.sql" />
     <Build Include="Dimension\Tables\Date.sql" />
+    <Build Include="Fact\Tables\Equities.sql" />
+    <Build Include="Dimension\Tables\Time.sql" />
+    <Build Include="Fact\Tables\Derivatives.sql" />
+    <Build Include="Dimension\Tables\Market.sql" />
+    <Build Include="Fact\Tables\Portfolios_1.sql" />
+    <Build Include="Dimension\Tables\Portfolio_1.sql" />
+    <Build Include="Dimension\Tables\Currency_1.sql" />
+    <Build Include="dbo\Functions\Get_EndOfYearDate.sql" />
+    <Build Include="dbo\Functions\Get_EndOfMonthDate.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />

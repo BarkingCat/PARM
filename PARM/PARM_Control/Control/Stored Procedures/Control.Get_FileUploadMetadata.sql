@@ -15,7 +15,7 @@ BEGIN
 	
 	DECLARE @BusinessDate DATE, @RunID INT;
 	
-	SELECT @RunID = MIN(RunID) FROM [Control].[UploadQueue] WHERE StatusCode in (-1, 0) AND FileID = @FileID;
+	SELECT @RunID = MIN(RunID) FROM [Control].[UploadQueue] WHERE StatusCode = 0 AND FileID = @FileID;
 
 	SELECT @BusinessDate = BusinessDate FROM [Control].[Run] WHERE RunID = @RunID;
 
@@ -29,7 +29,7 @@ BEGIN
 		REPLACE(B.FileName,'[YYMMDD]',CONVERT(char(6),DATEADD(d,B.DateOffset,@BusinessDate),12)) AS [Filename]
 	FROM [Control].[UploadQueue] AS A
 	INNER JOIN [Control].[Files] AS B on A.FileID = B.FileID
-	WHERE A.StatusCode in (-1,0) -- Only files that are pending 
+	WHERE A.StatusCode = 0 -- Only files that are pending 
 	AND A.RunID = @RunID
 	AND A.FileID = @FileID;
 

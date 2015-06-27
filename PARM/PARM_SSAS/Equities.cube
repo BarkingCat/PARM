@@ -1,0 +1,913 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="eec07d4e-0707-45e1-a25c-e3a5abee1064" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Equities</ID>
+  <Name>Equities</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="26" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3901" scrolltop="-2032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="31089" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Currency" left="7898" top="13134" logicalid="12" controlid="1" masterid="0" hint1="0" hint2="0" width="3281" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000d10c0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Currency" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Stock" left="-774" top="5522" logicalid="13" controlid="2" masterid="0" hint1="0" hint2="0" width="3122" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000320c0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Stock" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Market" left="6296" top="0" logicalid="14" controlid="3" masterid="0" hint1="0" hint2="0" width="3201" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000810c00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Market" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Equities" left="5542" top="5549" logicalid="15" controlid="4" masterid="0" hint1="0" hint2="0" width="4710" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a00006612000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Fact_Equities" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8039" top="10249" logicalid="16" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3385" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Equities-Currency]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="0" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8438" y="13134" />
+              <point x="8438" y="11749" />
+              <point x="8447" y="11749" />
+              <point x="8447" y="10549" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2048" top="6485" logicalid="17" controlid="6" masterid="0" hint1="0" hint2="0" width="3794" height="1864" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Equities-Stock]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="15" destattachpoint="26" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2348" y="6884" />
+              <point x="4342" y="6884" />
+              <point x="4342" y="8049" />
+              <point x="5542" y="8049" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7497" top="2650" logicalid="18" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Equities-Market]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="5" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7896" y="3149" />
+              <point x="7896" y="4349" />
+              <point x="7897" y="4349" />
+              <point x="7897" y="5549" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Time" left="-257" top="11566" logicalid="19" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="5529" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b000099150000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Time" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2443" top="9949" logicalid="20" controlid="9" masterid="0" hint1="0" hint2="0" width="3399" height="2581" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Dimension_Time_Fact_Equities]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="4" sourceattachpoint="11" destattachpoint="34" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2743" y="12130" />
+              <point x="4142" y="12130" />
+              <point x="4142" y="10249" />
+              <point x="5542" y="10249" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Date" left="13346" top="5468" logicalid="24" controlid="13" masterid="0" hint1="0" hint2="0" width="3836" height="11403" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000fc0e00008b2c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Date" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9952" top="5549" logicalid="25" controlid="14" masterid="0" hint1="0" hint2="0" width="3694" height="1070" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Dimension_Date_Fact_Equities]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="13" destid="4" sourceattachpoint="16" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13346" y="6219" />
+              <point x="11231" y="6219" />
+              <point x="11231" y="5849" />
+              <point x="10252" y="5849" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3901</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2032</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-774</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="17fbce54-6c2f-4008-a0ff-a3b46fa2a10f">
+      <ID>Market</ID>
+      <Name>Market</Name>
+      <DimensionID>Market</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ddfbeefd-985f-447b-85b8-e860474820db">
+          <AttributeID>Market SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8e56abeb-0e78-43b9-9059-a492681b603a">
+          <AttributeID>Market Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="697ba804-bbe8-4843-b39f-cc3e46fa1a04">
+          <AttributeID>Market Country</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="77024b6d-1aa5-4305-acd3-7c77ee0d9ef6">
+          <AttributeID>Market Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f78e6d91-d87e-4b1c-80cb-7958887e95c3">
+          <AttributeID>Market Currency</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="8181197a-e88a-4644-8bc1-0beee6a3a990">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="147be190-e026-4ffa-81e9-8ce3d3c2857e">
+      <ID>Currency</ID>
+      <Name>Currency</Name>
+      <DimensionID>Currency</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9d790143-5995-492c-aea4-6bbb3df381b6">
+          <AttributeID>Currency SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="717374d4-f57f-4213-8dbd-8a469b96bdb6">
+          <AttributeID>Currency Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e37a1fbe-9fab-466e-9b67-430b7131bca4">
+          <AttributeID>Currency Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6e84b2b3-1b16-4b55-92e9-708ec3048586">
+          <AttributeID>Currency Country</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="832d5ca3-3e19-45f9-9766-1355c67a44dd">
+          <AttributeID>Central Bank</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="6d10bb6d-e860-4d44-878b-2e802075c9ac">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="9f05c9e1-2a8c-43e4-a317-3793698b004e">
+      <ID>Stock</ID>
+      <Name>Stock</Name>
+      <DimensionID>Stock</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2d478ddb-1b08-4b0a-8d1a-25cfe8e3081f">
+          <AttributeID>Stock SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b8ce2045-6bdc-4ee7-8937-cc322900b0a0">
+          <AttributeID>Industry Group</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="015e88d3-4db9-4814-9a8e-7c9a614c8dfb">
+          <AttributeID>Company Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="836154d6-b403-4016-ba07-9629488c2399">
+          <AttributeID>Stock Code</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="a576151c-900f-4bc7-b489-3fe313f23d95">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="f645b1a4-8ea4-42f0-ab26-e26cd3fb86b3">
+      <ID>Time</ID>
+      <Name>Time</Name>
+      <DimensionID>Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="285a0c87-2d7b-4d15-a655-80736364f52b">
+          <AttributeID>Time SK</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="40a41723-dcbe-4d0b-bddd-17b9fdb21d84">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <DimensionID>Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="166d64d1-7edf-49ea-a36d-39f650fa778e">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fa51dd10-1cd2-49f6-89d2-34fa2ef4fdb2">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6f9940e4-ed06-4536-b0e9-870c5e9ed235">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="692fabc4-25b4-402e-b0ff-f9f9edbf84e4">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3db97b4f-a7f1-44c2-87cf-84954109b12f">
+          <AttributeID>Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cec16c2c-97b8-4132-ba96-523162092607">
+          <AttributeID>Day Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6a00c6ed-13a9-44b1-a30d-abe2876263e1">
+          <AttributeID>Day Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f7cc73d5-e416-4718-aea7-7f87d9bbd284">
+          <AttributeID>Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e167779b-b2f2-4fc0-aaa2-08aef4843042">
+          <AttributeID>Day Of Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c4de9f7c-8b84-4c58-bd59-7f1fbf634951">
+          <AttributeID>Week Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2ec40139-4dee-4945-ac42-c29bb4d930fc">
+          <AttributeID>Month Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="810682df-fff1-4eab-af03-c6d35600fdb0">
+          <AttributeID>Month Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="872228ff-e09a-4382-8998-69232dc18abe">
+          <AttributeID>Quarter Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a4ffda33-2ec7-4cdc-83db-1759a3480232">
+          <AttributeID>Fiscal Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c109281a-5d61-410b-92c5-6aaa6168c8ad">
+          <AttributeID>Fiscal Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fd69b3dd-e050-40c7-9a13-4f7ce5faa98d">
+          <AttributeID>Fiscal Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cc68c751-b83e-4691-be5a-547bd6834ff9">
+          <AttributeID>Fiscal Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c4db3fad-8101-4ffb-b191-a079a6322700">
+          <AttributeID>Fiscal Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e6c98302-f870-4233-9eab-9f2d0127f202">
+          <AttributeID>Fiscal Day Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="44d51a58-3584-4b43-8d8e-b29130ae21d7">
+          <AttributeID>Fiscal Day Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="173ceab8-91b4-4f54-8074-bde1ad82cdad">
+          <AttributeID>Fiscal Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="24a3cdb8-1a74-48a5-a2a8-d0d5be02a8f0">
+          <AttributeID>Fiscal Day Of Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d800426c-db50-409a-9f62-c064a4026332">
+          <AttributeID>Fiscal Week Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7cd8c112-260d-421f-bd4e-b32164a0106b">
+          <AttributeID>Fiscal Month Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="783a0b92-11c1-4c19-8f9b-dd59570a610c">
+          <AttributeID>Fiscal Month Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="370d97e1-3ec5-416a-a3b0-1b251a3e22c0">
+          <AttributeID>Fiscal Quarter Of Year</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="29b8a8ce-ed60-413e-a4da-014d421bbcb2">
+          <HierarchyID>Year -  Quarter -  Month -  Date</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="68606612-985b-4a9e-875f-c62ad596f95e">
+          <HierarchyID>Year -  Week -  Date</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="7655d04a-b5a6-46ca-bba2-1963404c3116">
+          <HierarchyID>Fiscal Year -  Fiscal Quarter -  Fiscal Month -  Fiscal Day</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="c73ca99a-4254-4903-ba5a-c58dd5d3fb51">
+          <HierarchyID>Fiscal Year -  Fiscal Week -  Fiscal Day</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <Perspectives>
+    <Perspective dwd:design-time-name="b73fffed-8bb0-4020-8b58-54bbcf41257c">
+      <ID>Perspective</ID>
+      <Name>Perspective</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="83aad186-9283-40cb-98fd-0aa4bfb7663a">
+          <CubeDimensionID>Market</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5f33efef-bf12-4bfe-998c-41e53c5aca1e">
+              <AttributeID>Market SK</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="04bf2723-3304-45dd-8686-e8df7c4bf1b7">
+              <AttributeID>Market Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="6b19ba97-d2e6-4d1a-8b85-4334bea3aaaf">
+              <AttributeID>Market Country</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3c275828-d3bb-4e84-a3a7-3f3479201644">
+              <AttributeID>Market Type</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="7fa9b854-ce5b-46a0-9ee6-15e370ac0307">
+              <AttributeID>Market Currency</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="7c4a4aff-af9a-4d99-abd1-f01f2785a0f0">
+          <CubeDimensionID>Currency</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dbecbdf2-c20d-4cfc-baac-bf07ce66f0a2">
+              <AttributeID>Currency SK</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="eff903aa-bb1f-45c8-8783-014e5483a022">
+              <AttributeID>Currency Code</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="fe4a8d49-5887-4201-897b-771ba39fb18f">
+              <AttributeID>Currency Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="9ff5de9c-73bf-4013-a757-95188ae4fca3">
+              <AttributeID>Currency Country</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="dafe26a5-6085-4c47-9601-0005db31a3b9">
+              <AttributeID>Central Bank</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="4aafa1b9-0f93-48bd-a54e-a4aad6a48ecb">
+          <CubeDimensionID>Stock</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f2e7fd7c-e906-4e40-a9c6-c1d124a25f8f">
+              <AttributeID>Stock SK</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="33b24492-2c70-4562-86b7-1065054342f2">
+              <AttributeID>Industry Group</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="6abdf601-200b-4aa5-8dc8-87cb0eb4b0bb">
+              <AttributeID>Company Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="9d64d408-1a89-4143-9933-a260fd9b7113">
+              <AttributeID>Stock Code</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="64c693ff-09f2-4132-90b8-8ed98169d4c0">
+          <MeasureGroupID>Equities</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="b645ae55-1718-4109-bb34-9a829da65908">
+              <MeasureID>High Price</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="74dc2c2e-5620-464f-ae1f-12faf7a508bb">
+              <MeasureID>Low Price</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="1c286d11-c95f-418e-9ffd-dd0c18b9fe50">
+              <MeasureID>Bid Price</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="becc75bb-302c-4200-aa29-f6cda1cf69a9">
+              <MeasureID>Ask Price</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="3f3c5630-30c4-4b6f-bea7-9b737152d78c">
+              <MeasureID>Bid Ask Spread</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="90262775-7884-4d21-90a3-86993e607627">
+              <MeasureID>Volume</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="a9e6fd20-9aff-465a-a7a4-2de8a3e8032c">
+              <MeasureID>Yield</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="d96483d8-eb3b-4314-b60a-2a5cb9642ef8">
+              <MeasureID>Dividend Cents Per Share</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="c1e90787-20ee-4114-8b27-1dffd984ccca">
+              <MeasureID>Earnings Cents Per Share</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="870989c6-bfb9-49a1-8c5d-c82d14212d5e">
+              <MeasureID>PE Ratio</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="74930dc8-0c3f-4d0a-911d-f6098561edff">
+              <MeasureID>Issued Capital</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="8984d8d1-2d2f-49ec-ab4f-2942da759bd8">
+              <MeasureID>Gross Short Sales</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="722a8d4e-b9f6-42dc-9602-5cc1c49ee223">
+              <MeasureID>90 Day SMA</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="705121fd-088e-4dd5-ace1-95a2879e7a3f">
+              <MeasureID>90 Day Average Daily Return</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="b95c076f-3317-48fe-be7d-4fa41ca4c76e">
+              <MeasureID>90 Day Volatility</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="9a3284ce-1b00-498a-8e41-d25f67f20178">
+              <MeasureID>Price Vs 90 Day SMA</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="c3ca9eb6-80f0-4e8f-aea0-7130d2bc7a11">
+              <MeasureID>Daily Price Change</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="f31c809f-6181-4331-8bdb-7c157229c189">
+              <MeasureID>MTD Price Change</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="83fc873b-35d3-4a64-9dca-ceb681f057ab">
+              <MeasureID>YTD Price Change</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="c37e06fa-e4b0-470d-80e8-6834dc10a4fd">
+              <MeasureID>Equities Count</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+    </Perspective>
+  </Perspectives>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="317cdfd7-846a-4a3c-b3d0-a8b62ddf100e">
+      <ID>Equities</ID>
+      <Name>Equities</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="6163b523-9ccd-4602-ae42-ff24b6078a3c">
+          <ID>High Price</ID>
+          <Name>High Price</Name>
+          <Source dwd:design-time-name="bde5a7bf-7a46-48f0-8809-03ce33cbb84e">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f062b9a9-f08d-49fa-96dd-434499429759">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>HighPrice</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Price</DisplayFolder>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="7c6c69af-ed58-4fa3-8a8a-c5f24d9faff0">
+          <ID>Low Price</ID>
+          <Name>Low Price</Name>
+          <Source dwd:design-time-name="c68d7a09-819e-47d2-a7c7-4b26b5b286e8">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0f7b8113-cb3f-4dc0-84a4-71883b9b33c8">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>LowPrice</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Price</DisplayFolder>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="72515534-a4f0-4aa7-9371-b27c964ab891">
+          <ID>Bid Price</ID>
+          <Name>Bid Price</Name>
+          <Source dwd:design-time-name="050833f4-9fd5-44ca-a56a-37272e10d8d5">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f2639f21-885d-4eec-829e-ec2dd19187c9">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>BidPrice</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Price</DisplayFolder>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="a3ca6ffa-0f01-4170-9cc1-17cfda9dab3d">
+          <ID>Ask Price</ID>
+          <Name>Ask Price</Name>
+          <Source dwd:design-time-name="68ef633b-43b7-4e23-92f5-8a031f14a03e">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b72575b2-d1f4-4fd4-83e2-2e7e667594e0">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>AskPrice</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Price</DisplayFolder>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="ae5d49ee-aabb-4c65-9b4a-98375dd86fa8">
+          <ID>Bid Ask Spread</ID>
+          <Name>Bid Ask Spread</Name>
+          <Source dwd:design-time-name="7a2c4efa-9772-46f5-a11d-21e52752f83b">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3a75e145-05e6-48ee-9956-ed88a2a9ac14">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>BidAskSpread</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Price</DisplayFolder>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="8f27b42f-373a-423b-b8a9-714da18829c6">
+          <ID>Volume</ID>
+          <Name>Volume</Name>
+          <Source dwd:design-time-name="dc183057-c393-4b22-8a36-766aefb4e580">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="979b65b7-66d6-40aa-b6d6-fa7882b1bad3">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>Volume</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="21e69e32-4ca1-4896-bd1a-7f8e6fd9be84">
+          <ID>Yield</ID>
+          <Name>Yield</Name>
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
+          <Source dwd:design-time-name="5aef1846-ba51-4ce2-b4bc-f66964047c42">
+            <DataType>Currency</DataType>
+            <Format>Percent</Format>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="dfeed914-4bfa-4831-b8f0-6ea3b3360dad">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>Yield</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Percent</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="58466006-6efc-47d9-9fcb-7548aab5772c">
+          <ID>Dividend Cents Per Share</ID>
+          <Name>Dividend Cents Per Share</Name>
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
+          <Source dwd:design-time-name="c26558db-7849-46da-8fb8-84e08c019a5a">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e449fb14-1030-46d3-9b54-948fccc09260">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>DividendCentsPerShare</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="9cee9c1d-1681-4343-957b-6f2df54886ec">
+          <ID>Earnings Cents Per Share</ID>
+          <Name>Earnings Cents Per Share</Name>
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
+          <Source dwd:design-time-name="a947c400-9a51-426a-a965-d443e0397742">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0bf85f76-aa1c-4b0d-808b-d23bb62b643b">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>EarningsCentsPerShare</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="cf68bc29-7c37-42c0-9a4d-88c302851cc1">
+          <ID>PE Ratio</ID>
+          <Name>PE Ratio</Name>
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
+          <Source dwd:design-time-name="4daa94e2-c291-412a-937d-555d98baa35d">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6a5854fb-ff66-405b-bca2-9f4eff000e39">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>PE_Ratio</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="97ab5193-367e-4322-be4d-18804394b8f8">
+          <ID>Issued Capital</ID>
+          <Name>Issued Capital</Name>
+          <Source dwd:design-time-name="b3dcd746-b135-4ac1-a586-2e6e35ad7e00">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c78231a0-841f-458c-acd8-e5def192bbad">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>IssuedCapital</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="39f00df3-697f-4a19-ae42-0d24a82086a0">
+          <ID>Gross Short Sales</ID>
+          <Name>Gross Short Sales</Name>
+          <Source dwd:design-time-name="411e6160-952b-4dfb-9919-bf0c9b70c410">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="97350486-983c-45f0-a570-c9064679e607">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>GrossShortSales</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="b8fdf354-00d2-4235-8ec0-316d6af8ea38">
+          <ID>90 Day SMA</ID>
+          <Name>90 Day SMA</Name>
+          <Source dwd:design-time-name="30b78e14-690a-4684-8113-3f24f7a0cf37">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="711c90f0-22ea-4dc8-b086-e1e755415683">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>_x0039_0Day_SMA</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="9dca68b0-6032-48b7-bcfb-82cf0c433594">
+          <ID>90 Day Average Daily Return</ID>
+          <Name>90 Day Average Daily Return</Name>
+          <Source dwd:design-time-name="0c7a3720-b8ef-47a4-a3c3-ac93f15867ba">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8c7412a2-49fb-4fef-96bb-814cfb8dfde1">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>_x0039_0Day_AverageDailyReturn</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Percent</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="af1fe5d4-d5f2-4318-bfb6-a9eab3875765">
+          <ID>90 Day Volatility</ID>
+          <Name>90 Day Volatility</Name>
+          <Source dwd:design-time-name="518c89da-8fb5-45b9-b440-d7f212f90f86">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="068cdce8-b80f-49c7-9cd2-8564f14d1da5">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>_x0039_0Day_Volatility</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Percent</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="5dd31f9c-83d9-4b71-aef4-374f460a0bc2">
+          <ID>Price Vs 90 Day SMA</ID>
+          <Name>Price Vs 90 Day SMA</Name>
+          <Source dwd:design-time-name="ea01d417-2d6b-4dbc-a07a-d06920a7c78c">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3ecd86f4-41d5-49b4-93a3-8e5e5289370b">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>Price_vs_90Day_SMA</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Percent</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="7a467f42-1c88-4b5a-93c6-c2623f42b9ff">
+          <ID>Daily Price Change</ID>
+          <Name>Daily Price Change</Name>
+          <Source dwd:design-time-name="0dfd62b9-88d8-44f8-86b3-afe29587a61d">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f6475e3a-02f8-45e5-9960-dab19f93f0fc">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>Daily_PriceChange</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Price</DisplayFolder>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="301ac0fb-c613-4aaf-9580-69ec81bc9dfc">
+          <ID>MTD Price Change</ID>
+          <Name>MTD Price Change</Name>
+          <Source dwd:design-time-name="3010e1ef-d84e-4a88-91de-961122b3ff50">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="81914a6e-60eb-4d38-b563-eb13b570f19e">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>MTD_PriceChange</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Price</DisplayFolder>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="66ec12c2-7ad2-441e-bb87-06f94fd837b9">
+          <ID>YTD Price Change</ID>
+          <Name>YTD Price Change</Name>
+          <Source dwd:design-time-name="4409964b-0c38-4289-8cde-d670e0ac578b">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4a7fa18e-551b-42f8-994f-0f48e2e68c2d">
+              <TableID>Fact_Equities</TableID>
+              <ColumnID>YTD_PriceChange</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Price</DisplayFolder>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="b2334569-f507-4f42-8a56-c1a04d06ac42">
+          <ID>Equities Count</ID>
+          <Name>Equities Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ecb2e984-46ce-401f-ae0d-47d62ee2d7b8">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="32244144-e269-4c27-8e78-459547d5663a">
+              <TableID>Fact_Equities</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>208</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1efd263e-f213-4841-8c64-a0b111b09aa4">
+          <CubeDimensionID>Market</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="59f64a73-98f8-4ed9-a1a6-90e99aff12cf">
+              <AttributeID>Market SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="91a7621e-16ee-4551-b946-62b118d7ea5d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="959c29f3-57d3-4640-9f63-31f0ebe93198">
+                    <TableID>Fact_Equities</TableID>
+                    <ColumnID>MarketSK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="835b53b4-ab69-4fd5-9b1f-06d750fc1990">
+          <CubeDimensionID>Currency</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5519e248-3dc1-4a79-b1b0-1d3530525fba">
+              <AttributeID>Currency SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c0cb1d97-43ac-41b6-956f-cdbc586fee66">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0c651618-9530-40f3-8685-ddf81d82494b">
+                    <TableID>Fact_Equities</TableID>
+                    <ColumnID>CurrencySK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1061ba8f-3e0a-4b98-86b9-7f63a5b0821e">
+          <CubeDimensionID>Stock</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="88ab36b7-3780-466d-ab6d-5463e29f6f50">
+              <AttributeID>Stock SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3fcc6fa4-1e60-4b2b-9934-1c0f4e1ed942">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d524fd7d-8139-4f1a-8200-2bb048c3dc2d">
+                    <TableID>Fact_Equities</TableID>
+                    <ColumnID>StockSK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="89b0a752-9e30-4212-9eaf-bba0b9984c2f">
+          <CubeDimensionID>Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="26e5d096-6a50-4d70-abb5-09613a7faf96">
+              <AttributeID>Time SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1b9aa6aa-729b-46de-b8d6-a902336eaf27">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ee6b5c20-1a14-4d21-a4aa-d7abcee110c5">
+                    <TableID>Fact_Equities</TableID>
+                    <ColumnID>TimeSK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2adcdb6c-cae3-4ccd-82b3-2bb1417ae075">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f1868e1a-b713-46b1-a115-d29b37afd7b8">
+              <AttributeID>Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fbae0612-8d60-4b4c-9b2f-9bf0b5fa5542">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1c81daad-1484-414c-b8e5-4ff8dd76f0b5">
+                    <TableID>Fact_Equities</TableID>
+                    <ColumnID>PK_Date</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="e423abd9-6ae0-4b37-81b6-0eafbd6a5e34">
+    <DataSourceViewID>Equities</DataSourceViewID>
+  </Source>
+</Cube>

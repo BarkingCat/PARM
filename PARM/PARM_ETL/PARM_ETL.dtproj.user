@@ -4,6 +4,8 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
+        <ServerName>NVRMND-LAPTOP</ServerName>
+        <PathOnServer>/SSISDB/PARM_ETL/PARM_ETL</PathOnServer>
         <Run64BitRuntime>true</Run64BitRuntime>
         <UserIDs />
         <UserPasswords />

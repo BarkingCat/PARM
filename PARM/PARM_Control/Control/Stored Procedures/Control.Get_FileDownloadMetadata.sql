@@ -2,12 +2,14 @@
 -- Author:		Aaron Jackson
 -- Create date: 05/04/2015
 -- Description:	Get a file to download from the queue
+-- Test: EXEC [Control].[Get_FileDownloadMetadata] @SystemID = 1;
 -- *********************************************
 CREATE PROCEDURE [Control].[Get_FileDownloadMetadata]
-	@SystemID INT, -- REQURIED
-	@FileID INT = 0, -- OPTIONAL 
-	@RunID INT = 0 --OPTIONAL - If not supplied, the min will be found
-
+	@SystemID INT,			  -- REQURIED
+	@FileID INT = 0,		  -- OPTIONAL 
+	@RunID INT = 0,			  -- OPTIONAL - If not supplied, the min will be found
+	@Frequency CHAR(1) = 'D', -- OPTIONAL - Default to daily
+	@Retry_Flag BIT = 0		  -- OPTIONAL - Default to no
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
@@ -15,8 +17,31 @@ BEGIN
 	SET NOCOUNT ON;
 	
 	DECLARE @BusinessDate DATE;
+
+	CREATE TABLE #StatusCodes ( StatusCode INT );
+
+	IF @Retry_Flag = 1
+	BEGIN
+		INSERT INTO #StatusCodes
+		SELECT -1 UNION ALL
+		SELECT 0
+	END
+	ELSE
+	BEGIN
+		INSERT INTO #StatusCodes
+		SELECT 0
+	END
 	
-	IF @RunID = 0 SELECT @RunID = MIN(RunID) FROM [Control].[DownloadQueue] WHERE StatusCode IN (-1,0);
+	IF @RunID = 0 
+	BEGIN
+		SELECT @RunID = MIN(RunID) 
+		FROM [Control].[DownloadQueue] as A
+		LEFT JOIN [Control].[Files] as  B on A.FileID = B.FileID
+		WHERE StatusCode IN (SELECT StatusCode FROM #StatusCodes)
+		AND B.SystemID = @SystemID
+	END
+
+	--SELECT @RunID;
 
 	SELECT @BusinessDate = BusinessDate FROM [Control].[Run] WHERE RunID = @RunID;
 
@@ -31,10 +56,11 @@ BEGIN
 		A.RunID
 	FROM [Control].[DownloadQueue] AS A
 	INNER JOIN [Control].[Files] AS B on A.FileID = B.FileID
-	WHERE A.StatusCode IN (-1,0) -- Only files that are pending 
+	WHERE A.StatusCode IN (SELECT StatusCode FROM #StatusCodes) -- Only files that are pending 
 	AND A.RunID = @RunID
 	AND B.SystemID = @SystemID
-	AND A.FileID = ISNULL(NULLIF(@FileID,0),A.FileID);
+	AND A.FileID = ISNULL(NULLIF(@FileID,0),A.FileID)
+	AND B.Frequency = @Frequency;
 
 
 END
