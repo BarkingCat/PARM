@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>PARM_ETL</Name>
-    <LastWriteTime>2015-06-27T06:29:19.831939Z</LastWriteTime>
+    <LastWriteTime>2015-06-27T15:25:48.7692968Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -48,7 +48,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Acquisition_AFR_InterestRateSecurities_Weekly.dtsx</Name>
-      <LastWriteTime>2015-06-24T13:28:38.9582686Z</LastWriteTime>
+      <LastWriteTime>2015-06-27T06:42:48.2485441Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -58,7 +58,17 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Acquisition_RBA_FX_Daily.dtsx</Name>
-      <LastWriteTime>2015-06-27T06:30:29.3619486Z</LastWriteTime>
+      <LastWriteTime>2015-06-27T06:42:49.1487241Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Acquisition_RBA_CPI_Daily.dtsx</Name>
+      <LastWriteTime>2015-06-27T15:06:42.018023Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Acquisition_RBA_Cash_Rates_Daily.dtsx</Name>
+      <LastWriteTime>2015-06-27T15:25:45.5768328Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
