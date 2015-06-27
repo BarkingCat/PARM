@@ -223,3 +223,11 @@ pip-log.txt
 *.pdb
 *.ispac
 *.dbmdl
+<<<<<<< HEAD
+=======
+*.dbmdl
+PARM/PARM_Control/PARM_Control.dbmdl
+*.dbmdl
+*.dbmdl
+PARM/PARM_Staging/obj/Debug/PARM_Staging.sqlproj.FileListAbsolute.txt
+>>>>>>> 07d39e34c015ce07c6f6fc807ac6bdf153badfab
