@@ -2,13 +2,13 @@
 # Information
 #######
 
-# Version: 0.1
+# Version: 0.2
 # Developer: Aaron Jackson
 # Date: 14/04/2015
 # Desc: This script will download files from the download queue in PARM
 
 ## TEST
-# .\Download_AFR_Files.ps1 -System_Name "AFR" -Frequency "D"
+# .\Download_Files.ps1 -System_Name "AFR" -Frequency "D"
 ##
 
 ################ VARIABLES #################
@@ -29,7 +29,7 @@ Set-StrictMode -version 4
 #######
 # CONSTANTS
 #######
-[string]$DB_Server = 'localhost' #NVRMND-PC or parm.barkingcat.com.au -- url disabled for now
+[string]$DB_Server = 'localhost' #cerberus.bct.local'
 [string]$DB_Name = 'PARM_Control'
 
 #######

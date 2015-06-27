@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>PARM_ETL</Name>
-    <LastWriteTime>2015-06-13T09:14:19.9361638Z</LastWriteTime>
+    <LastWriteTime>2015-06-27T06:29:19.831939Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -54,6 +54,11 @@
     <ProjectBuildItemInfo>
       <Name>Historical_Load_AFR_ShortSales_Daily.dtsx</Name>
       <LastWriteTime>2015-06-13T09:24:02.2657463Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Acquisition_RBA_FX_Daily.dtsx</Name>
+      <LastWriteTime>2015-06-27T06:30:29.3619486Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

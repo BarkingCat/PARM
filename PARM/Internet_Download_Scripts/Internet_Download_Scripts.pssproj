@@ -10,7 +10,7 @@
     <Name>Internet_Download_Scripts</Name>
     <ManifestFileName />
     <AliasesToExport />
-    <Author />
+    <Author>Aaron Jackson</Author>
     <ClrVersion />
     <CmdletsToExport />
     <CompanyName>Barking Cat Technology</CompanyName>
@@ -18,12 +18,12 @@
     <Description />
     <FormatsToProcess />
     <FunctionsToProcess />
-    <Guid />
+    <Guid>ab60618f-35af-4b3a-b131-055114c211af</Guid>
     <ModuleList />
     <ModuleToProcess />
     <NestedModules />
     <PowerShellHostVersion />
-    <PowerShellVersion />
+    <PowerShellVersion>v2</PowerShellVersion>
     <ProcessorArchitecture />
     <RequiredAssemblies />
     <RequiredModules />
@@ -49,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Download_AFR_Files.ps1">
+    <Content Include="Download_Files.ps1">
       <Publish>True</Publish>
     </Content>
   </ItemGroup>
