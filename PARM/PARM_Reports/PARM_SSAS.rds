@@ -2,7 +2,7 @@
 <RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="PARM_SSAS">
   <ConnectionProperties>
     <Extension>OLEDB-MD</Extension>
-    <ConnectString>Data Source=nvrmnd-laptop;Initial Catalog=PARM_SSAS</ConnectString>
+    <ConnectString>Data Source=cerberus.bct.local;Initial Catalog=PARM_SSAS</ConnectString>
     <IntegratedSecurity>true</IntegratedSecurity>
   </ConnectionProperties>
   <DataSourceID>07092b27-d32e-4893-812f-bb389eb79c95</DataSourceID>

@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">NVRMND-LAPTOP</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPfxDUTRQcUizfQvz4pUkSwAAAAACAAAAAAAQZgAAAAEAACAAAAAHz4UkjLfe68iLTgb/yS7bMJxz1ThFdFOA4C7eG+8+dAAAAAAOgAAAAAIAACAAAAATYwI+BqTWmskBZBW6+Ds4cxdGY0dE1O5ddnP6mXJ8qJAAAAAw6A0rmNhZR5w4QoOCWmZB3x2H0M7oQjVurhp5sLt44SzWAXsCmDYp1ZpB9u6VtIFlyeXuZb5aAuaUWcdcLJwZIq0diUVp2ojo88z/P42yFfZ/XEOitEY6HDahIMNVOhzmgn9Bdp30YQsVgTti7hqYSJEcX9Xq1xzKpp9MxM0gaRvaGPkDKfTDCovwGqFm8DBAAAAA9kuJY6SQdomszvQo9lQ3/lbOyjp+7TGGqZuZJC26QGiLdKZTqNsrNWnVgr6qXpBnwFZUAsrhjAI9DL1dnOH2JQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAauA/VEaIk0q0UyImzRWkVQAAAAACAAAAAAADZgAAwAAAABAAAACgnP+lkVr19bnUldIN2igJAAAAAASAAACgAAAAEAAAAIWWB8kEK/rUGKinRyPJxeeIAAAAG431t4Sf7HQP99mYxoRii8QZrkWWHjK0l+WuOH7mIlvuM4a6ZVHWtfV6ep5vk8Jasv3LpZC6XYnoACL2VWBfAqAoWr4J/XrP8BpmuGz81937ToDGA9i86eSlNWaY62t21c0UQ4n3P8CAuHI7FMoupcH7QBvkkACUzpTM3j2YtMQs/2Ab2IGErRQAAADJ9KTSnq0xMpfP/PtiZ+BqIY9dDQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -58,7 +58,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=localhost;Initial Catalog=PARM_Control;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Acquisition_AFR_Daily-{CD64049C-2680-44FF-A75D-3D0D94EEC79C}NVRMND-PC.PARM_Control;</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=192.168.2.85;Initial Catalog=PARM_Control;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Acquisition_AFR_Daily-{CD64049C-2680-44FF-A75D-3D0D94EEC79C}NVRMND-PC.PARM_Control;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -117,7 +117,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">localhost</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">192.168.2.85</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -146,7 +146,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=localhost;Initial Catalog=PARM_Staging;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{51A6FCF7-E674-40CC-BA36-612E7A9BC17C}NVRMND-PC.PARM_Staging;</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=192.168.2.85;Initial Catalog=PARM_Staging;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{51A6FCF7-E674-40CC-BA36-612E7A9BC17C}NVRMND-PC.PARM_Staging;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -205,7 +205,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">localhost</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">192.168.2.85</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -1138,8 +1138,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1547,10 +1545,10 @@
                 <SSIS:Property SSIS:Name="Name">Acquisition_AFR_InterestRateSecurities_Weekly</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">28</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">29</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{9DA023F4-6D6A-4411-AA62-E97FC6438564}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{DD5041FD-3597-4C27-83C3-941593A35E35}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1689,6 +1687,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

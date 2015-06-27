@@ -5,6 +5,6 @@
   DTS:CreationName="OLEDB">
   <DTS:ObjectData>
     <DTS:ConnectionManager
-      DTS:ConnectionString="Data Source=localhost;Initial Catalog=PARM_Control;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Acquisition_AFR_Daily-{CD64049C-2680-44FF-A75D-3D0D94EEC79C}NVRMND-PC.PARM_Control;" />
+      DTS:ConnectionString="Data Source=192.168.2.85;Initial Catalog=PARM_Control;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Acquisition_AFR_Daily-{CD64049C-2680-44FF-A75D-3D0D94EEC79C}NVRMND-PC.PARM_Control;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>

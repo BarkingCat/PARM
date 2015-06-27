@@ -3,7 +3,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>localhost</TargetServer>
+        <TargetServer>192.168.2.85</TargetServer>
         <TargetDatabase>PARM_SSAS</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>

@@ -12,3 +12,8 @@ C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Control\bin\Debug\PARM_Control.dl
 C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Control\bin\Debug\PARM_Control.pdb
 C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Control\obj\Debug\PARM_Control.dll
 C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_Control\obj\Debug\PARM_Control.pdb
+C:\Users\Aaron.BCT\Sync\Barking_Cat\PARM\PARM\PARM_Control\bin\Debug\PARM_Control.dacpac
+C:\Users\Aaron.BCT\Sync\Barking_Cat\PARM\PARM\PARM_Control\bin\Debug\PARM_Control.dll
+C:\Users\Aaron.BCT\Sync\Barking_Cat\PARM\PARM\PARM_Control\bin\Debug\PARM_Control.pdb
+C:\Users\Aaron.BCT\Sync\Barking_Cat\PARM\PARM\PARM_Control\obj\Debug\PARM_Control.dll
+C:\Users\Aaron.BCT\Sync\Barking_Cat\PARM\PARM\PARM_Control\obj\Debug\PARM_Control.pdb

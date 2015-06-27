@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Acquisition_AFR_InterestRateSecurities_Weekly"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{9DA023F4-6D6A-4411-AA62-E97FC6438564}">
+  DTS:VersionBuild="29"
+  DTS:VersionGUID="{DD5041FD-3597-4C27-83C3-941593A35E35}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1470,7 +1470,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
         <NodeLayout
           Size="136,44"
           Id="Package\SEQC_Error\SQL_SetStatus"
@@ -1478,8 +1478,8 @@
         <ContainerLayout
           HeaderHeight="43.924528301886795"
           IsExpanded="True"
-          PanelSize="170,97"
-          Size="170,141"
+          PanelSize="169.6,96.8"
+          Size="169.6,140.8"
           Id="Package\SEQC_Error"
           TopLeft="322.5,309.5" />
         <NodeLayout
@@ -1487,7 +1487,7 @@
           Id="Package\SEQC_Load_File\DFT_Load_File"
           TopLeft="21,109.5" />
         <NodeLayout
-          Size="167,44"
+          Size="167.2,44"
           Id="Package\SEQC_Load_File\SQL_GetFileData"
           TopLeft="5.50000000000001,5.5" />
         <EdgeLayout
@@ -1495,7 +1495,7 @@
           TopLeft="89,49.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -1515,8 +1515,8 @@
         <ContainerLayout
           HeaderHeight="43.924528301886795"
           IsExpanded="True"
-          PanelSize="209,208"
-          Size="209,252"
+          PanelSize="208.8,208"
+          Size="208.8,252"
           Id="Package\SEQC_Load_File"
           TopLeft="198,5.49999999999989" />
         <NodeLayout
@@ -1526,8 +1526,8 @@
         <ContainerLayout
           HeaderHeight="43.924528301886795"
           IsExpanded="True"
-          PanelSize="177,101"
-          Size="177,145"
+          PanelSize="176.8,100.8"
+          Size="176.8,144.8"
           Id="Package\SEQC_Success"
           TopLeft="98.5000000000001,309.5" />
         <EdgeLayout
@@ -1535,7 +1535,7 @@
           TopLeft="269,257.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="-81.9999999999999,52.0000000000001"
               Start="0,0"
               End="-81.9999999999999,44.5000000000001">
@@ -1569,7 +1569,7 @@
           TopLeft="336,257.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="71.5,52.0000000000001"
               Start="0,0"
               End="71.5,44.5000000000001">
@@ -1603,7 +1603,7 @@
         <AnnotationLayout
           Text="VERIFY ROW COUNT BEFORE MARKING SUCCESS"
           ParentId="Package"
-          Size="289,40"
+          Size="288.8,39.2"
           Id="0c729f0f-15fe-4f72-99e5-c8fb0dff055e"
           TopLeft="522.5,322.5">
           <AnnotationLayout.FontInfo>
@@ -1626,15 +1626,15 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="149,42"
+          Size="148.8,41.6"
           Id="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging"
           TopLeft="43.5,192.5" />
         <NodeLayout
-          Size="245,42"
+          Size="244.8,41.6"
           Id="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_AFRInterestRateSecurities"
           TopLeft="5.5,17.5" />
         <NodeLayout
-          Size="171,42"
+          Size="171.2,41.6"
           Id="Package\SEQC_Load_File\DFT_Load_File\DER_Lineage_Data"
           TopLeft="35.5,109.5" />
         <EdgeLayout

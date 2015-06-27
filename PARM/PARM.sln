@@ -13,9 +13,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSRS", "SSRS", "{9A9C30C0-8C89-47E2-8DBF-24F6A323158F}"
 EndProject
 Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "PARM_Reports", "PARM_Reports\PARM_Reports.rptproj", "{CDD3AF7E-B0D8-4A69-BE4F-8F88971AE139}"
-	ProjectSection(ProjectDependencies) = postProject
-		{A46EF178-64F0-4DD8-AF4C-EC24BDF7C37A} = {A46EF178-64F0-4DD8-AF4C-EC24BDF7C37A}
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Excel", "Excel", "{8A177AAC-EF7C-4E26-9210-EA9BE3E002C3}"
 	ProjectSection(SolutionItems) = preProject

@@ -5,7 +5,7 @@
     <TargetDatabaseName>PARM_Staging</TargetDatabaseName>
     <DeployScriptFileName>PARM_Staging.sql</DeployScriptFileName>
     <ProfileVersionNumber>1</ProfileVersionNumber>
-    <TargetConnectionString>Data Source=NVRMND-PC;User ID=nvrmnd;Pooling=False</TargetConnectionString>
+    <TargetConnectionString>Data Source=192.168.2.85;Integrated Security=True;Pooling=False</TargetConnectionString>
     <BlockWhenDriftDetected>True</BlockWhenDriftDetected>
     <RegisterDataTierApplication>True</RegisterDataTierApplication>
   </PropertyGroup>

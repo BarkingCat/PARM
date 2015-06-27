@@ -15,8 +15,8 @@ SET NUMERIC_ROUNDABORT OFF;
 GO
 :setvar DatabaseName "PARM_Staging"
 :setvar DefaultFilePrefix "PARM_Staging"
-:setvar DefaultDataPath "C:\Users\Aaron\AppData\Local\Microsoft\VisualStudio\SSDT\PARM"
-:setvar DefaultLogPath "C:\Users\Aaron\AppData\Local\Microsoft\VisualStudio\SSDT\PARM"
+:setvar DefaultDataPath "C:\Users\Aaron.BCT\AppData\Local\Microsoft\VisualStudio\SSDT\PARM"
+:setvar DefaultLogPath "C:\Users\Aaron.BCT\AppData\Local\Microsoft\VisualStudio\SSDT\PARM"
 
 GO
 :on error exit
