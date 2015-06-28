@@ -1,0 +1,28 @@
+﻿CREATE TABLE [Staging].[RBA_CommodityPrices_Daily_Raw] (
+    [RunID]                                                      INT           NULL,
+    [SystemID]                                                   INT           NULL,
+    [FileID]                                                     INT           NULL,
+    [Title]                                                      VARCHAR (100) NULL,
+    [Commodity prices – A$]                                      VARCHAR (100) NULL,
+    [Commodity prices – SDR]                                     VARCHAR (100) NULL,
+    [Commodity prices – US$]                                     VARCHAR (100) NULL,
+    [Rural commodity prices – A$]                                VARCHAR (100) NULL,
+    [Rural commodity prices – SDR]                               VARCHAR (100) NULL,
+    [Rural commodity prices – US$]                               VARCHAR (100) NULL,
+    [Non-rural commodity prices – A$]                            VARCHAR (100) NULL,
+    [Non-rural commodity prices – SDR]                           VARCHAR (100) NULL,
+    [Non-rural commodity prices – US$]                           VARCHAR (100) NULL,
+    [Base metals prices – A$]                                    VARCHAR (100) NULL,
+    [Base metals prices – SDR]                                   VARCHAR (100) NULL,
+    [Base metals prices – US$]                                   VARCHAR (100) NULL,
+    [Bulk commodities prices – A$]                               VARCHAR (100) NULL,
+    [Bulk commodities prices – SDR]                              VARCHAR (100) NULL,
+    [Bulk commodities prices – US$]                              VARCHAR (100) NULL,
+    [Commodity prices (with bulk commodities spot prices) – A$]  VARCHAR (100) NULL,
+    [Commodity prices (with bulk commodities spot prices) – SDR] VARCHAR (100) NULL,
+    [Commodity prices (with bulk commodities spot prices) – US$] VARCHAR (100) NULL,
+    [Bulk commodities spot prices – A$]                          VARCHAR (100) NULL,
+    [Bulk commodities spot prices – SDR]                         VARCHAR (100) NULL,
+    [Bulk commodities spot prices – US$]                         VARCHAR (100) NULL
+);
+

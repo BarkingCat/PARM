@@ -4,7 +4,7 @@
 -- Author:		Aaron Jackson
 -- Create date: 05/04/2015
 -- Description:	Update status
--- EXEC [Control].[Initialise_UploadQueue] @RunID = 248;
+-- EXEC [Control].[Initialise_UploadQueue] @RunID = 1;
 -- *********************************************
 CREATE PROCEDURE [Control].[Initialise_UploadQueue]
 	@RunID INT = -1
@@ -22,9 +22,11 @@ BEGIN
 		A.RunID,
 		B.FileID
 	FROM [Control].[Run] as A
-	CROSS APPLY (SELECT FileID FROM [Control].[Files] WHERE Frequency = 'W') as B
-	WHERE B.FileID NOT IN (SELECT FileID FROM [Control].[DownloadQueue] WHERE RunID = A.RunID)
+	CROSS APPLY (SELECT FileID FROM [Control].[Files] WHERE Frequency = 'D') as B
+	WHERE B.FileID NOT IN (SELECT FileID FROM [Control].[UploadQueue] WHERE RunID = A.RunID)
 	AND A.RunID = ISNULL(NULLIF(@RunID, -1), A.RunID);
+
+	SELECT @@ROWCOUNT;
 	
 	SET @RunDayOfWeek = (SELECT (DATEPART(dw, [Control].GetRunDate(@RunID)) + @@DATEFIRST) % 7)
 

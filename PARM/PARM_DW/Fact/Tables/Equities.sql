@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [Fact].[Equities] (
-    [DateSK]                   INT   NOT NULL,
+    [PK_Date]                  DATE  NOT NULL,
     [TimeSK]                   INT   NOT NULL,
     [MarketSK]                 INT   NOT NULL,
     [CurrencySK]               INT   NOT NULL,
@@ -19,7 +19,7 @@
     [90Day_SMA]                MONEY NOT NULL,
     [90Day_AverageDailyReturn] MONEY NOT NULL,
     [90Day_Volatility]         MONEY NOT NULL,
-    [Price_vs_90Day_SMA]       AS    (([90Day_SMA]-[AskPrice])/[90Day_SMA]) PERSISTED,
+    [Price_vs_90Day_SMA]       MONEY NOT NULL,
     [Daily_PriceChange]        MONEY NOT NULL,
     [MTD_PriceChange]          MONEY NOT NULL,
     [YTD_PriceChange]          MONEY NOT NULL
@@ -32,7 +32,8 @@
 
 
 
+
+
 GO
-CREATE UNIQUE CLUSTERED INDEX [ClusteredIndex-20150612-112129]
-    ON [Fact].[Equities]([DateSK] ASC, [TimeSK] ASC, [MarketSK] ASC, [CurrencySK] ASC, [StockSK] ASC);
+
 

@@ -7,6 +7,6 @@ RETURNS DATE
 AS
 BEGIN
 	
-	RETURN (SELECT TOP 1 [Date] FROM [Dimension].[Date] WHERE [Month] = Month(@BusinessDate) - 1 AND [Year] = YEAR(@BusinessDate) AND [DayOfWeek] NOT IN ('Saturday','Sunday') ORDER BY [Date] DESC)
+	RETURN (SELECT TOP 1 [PK_Date] FROM [Dimension].[Date] WHERE [Month] = Month(@BusinessDate) - 1 AND [Year] = YEAR(@BusinessDate) AND [Day_Of_Week] NOT IN (7,1) ORDER BY [PK_Date] DESC)
 
 END

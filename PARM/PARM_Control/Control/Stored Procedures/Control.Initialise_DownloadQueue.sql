@@ -26,6 +26,8 @@ BEGIN
 	WHERE B.FileID NOT IN (SELECT FileID FROM [Control].[DownloadQueue] WHERE RunID = A.RunID)
 	AND A.RunID = ISNULL(NULLIF(@RunID, -1), A.RunID);
 
+	SELECT @@ROWCOUNT;
+
 	SET @RunDayOfWeek = (SELECT (DATEPART(dw, [Control].GetRunDate(@RunID)) + @@DATEFIRST) % 7)
 
 	--SELECT @RunDayOfWeek;

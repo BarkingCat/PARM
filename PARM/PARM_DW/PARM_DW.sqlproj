@@ -94,6 +94,10 @@
     <Build Include="Dimension\Tables\Currency_1.sql" />
     <Build Include="dbo\Functions\Get_EndOfYearDate.sql" />
     <Build Include="dbo\Functions\Get_EndOfMonthDate.sql" />
+    <Build Include="Fact\Tables\BudgetFinancialRatios.sql" />
+    <Build Include="Security\trinity.sql" />
+    <Build Include="Security\neo.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />

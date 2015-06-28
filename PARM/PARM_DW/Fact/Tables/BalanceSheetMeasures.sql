@@ -1,6 +1,8 @@
 ﻿CREATE TABLE [Fact].[BalanceSheetMeasures] (
-    [BalanceSheetItemSK] INT      NOT NULL,
-    [AssetOrLiability]   CHAR (1) NOT NULL,
-    [BalanceSheetValue]  MONEY    NOT NULL
+    [PK_Date]            DATE  NOT NULL,
+    [BalanceSheetItemSK] INT   NOT NULL,
+    [BalanceSheetValue]  MONEY NOT NULL
 );
+
+
 
