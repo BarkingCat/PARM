@@ -5,22 +5,22 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="NVRMND-PC"
   DTS:CreatorName="nvrmnd-PC\nvrmnd"
-  DTS:DTSID="{080F820F-0FF6-465E-BC43-61EA308D5C6F}"
+  DTS:DTSID="{14CB06E7-4D9B-4FB1-9EF4-B3502D0EA8B8}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="12.0.2430.0"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Acquisition_RBA_Employment_Data_Daily"
+  DTS:ObjectName="Acquisition_RBA_BalanceOfPayments_Daily"
   DTS:PackageType="5"
-  DTS:VersionBuild="35"
-  DTS:VersionGUID="{52172420-F265-4191-90DE-458C28C1D5F4}">
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{2216A5EE-7B43-439C-B578-C730220541FA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[RBA_EmploymentData]"
+      DTS:refId="Package.ConnectionManagers[RBA_BalanceOfPayments]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{552083A1-E84C-4718-AA82-82E1B4744F25}"
-      DTS:ObjectName="RBA_EmploymentData">
+      DTS:DTSID="{5ED9DD7B-A532-4C80-87E9-8FF40DFFEDBC}"
+      DTS:ObjectName="RBA_BalanceOfPayments">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::Directory] +@[User::Filename]</DTS:PropertyExpression>
       <DTS:ObjectData>
@@ -41,7 +41,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Title"
-              DTS:DTSID="{A0278883-E526-414C-BC45-822BA18DADC1}"
+              DTS:DTSID="{1DBAEC54-4F67-4874-A3E4-BBE7F7A4F927}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -49,8 +49,8 @@
               DTS:MaximumWidth="100"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Labour force"
-              DTS:DTSID="{0FFC268C-D458-46DF-B440-88400FEE1C3A}"
+              DTS:ObjectName="Net inflows to the general government sector"
+              DTS:DTSID="{D8C95810-99F0-4CDD-8C19-E44B04F56BB0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -58,8 +58,8 @@
               DTS:MaximumWidth="100"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Participation rate"
-              DTS:DTSID="{8359F37D-D689-4965-A7BF-C7F5AB2F5696}"
+              DTS:ObjectName="Net  inflows to the Reserve Bank"
+              DTS:DTSID="{23CF3121-109A-4EB9-AEC9-6169CA6632DE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -67,8 +67,8 @@
               DTS:MaximumWidth="100"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Part-time employment"
-              DTS:DTSID="{CEAA0A98-B17E-4B56-BB9F-4F0884AD848D}"
+              DTS:ObjectName="Net direct debt inflows to the non-official sector"
+              DTS:DTSID="{7FFB17B4-279A-4C39-A85E-E50B17A94B3A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -76,8 +76,8 @@
               DTS:MaximumWidth="100"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Full-time employment"
-              DTS:DTSID="{BDB167B6-2CB2-40BC-AE71-3FFAD0FC1C70}"
+              DTS:ObjectName="Net direct equity inflows to the non-official sector"
+              DTS:DTSID="{5CBB83E8-F0B5-4CCE-8F7D-FECB1940D92D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -85,8 +85,8 @@
               DTS:MaximumWidth="100"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Employment"
-              DTS:DTSID="{C2050DCE-E67A-4A82-90A2-CBED8B7A4F4E}"
+              DTS:ObjectName="Net portfolio and other debt inflows to the non-official sector"
+              DTS:DTSID="{D097DE83-E639-4168-9EBE-9C822AF607E6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -94,8 +94,8 @@
               DTS:MaximumWidth="100"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Year-ended employment growth"
-              DTS:DTSID="{57B36775-26C5-43F5-B530-24DED7623CFA}"
+              DTS:ObjectName="Net portfolio and other equity inflows to the non-official sector"
+              DTS:DTSID="{FBBB2035-003B-4E86-89CA-01A0FC9CDFBD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -103,8 +103,8 @@
               DTS:MaximumWidth="100"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Year-ended employment trend growth"
-              DTS:DTSID="{9F9C9109-2B25-4867-9743-553560199F53}"
+              DTS:ObjectName="Net total inflows to the non-official sector"
+              DTS:DTSID="{A6DE63AE-4DE9-4C2A-BEF3-8FBFA00D6E26}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,8 +112,8 @@
               DTS:MaximumWidth="100"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Employment to population ratio"
-              DTS:DTSID="{E43F157F-83D5-4F35-99CA-3624CFEB464A}"
+              DTS:ObjectName="Financial account balance"
+              DTS:DTSID="{172E3E86-8437-4A37-AC39-694C91211933}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -121,89 +121,24 @@
               DTS:MaximumWidth="100"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Unemployment"
-              DTS:DTSID="{CF06D1EB-73D8-40B7-AF3C-A8E1B9121D51}"
+              DTS:ObjectName="Balancing item"
+              DTS:DTSID="{617A8F22-75D7-4494-91D2-AD806750201A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="100"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Unemployment rate"
-              DTS:DTSID="{F0F45379-22DD-4DE8-846D-12B48EDB955F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Unemployment rate trend"
-              DTS:DTSID="{DA07FF9C-994B-46D6-A080-6928AF5A4A17}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Hours worked"
-              DTS:DTSID="{77BE9E34-A7D8-4A80-B4AC-9C27BBF7E272}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Hours worked trend"
-              DTS:DTSID="{6360C5B8-C281-45C9-92F5-2515B4C96C80}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Year-ended hours worked trend growth"
-              DTS:DTSID="{B22F6032-9BA0-4C6B-82E2-905A104AC5A8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Average hours worked trend"
-              DTS:DTSID="{E9D23819-ED17-49D5-A17A-F5EEDB70CCE6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Job vacancies"
-              DTS:DTSID="{D960DB8B-F5F3-48A7-B373-93DF2E7C8A1D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Private sector job vacancies"
-              DTS:DTSID="{A3552F3F-39FA-4FE7-82A7-10D3329B9539}"
+              DTS:ObjectName="Column 10"
+              DTS:DTSID="{1D1C03C9-41D1-45EF-B635-7B3C4E30CD38}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000A_"
-              DTS:MaximumWidth="100"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Vacancies to labour force ratio "
-              DTS:DTSID="{2227A9D0-400C-4399-9C68-50194BB27261}"
+              DTS:ObjectName="Column 11"
+              DTS:DTSID="{24E0945E-D3B6-478B-A229-8BB354B9CA0B}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -213,7 +148,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{F18BE92E-17D6-40BE-BD7A-E9D42573EA97}"
+      DTS:DTSID="{8D00E0CF-C165-4D54-BC68-45DAB9282F02}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="Directory">
@@ -223,16 +158,16 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{2FA2D7B1-8541-46F6-9715-46E62E8E7D9F}"
+      DTS:DTSID="{88F73E13-FBE3-4F23-BCBC-469D35BEE8AF}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="FileID">
       <DTS:VariableValue
-        DTS:DataType="3">17</DTS:VariableValue>
+        DTS:DataType="3">18</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{7F2B4EC3-B0E9-48E1-A910-E68423D74871}"
+      DTS:DTSID="{DE847926-A411-4035-8757-6AC42F7E5727}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="Filename">
@@ -242,7 +177,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{C968B8EA-6FDE-48D2-B286-7FF6027645D1}"
+      DTS:DTSID="{62725F43-BB2E-4695-8AAA-FAB18A38625C}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="RunID">
@@ -251,7 +186,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{B4345596-B317-4258-AEDB-14AEF9F03ADA}"
+      DTS:DTSID="{EBDAC3D8-894C-441A-9C71-A838106C9FB1}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="SystemID">
@@ -264,7 +199,7 @@
       DTS:refId="Package\SEQC_Error"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{AC1DF8E5-6EFC-4F99-8FAF-1AB48345A32A}"
+      DTS:DTSID="{77F61F9D-9D03-43B3-B8AF-F396204B98A9}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="SEQC_Error">
@@ -274,7 +209,7 @@
           DTS:refId="Package\SEQC_Error\SQL_SetStatus"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{9EB615CA-9E8D-4ACA-A3BB-66C91433AB4D}"
+          DTS:DTSID="{FD2A7A7F-8AAC-4D8B-9F3B-152DE9554082}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="SQL_SetStatus"
@@ -306,7 +241,7 @@
       DTS:refId="Package\SEQC_Load_File"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{AFCD14C5-E085-4122-B73A-A41BD37D1EF6}"
+      DTS:DTSID="{BD7F1FA1-E7FB-4AEB-AC6A-C72791D0A218}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="SEQC_Load_File">
@@ -316,7 +251,7 @@
           DTS:refId="Package\SEQC_Load_File\DFT_Load_File"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{BAA56940-A13A-4B2D-9CB7-FB7A188651DF}"
+          DTS:DTSID="{68396128-464A-4156-8239-273DD3FABA76}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="DFT_Load_File"
@@ -446,12 +381,12 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData"
+                  refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments"
                   componentClassID="Microsoft.FlatFileSource"
                   contactInfo="Flat File Source;Microsoft Corporation; Microsoft SqlServer v10; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                   description="Flat File Source"
                   localeId="1033"
-                  name="FF_SRC_RBA_EmploymentData"
+                  name="FF_SRC_RBA_BalanceOfPayments"
                   usesDispositions="true"
                   version="1">
                   <properties>
@@ -466,25 +401,25 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Connections[FlatFileConnection]"
-                      connectionManagerID="Package.ConnectionManagers[RBA_EmploymentData]"
-                      connectionManagerRefId="Package.ConnectionManagers[RBA_EmploymentData]"
+                      refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[RBA_BalanceOfPayments]"
+                      connectionManagerRefId="Package.ConnectionManagers[RBA_BalanceOfPayments]"
                       name="FlatFileConnection" />
                   </connections>
                   <outputs>
                     <output
-                      refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output]"
+                      refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output]"
                       name="Flat File Source Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Title]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Title]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Title]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Title]"
                           length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Title]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Title]"
                           name="Title"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -499,15 +434,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Labour force]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net inflows to the general government sector]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Labour force]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Net inflows to the general government sector]"
                           length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Labour force]"
-                          name="Labour force"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net inflows to the general government sector]"
+                          name="Net inflows to the general government sector"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -521,15 +456,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Participation rate]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net  inflows to the Reserve Bank]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Participation rate]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Net  inflows to the Reserve Bank]"
                           length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Participation rate]"
-                          name="Participation rate"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net  inflows to the Reserve Bank]"
+                          name="Net  inflows to the Reserve Bank"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -543,15 +478,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Part-time employment]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net direct debt inflows to the non-official sector]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Part-time employment]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Net direct debt inflows to the non-official sector]"
                           length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Part-time employment]"
-                          name="Part-time employment"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net direct debt inflows to the non-official sector]"
+                          name="Net direct debt inflows to the non-official sector"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -565,15 +500,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Full-time employment]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net direct equity inflows to the non-official sector]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Full-time employment]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Net direct equity inflows to the non-official sector]"
                           length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Full-time employment]"
-                          name="Full-time employment"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net direct equity inflows to the non-official sector]"
+                          name="Net direct equity inflows to the non-official sector"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -587,15 +522,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Employment]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net portfolio and other debt inflows to the non-official sector]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Employment]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Net portfolio and other debt inflows to the non-official sector]"
                           length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Employment]"
-                          name="Employment"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net portfolio and other debt inflows to the non-official sector]"
+                          name="Net portfolio and other debt inflows to the non-official sector"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -609,15 +544,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Year-ended employment growth]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net portfolio and other equity inflows to the non-official sector]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Year-ended employment growth]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Net portfolio and other equity inflows to the non-official sector]"
                           length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Year-ended employment growth]"
-                          name="Year-ended employment growth"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net portfolio and other equity inflows to the non-official sector]"
+                          name="Net portfolio and other equity inflows to the non-official sector"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -631,15 +566,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Year-ended employment trend growth]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net total inflows to the non-official sector]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Year-ended employment trend growth]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Net total inflows to the non-official sector]"
                           length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Year-ended employment trend growth]"
-                          name="Year-ended employment trend growth"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net total inflows to the non-official sector]"
+                          name="Net total inflows to the non-official sector"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -653,15 +588,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Employment to population ratio]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Financial account balance]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Employment to population ratio]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Financial account balance]"
                           length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Employment to population ratio]"
-                          name="Employment to population ratio"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Financial account balance]"
+                          name="Financial account balance"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -675,213 +610,15 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Unemployment]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Balancing item]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Unemployment]"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Balancing item]"
                           length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Unemployment]"
-                          name="Unemployment"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Unemployment rate]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Unemployment rate]"
-                          length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Unemployment rate]"
-                          name="Unemployment rate"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Unemployment rate trend]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Unemployment rate trend]"
-                          length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Unemployment rate trend]"
-                          name="Unemployment rate trend"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Hours worked]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Hours worked]"
-                          length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Hours worked]"
-                          name="Hours worked"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Hours worked trend]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Hours worked trend]"
-                          length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Hours worked trend]"
-                          name="Hours worked trend"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Year-ended hours worked trend growth]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Year-ended hours worked trend growth]"
-                          length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Year-ended hours worked trend growth]"
-                          name="Year-ended hours worked trend growth"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Average hours worked trend]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Average hours worked trend]"
-                          length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Average hours worked trend]"
-                          name="Average hours worked trend"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Job vacancies]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Job vacancies]"
-                          length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Job vacancies]"
-                          name="Job vacancies"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Private sector job vacancies]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Private sector job vacancies]"
-                          length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Private sector job vacancies]"
-                          name="Private sector job vacancies"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Vacancies to labour force ratio ]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Vacancies to labour force ratio ]"
-                          length="100"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Vacancies to labour force ratio ]"
-                          name="Vacancies to labour force ratio "
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Balancing item]"
+                          name="Balancing item"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -898,143 +635,101 @@
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Title]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Title]"
                           codePage="1252"
                           dataType="str"
                           length="100"
                           name="Title" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Labour force]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Column 10]"
                           codePage="1252"
                           dataType="str"
-                          length="100"
-                          name="Labour force" />
+                          length="255"
+                          name="Column 10" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Participation rate]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Column 11]"
                           codePage="1252"
                           dataType="str"
-                          length="100"
-                          name="Participation rate" />
+                          length="255"
+                          name="Column 11" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Part-time employment]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Net inflows to the general government sector]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Part-time employment" />
+                          name="Net inflows to the general government sector" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Full-time employment]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Net  inflows to the Reserve Bank]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Full-time employment" />
+                          name="Net  inflows to the Reserve Bank" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Employment]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Net direct debt inflows to the non-official sector]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Employment" />
+                          name="Net direct debt inflows to the non-official sector" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Year-ended employment growth]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Net direct equity inflows to the non-official sector]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Year-ended employment growth" />
+                          name="Net direct equity inflows to the non-official sector" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Year-ended employment trend growth]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Net portfolio and other debt inflows to the non-official sector]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Year-ended employment trend growth" />
+                          name="Net portfolio and other debt inflows to the non-official sector" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Employment to population ratio]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Net portfolio and other equity inflows to the non-official sector]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Employment to population ratio" />
+                          name="Net portfolio and other equity inflows to the non-official sector" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Unemployment]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Net total inflows to the non-official sector]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Unemployment" />
+                          name="Net total inflows to the non-official sector" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Unemployment rate]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Financial account balance]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Unemployment rate" />
+                          name="Financial account balance" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Unemployment rate trend]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].ExternalColumns[Balancing item]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Unemployment rate trend" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Hours worked]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Hours worked" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Hours worked trend]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Hours worked trend" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Year-ended hours worked trend growth]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Year-ended hours worked trend growth" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Average hours worked trend]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Average hours worked trend" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Job vacancies]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Job vacancies" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Private sector job vacancies]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Private sector job vacancies" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].ExternalColumns[Vacancies to labour force ratio ]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Vacancies to labour force ratio " />
+                          name="Balancing item" />
                       </externalMetadataColumns>
                     </output>
                     <output
-                      refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Error Output]"
+                      refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Error Output]"
                       isErrorOut="true"
                       name="Flat File Source Error Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                           codePage="1252"
                           dataType="text"
                           description="Flat File Source Error Output Column"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                           name="Flat File Source Error Output Column" />
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -1058,7 +753,7 @@
                     <property
                       dataType="System.String"
                       description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[Staging].[RBA_EmploymentData_Daily_Raw]</property>
+                      name="OpenRowset">[Staging].[RBA_BalanceOfPayments_Daily_Raw]</property>
                     <property
                       dataType="System.String"
                       description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1139,151 +834,79 @@
                           cachedLength="100"
                           cachedName="Title"
                           externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Title]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Title]" />
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Title]" />
                         <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Labour force]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Net inflows to the general government sector]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="100"
-                          cachedName="Labour force"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Labour force]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Labour force]" />
+                          cachedName="Net inflows to the general government sector"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Net inflows to the general government sector]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net inflows to the general government sector]" />
                         <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Participation rate]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Net  inflows to the Reserve Bank]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="100"
-                          cachedName="Participation rate"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Participation rate]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Participation rate]" />
+                          cachedName="Net  inflows to the Reserve Bank"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Net  inflows to the Reserve Bank]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net  inflows to the Reserve Bank]" />
                         <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Part-time employment]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Net direct debt inflows to the non-official sector]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="100"
-                          cachedName="Part-time employment"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Part-time employment]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Part-time employment]" />
+                          cachedName="Net direct debt inflows to the non-official sector"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Net direct debt inflows to the non-official sector]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net direct debt inflows to the non-official sector]" />
                         <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Full-time employment]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Net direct equity inflows to the non-official sector]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="100"
-                          cachedName="Full-time employment"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Full-time employment]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Full-time employment]" />
+                          cachedName="Net direct equity inflows to the non-official sector"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Net direct equity inflows to the non-official sector]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net direct equity inflows to the non-official sector]" />
                         <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Employment]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Net portfolio and other debt inflows to the non-official sector]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="100"
-                          cachedName="Employment"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Employment]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Employment]" />
+                          cachedName="Net portfolio and other debt inflows to the non-official sector"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Net portfolio and other debt inflows to the non-official sector]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net portfolio and other debt inflows to the non-official sector]" />
                         <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Year-ended employment growth]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Net portfolio and other equity inflows to the non-official sector]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="100"
-                          cachedName="Year-ended employment growth"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Year-ended employment growth]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Year-ended employment growth]" />
+                          cachedName="Net portfolio and other equity inflows to the non-official sector"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Net portfolio and other equity inflows to the non-official sector]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net portfolio and other equity inflows to the non-official sector]" />
                         <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Year-ended employment trend growth]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Net total inflows to the non-official sector]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="100"
-                          cachedName="Year-ended employment trend growth"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Year-ended employment trend growth]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Year-ended employment trend growth]" />
+                          cachedName="Net total inflows to the non-official sector"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Net total inflows to the non-official sector]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Net total inflows to the non-official sector]" />
                         <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Employment to population ratio]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Financial account balance]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="100"
-                          cachedName="Employment to population ratio"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Employment to population ratio]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Employment to population ratio]" />
+                          cachedName="Financial account balance"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Financial account balance]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Financial account balance]" />
                         <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Unemployment]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Balancing item]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="100"
-                          cachedName="Unemployment"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Unemployment]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Unemployment]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Unemployment rate]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="Unemployment rate"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Unemployment rate]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Unemployment rate]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Unemployment rate trend]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="Unemployment rate trend"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Unemployment rate trend]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Unemployment rate trend]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Hours worked]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="Hours worked"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Hours worked]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Hours worked]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Hours worked trend]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="Hours worked trend"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Hours worked trend]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Hours worked trend]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Year-ended hours worked trend growth]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="Year-ended hours worked trend growth"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Year-ended hours worked trend growth]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Year-ended hours worked trend growth]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Average hours worked trend]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="Average hours worked trend"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Average hours worked trend]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Average hours worked trend]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Job vacancies]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="Job vacancies"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Job vacancies]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Job vacancies]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Private sector job vacancies]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="Private sector job vacancies"
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Private sector job vacancies]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Private sector job vacancies]" />
-                        <inputColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].Columns[Vacancies to labour force ratio ]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="Vacancies to labour force ratio "
-                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Vacancies to labour force ratio ]"
-                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output].Columns[Vacancies to labour force ratio ]" />
+                          cachedName="Balancing item"
+                          externalMetadataColumnId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Balancing item]"
+                          lineageId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output].Columns[Balancing item]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -1306,113 +929,59 @@
                           length="100"
                           name="Title" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Labour force]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Net inflows to the general government sector]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Labour force" />
+                          name="Net inflows to the general government sector" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Participation rate]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Net  inflows to the Reserve Bank]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Participation rate" />
+                          name="Net  inflows to the Reserve Bank" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Part-time employment]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Net direct debt inflows to the non-official sector]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Part-time employment" />
+                          name="Net direct debt inflows to the non-official sector" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Full-time employment]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Net direct equity inflows to the non-official sector]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Full-time employment" />
+                          name="Net direct equity inflows to the non-official sector" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Employment]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Net portfolio and other debt inflows to the non-official sector]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Employment" />
+                          name="Net portfolio and other debt inflows to the non-official sector" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Year-ended employment growth]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Net portfolio and other equity inflows to the non-official sector]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Year-ended employment growth" />
+                          name="Net portfolio and other equity inflows to the non-official sector" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Year-ended employment trend growth]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Net total inflows to the non-official sector]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Year-ended employment trend growth" />
+                          name="Net total inflows to the non-official sector" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Employment to population ratio]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Financial account balance]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Employment to population ratio" />
+                          name="Financial account balance" />
                         <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Unemployment]"
+                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Balancing item]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="Unemployment" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Unemployment rate]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Unemployment rate" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Unemployment rate trend]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Unemployment rate trend" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Hours worked]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Hours worked" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Hours worked trend]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Hours worked trend" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Year-ended hours worked trend growth]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Year-ended hours worked trend growth" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Average hours worked trend]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Average hours worked trend" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Job vacancies]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Job vacancies" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Private sector job vacancies]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Private sector job vacancies" />
-                        <externalMetadataColumn
-                          refId="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging.Inputs[OLE DB Destination Input].ExternalColumns[Vacancies to labour force ratio ]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Vacancies to labour force ratio " />
+                          name="Balancing item" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -1452,7 +1021,7 @@
                   refId="Package\SEQC_Load_File\DFT_Load_File.Paths[Flat File Source Output]"
                   endId="Package\SEQC_Load_File\DFT_Load_File\DER_Lineage_Data.Inputs[Derived Column Input]"
                   name="Flat File Source Output"
-                  startId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData.Outputs[Flat File Source Output]" />
+                  startId="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments.Outputs[Flat File Source Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -1461,7 +1030,7 @@
           DTS:refId="Package\SEQC_Load_File\SQL_GetFileData"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{C9C88E40-2D0A-4BA5-885E-F1841D8A9339}"
+          DTS:DTSID="{44E52BCD-E83B-4A60-A821-A516481743C2}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="SQL_GetFileData"
@@ -1499,7 +1068,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\SEQC_Load_File.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{24AF229B-33F8-4E68-BC68-450FE403F9AA}"
+          DTS:DTSID="{47935D52-E04B-4D9C-AAD0-5813AE335867}"
           DTS:From="Package\SEQC_Load_File\SQL_GetFileData"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -1510,7 +1079,7 @@
       DTS:refId="Package\SEQC_Success"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{A88B618C-F766-49CC-848C-81BF5E020ACD}"
+      DTS:DTSID="{BBD00E8B-927C-4313-9D09-AEE898C2FA2E}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="SEQC_Success">
@@ -1520,7 +1089,7 @@
           DTS:refId="Package\SEQC_Success\SQL_SetStatus"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{4B228FB6-B69A-44DE-BF27-172B1ED1C447}"
+          DTS:DTSID="{1124F41B-A29C-4557-8A0D-70EADA044584}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="SQL_SetStatus"
@@ -1553,7 +1122,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{6D61F5F5-1BAE-4FD3-AA2C-B651FE099A60}"
+      DTS:DTSID="{88C9535B-475B-4BEA-9D95-F48DD5B3BE81}"
       DTS:From="Package\SEQC_Load_File"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -1561,7 +1130,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{587AADCC-D20C-4757-A42D-9376DDD4C59B}"
+      DTS:DTSID="{EB385CBB-6BDB-4F2F-BD40-315A08A01C28}"
       DTS:From="Package\SEQC_Load_File"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -1735,31 +1304,31 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="227.2,41.6"
-          Id="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_EmploymentData"
-          TopLeft="17.5285715380493,19.2647060753977" />
+          Size="240,41.6"
+          Id="Package\SEQC_Load_File\DFT_Load_File\FF_SRC_RBA_BalanceOfPayments"
+          TopLeft="11.1,5.49999999999995" />
         <NodeLayout
           Size="169.6,41.6"
           Id="Package\SEQC_Load_File\DFT_Load_File\DER_Lineage_Data"
-          TopLeft="39.0714291431466,101.747058748456" />
+          TopLeft="5.50000000000003,107.1" />
         <NodeLayout
           Size="148.8,41.6"
           Id="Package\SEQC_Load_File\DFT_Load_File\PARM_Staging"
-          TopLeft="50.9000005960465,194.935293924602" />
+          TopLeft="15.9,208.7" />
         <EdgeLayout
           Id="Package\SEQC_Load_File\DFT_Load_File.Paths[Derived Column Output]"
-          TopLeft="124.585714869597,143.347058748456">
+          TopLeft="90.3,148.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,51.5882351761458"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,44.0882351761458">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,44.0882351761458" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1770,18 +1339,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\SEQC_Load_File\DFT_Load_File.Paths[Flat File Source Output]"
-          TopLeft="127.500000340598,60.8647060753977">
+          TopLeft="131.1,47.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,40.8823526730587"
+              EndConnector="-40.8,60"
               Start="0,0"
-              End="0,33.3823526730587">
+              End="-40.8,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.3823526730587" />
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="-4,30" />
+                  <mssgle:LineSegment
+                    End="-36.8,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-36.8,30"
+                    Point2="-40.8,30"
+                    Point3="-40.8,34" />
+                  <mssgle:LineSegment
+                    End="-40.8,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

@@ -287,8 +287,18 @@ CREATE TABLE [Control].[Files] (
     [FileDesc]   VARCHAR (255) NOT NULL,
     [TargetURI]  VARCHAR (255) NOT NULL,
     [Frequency]  CHAR (1)      NULL,
+    [Disabled]   BIT           NULL,
     PRIMARY KEY CLUSTERED ([FileID] ASC)
 );
+
+
+GO
+PRINT N'Creating [Control].[Files].[NCI_UNQ_Files_SystemID_SourceURI_FileName]...';
+
+
+GO
+CREATE UNIQUE NONCLUSTERED INDEX [NCI_UNQ_Files_SystemID_SourceURI_FileName]
+    ON [Control].[Files]([SystemID] ASC, [SourceURI] ASC, [FileName] ASC);
 
 
 GO
@@ -450,6 +460,31 @@ BEGIN
 
 END
 GO
+PRINT N'Creating [Control].[GetRunDate]...';
+
+
+GO
+
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date, ,>
+-- Description:	<Description, ,>
+-- =============================================
+CREATE FUNCTION [Control].[GetRunDate]
+(
+	@RunID INT
+)
+RETURNS DATE
+WITH SCHEMABINDING
+AS
+BEGIN
+
+	DECLARE @RunDate DATE = (SELECT BusinessDate FROM [Control].[Run] WHERE RunID = @RunID);
+
+	RETURN @RunDate
+
+END
+GO
 PRINT N'Creating [Control].[Initialise_DownloadQueue]...';
 
 
@@ -481,6 +516,8 @@ BEGIN
 	CROSS APPLY (SELECT FileID FROM [Control].[Files] WHERE Frequency = 'D') as B
 	WHERE B.FileID NOT IN (SELECT FileID FROM [Control].[DownloadQueue] WHERE RunID = A.RunID)
 	AND A.RunID = ISNULL(NULLIF(@RunID, -1), A.RunID);
+
+	SELECT @@ROWCOUNT;
 
 	SET @RunDayOfWeek = (SELECT (DATEPART(dw, [Control].GetRunDate(@RunID)) + @@DATEFIRST) % 7)
 
@@ -567,7 +604,7 @@ GO
 -- Author:		Aaron Jackson
 -- Create date: 05/04/2015
 -- Description:	Update status
--- EXEC [Control].[Initialise_UploadQueue] @RunID = 248;
+-- EXEC [Control].[Initialise_UploadQueue] @RunID = 1;
 -- *********************************************
 CREATE PROCEDURE [Control].[Initialise_UploadQueue]
 	@RunID INT = -1
@@ -585,9 +622,11 @@ BEGIN
 		A.RunID,
 		B.FileID
 	FROM [Control].[Run] as A
-	CROSS APPLY (SELECT FileID FROM [Control].[Files] WHERE Frequency = 'W') as B
-	WHERE B.FileID NOT IN (SELECT FileID FROM [Control].[DownloadQueue] WHERE RunID = A.RunID)
+	CROSS APPLY (SELECT FileID FROM [Control].[Files] WHERE Frequency = 'D') as B
+	WHERE B.FileID NOT IN (SELECT FileID FROM [Control].[UploadQueue] WHERE RunID = A.RunID)
 	AND A.RunID = ISNULL(NULLIF(@RunID, -1), A.RunID);
+
+	SELECT @@ROWCOUNT;
 	
 	SET @RunDayOfWeek = (SELECT (DATEPART(dw, [Control].GetRunDate(@RunID)) + @@DATEFIRST) % 7)
 
