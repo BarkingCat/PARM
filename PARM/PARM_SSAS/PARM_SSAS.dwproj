@@ -37,6 +37,16 @@
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
+    <ProjectItem>
+      <Name>FXRates.cube</Name>
+      <FullPath>FXRates.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>FXRates.partitions</Name>
+          <FullPath>FXRates.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
@@ -99,6 +109,10 @@
       <Name>PARM_SSAS.dsv</Name>
       <FullPath>PARM_SSAS.dsv</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>FXRates.dsv</Name>
+      <FullPath>FXRates.dsv</FullPath>
+    </ProjectItem>
   </DataSourceViews>
   <Roles>
     <ProjectItem>
@@ -114,7 +128,7 @@
           <ConfigurationSetting>
             <Id>PARM DW</Id>
             <Name>PARM DW</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=192.168.2.85;Integrated Security=SSPI;Initial Catalog=PARM_DW</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=NVRMND-LAPTOP;Integrated Security=SSPI;Initial Catalog=PARM_DW</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>

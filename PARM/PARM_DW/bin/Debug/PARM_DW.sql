@@ -40,6 +40,1073 @@ USE [$(DatabaseName)];
 
 
 GO
+PRINT N'Dropping [Fact].[Equities].[ClusteredIndex-20150612-112129]...';
+
+
+GO
+DROP INDEX [ClusteredIndex-20150612-112129]
+    ON [Fact].[Equities];
+
+
+GO
+PRINT N'Starting rebuilding table [Dimension].[Date]...';
+
+
+GO
+BEGIN TRANSACTION;
+
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+
+SET XACT_ABORT ON;
+
+CREATE TABLE [Dimension].[tmp_ms_xx_Date] (
+    [PK_Date]                      DATETIME      NOT NULL,
+    [Date_Name]                    NVARCHAR (50) NULL,
+    [Year]                         DATETIME      NULL,
+    [Year_Name]                    NVARCHAR (50) NULL,
+    [Quarter]                      DATETIME      NULL,
+    [Quarter_Name]                 NVARCHAR (50) NULL,
+    [Month]                        DATETIME      NULL,
+    [Month_Name]                   NVARCHAR (50) NULL,
+    [Week]                         DATETIME      NULL,
+    [Week_Name]                    NVARCHAR (50) NULL,
+    [Day_Of_Year]                  INT           NULL,
+    [Day_Of_Year_Name]             NVARCHAR (50) NULL,
+    [Day_Of_Quarter]               INT           NULL,
+    [Day_Of_Quarter_Name]          NVARCHAR (50) NULL,
+    [Day_Of_Month]                 INT           NULL,
+    [Day_Of_Month_Name]            NVARCHAR (50) NULL,
+    [Day_Of_Week]                  INT           NULL,
+    [Day_Of_Week_Name]             NVARCHAR (50) NULL,
+    [Week_Of_Year]                 INT           NULL,
+    [Week_Of_Year_Name]            NVARCHAR (50) NULL,
+    [Month_Of_Year]                INT           NULL,
+    [Month_Of_Year_Name]           NVARCHAR (50) NULL,
+    [Month_Of_Quarter]             INT           NULL,
+    [Month_Of_Quarter_Name]        NVARCHAR (50) NULL,
+    [Quarter_Of_Year]              INT           NULL,
+    [Quarter_Of_Year_Name]         NVARCHAR (50) NULL,
+    [Fiscal_Year]                  DATETIME      NULL,
+    [Fiscal_Year_Name]             NVARCHAR (50) NULL,
+    [Fiscal_Quarter]               DATETIME      NULL,
+    [Fiscal_Quarter_Name]          NVARCHAR (50) NULL,
+    [Fiscal_Month]                 DATETIME      NULL,
+    [Fiscal_Month_Name]            NVARCHAR (50) NULL,
+    [Fiscal_Week]                  DATETIME      NULL,
+    [Fiscal_Week_Name]             NVARCHAR (50) NULL,
+    [Fiscal_Day]                   DATETIME      NULL,
+    [Fiscal_Day_Name]              NVARCHAR (50) NULL,
+    [Fiscal_Day_Of_Year]           INT           NULL,
+    [Fiscal_Day_Of_Year_Name]      NVARCHAR (50) NULL,
+    [Fiscal_Day_Of_Quarter]        INT           NULL,
+    [Fiscal_Day_Of_Quarter_Name]   NVARCHAR (50) NULL,
+    [Fiscal_Day_Of_Month]          INT           NULL,
+    [Fiscal_Day_Of_Month_Name]     NVARCHAR (50) NULL,
+    [Fiscal_Day_Of_Week]           INT           NULL,
+    [Fiscal_Day_Of_Week_Name]      NVARCHAR (50) NULL,
+    [Fiscal_Week_Of_Year]          INT           NULL,
+    [Fiscal_Week_Of_Year_Name]     NVARCHAR (50) NULL,
+    [Fiscal_Month_Of_Year]         INT           NULL,
+    [Fiscal_Month_Of_Year_Name]    NVARCHAR (50) NULL,
+    [Fiscal_Month_Of_Quarter]      INT           NULL,
+    [Fiscal_Month_Of_Quarter_Name] NVARCHAR (50) NULL,
+    [Fiscal_Quarter_Of_Year]       INT           NULL,
+    [Fiscal_Quarter_Of_Year_Name]  NVARCHAR (50) NULL,
+    CONSTRAINT [tmp_ms_xx_constraint_PK_Date] PRIMARY KEY CLUSTERED ([PK_Date] ASC)
+);
+
+IF EXISTS (SELECT TOP 1 1 
+           FROM   [Dimension].[Date])
+    BEGIN
+        INSERT INTO [Dimension].[tmp_ms_xx_Date] ([PK_Date], [Date_Name], [Year], [Year_Name], [Quarter], [Quarter_Name], [Month], [Month_Name], [Week], [Week_Name], [Day_Of_Year], [Day_Of_Year_Name], [Day_Of_Quarter], [Day_Of_Quarter_Name], [Day_Of_Month], [Day_Of_Month_Name], [Day_Of_Week], [Day_Of_Week_Name], [Week_Of_Year], [Week_Of_Year_Name], [Month_Of_Year], [Month_Of_Year_Name], [Month_Of_Quarter], [Month_Of_Quarter_Name], [Quarter_Of_Year], [Quarter_Of_Year_Name], [Fiscal_Year], [Fiscal_Year_Name], [Fiscal_Quarter], [Fiscal_Quarter_Name], [Fiscal_Month], [Fiscal_Month_Name], [Fiscal_Week], [Fiscal_Week_Name], [Fiscal_Day], [Fiscal_Day_Name], [Fiscal_Day_Of_Year], [Fiscal_Day_Of_Year_Name], [Fiscal_Day_Of_Quarter], [Fiscal_Day_Of_Quarter_Name], [Fiscal_Day_Of_Month], [Fiscal_Day_Of_Month_Name], [Fiscal_Day_Of_Week], [Fiscal_Day_Of_Week_Name], [Fiscal_Week_Of_Year], [Fiscal_Week_Of_Year_Name], [Fiscal_Month_Of_Year], [Fiscal_Month_Of_Year_Name], [Fiscal_Month_Of_Quarter], [Fiscal_Month_Of_Quarter_Name], [Fiscal_Quarter_Of_Year], [Fiscal_Quarter_Of_Year_Name])
+        SELECT   [PK_Date],
+                 [Date_Name],
+                 [Year],
+                 [Year_Name],
+                 [Quarter],
+                 [Quarter_Name],
+                 [Month],
+                 [Month_Name],
+                 [Week],
+                 [Week_Name],
+                 [Day_Of_Year],
+                 [Day_Of_Year_Name],
+                 [Day_Of_Quarter],
+                 [Day_Of_Quarter_Name],
+                 [Day_Of_Month],
+                 [Day_Of_Month_Name],
+                 [Day_Of_Week],
+                 [Day_Of_Week_Name],
+                 [Week_Of_Year],
+                 [Week_Of_Year_Name],
+                 [Month_Of_Year],
+                 [Month_Of_Year_Name],
+                 [Month_Of_Quarter],
+                 [Month_Of_Quarter_Name],
+                 [Quarter_Of_Year],
+                 [Quarter_Of_Year_Name],
+                 [Fiscal_Year],
+                 [Fiscal_Year_Name],
+                 [Fiscal_Quarter],
+                 [Fiscal_Quarter_Name],
+                 [Fiscal_Month],
+                 [Fiscal_Month_Name],
+                 [Fiscal_Week],
+                 [Fiscal_Week_Name],
+                 [Fiscal_Day],
+                 [Fiscal_Day_Name],
+                 [Fiscal_Day_Of_Year],
+                 [Fiscal_Day_Of_Year_Name],
+                 [Fiscal_Day_Of_Quarter],
+                 [Fiscal_Day_Of_Quarter_Name],
+                 [Fiscal_Day_Of_Month],
+                 [Fiscal_Day_Of_Month_Name],
+                 [Fiscal_Day_Of_Week],
+                 [Fiscal_Day_Of_Week_Name],
+                 [Fiscal_Week_Of_Year],
+                 [Fiscal_Week_Of_Year_Name],
+                 [Fiscal_Month_Of_Year],
+                 [Fiscal_Month_Of_Year_Name],
+                 [Fiscal_Month_Of_Quarter],
+                 [Fiscal_Month_Of_Quarter_Name],
+                 [Fiscal_Quarter_Of_Year],
+                 [Fiscal_Quarter_Of_Year_Name]
+        FROM     [Dimension].[Date]
+        ORDER BY [PK_Date] ASC;
+    END
+
+DROP TABLE [Dimension].[Date];
+
+EXECUTE sp_rename N'[Dimension].[tmp_ms_xx_Date]', N'Date';
+
+EXECUTE sp_rename N'[Dimension].[tmp_ms_xx_constraint_PK_Date]', N'PK_Date', N'OBJECT';
+
+COMMIT TRANSACTION;
+
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+
+
+GO
+PRINT N'Starting rebuilding table [Dimension].[Time]...';
+
+
+GO
+BEGIN TRANSACTION;
+
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+
+SET XACT_ABORT ON;
+
+CREATE TABLE [Dimension].[tmp_ms_xx_Time] (
+    [TimeSK]     INT       NOT NULL,
+    [Time]       CHAR (11) NOT NULL,
+    [Time24]     CHAR (8)  NOT NULL,
+    [Hour]       TINYINT   NOT NULL,
+    [HourName]   CHAR (5)  NOT NULL,
+    [Minute]     TINYINT   NOT NULL,
+    [MinuteKey]  INT       NOT NULL,
+    [MinuteName] CHAR (8)  NOT NULL,
+    [Second]     TINYINT   NOT NULL,
+    [Hour24]     TINYINT   NOT NULL,
+    [AM]         CHAR (2)  NOT NULL,
+    CONSTRAINT [tmp_ms_xx_constraint_PK_TimeSK] PRIMARY KEY CLUSTERED ([TimeSK] ASC)
+);
+
+IF EXISTS (SELECT TOP 1 1 
+           FROM   [Dimension].[Time])
+    BEGIN
+        INSERT INTO [Dimension].[tmp_ms_xx_Time] ([TimeSK], [Time], [Time24], [Hour], [HourName], [Minute], [MinuteKey], [MinuteName], [Second], [Hour24], [AM])
+        SELECT   [TimeSK],
+                 [Time],
+                 [Time24],
+                 [Hour],
+                 [HourName],
+                 [Minute],
+                 [MinuteKey],
+                 [MinuteName],
+                 [Second],
+                 [Hour24],
+                 [AM]
+        FROM     [Dimension].[Time]
+        ORDER BY [TimeSK] ASC;
+    END
+
+DROP TABLE [Dimension].[Time];
+
+EXECUTE sp_rename N'[Dimension].[tmp_ms_xx_Time]', N'Time';
+
+EXECUTE sp_rename N'[Dimension].[tmp_ms_xx_constraint_PK_TimeSK]', N'PK_TimeSK', N'OBJECT';
+
+COMMIT TRANSACTION;
+
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Project]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'Project', @value = N'a46ef178-64f0-4dd8-af4c-ec24bdf7c37a', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[DSVTable]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVTable', @value = N'Date', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[PK_Date].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Date', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'PK_Date';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[PK_Date].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'PK_Date';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Date_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Date_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Date_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Date_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Date_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Year].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Year', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Year].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Year_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Year_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Year_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Quarter].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Quarter', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Quarter';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Quarter].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Quarter';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Quarter_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Quarter_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Quarter_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Quarter_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Quarter_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Month].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Month', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Month';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Month].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Month';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Month_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Month_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Month_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Month_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Month_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Week].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Week', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Week';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Week].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Week';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Week_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Week_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Week_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Week_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Week_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Day_Of_Year].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Day_Of_Year', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Day_Of_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Day_Of_Year].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Day_Of_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Day_Of_Year_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Day_Of_Year_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Day_Of_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Day_Of_Year_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Day_Of_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Day_Of_Quarter].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Day_Of_Quarter', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Day_Of_Quarter';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Day_Of_Quarter].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Day_Of_Quarter';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Day_Of_Quarter_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Day_Of_Quarter_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Day_Of_Quarter_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Day_Of_Quarter_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Day_Of_Quarter_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Day_Of_Month].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Day_Of_Month', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Day_Of_Month';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Day_Of_Month].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Day_Of_Month';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Day_Of_Month_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Day_Of_Month_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Day_Of_Month_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Day_Of_Month_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Day_Of_Month_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Day_Of_Week].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Day_Of_Week', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Day_Of_Week';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Day_Of_Week].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Day_Of_Week';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Day_Of_Week_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Day_Of_Week_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Day_Of_Week_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Day_Of_Week_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Day_Of_Week_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Week_Of_Year].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Week_Of_Year', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Week_Of_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Week_Of_Year].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Week_Of_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Week_Of_Year_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Week_Of_Year_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Week_Of_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Week_Of_Year_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Week_Of_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Month_Of_Year].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Month_Of_Year', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Month_Of_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Month_Of_Year].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Month_Of_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Month_Of_Year_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Month_Of_Year_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Month_Of_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Month_Of_Year_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Month_Of_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Month_Of_Quarter].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Month_Of_Quarter', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Month_Of_Quarter';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Month_Of_Quarter].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Month_Of_Quarter';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Month_Of_Quarter_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Month_Of_Quarter_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Month_Of_Quarter_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Month_Of_Quarter_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Month_Of_Quarter_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Quarter_Of_Year].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Quarter_Of_Year', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Quarter_Of_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Quarter_Of_Year].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Quarter_Of_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Quarter_Of_Year_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Quarter_Of_Year_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Quarter_Of_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Quarter_Of_Year_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Quarter_Of_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Year].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Year', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Year].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Year_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Year_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Year_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Quarter].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Quarter', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Quarter';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Quarter].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Quarter';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Quarter_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Quarter_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Quarter_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Quarter_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Quarter_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Month].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Month', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Month';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Month].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Month';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Month_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Month_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Month_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Month_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Month_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Week].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Week', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Week';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Week].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Week';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Week_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Week_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Week_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Week_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Week_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Day', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Day_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Of_Year].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Day_Of_Year', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Of_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Of_Year].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Of_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Of_Year_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Day_Of_Year_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Of_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Of_Year_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Of_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Of_Quarter].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Day_Of_Quarter', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Of_Quarter';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Of_Quarter].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Of_Quarter';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Of_Quarter_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Day_Of_Quarter_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Of_Quarter_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Of_Quarter_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Of_Quarter_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Of_Month].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Day_Of_Month', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Of_Month';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Of_Month].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Of_Month';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Of_Month_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Day_Of_Month_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Of_Month_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Of_Month_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Of_Month_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Of_Week].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Day_Of_Week', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Of_Week';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Of_Week].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Of_Week';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Of_Week_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Day_Of_Week_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Of_Week_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Day_Of_Week_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Day_Of_Week_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Week_Of_Year].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Week_Of_Year', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Week_Of_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Week_Of_Year].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Week_Of_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Week_Of_Year_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Week_Of_Year_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Week_Of_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Week_Of_Year_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Week_Of_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Month_Of_Year].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Month_Of_Year', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Month_Of_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Month_Of_Year].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Month_Of_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Month_Of_Year_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Month_Of_Year_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Month_Of_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Month_Of_Year_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Month_Of_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Month_Of_Quarter].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Month_Of_Quarter', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Month_Of_Quarter';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Month_Of_Quarter].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Month_Of_Quarter';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Month_Of_Quarter_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Month_Of_Quarter_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Month_Of_Quarter_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Month_Of_Quarter_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Month_Of_Quarter_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Quarter_Of_Year].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Quarter_Of_Year', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Quarter_Of_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Quarter_Of_Year].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Quarter_Of_Year';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Quarter_Of_Year_Name].[DSVColumn]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'DSVColumn', @value = N'Fiscal_Quarter_Of_Year_Name', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Quarter_Of_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[Date].[Fiscal_Quarter_Of_Year_Name].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'COLUMN', @level2name = N'Fiscal_Quarter_Of_Year_Name';
+
+
+GO
+PRINT N'Creating [Dimension].[PK_Date].[AllowGen]...';
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'AllowGen', @value = N'True', @level0type = N'SCHEMA', @level0name = N'Dimension', @level1type = N'TABLE', @level1name = N'Date', @level2type = N'CONSTRAINT', @level2name = N'PK_Date';
+
+
+GO
 /*
 Post-Deployment Script Template							
 --------------------------------------------------------------------------------------

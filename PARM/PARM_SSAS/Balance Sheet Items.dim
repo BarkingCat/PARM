@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5232" scrolltop="-9155" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9377" y="15579" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5232" scrolltop="-9155" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9165" y="15579" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
             </font>
@@ -76,9 +76,9 @@
               </Attributes>
               <Position x="20" y="20" />
             </Shape>
-            <Shape Id="Balance Sheet Name" Expanded="false">
+            <Shape Id="Balance Sheet Type" Expanded="false">
               <Attributes>
-                <Attribute Id="Balance Sheet Name" />
+                <Attribute Id="Balance Sheet Type" />
               </Attributes>
               <Position x="232" y="20" />
             </Shape>
@@ -86,13 +86,13 @@
               <Attributes>
                 <Attribute Id="Balance Sheet Category" />
               </Attributes>
-              <Position x="445" y="20" />
+              <Position x="232" y="69" />
             </Shape>
-            <Shape Id="Balance Sheet Type" Expanded="false">
+            <Shape Id="Balance Sheet Name" Expanded="false">
               <Attributes>
-                <Attribute Id="Balance Sheet Type" />
+                <Attribute Id="Balance Sheet Name" />
               </Attributes>
-              <Position x="657" y="20" />
+              <Position x="232" y="118" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -128,6 +128,16 @@
           <RelationshipType>Rigid</RelationshipType>
           <Name>Balance Sheet Name</Name>
         </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="aaf7d1d9-8e96-44c8-86ac-90f31a33812f">
+          <AttributeID>Balance Sheet Category</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Balance Sheet Category</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ed5f244e-c739-4708-93f2-3f344f837dae">
+          <AttributeID>Balance Sheet Type</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Balance Sheet Type</Name>
+        </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -146,13 +156,6 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="aa0aadb5-65c0-4c65-8e37-d8d9260800ac">
-          <AttributeID>Balance Sheet Category</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Balance Sheet Category</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -169,13 +172,6 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="9ea2ee72-1788-4d66-9f29-1d6bb1f239e5">
-          <AttributeID>Balance Sheet Type</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Balance Sheet Type</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>

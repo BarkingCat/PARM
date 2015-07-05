@@ -436,30 +436,6 @@ ALTER TABLE [Control].[Files]
 
 
 GO
-PRINT N'Creating [Control].[GetSystemID]...';
-
-
-GO
--- =============================================
--- Author:		<Author,,Name>
--- Create date: <Create Date, ,>
--- Description:	<Description, ,>
--- =============================================
-CREATE FUNCTION [Control].[GetSystemID]
-(
-	@SystemName VARCHAR(255)
-)
-RETURNS INT
-WITH SCHEMABINDING
-AS
-BEGIN
-
-	DECLARE @SystemID INT = (SELECT SystemID FROM [Control].[SourceSystems] WHERE SystemName = @SystemName);
-
-	RETURN @SystemID
-
-END
-GO
 PRINT N'Creating [Control].[GetRunDate]...';
 
 
@@ -482,6 +458,30 @@ BEGIN
 	DECLARE @RunDate DATE = (SELECT BusinessDate FROM [Control].[Run] WHERE RunID = @RunID);
 
 	RETURN @RunDate
+
+END
+GO
+PRINT N'Creating [Control].[GetSystemID]...';
+
+
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date, ,>
+-- Description:	<Description, ,>
+-- =============================================
+CREATE FUNCTION [Control].[GetSystemID]
+(
+	@SystemName VARCHAR(255)
+)
+RETURNS INT
+WITH SCHEMABINDING
+AS
+BEGIN
+
+	DECLARE @SystemID INT = (SELECT SystemID FROM [Control].[SourceSystems] WHERE SystemName = @SystemName);
+
+	RETURN @SystemID
 
 END
 GO

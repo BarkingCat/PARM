@@ -17,6 +17,10 @@
       <Name>Equities_SimpleAnalysis.rdl</Name>
       <FullPath>Equities_SimpleAnalysis.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Daily_FX_Rates.rdl</Name>
+      <FullPath>Daily_FX_Rates.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>

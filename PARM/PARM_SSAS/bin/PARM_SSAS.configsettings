@@ -3,10 +3,11 @@
     <DataSources>
       <DataSource>
         <ID>PARM DW</ID>
-        <ConnectionString>Provider=SQLNCLI11.1;Data Source=192.168.2.85;Integrated Security=SSPI;Initial Catalog=PARM_DW</ConnectionString>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=NVRMND-LAPTOP;Integrated Security=SSPI;Initial Catalog=PARM_DW</ConnectionString>
         <ImpersonationInfo>
-          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
-          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
+          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">BCT\Aaron</Account>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">PasswordRemoved</ImpersonationInfoSecurity>
         </ImpersonationInfo>
       </DataSource>
     </DataSources>
@@ -54,6 +55,19 @@
         </MeasureGroups>
       </Cube>
       <Cube>
+        <ID>Equities</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Equities</ID>
+            <Partitions>
+              <Partition>
+                <ID>Equities</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
         <ID>BalanceSheet</ID>
         <MeasureGroups>
           <MeasureGroup>
@@ -67,13 +81,13 @@
         </MeasureGroups>
       </Cube>
       <Cube>
-        <ID>Equities</ID>
+        <ID>FXRates</ID>
         <MeasureGroups>
           <MeasureGroup>
-            <ID>Equities</ID>
+            <ID>FX Rates</ID>
             <Partitions>
               <Partition>
-                <ID>Equities</ID>
+                <ID>FX Rates</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>

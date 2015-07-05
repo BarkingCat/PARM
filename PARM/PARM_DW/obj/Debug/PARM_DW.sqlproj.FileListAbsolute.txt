@@ -6,5 +6,9 @@ C:\Users\Aaron\Sync\Barking_Cat\PARM\PARM\PARM_DW\obj\Debug\PARM_DW.pdb
 C:\Users\Aaron.BCT\Sync\Barking_Cat\PARM\PARM\PARM_DW\bin\Debug\PARM_DW.dacpac
 C:\Users\Aaron.BCT\Sync\Barking_Cat\PARM\PARM\PARM_DW\bin\Debug\PARM_DW.dll
 C:\Users\Aaron.BCT\Sync\Barking_Cat\PARM\PARM\PARM_DW\bin\Debug\PARM_DW.pdb
+C:\Users\Aaron.BCT\Sync\Barking_Cat\PARM\PARM\PARM_DW\obj\Debug\Model.xml
+C:\Users\Aaron.BCT\Sync\Barking_Cat\PARM\PARM\PARM_DW\obj\Debug\refactor.xml
+C:\Users\Aaron.BCT\Sync\Barking_Cat\PARM\PARM\PARM_DW\obj\Debug\postdeploy.sql
+C:\Users\Aaron.BCT\Sync\Barking_Cat\PARM\PARM\PARM_DW\obj\Debug\predeploy.sql
 C:\Users\Aaron.BCT\Sync\Barking_Cat\PARM\PARM\PARM_DW\obj\Debug\PARM_DW.dll
 C:\Users\Aaron.BCT\Sync\Barking_Cat\PARM\PARM\PARM_DW\obj\Debug\PARM_DW.pdb

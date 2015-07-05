@@ -3,7 +3,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>192.168.2.85</TargetServer>
+        <TargetServer>nvrmnd-laptop</TargetServer>
         <TargetDatabase>PARM_SSAS</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>
