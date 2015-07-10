@@ -93,6 +93,22 @@
           </MeasureGroup>
         </MeasureGroups>
       </Cube>
+      <Cube>
+        <ID>Bonds</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Bonds</ID>
+            <Partitions>
+              <Partition>
+                <ID>Bonds</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>FX Rates</ID>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
     </Cubes>
     <DataSourceImpersonationInfo>
       <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>

@@ -1,0 +1,715 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c8e05c53-bba6-495e-be96-5681c6d6245d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Bonds</ID>
+  <Name>Bonds</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10581" scrolltop="-627" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="27136" y="15579" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Date" left="5743" top="4261" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5482" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a00006a15000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Date" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Bonds" left="343" top="5067" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="3387" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b00003b0d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Fact_Bonds" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Currency" left="20" top="10854" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3323" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000fb0c0000d30b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Currency" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Market" left="147" top="0" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3196" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a00007c0c00006b0a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Market" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3043" top="6362" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Bonds-Date]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="26" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5743" y="6761" />
+              <point x="4543" y="6761" />
+              <point x="4543" y="6760" />
+              <point x="3343" y="6760" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1346" top="2168" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Bonds-Market]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="2" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1745" y="2667" />
+              <point x="1745" y="3867" />
+              <point x="1843" y="3867" />
+              <point x="1843" y="5067" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1282" top="8154" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="861" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Bonds-Currency]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="2" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1681" y="10854" />
+              <point x="1681" y="9654" />
+              <point x="1843" y="9654" />
+              <point x="1843" y="8454" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-10581</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-627</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="0a4899ef-203b-46fa-ac98-f90effb704d3">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <DimensionID>Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7f86639e-f1ed-4c0f-8730-6477b73431eb">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cf347f9c-c609-4155-92d7-b2406e41b61a">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="78c70fec-4cb1-4e56-bbcb-d45bf6bae315">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6ecfdcd4-428b-4944-a0de-4929122467ad">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="291549c5-24ba-4653-a7e0-b647f0a37fcd">
+          <AttributeID>Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="35bdf0dc-4f74-4598-bae7-e51c57d38215">
+          <AttributeID>Day Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="57d71ec4-963b-4dda-9f21-ef07816710c7">
+          <AttributeID>Day Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f9099692-3d8a-465c-9e25-f5be0994f8e3">
+          <AttributeID>Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7bea7aaa-1ba1-4432-9f77-02e688ea50e4">
+          <AttributeID>Day Of Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4584106c-1ce9-4895-b9e3-0ca240d9f0b2">
+          <AttributeID>Week Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="789a5b8c-e3d6-408f-b9e5-c4e6b1981bde">
+          <AttributeID>Month Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f8b747a0-31b0-46a8-8f5c-1bd5a76e02fc">
+          <AttributeID>Month Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e4db85b5-05ad-49d0-ac08-b393f2490700">
+          <AttributeID>Quarter Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c53f90ca-23e2-4ac9-ad8d-9d0501bc9d86">
+          <AttributeID>Fiscal Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2b9cd6b1-448c-4503-9d70-90105bb894de">
+          <AttributeID>Fiscal Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="359320f5-073d-4b74-bb76-f9e528941589">
+          <AttributeID>Fiscal Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3ee6cf7c-a5f7-463c-bb90-a4e1465b39cd">
+          <AttributeID>Fiscal Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="af698238-cd7d-4c33-b70d-2e6293d6d764">
+          <AttributeID>Fiscal Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7e361a05-1032-448c-934f-78ed71ed4770">
+          <AttributeID>Fiscal Day Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6ef8c470-4604-49ad-94c7-57c86d8aff3f">
+          <AttributeID>Fiscal Day Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d5302b98-6926-4484-bb55-f8d43d785a8a">
+          <AttributeID>Fiscal Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3fe8172f-fccc-489a-b09d-023908acdb69">
+          <AttributeID>Fiscal Day Of Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="18e06941-0564-410e-a2b5-e0b21453fa26">
+          <AttributeID>Fiscal Week Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="64e9f426-88da-45b2-b4b3-a307535aa5e5">
+          <AttributeID>Fiscal Month Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ed7842a3-a08c-42a4-be1f-57a4825c6808">
+          <AttributeID>Fiscal Month Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="81f255c6-5c73-4e52-a3c1-64c2b0d2b99a">
+          <AttributeID>Fiscal Quarter Of Year</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="bf9e8cd8-d80a-4c4d-b3d1-c2c403bb0c16">
+          <HierarchyID>Year -  Quarter -  Month -  Date</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="3140842f-40e3-4c72-94ef-9c8349c13fcc">
+          <HierarchyID>Year -  Week -  Date</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="ac2a6d48-28d4-4f6e-bc2a-f46424cc7d17">
+          <HierarchyID>Fiscal Year -  Fiscal Quarter -  Fiscal Month -  Fiscal Day</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="6a66c733-40d9-4ed1-9949-79d602d4c0c6">
+          <HierarchyID>Fiscal Year -  Fiscal Week -  Fiscal Day</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="dfc3420f-c997-4837-9255-f4f551f54dfb">
+      <ID>Market</ID>
+      <Name>Market</Name>
+      <DimensionID>Market</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7a5ab392-e09f-4a95-8023-0363b7e81874">
+          <AttributeID>Market SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3e61b119-1a1c-44fe-a2bb-4fe062e1a7eb">
+          <AttributeID>Market Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="abe2ded7-ea8a-427e-97f7-25d43cb79f68">
+          <AttributeID>Market Country</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ff41ccbe-213d-4a9c-8b88-5278a8781dad">
+          <AttributeID>Market Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="647cdd2e-d4ec-45c2-b7df-3affee002329">
+          <AttributeID>Market Currency</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="d41c8e94-b438-4bd4-ad1a-338367063992">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="8e206c33-2f2b-4086-b289-95c88d8e5f8f">
+      <ID>Currency</ID>
+      <Name>Currency</Name>
+      <DimensionID>Currency</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7c06e35c-0aab-4042-ab37-52891ff5bd97">
+          <AttributeID>Currency SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="35858371-150d-42ca-92e3-8707adb86566">
+          <AttributeID>Currency Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="de3240d2-2178-4db7-b254-d5744b3bb973">
+          <AttributeID>Currency Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c618fe8a-aa1f-4fea-b3ac-bd05217a2957">
+          <AttributeID>Currency Country</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="87025fe7-6361-4406-8909-435e4b2adf94">
+          <AttributeID>Central Bank</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="a375985e-406c-49be-9217-24630a340cda">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="64d64970-7260-48ee-87a9-05ea527ef2c8">
+      <Annotations>
+        <Annotation>
+          <Name>ImportSourceInformation</Name>
+          <Value>
+            <ImportSourceInformation xmlns="">
+              <DataSourceID>.</DataSourceID>
+              <SourceCubeID>FXRates</SourceCubeID>
+              <SourceObjectID>Currency 1</SourceObjectID>
+            </ImportSourceInformation>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <ID>FromCurrency</ID>
+      <Name>FromCurrency</Name>
+      <DimensionID>Currency</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f8d12491-45a1-46e7-b083-14c3edf514c5">
+          <AttributeID>Currency SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b5989e9e-f83f-491d-a020-76b8d8363612">
+          <AttributeID>Currency Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="05bdb6f7-2885-4559-86b2-bdfa4addee2a">
+          <AttributeID>Currency Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="703cce30-a01f-49af-8ad4-ff16e510461f">
+          <AttributeID>Currency Country</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d16c1225-995d-4a09-99c5-195be9fc4a8c">
+          <AttributeID>Central Bank</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="289a4b06-3aff-45f6-aee0-06d48b00caf1">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="a07db50f-d765-4448-a5dd-4ad9c780b6b9">
+      <Annotations>
+        <Annotation>
+          <Name>ImportSourceInformation</Name>
+          <Value>
+            <ImportSourceInformation xmlns="">
+              <DataSourceID>.</DataSourceID>
+              <SourceCubeID>FXRates</SourceCubeID>
+              <SourceObjectID>Currency</SourceObjectID>
+            </ImportSourceInformation>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <ID>ToCurrency</ID>
+      <Name>ToCurrency</Name>
+      <DimensionID>Currency</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="287ba233-85ea-451e-a1fe-19ac750dbd87">
+          <AttributeID>Currency SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b0216a24-0b13-46f2-82fe-02e21f237d11">
+          <AttributeID>Currency Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c0384738-7256-4c72-8a98-96da8bd79a00">
+          <AttributeID>Currency Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cf4881f7-9110-41b1-83b6-319124d27b78">
+          <AttributeID>Currency Country</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c978fe4e-61c3-47e8-b9bf-32f812ce1731">
+          <AttributeID>Central Bank</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="3a3e11ee-8ad2-4e84-9adc-a2c4bc274620">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="9cef6714-2e06-47c9-a2b1-23741f81e8d0">
+      <ID>Bonds</ID>
+      <Name>Bonds</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="78d72d6c-db03-4ffe-a74d-fe7d17c03723">
+          <ID>2YR Bond</ID>
+          <Name>2YR Bond</Name>
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
+          <Source dwd:design-time-name="7348f6eb-a1bc-497a-bca5-d5d2c5a0bea0">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="42369031-285d-4b0e-a197-53b2f543e663">
+              <TableID>Fact_Bonds</TableID>
+              <ColumnID>_x0032_YR_Bond</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1e79dec7-65b4-45fb-b418-b068848a2776">
+          <ID>3YR Bond</ID>
+          <Name>3YR Bond</Name>
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
+          <Source dwd:design-time-name="735c5e14-eaac-4798-a887-e700d47c363d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="38a8862a-7066-4135-a212-9675732ffa9f">
+              <TableID>Fact_Bonds</TableID>
+              <ColumnID>_x0033_YR_Bond</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5f7745ad-4dbc-45fb-850f-fac54b7d03ea">
+          <ID>5YR Bond</ID>
+          <Name>5YR Bond</Name>
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
+          <Source dwd:design-time-name="ab97e097-8bd5-4530-8aa3-2cb48d7b2d03">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="13e65360-4a33-4746-b418-92761f67636d">
+              <TableID>Fact_Bonds</TableID>
+              <ColumnID>_x0035_YR_Bond</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b6a5743f-f993-4610-9fc1-14fbb8756c0f">
+          <ID>10YR Bond</ID>
+          <Name>10YR Bond</Name>
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
+          <Source dwd:design-time-name="54a5a813-7dde-4d30-a3f8-5f1691845bef">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8450854b-63f9-4d71-8035-d558dcaf216b">
+              <TableID>Fact_Bonds</TableID>
+              <ColumnID>_x0031_0YR_Bond</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="aae9087c-2b44-49e0-b655-84bda36cf889">
+          <ID>CPI Bond</ID>
+          <Name>CPI Bond</Name>
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
+          <Source dwd:design-time-name="26b34cb2-fb65-40fa-9076-7806af840c8a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="700bba01-485c-4fa0-b3a4-7328aac34218">
+              <TableID>Fact_Bonds</TableID>
+              <ColumnID>CPI_Bond</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bf929347-8246-4ddd-b593-9ea74ffcc3a2">
+          <ID>Bonds Count</ID>
+          <Name>Bonds Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="52de9546-7978-445c-a9a8-7349bc745f4a">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="e59f4943-382e-46fe-82ba-95170ea9645c">
+              <TableID>Fact_Bonds</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3c9a8d9c-e526-4d10-9ef1-d68aff04d52d">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c2a7ea34-cd2a-40d8-8385-975b9945ef99">
+              <AttributeID>Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4ef8a946-3c50-486b-b6d9-23231321996a">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b330a3db-0934-407c-a150-6764ce17ae74">
+                    <TableID>Fact_Bonds</TableID>
+                    <ColumnID>PK_Date</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="caad2786-b8dc-40fa-9253-104e55f74ae4">
+          <CubeDimensionID>Market</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="defaf490-47fb-47eb-92a9-a2bef09f8c88">
+              <AttributeID>Market SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="38d1d7fc-634d-41aa-a12f-ba4567fad014">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="246ac542-b371-48c7-bf48-3e3cb545f4e3">
+                    <TableID>Fact_Bonds</TableID>
+                    <ColumnID>MarketSK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="caf9242e-f616-4d8a-9b24-e4cf3671d513">
+          <CubeDimensionID>Currency</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="86184e0f-4fff-41fe-8bf4-1683d083de6e">
+              <AttributeID>Currency SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4b26f2c1-a69b-4263-a5a4-36ac3f7e0591">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dc616bbf-6552-4429-8a78-2d3133f62e4d">
+                    <TableID>Fact_Bonds</TableID>
+                    <ColumnID>CurrencySK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="0442bb4f-4629-47fa-ad6f-566c67a3fcf5">
+      <ID>FX Rates</ID>
+      <Name>FX Rates</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="b3dc1f72-d437-4feb-b618-2d07acfe7ca3">
+          <ID>Exchange Rate</ID>
+          <Name>Exchange Rate</Name>
+          <Source dwd:design-time-name="f606898b-d78d-4e77-ba48-22bcfed18725">
+            <DataType>Double</DataType>
+            <Source xsi:type="MeasureBinding" dwd:design-time-name="6af55bb5-c6e1-43e2-b172-a3d015fdf358">
+              <MeasureID>Exchange Rate</MeasureID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a2e7674a-845f-4c85-a513-e20c1e237972">
+          <ID>FX Rates Count</ID>
+          <Name>FX Rates Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="c275792c-b24b-408e-a5f6-160fa27d8755">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="MeasureBinding" dwd:design-time-name="8baff949-c75f-4d48-b0a8-e2f949da88a2">
+              <MeasureID>FX Rates Count</MeasureID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <Source dwd:design-time-name="e491126a-03d9-4b85-b7bc-7353ebdbd32d">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>FXRates</CubeID>
+        <MeasureGroupID>FX Rates</MeasureGroupID>
+        <Persistence>Metadata</Persistence>
+        <RefreshInterval>PT1S</RefreshInterval>
+      </Source>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="af46a9bd-cb8f-4ebd-9c7e-1818cb6471b4">
+          <CubeDimensionID>Market</CubeDimensionID>
+          <Source dwd:design-time-name="65da3f71-2280-4f83-8f62-0404ea54e46e">
+            <CubeDimensionID>Market</CubeDimensionID>
+          </Source>
+          <Attributes>
+            <Attribute dwd:design-time-name="40aa0987-ca8b-4882-86ad-0148a39dce8f">
+              <AttributeID>Market SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b1e986ba-b837-4e0d-96b8-f37e09d5e835">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9085eba8-ba8a-47a9-bbc8-a281823557de">
+                    <TableID>Fact_FXRates</TableID>
+                    <ColumnID>MarketSK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3e9ec978-c2c7-4cf2-af9f-7ccd0769b443">
+          <CubeDimensionID>FromCurrency</CubeDimensionID>
+          <Source dwd:design-time-name="e01826bb-03e9-4df2-9143-cc46e39e7856">
+            <CubeDimensionID>Currency 1</CubeDimensionID>
+          </Source>
+          <Attributes>
+            <Attribute dwd:design-time-name="9a0dede2-1bbf-4092-91ad-249979ef4e66">
+              <AttributeID>Currency SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7830f20f-07a1-4fec-925d-3ceb283a0fa7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1a27c4e3-4371-4152-af89-bd31ca5aa6a5">
+                    <TableID>Fact_FXRates</TableID>
+                    <ColumnID>FromCurrencySK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9ca273e6-8d59-4bbc-91dd-446b0d337128">
+          <CubeDimensionID>ToCurrency</CubeDimensionID>
+          <Source dwd:design-time-name="d583649d-8a63-4bda-9b58-b5cecd3ed6a5">
+            <CubeDimensionID>Currency</CubeDimensionID>
+          </Source>
+          <Attributes>
+            <Attribute dwd:design-time-name="3965d2c0-5fd8-4728-83bc-eb2e668d8ca6">
+              <AttributeID>Currency SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7bbdc3d4-58cf-4132-80aa-bc394d6e897c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bbf855ff-f060-456f-b959-95db41b77dab">
+                    <TableID>Fact_FXRates</TableID>
+                    <ColumnID>ToCurrencySK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="594ddb17-5894-47d8-994d-577f7b4f17f8">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Source dwd:design-time-name="5086227f-b176-4d6b-b392-3202cfce6b1a">
+            <CubeDimensionID>Date</CubeDimensionID>
+          </Source>
+          <Attributes>
+            <Attribute dwd:design-time-name="4f8d34f2-27ae-4ee1-9fd8-757c666f2063">
+              <AttributeID>Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="83aaab8e-9a64-400d-9099-2804ec3be430">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="297247ba-4fdc-4318-9f64-1d60654b157d">
+                    <TableID>Fact_FXRates</TableID>
+                    <ColumnID>PK_Date</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="8cc2fc5d-0eb3-468f-99ad-9781bb721b1f">
+    <DataSourceViewID>Bonds</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="fd09cd23-1842-4cdf-bc52-1f844ad94582">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE;
+
+
+//&lt;ImportedScript DataSourceID="." SourceCubeID="FXRates"&gt;
+//This script was imported through the linked object wizard 
+//by aaron on 7/7/2015.
+//Some of its calculations may not apply if they refer to objects (dimension, 
+//measure group, etc) that were not linked to this cube or that were renamed 
+//when linked.  You may want to review the imported script in order to avoid 
+//errors during processing.
+/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].[90 Day Moving Average]
+ AS Avg
+(
+   [Date].[Date].CurrentMember.Lag(90) : 
+   [Date].[Date].CurrentMember, 
+   [Measures].[Exchange Rate]
+)
+
+, // This calculation returns the average value of a member over the specified time interval.
+FORMAT_STRING = "Currency", 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'FX Rates'  ;
+//&lt;/ImportedScript&gt;</Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>

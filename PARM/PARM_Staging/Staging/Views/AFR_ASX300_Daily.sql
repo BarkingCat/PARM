@@ -33,7 +33,7 @@ INNER JOIN [Control].Run AS B on A.RunID = B.RunID
 LEFT JOIN (SELECT MAX([BusinessDate]) AS BusinessDate
       ,[ASX code]
       ,[CIGS industry group]
-FROM [Staging].[ASX_ListedCompanies_Daily]
+FROM [PARM_Staging].[Staging].[ASX_ListedCompanies_Daily]
 GROUP BY 
 	   [ASX code]
       ,[CIGS industry group]) AS C on A.[ASX Code] = C.[ASX code]

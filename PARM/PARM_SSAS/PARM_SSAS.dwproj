@@ -47,8 +47,22 @@
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Bonds.cube</Name>
+      <FullPath>Bonds.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Bonds.partitions</Name>
+          <FullPath>Bonds.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
   </Cubes>
   <Dimensions>
+    <ProjectItem>
+      <Name>Balance Sheet Items.dim</Name>
+      <FullPath>Balance Sheet Items.dim</FullPath>
+    </ProjectItem>
     <ProjectItem>
       <Name>Budget Accounts.dim</Name>
       <FullPath>Budget Accounts.dim</FullPath>
@@ -58,12 +72,20 @@
       <FullPath>Budget Items.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Market.dim</Name>
-      <FullPath>Market.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Currency.dim</Name>
       <FullPath>Currency.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date 1.dim</Name>
+      <FullPath>Date 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date.dim</Name>
+      <FullPath>Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Market.dim</Name>
+      <FullPath>Market.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Stock.dim</Name>
@@ -72,18 +94,6 @@
     <ProjectItem>
       <Name>Time.dim</Name>
       <FullPath>Time.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Date.dim</Name>
-      <FullPath>Date.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Balance Sheet Items.dim</Name>
-      <FullPath>Balance Sheet Items.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Date 1.dim</Name>
-      <FullPath>Date 1.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
@@ -112,6 +122,10 @@
     <ProjectItem>
       <Name>FXRates.dsv</Name>
       <FullPath>FXRates.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Bonds.dsv</Name>
+      <FullPath>Bonds.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Roles>
