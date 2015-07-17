@@ -1,0 +1,3 @@
+﻿CREATE USER [neo] WITHOUT LOGIN
+    WITH DEFAULT_SCHEMA = [Dimension];
+
