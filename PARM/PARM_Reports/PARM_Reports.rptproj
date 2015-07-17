@@ -14,12 +14,16 @@
       <FullPath>Budget_Summary.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Daily_FX_Rates.rdl</Name>
+      <FullPath>Daily_FX_Rates.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Equities_SimpleAnalysis.rdl</Name>
       <FullPath>Equities_SimpleAnalysis.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Daily_FX_Rates.rdl</Name>
-      <FullPath>Daily_FX_Rates.rdl</FullPath>
+      <Name>10_Year_Bond_Yield.rdl</Name>
+      <FullPath>10_Year_Bond_Yield.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
