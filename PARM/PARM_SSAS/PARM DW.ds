@@ -3,12 +3,11 @@
   <Name>PARM DW</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-  <ConnectionString>Provider=SQLNCLI11.1;Data Source=NVRMND-LAPTOP;Integrated Security=SSPI;Initial Catalog=PARM_DW</ConnectionString>
+  <ConnectionString>Provider=SQLNCLI11.1;Data Source=cerberus;Integrated Security=SSPI;Initial Catalog=PARM_DW</ConnectionString>
   <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
   <ImpersonationInfo>
-    <ImpersonationMode>ImpersonateAccount</ImpersonationMode>
-    <Account>BCT\Aaron</Account>
-    <ImpersonationInfoSecurity>PasswordRemoved</ImpersonationInfoSecurity>
+    <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
+    <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
   </ImpersonationInfo>
   <Timeout>PT0S</Timeout>
 </DataSource>

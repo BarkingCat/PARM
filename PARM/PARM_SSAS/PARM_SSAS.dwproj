@@ -133,6 +133,10 @@
       <Name>Administrator.role</Name>
       <FullPath>Administrator.role</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Role 1.role</Name>
+      <FullPath>Role 1.role</FullPath>
+    </ProjectItem>
   </Roles>
   <Configurations>
     <Configuration>
@@ -142,7 +146,7 @@
           <ConfigurationSetting>
             <Id>PARM DW</Id>
             <Name>PARM DW</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=NVRMND-LAPTOP;Integrated Security=SSPI;Initial Catalog=PARM_DW</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=cerberus;Integrated Security=SSPI;Initial Catalog=PARM_DW</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>

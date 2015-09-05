@@ -287,8 +287,6 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="Security\trinity_1.sql" />
-    <Build Include="Security\RoleMemberships_1.sql" />
     <Build Include="dbo\Tables\641604.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>

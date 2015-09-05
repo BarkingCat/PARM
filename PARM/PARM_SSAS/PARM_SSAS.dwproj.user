@@ -3,7 +3,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>nvrmnd-laptop</TargetServer>
+        <TargetServer>cerberus</TargetServer>
         <TargetDatabase>PARM_SSAS</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>

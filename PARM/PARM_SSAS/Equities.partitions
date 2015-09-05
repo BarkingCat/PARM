@@ -6,21 +6,1575 @@
       <Partitions>
         <Partition dwd:design-time-name="3e580e4d-c784-4375-ae60-b7f517374307">
           <ID>Equities</ID>
-          <Name>Equities</Name>
+          <Name>Equities_2014</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="91cc43ed-126d-48b5-949b-b320de104275">
-            <DataSourceViewID>Equities</DataSourceViewID>
-            <TableID>Fact_Equities</TableID>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="be2586ca-2e2e-4e6f-a105-b6d77f642697">
+            <DataSourceID>PARM DW</DataSourceID>
+            <QueryDefinition>SELECT [Fact].[Equities].[TimeSK],[Fact].[Equities].[MarketSK],[Fact].[Equities].[CurrencySK],[Fact].[Equities].[StockSK],[Fact].[Equities].[HighPrice],[Fact].[Equities].[LowPrice],[Fact].[Equities].[BidPrice],[Fact].[Equities].[AskPrice],[Fact].[Equities].[BidAskSpread],[Fact].[Equities].[Volume],[Fact].[Equities].[Yield],[Fact].[Equities].[DividendCentsPerShare],[Fact].[Equities].[EarningsCentsPerShare],[Fact].[Equities].[PE_Ratio],[Fact].[Equities].[IssuedCapital],[Fact].[Equities].[GrossShortSales],[Fact].[Equities].[90Day_SMA],[Fact].[Equities].[90Day_AverageDailyReturn],[Fact].[Equities].[90Day_Volatility],[Fact].[Equities].[Price_vs_90Day_SMA],[Fact].[Equities].[Daily_PriceChange],[Fact].[Equities].[MTD_PriceChange],[Fact].[Equities].[YTD_PriceChange],[Fact].[Equities].[PK_Date]
+FROM [Fact].[Equities]
+WHERE YEAR(PK_Date) &lt; 2015</QueryDefinition>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <EstimatedRows>208</EstimatedRows>
+          <EstimatedRows>61709</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="e672f2b6-eb6d-4563-986e-3f9573a8e084">
+          <ID>Equities 1</ID>
+          <Name>Equities_2015</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <Annotations>
+            <Annotation>
+              <Name>AggregationPercent</Name>
+              <Value></Value>
+            </Annotation>
+          </Annotations>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="af926549-57af-4f8d-b82a-150be556aa9c">
+            <DataSourceID>PARM DW</DataSourceID>
+            <QueryDefinition>SELECT [Fact].[Equities].[TimeSK],[Fact].[Equities].[MarketSK],[Fact].[Equities].[CurrencySK],[Fact].[Equities].[StockSK],[Fact].[Equities].[HighPrice],[Fact].[Equities].[LowPrice],[Fact].[Equities].[BidPrice],[Fact].[Equities].[AskPrice],[Fact].[Equities].[BidAskSpread],[Fact].[Equities].[Volume],[Fact].[Equities].[Yield],[Fact].[Equities].[DividendCentsPerShare],[Fact].[Equities].[EarningsCentsPerShare],[Fact].[Equities].[PE_Ratio],[Fact].[Equities].[IssuedCapital],[Fact].[Equities].[GrossShortSales],[Fact].[Equities].[90Day_SMA],[Fact].[Equities].[90Day_AverageDailyReturn],[Fact].[Equities].[90Day_Volatility],[Fact].[Equities].[Price_vs_90Day_SMA],[Fact].[Equities].[Daily_PriceChange],[Fact].[Equities].[MTD_PriceChange],[Fact].[Equities].[YTD_PriceChange],[Fact].[Equities].[PK_Date]
+FROM [Fact].[Equities]
+WHERE YEAR(PK_Date) &gt; 2015</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="b0958c37-6e61-4834-8f29-d73156f2a870">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <AggregationStorage>MolapOnly</AggregationStorage>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="0d6240aa-5a1f-4f7a-813e-a99e53b42160">
+              <NotificationTechnique>Server</NotificationTechnique>
+            </Source>
+          </ProactiveCaching>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
       </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2015-08-29T03:29:41.1Z</CreatedTimestamp>
+          <LastSchemaUpdate>2015-08-29T03:29:41.1Z</LastSchemaUpdate>
+          <EstimatedRows>208</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Market</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Market SK</AttributeID>
+                  <EstimatedCount>1</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Market Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Market Country</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Market Type</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Market Currency</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Currency</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Currency SK</AttributeID>
+                  <EstimatedCount>1</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Currency Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Currency Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Currency Country</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Central Bank</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Stock</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Stock SK</AttributeID>
+                  <EstimatedCount>327</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Industry Group</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Company Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Stock Code</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Time</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Time SK</AttributeID>
+                  <EstimatedCount>1</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date</AttributeID>
+                  <EstimatedCount>208</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Quarter</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Week</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Of Quarter</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Of Month</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Of Week</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Week Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Of Quarter</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Quarter Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Fiscal Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Fiscal Quarter</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Fiscal Month</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Fiscal Week</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Fiscal Day</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Fiscal Day Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Fiscal Day Of Quarter</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Fiscal Day Of Month</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Fiscal Day Of Week</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Fiscal Week Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Fiscal Month Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Fiscal Month Of Quarter</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Fiscal Quarter Of Year</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Quarter</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Month</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Quarter</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Month</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 7</ID>
+              <Name>Aggregation 7</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Month</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 8</ID>
+              <Name>Aggregation 8</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Month</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 9</ID>
+              <Name>Aggregation 9</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Month</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation a</ID>
+              <Name>Aggregation a</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Industry Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation b</ID>
+              <Name>Aggregation b</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Industry Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation c</ID>
+              <Name>Aggregation c</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Industry Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation d</ID>
+              <Name>Aggregation d</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Quarter</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation e</ID>
+              <Name>Aggregation e</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Month</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation f</ID>
+              <Name>Aggregation f</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 10</ID>
+              <Name>Aggregation 10</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 11</ID>
+              <Name>Aggregation 11</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 12</ID>
+              <Name>Aggregation 12</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 13</ID>
+              <Name>Aggregation 13</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 14</ID>
+              <Name>Aggregation 14</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 15</ID>
+              <Name>Aggregation 15</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 16</ID>
+              <Name>Aggregation 16</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 17</ID>
+              <Name>Aggregation 17</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 18</ID>
+              <Name>Aggregation 18</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 19</ID>
+              <Name>Aggregation 19</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1a</ID>
+              <Name>Aggregation 1a</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1b</ID>
+              <Name>Aggregation 1b</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1c</ID>
+              <Name>Aggregation 1c</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1d</ID>
+              <Name>Aggregation 1d</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1e</ID>
+              <Name>Aggregation 1e</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1f</ID>
+              <Name>Aggregation 1f</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 20</ID>
+              <Name>Aggregation 20</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 21</ID>
+              <Name>Aggregation 21</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 22</ID>
+              <Name>Aggregation 22</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 23</ID>
+              <Name>Aggregation 23</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 24</ID>
+              <Name>Aggregation 24</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 25</ID>
+              <Name>Aggregation 25</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 26</ID>
+              <Name>Aggregation 26</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Quarter</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 27</ID>
+              <Name>Aggregation 27</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Month</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 28</ID>
+              <Name>Aggregation 28</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Month</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 29</ID>
+              <Name>Aggregation 29</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Industry Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2a</ID>
+              <Name>Aggregation 2a</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2b</ID>
+              <Name>Aggregation 2b</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Market</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Market SK</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
     </MeasureGroup>
   </MeasureGroups>
 </Cube>
