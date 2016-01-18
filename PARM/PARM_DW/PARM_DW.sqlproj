@@ -89,15 +89,17 @@
     <Build Include="Dimension\Tables\Time.sql" />
     <Build Include="Fact\Tables\Derivatives.sql" />
     <Build Include="Dimension\Tables\Market.sql" />
-    <Build Include="Fact\Tables\Portfolios_1.sql" />
-    <Build Include="Dimension\Tables\Portfolio_1.sql" />
-    <Build Include="Dimension\Tables\Currency_1.sql" />
     <Build Include="dbo\Functions\Get_EndOfYearDate.sql" />
     <Build Include="dbo\Functions\Get_EndOfMonthDate.sql" />
     <Build Include="Fact\Tables\BudgetFinancialRatios.sql" />
     <Build Include="Fact\Tables\FXRates.sql" />
     <Build Include="Fact\Tables\Bonds.sql" />
     <Build Include="Security\neo.sql" />
+    <Build Include="Fact\Tables\Portfolios.sql" />
+    <Build Include="Dimension\Tables\Currency.sql" />
+    <Build Include="Dimension\Tables\Portfolio.sql" />
+    <Build Include="Fact\Tables\EconomicIndicators.sql" />
+    <Build Include="Dimension\Tables\Country.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />

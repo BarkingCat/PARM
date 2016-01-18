@@ -198,18 +198,6 @@
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
     <Build Include="Security\Reference.sql" />
-    <Build Include="Staging\Tables\AFR_IntlIndices_Weekly_Raw_1.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Staging\Tables\AFR_InterestRateSecurities_Weekly_Raw_1.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Staging\Tables\AFR_ASXIndices_Weekly_Raw_1.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
     <Build Include="Staging\Views\AFR_Options_Daily_1.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
@@ -219,34 +207,6 @@
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
     <Build Include="Security\Dimension.sql" />
-    <Build Include="Staging\Tables\RBA_GovernmentBondYields_Daily_Raw_1.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Staging\Tables\RBA_GDP_Data_Daily_Raw_1.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Staging\Tables\RBA_FXRates_Daily_Raw_1.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Staging\Tables\RBA_EmploymentData_Daily_Raw_1.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Staging\Tables\RBA_CPI_Daily_Raw_1.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Staging\Tables\RBA_CommodityPrices_Daily_Raw_1.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Staging\Tables\RBA_CashRates_Daily_Raw_1.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
     <Build Include="Staging\Tables\RBA_BalanceOfPayments_Daily_Raw.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
@@ -291,6 +251,16 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
+    <Build Include="Staging\Tables\AFR_ASXIndices_Weekly_Raw.sql" />
+    <Build Include="Staging\Tables\AFR_InterestRateSecurities_Weekly_Raw.sql" />
+    <Build Include="Staging\Tables\AFR_IntlIndices_Weekly_Raw.sql" />
+    <Build Include="Staging\Tables\RBA_CashRates_Daily_Raw.sql" />
+    <Build Include="Staging\Tables\RBA_CommodityPrices_Daily_Raw.sql" />
+    <Build Include="Staging\Tables\RBA_CPI_Daily_Raw.sql" />
+    <Build Include="Staging\Tables\RBA_EmploymentData_Daily_Raw.sql" />
+    <Build Include="Staging\Tables\RBA_FXRates_Daily_Raw.sql" />
+    <Build Include="Staging\Tables\RBA_GDP_Data_Daily_Raw.sql" />
+    <Build Include="Staging\Tables\RBA_GovernmentBondYields_Daily_Raw.sql" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PARM_Control\PARM_Control.sqlproj">
